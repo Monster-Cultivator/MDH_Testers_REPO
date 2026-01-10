@@ -118,8 +118,7 @@ MidbattleHandlers.add(:midbattle_global, :wild_zpower_battle,
       end
       battle.zMove[1][0] == -2
       battle.noBag = false
-      battle.disablePokeBalls = false
-      battle.pbDisplayPaused(_INTL("{1}'s aura faded!\nIt may now be captured!", foe.pbThis))
+      battle.pbDisplayPaused(_INTL("{1}'s aura faded!", foe.pbThis))
     when "BattleEndWin"
       if battle.wildBattleMode == :zmove
         $stats.wild_zpower_battles_won += 1

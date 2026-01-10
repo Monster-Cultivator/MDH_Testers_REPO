@@ -1633,6 +1633,7 @@ ZOE_MIDBATTLE   = {
 	"text" => ["There seems to be some kind of explosive ordnance!"]
 	},
 "RoundEnd_foe_repeat_even" => {
+	"ignoreAfter"	=> "BattlerReachedHPCap_foe",
     "playSE"        => "Anim/Sound2",
     "battlerForm"   => [1, "{1} got the glock!"],
     "playCry"       => :Self,
@@ -1651,7 +1652,7 @@ ZOE_MIDBATTLE   = {
     "speech_A" => ["Time to pull out all the stops!"],
 	"ignoreAfter"   => "BattlerReachedHPCap_foe"
   },
-"RoundEnd_foe_repeat_odd" => {
+"RoundEnd_foe" => {
     "ignoreUntil"   => "BattlerReachedHPCap_foe",
     "playSE"        => "Anim/Sound2",
     "battlerForm"   => [2, "{1} Grizzbolt's gun is running!!"],
