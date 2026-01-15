@@ -10536,3 +10536,41 @@ FrontSprite = 0,7
 ShadowX = 0
 ShadowSize = 2
 DmaxFrontSprite = 0,0
+#-------------------------------
+[MACHOPh]
+BackSprite = 0,0
+FrontSprite = 0,23
+ShadowX = 0
+ShadowSize = 2
+DmaxFrontSprite = 0,0
+#-------------------------------
+[MACHOKEh]
+BackSprite = 0,0
+FrontSprite = 0,17
+ShadowX = 0
+ShadowSize = 2
+DmaxFrontSprite = 0,0
+#-------------------------------
+[MACHAMPh]
+BackSprite = -8,70
+FrontSprite = 0,7
+ShadowX = 0
+ShadowSize = 2
+DmaxBackSprite = 0,0
+DmaxFrontSprite = 0,0
+#-------------------------------
+[VULPIXha]
+BackSprite = -7,16
+FrontSprite = -4,18
+ShadowX = 0
+ShadowSize = 2
+DmaxBackSprite = 0,0
+DmaxFrontSprite = 0,0
+#-------------------------------
+[NINETALESha]
+BackSprite = -4,15
+FrontSprite = 0,11
+ShadowX = 0
+ShadowSize = 2
+DmaxBackSprite = 0,0
+DmaxFrontSprite = 0,0
