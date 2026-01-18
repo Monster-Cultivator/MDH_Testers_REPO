@@ -21,6 +21,44 @@ def pbGenerateRaidRewards(pokemon, style = :Basic, rank = nil, loot = nil, weath
   end
   rewards.push([:RARECANDY, qty + rand(-1..2)]) if rank > 2
   #-----------------------------------------------------------------------------
+  # Idite: Adds IV Candies to raid loot.
+  #-----------------------------------------------------------------------------
+=begin OLD METHOD, TREATS ALL CANDIES EQUALLY
+  iv_candies = [
+    :HEALTHCANDY, :MIGHTYCANDY, :TOUGHCANDY, :SMARTCANDY, :COURAGECANDY, :QUICKCANDY,
+    :SICKLYCANDY, :WEAKCANDY, :BRITTLECANDY, :NUMBCANDY, :COWARDCANDY, :SLOWCANDY
+  ]
+  rolls = rand(0..4) + (rank * 1.1).round
+  rolls.times do
+    rewards.push([iv_candies.sample, 1])
+  end
+=end
+  # New Method, splits candy pool into positive/negative.
+  positive_candies = [
+    :HEALTHCANDY, :MIGHTYCANDY, :TOUGHCANDY,
+    :SMARTCANDY, :COURAGECANDY, :QUICKCANDY
+  ]
+
+  negative_candies = [
+    :SICKLYCANDY, :WEAKCANDY, :BRITTLECANDY,
+    :NUMBCANDY, :COWARDCANDY, :SLOWCANDY
+  ]
+
+  # Positive candies:
+  # Rank 1: 0-4 rolls
+  # Each rank above 1: +2 rolls
+  pos_rolls = rand(0..4) + (rank * 1.1).round
+  pos_rolls.times do
+    rewards.push([positive_candies.sample, 1])
+  end
+
+  # Negative candies:
+  # At most one roll total, with only a chance to appear
+  if rand(100) < (20 + rank * 5)   # 25% (rank 1) - 45% (rank 5)
+    rewards.push([negative_candies.sample, 1])
+  end
+
+  #-----------------------------------------------------------------------------
   # Adds rewards related to raid type.
   #-----------------------------------------------------------------------------
   case style

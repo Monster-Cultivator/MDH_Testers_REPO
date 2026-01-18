@@ -1,0 +1,146 @@
+# The hoes may call this "blatant theft from Cobblemon"
+# I call it liberating good mechanics
+[HEALTHCANDY]
+Name = Health Candy
+NamePlural = Health Candies
+PortionName = piece of Health Candy
+PortionNamePlural = pieces of Health Candy
+Pocket = 2
+Price = 100
+SellPrice = 20
+FieldUse = OnPokemon
+Flags = Fling_10
+Description = A sweet candy for Pokémon. It raises the base HP IV of a single Pokémon by 3 points.
+#-------------------------------
+[MIGHTYCANDY]
+Name = Mighty Candy
+NamePlural = Mighty Candies
+PortionName = piece of Mighty Candy
+PortionNamePlural = pieces of Mighty Candy
+Pocket = 2
+Price = 100
+SellPrice = 20
+FieldUse = OnPokemon
+Flags = Fling_10
+Description = A sweet candy for Pokémon. It raises the base Atk IV of a single Pokémon by 3 points.
+#-------------------------------
+[TOUGHCANDY]
+Name = Tough Candy
+NamePlural = Tough Candies
+PortionName = piece of Tough Candy
+PortionNamePlural = pieces of Tough Candy
+Pocket = 2
+Price = 100
+SellPrice = 20
+FieldUse = OnPokemon
+Flags = Fling_10
+Description = A sweet candy for Pokémon. It raises the base Def IV of a single Pokémon by 3 points.
+#-------------------------------
+[SMARTCANDY]
+Name = Smart Candy
+NamePlural = Smart Candies
+PortionName = piece of Smart Candy
+PortionNamePlural = pieces of Smart Candy
+Pocket = 2
+Price = 100
+SellPrice = 20
+FieldUse = OnPokemon
+Flags = Fling_10
+Description = A sweet candy for Pokémon. It raises the base SpAtk IV of a single Pokémon by 3 points.
+#-------------------------------
+[COURAGECANDY]
+Name = Courage Candy
+NamePlural = Courage Candies
+PortionName = piece of Courage Candy
+PortionNamePlural = pieces of Courage Candy
+Pocket = 2
+Price = 100
+SellPrice = 20
+FieldUse = OnPokemon
+Flags = Fling_10
+Description = A sweet candy for Pokémon. It raises the base SpDef IV of a single Pokémon by 3 points.
+#-------------------------------
+[QUICKCANDY]
+Name = Quick Candy
+NamePlural = Quick Candies
+PortionName = piece of Quick Candy
+PortionNamePlural = pieces of Quick Candy
+Pocket = 2
+Price = 100
+SellPrice = 20
+FieldUse = OnPokemon
+Flags = Fling_10
+Description = A sweet candy for Pokémon. It raises the base Speed IV of a single Pokémon by 3 points.
+#-------------------------------
+[SICKLYCANDY]
+Name = Sickly Candy
+NamePlural = Sickly Candies
+PortionName = piece of Sickly Candy
+PortionNamePlural = pieces of Sickly Candy
+Pocket = 2
+Price = 500
+SellPrice = 300
+FieldUse = OnPokemon
+Flags = Fling_10
+Description = A bitter candy for Pokémon. It resets the base HP IV of a single Pokémon to 0.
+#-------------------------------
+[WEAKCANDY]
+Name = Weak Candy
+NamePlural = Weak Candies
+PortionName = piece of Weak Candy
+PortionNamePlural = pieces of Weak Candy
+Pocket = 2
+Price = 500
+SellPrice = 450
+FieldUse = OnPokemon
+Flags = Fling_10
+Description = A bitter candy for Pokémon. It resets the base Attack IV of a single Pokémon to 0.
+#-------------------------------
+[BRITTLECANDY]
+Name = Brittle Candy
+NamePlural = Brittle Candies
+PortionName = piece of Brittle Candy
+PortionNamePlural = pieces of Brittle Candy
+Pocket = 2
+Price = 500
+SellPrice = 300
+FieldUse = OnPokemon
+Flags = Fling_10
+Description = A bitter candy for Pokémon. It resets the base Defense IV of a single Pokémon to 0.
+#-------------------------------
+[NUMBCANDY]
+Name = Numb Candy
+NamePlural = Numb Candies
+PortionName = piece of Numb Candy
+PortionNamePlural = pieces of Numb Candy
+Pocket = 2
+Price = 500
+SellPrice = 300
+FieldUse = OnPokemon
+Flags = Fling_10
+Description = A bitter candy for Pokémon. It resets the base SpAtk IV of a single Pokémon to 0.
+#-------------------------------
+[COWARDCANDY]
+Name = Coward Candy
+NamePlural = Coward Candies
+PortionName = piece of Coward Candy
+PortionNamePlural = pieces of Coward Candy
+Pocket = 2
+Price = 500
+SellPrice = 300
+FieldUse = OnPokemon
+Flags = Fling_10
+Description = A bitter candy for Pokémon. It resets the base SpDef IV of a single Pokémon to 0.
+#-------------------------------
+[SLOWCANDY]
+Name = Slow Candy
+NamePlural = Slow Candies
+PortionName = piece of Slow Candy
+PortionNamePlural = pieces of Slow Candy
+Pocket = 2
+Price = 500
+SellPrice = 450
+FieldUse = OnPokemon
+Flags = Fling_10
+Description = A bitter candy for Pokémon. It resets the base Speed IV of a single Pokémon to 0.
+#-------------------------------
