@@ -307,7 +307,7 @@ Battle::AbilityEffects::OnBeingHit.add(:LOOSEROCKS,
   proc { |ability, user, target, move, battle|
     next if !move.physicalMove?
     next if target.damageState.substitute
-    next if target.pbOpposingSide.effects[PBEffects::StealthRock] = 0
+    next if target.pbOpposingSide.effects[PBEffects::StealthRock] != 0
     battle.pbShowAbilitySplash(target)
     target.pbOpposingSide.effects[PBEffects::StealthRock] = 1
     battle.pbAnimation(:SPIKES, target, target.pbDirectOpposing)
