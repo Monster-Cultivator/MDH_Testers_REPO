@@ -128,3 +128,9 @@ Innates = TINTEDLENS
 #-------------------------------
 [MILOTICh]
 Innates = RIVALRY
+#-------------------------------
+[LURANTIS_1]
+Innates = EIGHTHPLAGUE
+#-------------------------------
+[WEAVILE_1]
+Innates = HITALICK

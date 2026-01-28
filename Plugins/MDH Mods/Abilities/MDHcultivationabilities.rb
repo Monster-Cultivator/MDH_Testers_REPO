@@ -54,3 +54,20 @@ Battle::AbilityEffects::DamageCalcFromUser.add(:KITSUNECROSS,
     mults[:final_damage_multiplier] *= 1.2
   }
 )
+
+#===============================================================================
+# Ability: HITALICK
+# Powers up fairy & psychic type moves, also gives a 10% damage reduction.
+#===============================================================================
+
+Battle::AbilityEffects::DamageCalcFromUser.add(:HITALICK,
+  proc { |ability, user, target, move, battle|
+    next if !move.damagingMove?
+    next if target.damageState.hpLost <= 0
+    next if user.statStageAtMax?(:EVASION)
+	if Effectiveness.super_effective?(target.damageState.typeMod)
+    battle.pbShowAbilitySplash(user)
+    user.tryRaiseStat(:EVASION, user, move, 1)
+    battle.pbHideAbilitySplash(user)
+  }
+)
