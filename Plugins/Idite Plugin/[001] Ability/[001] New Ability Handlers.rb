@@ -324,7 +324,7 @@ Battle::AbilityEffects::OnBeingHit.add(:JAGGEDSTEEL,
   proc { |ability, user, target, move, battle|
     next if !move.physicalMove?
     next if target.damageState.substitute
-    next if target.pbOpposingSide.effects[PBEffects::Steelsurge] = false
+    next if target.pbOpposingSide.effects[PBEffects::Steelsurge] = true
     battle.pbShowAbilitySplash(target)
     target.pbOpposingSide.effects[PBEffects::Steelsurge] = true
     battle.pbAnimation(:SPIKES, target, target.pbDirectOpposing)
@@ -428,7 +428,7 @@ Battle::AbilityEffects::OnEndOfUsingMove.add(:PREDATOR,
 
 #===============================================
 # Soul Siphon/Apex Predator
-# KOs restore 33% HP each.
+# KOs restore 20% HP each. [Nerfed from 33% for 0.2.0]
 #===============================================
 Battle::AbilityEffects::OnEndOfUsingMove.add(:SOULSIPHON,
   proc { |ability, user, targets, move, battle|
@@ -447,8 +447,8 @@ Battle::AbilityEffects::OnEndOfUsingMove.add(:SOULSIPHON,
 
     # Heal the user based on the number of Pokémon fainted
     battle.pbShowAbilitySplash(user)
-    user.pbRecoverHP((user.totalhp * numFainted / 3), true, true)
-    battle.pbDisplay(_INTL("{1} restored a lot of HP with its {2}!", user.pbThis, user.abilityName)) 
+    user.pbRecoverHP((user.totalhp * numFainted / 4), true, true)
+    battle.pbDisplay(_INTL("{1} siphoned HP with its {2}!", user.pbThis, user.abilityName)) 
     battle.pbHideAbilitySplash(user)
   }
 )
@@ -641,7 +641,6 @@ Battle::AbilityEffects::OnSwitchIn.add(:INVASIVE,
       end
     # If Special Attack is higher, lower the Special Attack stat
     else
-      battle.pbShowAbilitySplash(battler)
       battle.allOtherSideBattlers(battler.index).each do |b|
         next if !b.near?(battler)
         check_item = true
@@ -751,21 +750,42 @@ Battle::AbilityEffects::DamageCalcFromUser.add(:ATTUNED,
 )
 
 #===============================================
+# Distorted
+# Boosts the user's Ghost type attacks.
+#===============================================
+Battle::AbilityEffects::DamageCalcFromUser.add(:DISTORTED,
+  proc { |ability, user, target, move, mults, power, type|
+    mults[:attack_multiplier] *= 1.5 if type == :GHOST
+  }
+)
+
+
+#===============================================
 # Air Support
 # Sets Tailwind for 3 turns upon switch-in.
 #===============================================
 Battle::AbilityEffects::OnSwitchIn.add(:AIRSUPPORT,
-proc { |ability, battler, battle, switch_in|
-battle.pbShowAbilitySplash(battler)
-  if @battle.field.effects[PBEffects::Tailwind] > 0
-     battle.field.effects[PBEffects::Tailwind] = 3
+  proc { |ability, battler, battle, switch_in|
+    side = battler.pbOwnSide
+
+    battle.pbShowAbilitySplash(battler)
+
+    if side.effects[PBEffects::Tailwind] > 0
+      side.effects[PBEffects::Tailwind] = 3
+      battle.pbAnimation(:TAILWIND, battler, nil)
       battle.pbDisplay(_INTL("{1} reactivated Tailwind!", battler.pbThis))
-  else
-     battle.field.effects[PBEffects::TrickRoom] = 3
-      battle.pbDisplay(_INTL("{1}'s presence stirred up a strong wind behind your team!", battler.pbThis))
-    end 
+    else
+      side.effects[PBEffects::Tailwind] = 3
+      battle.pbAnimation(:TAILWIND, battler, nil)
+      battle.pbDisplay(
+        _INTL("{1}'s presence stirred up a strong wind!",
+        battler.pbThis)
+      )
+    end
+
+    battle.pbHideAbilitySplash(battler)
   }
-) 
+)
 
 #===============================================
 # Blues
@@ -778,7 +798,6 @@ Battle::AbilityEffects::OnDealingHit.add(:BLUES,
     next if !move.damagingMove?
     next if !user.canHeal?
     next if target.damageState.hpLost <= 0
-    # Heal the user for half of the damage dealt
     hpGain = (target.damageState.hpLost / 1.2).round
     # Show ability activation
     battle.pbShowAbilitySplash(user)
@@ -974,3 +993,20 @@ Battle::AbilityEffects::CriticalCalcFromUser.add(:TREMBLE,
     next 99 if target.paralyzed?
   }
 )
+=begin
+#============================================
+# Flammable (Froslass Drawback)
+# Most of this is handled in Move Calcs
+# This is for doubling power of super-effective fire moves
+#============================================
+Battle::AbilityEffects::DamageCalcFromTarget.add(:FLAMMABLE,
+  proc { |ability, user, target, move, mults, baseDmg, type|
+    next if type != :FIRE
+    mod = Effectiveness.calculate(type, target.type1, target.type2)
+    if mod > Effectiveness::NORMAL_EFFECTIVE
+      # Double the final damage
+      mults[:final_damage_multiplier] *= 2
+    end
+  }
+)
+=end
