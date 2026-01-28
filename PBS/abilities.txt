@@ -1276,3 +1276,10 @@ Flags = exEggHatching
 Name = Loose Ends
 Description = Being hit with a contact move scatters Spikes on the Opponent's side.
 #-------------------------------
+[TRUEEMBRACE]
+Name = True Embrace
+Description = Powers up Fairy & Psychic type moves.
+#-------------------------------
+[KITSUNECROSS]
+Name = Kitsune Cross
+Description = Boosts the Pokémon's evasion in the sun.

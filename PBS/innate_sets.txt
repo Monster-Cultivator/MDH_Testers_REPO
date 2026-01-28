@@ -7,7 +7,7 @@ Innates3 = CUTECHARM
 Innates = FATALPRECISION
 #-------------------------------
 [NINETALES_2]
-Innates = WELLBAKEDBODY
+Innates = KITSUNECROSS
 #-------------------------------
 [GARDEVOIR_2]
 Innates = DANCER
@@ -84,6 +84,9 @@ Innates = ICEBODY
 [SYLVEON_1]
 Innates = SOULHEART
 #-------------------------------
+[VAPOREON_1]
+Innates = WATERVEIL
+#-------------------------------
 [DRACEON]
 Innates = STAMINA
 #-------------------------------
@@ -116,3 +119,12 @@ Innates = FILTER,JUSTIFIED,ROCKHEAD
 #-------------------------------
 [DRAGONITE_1]
 Innates = PHOENIXDOWN,AERILATE
+#-------------------------------
+[WHIMSICOTT_1]
+Innates = AIRSUPPORT
+#-------------------------------
+[CORVIKNIGHT_2]
+Innates = TINTEDLENS
+#-------------------------------
+[MILOTICh]
+Innates = RIVALRY
