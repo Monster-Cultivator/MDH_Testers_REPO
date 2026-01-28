@@ -3038,3 +3038,7 @@ HiddenAbilities = DUALWIELD
 Weight = 49.0
 Pokedex = When this Pokémon whips the winglike fur on its back as though beating its wings, it sends an intimidating aura flying at its opponents.
 Generation = 6
+#-------------------------------
+[HATTERENE_2,1]
+FormName = Released Form
+BaseStats = 80,29,105,90,150,103

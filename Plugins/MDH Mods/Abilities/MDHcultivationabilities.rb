@@ -38,7 +38,7 @@ Battle::AbilityEffects::DamageCalcFromTarget.add(:TRUEEMBRACE,
 
 #===============================================================================
 # Ability: KITSUNECROSS
-# Powers up fairy & psychic type moves, also gives a 10% damage reduction.
+# Boosts the Pokémon's evasion in the sun. Powers up fire & ghost type moves.
 #===============================================================================
 
 Battle::AbilityEffects::AccuracyCalcFromTarget.add(:KITSUNECROSS,
@@ -71,3 +71,20 @@ Battle::AbilityEffects::DamageCalcFromUser.add(:HITALICK,
     battle.pbHideAbilitySplash(user)
   }
 )
+
+#===============================================================================
+# Ability: HITALICK
+# Powers up fairy & psychic type moves, also gives a 10% damage reduction.
+#===============================================================================
+
+class Battle::Move::ChangeUserHattereneForm < Battle::Move
+  def pbEndOfMoveUsageEffect(user, targets, numHits, switchedBattlers)
+    return if numHits == 0
+    return if user.fainted? || user.effects[PBEffects::Transform]
+    return if !user.isSpecies?(:HATTERENE_2)
+    return if user.hasActiveAbility?(:SHEERFORCE) && @addlEffect > 0
+    newForm = (user.form + 1) % 2
+    user.pbChangeForm(newForm, _INTL("{1} transformed!", user.pbThis))
+	Hello world!
+  end
+end
