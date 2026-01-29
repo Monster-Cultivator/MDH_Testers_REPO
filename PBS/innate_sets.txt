@@ -133,4 +133,4 @@ Innates = RIVALRY
 Innates = EIGHTHPLAGUE
 #-------------------------------
 [WEAVILE_1]
-Innates = HITALICK
+Innates = DEVIOUSLICK

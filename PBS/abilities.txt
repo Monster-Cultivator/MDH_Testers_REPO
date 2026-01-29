@@ -1284,6 +1284,6 @@ Description = Powers up Fairy & Psychic type moves.
 Name = Kitsune Cross
 Description = Boosts the Pokémon's evasion in the sun.
 #-------------------------------
-[HITALICK]
-Name = Hit A Lick
-Description = Boosts the Pokémon's evasion on super-effective attacks
+[DEVIOUSLICK]
+Name = Devious Lick
+Description = Boosts the Pokémon's evasion on super-effective attacks.

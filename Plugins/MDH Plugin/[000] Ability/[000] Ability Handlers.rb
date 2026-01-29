@@ -58,11 +58,11 @@ Battle::AbilityEffects::DamageCalcFromUser.add(:KITSUNECROSS,
 )
 
 #===============================================================================
-# Ability: HITALICK
-# Powers up fairy & psychic type moves, also gives a 10% damage reduction.
+# Ability: DEVIOUSLICK
+# Boosts the Pokémon's evasion on super-effective attacks
 #===============================================================================
 
-Battle::AbilityEffects::OnDealingHit.add(:HITALICK,
+Battle::AbilityEffects::OnDealingHit.add(:DEVIOUSLICK,
   proc { |ability, user, target, move, battle|
     next if !move.damagingMove?
     next if target.damageState.hpLost <= 0
