@@ -1627,7 +1627,6 @@ ZOE_MIDBATTLE   = {
 	},
 "TurnStart_1_foe" => {
     "useMove" => :THUNDER,
-	"useZMove" => :GIGAVOLTHAVOC,
 	"setBattler" => :Self,
 	"battlerStats" => [:SPECIAL_ATTACK, 1, :DEFENSE, 2],
 	"text" => ["There seems to be some kind of explosive ordnance!"]
