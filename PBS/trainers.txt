@@ -1012,16 +1012,26 @@ Pokemon = PIKACHU,27
     Ability = STATIC
 #-------------------------------
 [TRIATHLETE_M,Anthony]
+Items = HYPERPOTION
 LoseText = "You sure left me in the dust..."
-Pokemon = NINJASK,25
-    Moves = METALCLAW,AGILITY,BATONPASS,FURYCUTTER
-    Ability = INFILTRATOR
-Pokemon = CHARJABUG,26
-    Moves = SPARK,STRINGSHOT,BUGBITE,CHARGE
-    Ability = BATTERY
-Pokemon = SURSKIT,27
-    Moves = BUBBLEBEAM,SOAK,SWEETSCENT,QUICKATTACK
-    Ability = SWIFTSWIM
+Pokemon = NINJASK,49
+    Moves = XSCISSOR,NIGHTSLASH,DIG,PROTECT
+    Ability = SPEEDBOOST
+    Item = FOCUSSASH
+    Nature = JOLLY
+    EV = 0,120,0,40,0,0
+Pokemon = VIKAVOLT,46
+    Moves = THUNDERBOLT,BUGBUZZ,AIRSLASH,CHARGE
+    Ability = LEVITATE
+    Item = SILVERPOWDER
+    Nature = MODEST
+    EV = 0,0,0,0,160,0
+Pokemon = MASQUERAIN,47
+    Moves = BUGBUZZ,GIGADRAIN,HURRICANE,STUNSPORE
+    Ability = INTIMIDATE
+    Item = BRIGHTPOWDER
+    Nature = MODEST
+    EV = 0,0,0,80,40,40
 #-------------------------------
 [FAIRY_Cirno,Cirno]
 Items = FULLRESTORE,FULLRESTORE
@@ -3038,28 +3048,48 @@ Pokemon = KECLEON,27
     Ability = COLORCHANGE
 #-------------------------------
 [TRIATHLETE_M,Benjamin]
-LoseText = "Be careful out there trainer."
-Pokemon = TOGEDEMARU,25
-    Moves = FELLSTINGER,CHARGE,NUZZLE,DEFENSECURL
-    Ability = IRONBARBS
-Pokemon = VAROOM,26
-    Moves = GYROBALL,SMOG,SELFDESTRUCT,SCREECH
-    Ability = OVERCOAT
-Pokemon = PHANPY,27
-    Moves = ROLLOUT,SLAM,DEFENSECURL,ENDURE
-    Ability = SANDVEIL
+Items = HYPERPOTION
+LoseText = "Be careful out there, Trainer."
+Pokemon = MAGNEZONE,45
+    Moves = DISCHARGE,FLASHCANNON,GRAVITY,CONFUSERAY
+    Ability = MAGNETPULL
+    Item = AIRBALLOON
+    Nature = MODEST
+    EV = 0,0,80,0,80,0
+Pokemon = REVAVROOM,44
+    Moves = PARTINGSHOT,IRONHEAD,POISONJAB,TEMPERFLARE
+    Ability = FILTER
+    Item = AIRBALLOON
+    Nature = ADAMANT
+    EV = 0,80,0,80,0,0
+Pokemon = DONPHAN,46
+    Moves = EARTHQUAKE,KNOCKOFF,THUNDERFANG,TRAILBLAZE
+    Ability = STURDY
+    Item = ASSAULTVEST
+    Nature = IMPISH
+    EV = 100,0,80,0,0,0
 #-------------------------------
 [TRIATHLETE_F,Jasmine]
 LoseText = "Never skip Leg Day!"
-Pokemon = MAGNEMITE,25
-    Moves = EXPLOSION,THUNDERWAVE,ELECTROBALL,SUPERSONIC
-    Ability = STURDY
-Pokemon = FERROSEED,26
-    Moves = PINMISSILE,METALCLAW,HARDEN,FLASHCANNON
+Items = HYPERPOTION
+Pokemon = FERROTHORN,46
+    Moves = STEALTHROCK,POWERWHIP,SANDSTORM,THUNDERWAVE
     Ability = IRONBARBS
-Pokemon = ROLYCOLY,27
-    Moves = SMOKESCREEN,SMACKDOWN,ROCKPOLISH,INCINERATE
-    Ability = HEATPROOF
+    Item = ROCKYHELMET
+    Nature = IMPISH
+    EV = 40,40,80,0,0,0
+Pokemon = MAGNEZONE,46
+    Moves = THUNDERBOLT,FLASHCANNON,CONFUSERAY,CHARGE
+    Ability = ANALYTIC
+    Item = AIRBALLOON
+    Nature = MODEST
+    EV = 0,0,40,0,120,0
+Pokemon = COALOSSAL,46
+    Moves = HEATCRASH,STONEEDGE,EARTHQUAKE,BODYPRESS
+    Ability = STEAMENGINE
+    Item = PASSHOBERRY
+    Nature = IMPISH
+    EV = 0,0,160,0,0,0
 #-------------------------------
 [YOUNGSTER,Timmy]
 LoseText = "You're no novice. That's for sure!"
@@ -3122,16 +3152,26 @@ Pokemon = HATTREM,27
 #-------------------------------
 [TRIATHLETE_F,Abigail]
 LoseText = "Just what I needed. A brake..."
-Pokemon = ARON,25
-    Moves = TACKLE,HARDEN,HEADBUTT,IRONHEAD
-    Ability = STURDY
-Pokemon = SANDSHREW,26
+Items = HYPERPOTION
+Pokemon = AGGRON,48
+    Moves = BODYPRESS,HEAVYSLAM,EARTHQUAKE,LOWKICK
+    Ability = HEAVYMETAL
+    Item = PASSHOBERRY
+    Nature = IMPISH
+    EV = 80,0,80,0,0,0
+Pokemon = SANDSLASH,47
     Form = 1
-    Moves = RAPIDSPIN,POWDERSNOW,ROLLOUT,SWIFT
+    Moves = TRIPLEAXEL,KNOCKOFF,AGILITY,BULLDOZE
     Ability = SLUSHRUSH
-Pokemon = BRONZOR,27
-    Moves = CONFUSERAY,GYROBALL,SAFEGUARD,GRAVITY
-    Ability = LEVITATE
+    Item = OCCABERRY
+    Nature = IMPISH
+    EV = 0,80,80,0,0,0
+Pokemon = BRONZONG,47
+    Moves = HYPNOSIS,PSYCHIC,PAYBACK,HEAVYSLAM
+    Ability = HEATPROOF
+    Item = LEFTOVERS
+    Nature = NAIVE
+    EV = 0,0,80,0,0,80
 #-------------------------------
 [FISHERMAN,Dale]
 LoseText = "I lost spectacularly!"
@@ -3142,15 +3182,24 @@ Pokemon = BARBOACH,24
 #-------------------------------
 [PSYCHIC_F,Jaclyn]
 LoseText = "Seems your light was that much brighter..."
-Pokemon = ELGYEM,25
-    Moves = POWERSPLIT,GUARDSPLIT,PSYBEAM,CONFUSION
-    Ability = TELEPATHY
-Pokemon = EXEGGCUTE,26
-    Moves = REFLECT,LEECHSEED,CONFUSION,MEGADRAIN
+Pokemon = BEHEEYEM,47
+    Moves = PSYCHIC,ENERGYBALL,DARKPULSE,RECOVER
+    Ability = ANALYTIC
+    Item = TWISTEDSPOON
+    Nature = MODEST
+    EV = 80,0,0,0,80,0
+Pokemon = EXEGGUTOR,48
+    Moves = PSYSHOCK,SLUDGEBOMB,GIGADRAIN,REFLECT
     Ability = HARVEST
-Pokemon = KIRLIA,27
-    Moves = DRAININGKISS,DOUBLETEAM,PSYBEAM,SHADOWSNEAK
+    Item = SITRUSBERRY
+    Nature = MODEST
+    EV = 80,0,0,0,80,0
+Pokemon = GARDEVOIR,47
+    Moves = MYSTICALFIRE,PSYCHIC,FOCUSBLAST,DAZZLINGGLEAM
     Ability = TRACE
+    Item = ASSAULTVEST
+    Nature = MODEST
+    EV = 0,0,0,0,80,80
 #-------------------------------
 [LEADERS_IONO_ELESA,Iono & Elesa]
 Items = DYNAMAXBAND,TERAORB
@@ -3479,10 +3528,26 @@ Pokemon = BEAUTIFLY,25
 #-------------------------------
 [TRIATHLETE_M,Dylan]
 LoseText = "I need to train even harder!"
-Pokemon = MAGNEMITE,24
-    Moves = THUNDERSHOCK,SONICBOOM,THUNDERWAVE,SPARK
-Pokemon = VOLTORB,23
-    Moves = SPARK,ROLLOUT,SCREECH,SONICBOOM
+Items = HYPERPOTION
+Pokemon = ELECTIVIRE,48
+    Moves = SUPERCELLSLAM,KNOCKOFF,STOMPINGTANTRUM,LOWKICK
+    Ability = MOTORDRIVE
+    Item = ASSAULTVEST
+    Nature = ADAMANT
+    EV = 0,120,0,0,0,40
+Pokemon = ELECTRODE,49
+    Form = 1
+    Moves = CHLOROBLAST,THUNDER
+    Ability = AFTERMATH
+    Item = CHOICESPECS
+    Nature = TIMID
+    EV = 0,0,0,80,80,0
+Pokemon = ZEBSTRIKA,47
+    Moves = WILDCHARGE,TRAILBLAZE,SMARTSTRIKE,SCREECH
+    Ability = SAPSIPPER
+    Item = MAGNET
+    Nature = JOLLY
+    EV = 0,80,0,80,0,0
 #-------------------------------
 [BREEDER_F,Lydia]
 LoseText = "I lost my confidence..."
@@ -3946,6 +4011,72 @@ Pokemon = DACHSBUN,45
     Moves = PLAYROUGH,BITE,YAWN,HEADBUTT
 Pokemon = FENNEKIN_2,46
     Moves = PSYSHOCK,LAVAPLUME,DAZZLINGGLEAM,WILLOWISP
+#-------------------------------
+[LASS,Amy]
+LoseText = "My Best Friend will beat you to a pulp!"
+Items = LEMONADE
+Pokemon = WIGGLYTUFF,44
+    Moves = WISH,HYPERVOICE,MOONBLAST,FOCUSBLAST
+    Ability = COMPETITIVE
+    Item = CHILANBERRY
+    Nature = MODEST
+    EV = 80,0,0,0,40,0
+Pokemon = CINCCINO,45
+    Moves = TAILSLAP,BULLETSEED,ROCKBLAST,TRIPLEAXEL
+    Ability = TECHNICIAN
+    Item = LOADEDDICE
+    Nature = JOLLY
+    EV = 0,60,0,60,0,0
+Pokemon = BUNEARY_2,46
+    Moves = MEGAPUNCH,DRAINPUNCH,THUNDERPUNCH,ICEPUNCH
+    Ability = IRONFIST
+    Item = PUNCHINGGLOVE
+    Nature = ADAMANT
+    EV 0,60,0,60,0,0
+#-------------------------------
+[LASS,Stacy]
+LoseText = "You don't look nearly as good as my new Best Friend!"
+Items = LEMONADE
+Pokemon = SQUAWKABILLY,45
+    Moves = TAUNT,PARTINGSHOT,BRAVEBIRD,FACADE
+    Ability = INTIMIDATE
+    Item = FOCUSBAND
+    Nature = JOLLY
+    EV = 0,60,0,60,0,0
+Pokemon = SWELLOW,42
+    Moves = PROTECT,DUALWINGBEAT,FACADE,UTURN
+    Ability = GUTS
+    Item = FLAMEORB
+    Nature = ADAMANT
+    EV = 0,20,0,20,0,0
+Pokemon = BUNEARY_2,44
+    Moves = TAKEDOWN,SUBMISSION,ATTRACT,DRAINPUNCH
+    Ability = RECKLESS
+    Item = SITRUSBERRY
+    Nature = JOLLY
+    EV = 0,60,0,60,0,0
+#-------------------------------
+[LASS,Abigail]
+LoseText = "Please, don't mention this loss to my new Best Friend."
+Items = LEMONADE
+Pokemon = KECLEON,43
+    Moves = SHADOWCLAW,SLASH,KNOCKOFF,FIRSTIMPRESSION
+    Ability = COLORCHANGE
+    Item = EXPERTBELT
+    Nature = CAREFUL
+    EV = 0,60,0,0,0,60
+Pokemon = DUBWOOL,44
+    Moves = FACADE,ZENHEADBUTT,REVERSAL,COTTONGUARD
+    Ability = FLUFFY
+    Item = SITRUSBERRY
+    Nature = IMPISH
+    EV = 0,40,40,40,0,0
+Pokemon = BUNEARY_2,45
+    Moves = COTTONGUARD,FACADE,LOWSWEEP,FIREPUNCH
+    Ability = LIMBER
+    Item = PROTECTIVEPADS
+    Nature = DOCILE
+    EV = 60,0,40,20,0,0
 #-------------------------------
 [LASS,Chloe]
 LoseText = "You didn't have to win so convincingly!"
