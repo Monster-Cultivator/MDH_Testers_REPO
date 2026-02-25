@@ -493,7 +493,7 @@ Quest13 = {
     :QuestGiver => "Feebas",
     :Stage1 => "Increase her Affinity",
     :Location1 => "...",
-    :QuestDescription => "Feebas seems to have taken a liking to you! It would be best to show her some loving! Big Pearl, 5 Chesto Berries, Sea Incense, SlowPoke Tail, Heart Scale, Water Gem",
+    :QuestDescription => "Feebas seems to have taken a liking to you! It would be best to show her some loving! Big Pearl, 5 Chesto Berries, Sea Incense, Slowpoke Tail, Heart Scale, Water Gem",
     :RewardString => ". . ."
 }
     Quest46 = {
@@ -510,7 +510,7 @@ Quest13 = {
     :Name => "The Legendary Fisherman!",
     :QuestGiver => "Nami",
     :Stage1 => "Fish for Pokemon!",
-    :Location1 => "Water",
+    :Location1 => "Fishing around the Region",
     :QuestDescription => "Nami's shop is about to go under! She needs you to become the Legendary fisher! Try catching a Magikarp, Barboach, Goldeen, Tentacool, Feebas, Luvdisc, Carvanha, Basculin, and Remoraid and give them to her!",
     :RewardString => ". . ."
 }
@@ -709,7 +709,7 @@ Quest13 = {
 
    LilthMuscleBandQuest = {
     :ID => "64",
-    :Name => "Strength in Every Strike",
+    :Name => "Toning the Muscles",
     :QuestGiver => "Lilth",
     :Stage1 => "Find a Muscle Band.",
     :Location1 => "Dewford Island",
@@ -721,9 +721,9 @@ Quest13 = {
     :ID => "65",
     :Name => "Show Me Power",
     :QuestGiver => "Lilth",
-    :Stage1 => "Show Lilth a Machamp.",
+    :Stage1 => "Give Lilth a Machamp.",
     :Location1 => "Dewford Island",
-    :QuestDescription => "Inspired by your victories, Lilth wants to see a strong Fighting-type Pokémon you’ve trained. Bring one to her to motivate her own training.",
+    :QuestDescription => "Inspired by your victories, Lilth wants to own a strong Fighting-type Pokémon you’ve trained. Bring one to her to motivate her own training.",
     :RewardString => "Lilth’s respect and top-tier training gear."
 }
 
@@ -733,7 +733,7 @@ Quest13 = {
     :QuestGiver => "Greninja",
     :Stage1 => "Increase her Affinity",
     :Location1 => "...",
-    :QuestDescription => "Greninja seems to have taken a liking to you! It would be best to show her some loving! Big Pearl, 5 Chesto Berries, Sea Incense, SlowPoke Tail, Heart Scale, Water Gem",
+    :QuestDescription => "Greninja seems to have taken a liking to you! It would be best to show her some loving! Big Pearl, 5 Chesto Berries, Sea Incense, Slowpoke Tail, Heart Scale, Water Gem",
     :RewardString => ". . ."
 	
 }
@@ -871,7 +871,7 @@ Quest13 = {
   # > 15,000 Coins
   Sneasel = {
     :ID => "113",
-    :Name => "Rainman Cometh",
+    :Name => "Better Have My Money",
     :QuestGiver => "Guild Board",
     :Stage1 => "Help the Mauville Game Corner!",
     :Location1 => "Mauville City",
