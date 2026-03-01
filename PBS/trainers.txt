@@ -4814,7 +4814,7 @@ Pokemon = VIKAVOLT,40
 #================================
 [LEADER_Brock,Brock,1]
 Items = MEGARING
-LoseText = Ouch! Brock hard. 
+LoseText = "Ouch! Brock hard."
 Pokemon = TYRANITAR,50
     Moves = STEALTHROCK,STONEEDGE,CRUNCH,THUNDERWAVE
     Ability = SANDSTREAM
@@ -4866,7 +4866,7 @@ Pokemon = STEELIX,50
 #-------------------------------
 [LEADER_Misty,Misty,1]
 Items = MEGARING
-LoseText = I was going to use the prize money to buy a new BIKE...
+LoseText = "I was going to use the prize money to buy a new Bike..."
 Pokemon = STARMIE,50
     Moves = HYDROPUMP,PSYSHOCK,ICEBEAM,RAPIDSPIN
     Ability = ANALYTIC
@@ -4918,7 +4918,7 @@ Pokemon = GYARADOS,50
 #-------------------------------
 [LEADER_Surge,Lt.Surge,1]
 Items = TERAORB
-LoseText = Ooh Rah! Shocked and awed!
+LoseText = "Ooh Rah! Shocked and awed!"
 Pokemon = RAICHU,50
     Moves = BATONPASS,THUNDERBOLT,GRASSKNOT,NASTYPLOT
     Ability = LIGHTNINGROD
@@ -4977,7 +4977,7 @@ Pokemon = ZAPDOS,50
 #-------------------------------
 [LEADER_Erika,Erika,1]
 Items = MEGARING
-LoseText = Still, what a lovely City to do battle in.
+LoseText = "Still, what a lovely City to do battle in."
 Pokemon = SHIFTRY,50
     Moves = LEAFBLADE,KNOCKOFF,EXPLOSION,LEECHSEED
     Ability = WINDRIDER
@@ -5035,7 +5035,7 @@ Pokemon = VENUSAUR,50
 #-------------------------------
 [LEADER_Sabrina,Sabrina,1]
 Items = ZRING
-LoseText = Hmph. I did not forsee this.
+LoseText = "Hmph. I did not foresee this."
 Pokemon = ALAKAZAM,50
     Moves = PSYCHIC,FOCUSBLAST,SHADOWBALL,ENCORE
     Ability = MAGICGUARD
@@ -5086,7 +5086,7 @@ Pokemon = MEW,50
     Ball = CHERISHBALL
 #-------------------------------
 [LEADER_Koga,Koga,1]
-LoseText = ... Hmph.
+LoseText = "... Hmph."
 Pokemon = GLIMMORA,50
     Moves = POWERGEM,EARTHPOWER,STEALTHROCK,MORTALSPIN
     Ability = TOXICDEBRIS
@@ -5139,7 +5139,7 @@ Pokemon = VENOMOTH,50
 #-------------------------------
 [LEADER_Blaine,Blaine,1]
 Items = DYNAMAXBAND,TERAORB
-LoseText = Burnt to a crisp! You're one heck of a Trainer, youngster.   
+LoseText = "Burnt to a crisp! You're one heck of a Trainer, youngster."
 Pokemon = ARCANINE,50
     Form = 1
     Moves = FLAREBLITZ,WILDCHARGE,EXTREMESPEED,PLAYROUGH
@@ -5206,7 +5206,7 @@ Pokemon = ENTEI,50
 #-------------------------------
 [LEADER_Giovanni,Giovanni,1]
 Items = TERAORB
-LoseText = This cannot be! Young man, I have an offer for you...
+LoseText = "This cannot be! Youngster, I have an offer for you..."
 Pokemon = NIDOKING,50
     Moves = EARTHPOWER,SLUDGEBOMB,ICEBEAM,THUNDERBOLT
     Ability = SHEERFORCE
@@ -5272,7 +5272,7 @@ Pokemon = URSALUNA,50
 #==============================
 [LEADER_Falkner,Falkner,1]
 Items = TERAORB
-LoseText = Clipped my wings! Damn!
+LoseText = "Clipped my wings! Damn!"
 Pokemon = TORNADUS,50
     Form = 1
     Moves = BLEAKWINDSTORM,HEATWAVE,UTURN,KNOCKOFF
@@ -5330,7 +5330,7 @@ Pokemon = TOUCANNON,50
     NoTera = true
 #-------------------------------
 [LEADER_Bugsy,Bugsy,1]
-LoseText = You really bugged me. Get it?
+LoseText = "You really bugged me. Get it?"
 Pokemon = ARIADOS,50
     Moves = STICKYWEB,TOXICSPIKES,SUCKERPUNCH,LEECHLIFE
     Ability = PRANKSTER
@@ -5387,7 +5387,7 @@ Pokemon = PINSIR,50
     TeraType = FLYING
 #-------------------------------
 [LEADER_Whitney,Whitney,1]
-LoseText = Haha! I have no relation to the Petalburg Gym Leader! Chalk it up to multiverse shenanigans or something!
+LoseText = "Haha! I have no relation to the Petalburg Gym Leader! Chalk it up to multiverse shenanigans or something!"
 Pokemon = ZOROARK,50
     Form = 1
     Moves = HYPERVOICE,BITTERMALICE,UTURN,FLAMETHROWER
@@ -5442,7 +5442,7 @@ Pokemon = MILTANK,50
 #-------------------------------
 [LEADER_Morty,Morty,1]
 Items = TERAORB,DYNAMAXBAND
-LoseText = You channel your power well, Trainer.
+LoseText = "You channel your power well, Trainer."
 Pokemon = GENGAR,50
     Moves = SLUDGEWAVE,SHADOWBALL,FOCUSBLAST,DESTINYBOND
     Ability = LEVITATE
@@ -5507,7 +5507,7 @@ Pokemon = HOUNDSTONE,50
     NoDynamax = true
 #-------------------------------
 [LEADER_Chuck,Chuck,1]
-    LoseText = Hoohah! You're spry!
+    LoseText = "Hoohah! You're spry!"
 Pokemon = POLIWRATH,50
     Moves = WATERFALL,CLOSECOMBAT,ICEPUNCH,BULKUP
     NoDynamax = true
@@ -5566,7 +5566,7 @@ Pokemon = KELDEO,50
 #-------------------------------
 [LEADER_Jasmine,Jasmine,2]
 Items = MEGARING,TERAORB
-LoseText = Well battled, Trainer. You're quite formidable. 
+LoseText = "Well battled, Trainer. You're quite formidable."
 Pokemon = SKARMORY,50
     Moves = BODYPRESS,IRONDEFENSE,ROOST,STEALTHROCK
     Ability = STURDY
@@ -5630,7 +5630,7 @@ Pokemon = STEELIX,50
 #-------------------------------
 [LEADER_Pryce,Pryce,1]
 Items = TERAORB,DYNAMAXBAND
-LoseText = I can't keep up with all these new damn gimmicks... 
+LoseText = "I can't keep up with all these new damn gimmicks..."
 Pokemon = VANILLUXE,50
     Moves = BLIZZARD,FREEZEDRY,AURORAVEIL,FLIPTURN
     Ability = STURDY
@@ -5689,7 +5689,7 @@ Pokemon = MAMOSWINE,50
 #-------------------------------
 [LEADER_Clair,Clair,1]
 Items = TERAORB,DYNAMAXBAND
-LoseText = I'm not conceding this BADGE! ...Oh, wait. Nevermind.
+LoseText = "I'm not conceding this Badge! ...Oh, wait. Nevermind."
 Pokemon = VANILLUXE,50
     Moves = BLIZZARD,FREEZEDRY,AURORAVEIL,FLIPTURN
     Ability = STURDY
@@ -5769,7 +5769,7 @@ Pokemon = MAMOSWINE,50
 #╚═════╝░░╚════╝░░╚════╝░░╚═════╝░╚═╝░░╚═╝╚══════╝░╚════╝░░╚════╝░
 #=====================================
 [LEADER_Roxanne,Roxanne,3]
-    LoseText = Don't ask too many questions, All Father.
+    LoseText = "Don't ask too many questions, All-Father."
 Pokemon = TYRANITAR,50
     Moves = STEALTHROCK,ROCKSLIDE,CRUNCH,KNOCKOFF
     Nature = CAREFUL
@@ -5823,7 +5823,7 @@ Pokemon = AURORUS,50
 #-------------------------------------
 [LEADER_Brawly,Brawly,3]
     Items = MEGARING
-    LoseText = You thought they killed me? Nah, dude! Been catching some waves.
+    LoseText = "You thought they killed me? Nah, dude! Been catching some waves."
 Pokemon = HARIYAMA,50
     Moves = CLOSECOMBAT,FAKEOUT,FIREPUNCH,HEAVYSLAM
     Nature = ADAMANT
@@ -5874,7 +5874,7 @@ Pokemon = URSHIFU,50
     Ball = FRIENDBALL
 #-------------------------------------
 [LEADER_Wattson,Wattson,3]
-    LoseText = Wahahaha! You're as good as ever!
+    LoseText = "Wahahaha! You're as good as ever!"
 Pokemon = GOLEM,50
     Moves = EXPLOSION,,,
     Nature = ADAMANT
@@ -5927,7 +5927,7 @@ Pokemon = MANECTRIC,50
     Ball = FASTBALL
 #-------------------------------------
 [LEADER_Flannery,Flannery,3]
-    LoseText = NO WAY! 0-2 against you... Not cool.
+    LoseText = "No way! 0-2 against you... Not cool."
 Pokemon = TORKOAL,50
     Moves = LAVAPLUME,ERUPTION,STEALTHROCK,YAWN
     Nature = RELAXED
@@ -5978,7 +5978,7 @@ Pokemon = CHIYU,50
     Ball = MASTERBALL
 #-------------------------------------
 [LEADER_Norman,Norman,3]
-    LoseText = Selling my Gym was a great decision. Whitney has done just fine with it.
+    LoseText = "Selling my Gym was a great decision. Whitney has done just fine with it."
 Pokemon = SLAKING,50
     Moves = GIGAIMPACT,SKILLSWAP,NIGHTSLASH,POWERUPPUNCH
     Nature = ADAMANT
@@ -6031,7 +6031,7 @@ Pokemon = KANGASKHAN,50
     Ball = POKEBALL
 #-------------------------------------
 [LEADER_Winona,Winona,3]
-    LoseText = My wings were clipped.
+    LoseText = "My wings were clipped."
 Pokemon = SWELLOW,50
     Moves = BOOMBURST,HURRICANE,HEATWAVE,UTURN
     Nature = ADAMANT
@@ -6083,7 +6083,7 @@ Pokemon = ALTARIA,50
     Ball = LOVEBALL
 #------------------------------------
 [LEADER_Juan,Juan,3]
-    LoseText = There's only one Juan! 
+    LoseText = "There's only one Juan!"
 Pokemon = MILOTIC,50
     Moves = SCALD,COIL,RECOVER,HYPNOSIS
     Nature = BOLD
@@ -6136,7 +6136,7 @@ Pokemon = KINGLER,50
     Ball = NESTBALL
 #-------------------------------------
 [LEADER_Tate,Tate,1]
-    LoseText = If I would've battled you with LIZA... Ugh!
+    LoseText = "If I would've battled you with Liza... Ugh!"
 Pokemon = GENGAR,50
     Moves = SHADOWBALL,SLUDGEBOMB,MOONBLAST,DESTINYBOND
     TeraType = FAIRY
@@ -6194,7 +6194,7 @@ Pokemon = LATIOS,50
     Ball = ULTRABALL
 #-------------------------------------
 [LEADER_Liza,Liza,3]
-    LoseText = If TATE was here we would've kicked your ass!
+    LoseText = "If Tate was here, we would've kicked your ass!"
 Pokemon = CLEFABLE,50
     Moves = MOONBLAST,THUNDERBOLT,SHADOWBALL,COSMICPOWER
     TeraType = GHOST
@@ -6255,7 +6255,7 @@ Pokemon = LATIAS,50
 #=====================================
 [LEADER_Roark,Roark,1]
     Items = MEGARING
-    LoseText = "..."
+    LoseText = "I couldn't dig myself out of this situation."
 Pokemon = TYRANITAR,50
     Moves = STONEEDGE,CRUNCH,EARTHQUAKE,DRAGONDANCE
     Nature = JOLLY
@@ -6306,7 +6306,7 @@ Pokemon = GARGANACL,50
     Ball = HEAVYBALL
 #-------------------------------------
 [LEADER_Gardenia,Gardenia,1]
-    LoseText = "..."
+    LoseText = "It seems I have room to grow."
 Pokemon = LILLIGANT,50
     Form = 1
     Moves = VICTORYDANCE,LEAFBLADE,CLOSECOMBAT,ICEPUNCH
@@ -6359,7 +6359,7 @@ Pokemon = KARTANA,50
 #-------------------------------------
 [LEADER_Maylene,Maylene,1]
     Items = ZRING, MEGARING
-    LoseText = "..."
+    LoseText = "I must train more."
 Pokemon = KOMMOO,50
     Moves = CLANGOROUSSOUL,EARTHQUAKE,CLOSECOMBAT,POISONJAB
     Nature = JOLLY
@@ -6411,7 +6411,7 @@ Pokemon = IRONVALIANT,50
     Ball = BEASTBALL
 #-------------------------------------
 [LEADER_Wake,Crasher Wake,1]
-    LoseText = "..."
+    LoseText = "Wah! Maybe I'll go train under waterfalls with Chuck..."
 Pokemon = PALAFIN,50
     Moves = FLIPTURN,WAVECRASH,JETPUNCH,ICEPUNCH
     Nature = ADAMANT
@@ -6464,7 +6464,7 @@ Pokemon = HAWLUCHA,50
 #-------------------------------------
 [LEADER_Fantina,Fantina,1]
     Items = TERAORB
-    LoseText = "..."
+    LoseText = "Well done! We put up a great show!"
 Pokemon = DRIFBLIM,50
     Moves = SHADOWBALL,EXPLOSION,STRENGTHSAP,THUNDERBOLT
     NoTera = true
@@ -6522,7 +6522,7 @@ Pokemon = SHEDINJA,50
     Ball = MASTERBALL
 #-------------------------------------
 [LEADER_Byron,Byron,1]
-    LoseText = "..."
+    LoseText = "I should've steeled myself for this outcome."
 Pokemon = HEATRAN,50
     Moves = MAGMASTORM,EARTHPOWER,STEALTHROCK,TAUNT
     Nature = TIMID
@@ -6575,7 +6575,7 @@ Pokemon = ORTHWORM,50
 #-------------------------------------
 [LEADER_Candice,Candice,1]
     Items = MEGARING
-    LoseText = Candice: dick fit in yo mouth? HA! Zing!
+    LoseText = "Candice dick fit in yo mouth? HA! Zing!"
 Pokemon = FROSLASS,50
     Moves = ICESHARD,SHADOWBALL,DESTINYBOND,TAUNT
     Nature = TIMID
@@ -6627,7 +6627,7 @@ Pokemon = IRONBUNDLE,50
 #-------------------------------------
 [LEADER_Volkner,Volkner,1]
     Items = TERAORB
-    LoseText = "..."
+    LoseText = "This is a shocking conclusion."
 Pokemon = TAPUKOKO,50
     Moves = ROOST,DAZZLINGGLEAM,VOLTSWITCH,RISINGVOLTAGE
     NoTera = true
@@ -6717,7 +6717,7 @@ Pokemon = MANECTRIC,36
     EV = 0,0,0,50,200,0
 #-------------------------------
 [PARASOLLADY,Clarissa]
-LoseText = It just gets so wet here!
+LoseText = "It just gets so wet here!"
 Pokemon = SEAKING,58
     Moves = WATERFALL,KNOCKOFF,DRILLRUN,MEGAHORN
     Ability = LIGHTNINGROD
@@ -6729,21 +6729,21 @@ Pokemon = WAILORD,59
     IV = 25,25,25,25,25,25
 #-------------------------------
 [PARASOLLADY,Angelica]
-LoseText = Splish splash, I was takin' a bath!
+LoseText = "Splish splash, I was takin' a bath!"
 Pokemon = CASTFORM,59
     Item = DAMPROCK
     Moves = WEATHERBALL,SURF,THUNDER,
     IV = 25,25,25,25,25,25
 #-------------------------------
 [BIRDKEEPER,Robert]
-LoseText = Fly away, little birds!
+LoseText = "Fly away, little birds!"
 Pokemon = ALTARIA,62
     Moves = DAZZLINGGLEAM,HYPERVOICE,DRAGONPULSE,MOONBLAST
     Ability = CLOUDNINE
     IV = 25,25,25,25,25,25
 #-------------------------------
 [BIRDKEEPER,Colin]
-LoseText = Fly away, little birds!
+LoseText = "My birds needed to spread their wings!"
 Pokemon = XATU,57
     Moves = PSYCHIC,NIGHTSHADE,ROOST,UTURN
     Ability = MAGICBOUNCE
@@ -6754,7 +6754,7 @@ Pokemon = SWELLOW,56
     IV = 25,25,25,25,25,25
 #-------------------------------
 [NINJABOY,Tsunao]
-LoseText = . . . But my SNEAK ATTACK!
+LoseText = ". . . But my Sneak Attack!"
 Pokemon = NINJASK,57
     Moves = PROTECT,LEECHLIFE,AERIALACE,UTURN
     Ability = SPEEDBOOST
@@ -6769,21 +6769,21 @@ Pokemon = CROBAT,57
     IV = 25,25,25,25,25,25
 #-------------------------------
 [NINJABOY,Keigo]
-LoseText = I can't believe you bested my completely fair and resonable tactics!!
+LoseText = "I can't believe you bested my completely fair and reasonable tactics!"
 Pokemon = SHEDINJA,57
     Item = FOCUSSASH
     Moves = TOXIC,SWORDSDANCE,PROTECT,SHADOWSNEAK
     IV = 25,25,25,25,25,25
 #-------------------------------
 [ACETRAINER_F,Jessica]
-LoseText = They say there is a cool Pokémon hidden in the Scorched Slab. . .
+LoseText = "They say there is a cool Pokémon hidden in the Scorched Slab. . ."
 Pokemon = MILOTIC,61
     Moves = SCALD,RECOVER,TOXIC,HAZE
     Ability = MARVELSCALE
     IV = 25,25,25,25,25,25
 #-------------------------------
 [POKEMONRANGER_F,Jenna]
-LoseText = I'm at home out here in the wilderness!
+LoseText = "I'm at home out here in the wilderness!"
 Pokemon = LUDICOLO,56
     Moves = ENERGYBALL,HYDROPUMP,LEECHSEED,THIEF
     Ability = SWIFTSWIM
@@ -6798,7 +6798,7 @@ Pokemon = SHIFTRY,57
     IV = 25,25,25,25,25,25
 #-------------------------------
 [POKEMONRANGER_M,Carlos]
-LoseText = Dang! What a bummer.
+LoseText = "Dang! What a bummer."
 Pokemon = FORRETRESS,60
     Moves = GYROBALL,SPIKES,VOLTSWITCH,TOXIC
     Ability = VITALSPIRIT
@@ -6809,7 +6809,7 @@ Pokemon = BRELOOM,57
     IV = 25,25,25,25,25,25
 #-------------------------------
 [BUGCATCHER,Brandon]
-LoseText = My precious bugs!
+LoseText = "My precious bugs!"
 Pokemon = MASQUERAIN,62
     Moves = STICKYWEB,SOAK,FOULPLAY,SIGNALBEAM
     Gender = female
@@ -6822,7 +6822,7 @@ Pokemon = BUTTERFREE,57
     IV = 25,25,25,25,25,25   
 #-------------------------------
 [RUINMANIAC,Chip]
-LoseText = I came to investigate the Scorched Slab...
+LoseText = "I came to investigate the Scorched Slab..."
 Pokemon = SANDSLASH,58
     Moves = DRILLRUN,EARTHQUAKE,STEALTHROCK,KNOCKOFF
     Ability = SANDRUSH
@@ -6833,7 +6833,7 @@ Pokemon = CLAYDOL,58
     IV = 25,25,25,25,25,25
 #-------------------------------
 [BUGCATCHER,Cole]
-LoseText = Aw, snap. My bugs were squished!
+LoseText = "Aw, snap. My bugs were squished!"
 Pokemon = DUSTOX,58
     Moves = QUIVERDANCE,BUGBUZZ,IRONDEFENSE,ROOST
     Ability = SHIELDDUST    
@@ -6844,7 +6844,7 @@ Pokemon = BEAUTIFLY,60
     IV = 25,25,25,25,25,25
 #-------------------------------------
 [HEX,Tammy]
-LoseText = UwU?
+LoseText = "UwU?"
 Pokemon = DUSCLOPS,59
     Moves = SEISMICTOSS,REST,TOXIC,SLEEPTALK
     Item = EVIOLITE
@@ -6856,7 +6856,7 @@ Pokemon = BANETTE,58
     IV = 25,25,25,25,25,25
 #-------------------------------------
 [BEAUTY,Jessica]
-LoseText = Ugh, what a drag.
+LoseText = "Ugh, what a drag."
 Pokemon = KECLEON,60
     Moves = KNOCKOFF,DRAINPUNCH,SHADOWSNEAK,FAKEOUT
     Ability = PROTEAN    
@@ -6867,21 +6867,21 @@ Pokemon = SEVIPER,59
     IV = 25,25,25,25,25,25
 #-------------------------------------
 [LASS,Kate]
-LoseText = Good grief. I'm dizzy . . .
+LoseText = "Good grief. I'm dizzy . . ."
 Pokemon = SPINDA,62
     Moves = TEETERDANCE,SUCKERPUNCH,RETURN,SUPERPOWER
     Ability = CONTRARY    
     IV = 25,25,25,25,25,25
 #-------------------------------------
 [LASS,Joy]
-LoseText = I just want to shop till I drop!
+LoseText = "I just want to shop till I drop!"
 Pokemon = SLAKING,59
     Moves = EARTHQUAKE,HAMMERARM,RETURN,PURSUIT
     Ability = TRUANT    
     IV = 25,25,25,25,25,25
 #-------------------------------------
 [BREEDER_F,Pat]
-LoseText = NO, MY BABIES!
+LoseText = "No, my babies!"
 Pokemon = SMOOCHUM,56
 Pokemon = ELEKID,56
 Pokemon = MAGBY,56
@@ -6890,7 +6890,7 @@ Pokemon = BONSLY,56
 Pokemon = TOXEL,56
 #-------------------------------------
 [BREEDER_M,Myles]
-LoseText = Listen, it's a tough job.
+LoseText = "Listen, it's a tough job."
 Pokemon = GARDEVOIR,58
     Moves = PSYCHIC,DAZZLINGGLEAM,DOUBLETEAM,SOAK   
     IV = 25,25,25,25,25,25
@@ -6900,14 +6900,14 @@ Pokemon = DITTO,60
     IV = 25,25,25,25,25,25
 #-------------------------------------
 [GENTLEMAN,Walter]
-LoseText = My recent diagnosis has led me to consider other options.
+LoseText = "My recent diagnosis has led me to consider other options."
 Pokemon = MANECTRIC,61
     Ability = LIGHTNINGROD
     Moves = THUNDERBOLT,FLAMETHROWER,SIGNALBEAM,SNARL
     IV = 25,25,25,25,25,25
 #-------------------------------------
 [POKEFAN_F,Vanessa]
-LoseText = I just adore my darling PIKACHU !
+LoseText = "I just adore my darling Pikachu!"
 Pokemon = PIKACHU,58
     Moves = VOLTTACKLE,QUICKATTACK,THUNDERBOLT,IRONTAIL
     Ability = STATIC
@@ -6915,7 +6915,7 @@ Pokemon = PIKACHU,58
     IV = 25,25,25,25,25,25
 #-------------------------------------
 [COOLTRAINER_M,Marcel]
-LoseText = "Gah - !"
+LoseText = "Gah-!"
 Pokemon = MANECTRIC,59
     Moves = VOLTSWITCH,THUNDERBOLT,FLAMETHROWER,ICEFANG
     Ability = STATIC
