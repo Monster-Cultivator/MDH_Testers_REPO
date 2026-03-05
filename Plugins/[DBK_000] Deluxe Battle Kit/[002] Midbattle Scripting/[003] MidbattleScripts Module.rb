@@ -2165,6 +2165,65 @@ InesseBFFTrainers_MIDBATTLE = {
  }
 }
 
+LEAFEON_BOSS = {
+  "RoundStartCommand_1_foe" => {
+    "setVariable" => 0,
+    "battlerForm" => [1, "Leafeon has formed a shell around herself!"],
+    "battlerHPCap" => 100,
+    "playSE" => "Anim/GrassyTerrain",
+    "text" => "The tree form shrugs off all attacks!"
+  },
+  "TargetTookDamage_foe_repeat" => {
+    "ignoreAfter" => "Variable_12",
+    "addVariable" => 1,
+    "battlerHP" => [100, "The ancient tree absorbs the blow into its bark!"],
+    "playAnim" => [:WOODHAMMER, :Opposing, :Self],
+    "playSE" => "Anim/BulletSeed"
+  },
+  "Variable_3" => {
+    "battlerForm" => [2, "Cracks spiderweb across the tree bark!"],
+    "playSE" => "Mining collapse",
+    "text" => "The tree trembles!"
+  },
+  "Variable_6" => {
+    "battlerForm" => [0, "The tree shatters spectacularly!"],
+    "battlerHPCap" => -1,
+    "changeWeather" => :Rain,
+    "battlerStats" => [:DEFENSE, 3, :SPECIAL_DEFENSE, 3],
+    "speech" => ["Leafeon emerges!\nThe rain nourishes her!"],
+    "playSE" => "Anim/Rain",
+    "text" => "Leafeon is empowered by the downpour!"
+  },
+  "RoundEnd_foe_repeat" => {
+    "ignoreUntil" => "Variable_6",
+    "ignoreAfter" => "TargetHPHalf_foe",
+    "battlerHP" => [12, "{1} draws vitality from the rain!"]
+  },
+  "TargetHPHalf_foe" => {
+    "ignoreAfter" => "Variable_12",
+    "battlerHP" => [100, "Leafeon melds back into the tree!"],
+    "battlerForm" => [1, "The shattered tree miraculously reforms!"],
+    "battlerHPCap" => 100,
+    "playSE" => "Anim/GrassyTerrain",
+    "text" => "The guardian endures!"
+  },
+  "Variable_9" => {
+    "battlerForm" => [2, "Deep fissures crack open in the reformed tree!"],
+    "playSE" => "Mining collapse",
+    "text" => "The tree strains under the assault!"
+  },
+  "Variable_12" => {
+    "battlerForm" => [0, "The tree explodes in a burst of leaves!"],
+    "battlerHPCap" => -1,
+    "changeWeather" => :Sun,
+    "battlerStats" => [:ATTACK, 3, :SPEED, 3, :EVASION, 2],
+    "speech" => ["Leafeon reveals her true fury!\nFeel the sun's wrath!"],
+    "playSE" => "Anim/SunnyDay",
+    "playAnim" => [:SUNNYDAY, :Self],
+    "text" => "Leafeon surges with solar power!"
+  }
+}
+
 #===============================================
 #
 # Professional's MIDBATTLE SCRIPTS!

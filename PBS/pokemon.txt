@@ -29547,6 +29547,29 @@ Pokedex = It shows no mercy to any who desecrate fields and mountains. It will f
 Generation = 8
 RaidRanks = 3,4,5
 #-------------------------------
+[DAIYOUSEI]
+Name = Daiyousei
+Types = FLYING,FAIRY
+BaseStats = 120,120,120,120,120,120
+GenderRatio = AlwaysFemale
+GrowthRate = Medium
+BaseEXP = 168
+EffortPoints = 0,0,0,0,2,0
+Happiness = 50
+Abilities = ICESCALES
+Moves = 0,BLIZZARD,1,MOONBLAST,1,GEOMANCY,1,FLAMETHROWER
+TutorMoves = ACROBATICS,AIRSLASH,ATTRACT,AVALANCHE,BLIZZARD,BUGBUZZ,CALMMIND,DAZZLINGGLEAM,DUALWINGBEAT,ENDURE,FACADE,FALSESWIPE,GIGADRAIN,GIGAIMPACT,HAIL,HELPINGHAND,HIDDENPOWER,HURRICANE,HYPERBEAM,ICEBEAM,ICICLESPEAR,ICYWIND,IMPRISON,LEECHLIFE,LIGHTSCREEN,PLAYROUGH,PROTECT,REFLECT,REST,ROUND,SAFEGUARD,SKITTERSMACK,SLEEPTALK,SNORE,SUBSTITUTE,TRIPLEAXEL,UTURN,WEATHERBALL
+EggGroups = Bug
+HatchSteps = 5120
+Height = 1.3
+Weight = 42.0
+Color = White
+Shape = MultiWinged
+Kind = Frost Moth
+Pokedex = It shows no mercy to any who desecrate fields and mountains. It will fly around on its icy wings, causing a blizzard to chase offenders away.
+Generation = 8
+RaidRanks = 3,4,5
+#-------------------------------
 [DHELMISE_1]
 Name = Dhelmise
 Types = GHOST,GRASS
