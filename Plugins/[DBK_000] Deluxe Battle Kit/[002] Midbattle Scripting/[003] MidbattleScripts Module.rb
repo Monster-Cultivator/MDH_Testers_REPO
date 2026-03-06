@@ -2224,6 +2224,154 @@ LEAFEON_BOSS = {
   }
 }
 
+ABOMINACEON_MIDBATTLE = {
+  "RoundStartCommand_1_foe" => {
+    "changeTerrain" => :Electric,
+    "setVariable"   => 0,
+    "battlerForm"   => [1, "Abominaceon manifests as a chaotic fusion of elements!"],
+    "speech"        => ["Abominaceon pulses with raw elemental power!\nTarget her cores wisely!"],
+    "playSE"        => "Anim/ElectricTerrain",
+    "text"          => "Electric Terrain crackles to life!"
+  },
+  # Phase 1 Weather Cycle (Sunny <-> Rain alternation via odd/even rounds)
+  "RoundEnd_foe_repeat_odd" => {
+    "ignoreAfter"     => "UserMoveEffective_GROUND_foe",
+    "changeWeather"   => :Rain,
+    "playSE"          => "Anim/Rain",
+    "text"            => "Torrential rain begins to pour!"
+  },
+  "RoundEnd_foe_repeat_even" => {
+    "ignoreAfter"     => "UserMoveEffective_GROUND_foe",
+    "changeWeather"   => :Sun,
+    "playSE"          => "Anim/SunnyDay",
+    "playAnim"        => [:SUNNYDAY, :Self],
+    "text"            => "Blazing sun scorches the field!"
+  },
+  # Phase 1: Destroy Fire Part (Water SE hit)
+  "UserMoveEffective_WATER_foe" => {
+    "ignoreAfter"     => "UserMoveEffective_GROUND_foe",
+    "addVariable"     => 1,
+    "battlerStats"    => [:ATTACK, 2],
+    "battlerForm"     => [2, "The fiery core shatters and fades!"],
+    "battlerHP"       => [100, "{1} absorbs the loss and reforms fiercer!"],
+    "playAnim"        => [:WATERFALL, :Opposing, :Self],
+    "playSE"          => "Anim/HornDrill",
+    "speech"          => "The Fire heart burns out!",
+    "text"            => "You struck the Fire part perfectly!"
+  },
+  # Phase 1: Destroy Water Part (Grass SE hit)
+  "UserMoveEffective_GRASS_foe" => {
+    "ignoreUntil"     => "UserMoveEffective_WATER_foe",
+    "ignoreAfter"     => "UserMoveEffective_GROUND_foe",
+    "addVariable"     => 1,
+    "battlerStats"    => [:SPECIAL_DEFENSE, 2],
+    "battlerForm"     => [3, "The watery veins evaporate!"],
+    "battlerHP"       => [100, "{1} channels new vitality!"],
+    "playAnim"        => [:LEAFSTORM, :Opposing, :Self],
+    "playSE"          => "Anim/RazorLeaf",
+    "speech"          => "The Water essence dries away!",
+    "text"            => "You targeted the Water part!"
+  },
+  # Phase 1: Destroy Electric Part (Ground SE hit) → TRANSITION TO PHASE 2
+  "UserMoveEffective_GROUND_foe" => {
+    "ignoreUntil"     => "UserMoveEffective_GRASS_foe",
+    "ignoreAfter"     => "UserMoveEffective_FAIRY_foe",
+    "addVariable"     => 1,
+    "battlerStats"    => [:SPEED, 2],
+    "battlerForm"     => [4, "Sparks fizzle as the Electric core grounds out!\nNow the shadowed fusion reveals itself!"],
+    "battlerHP"       => [100, "{1} evolves beyond the storm!"],
+    "changeTerrain"   => :Psychic,
+    "battlerAbility"  => [:DARKAURA, true],
+    "playAnim"        => [:EARTHQUAKE, :Opposing, :Self],
+    "playSE"          => "Anim/Earthquake",
+    "speech"          => ["The primal elements yield...\nNow face the shadowed mind!"],
+    "endSpeech"       => true,
+    "text"            => "Psychic Terrain warps reality! Dark Aura looms!"
+  },
+  # Phase 2: Destroy Psychic Part (Dark SE hit)
+  "UserMoveEffective_DARK_foe" => {
+    "ignoreUntil"     => "UserMoveEffective_GROUND_foe",
+    "ignoreAfter"     => "UserMoveEffective_FIGHTING_foe",
+    "addVariable"     => 1,
+    "battlerStats"    => [:SPECIAL_ATTACK, 2],
+    "battlerForm"     => [5, "The psychic glow dims to nothing!"],
+    "battlerHP"       => [100, "{1} embraces deeper chaos!"],
+    "playAnim"        => [:NIGHTSHADE, :Opposing, :Self],
+    "playSE"          => "Anim/Bite",
+    "speech"          => "The Psychic soul shatters!",
+    "text"            => "You pierced the Psychic part!"
+  },
+  # Phase 2: Destroy Dark Part (Fighting SE hit)
+  "UserMoveEffective_FIGHTING_foe" => {
+    "ignoreUntil"     => "UserMoveEffective_DARK_foe",
+    "ignoreAfter"     => "UserMoveEffective_FIRE_foe",
+    "addVariable"     => 1,
+    "battlerStats"    => [:DEFENSE, 2],
+    "battlerForm"     => [6, "Shadows recede from the Dark core!"],
+    "battlerHP"       => [100, "{1} surges with primal instincts!"],
+    "playAnim"        => [:CLOSECOMBAT, :Opposing, :Self],
+    "playSE"          => "Anim/Superpower",
+    "speech"          => "The Dark heart crumbles!",
+    "text"            => "You smashed the Dark part!"
+  },
+  # Phase 2: Destroy Ice Part (Fire SE hit)
+  "UserMoveEffective_FIRE_foe" => {
+    "ignoreUntil"     => "UserMoveEffective_FIGHTING_foe",
+    "ignoreAfter"     => "UserMoveEffective_POISON_foe",
+    "addVariable"     => 1,
+    "battlerStats"    => [:EVASION, 2],
+    "battlerForm"     => [7, "The icy shards melt into steam!"],
+    "battlerHP"       => [100, "{1} thaws into greater fury!"],
+    "playAnim"        => [:FLAMETHROWER, :Opposing, :Self],
+    "playSE"          => "Anim/Flamethrower",
+    "speech"          => "Glaceon's chill is vanquished!",
+    "text"            => "You melted the Ice part!"
+  },
+  # Phase 2: Destroy Grass Part (Poison SE hit)
+  "UserMoveEffective_POISON_foe" => {
+    "ignoreUntil"     => "UserMoveEffective_FIRE_foe",
+    "ignoreAfter"     => "UserMoveEffective_STEEL_foe",
+    "addVariable"     => 1,
+    "battlerStats"    => [:DEFENSE, 1, :SPECIAL_DEFENSE, 1],
+    "battlerForm"     => [8, "Vines wither and decay!"],
+    "battlerHP"       => [100, "{1} sheds its verdant shell!"],
+    "playAnim"        => [:SLUDGEWAVE, :Opposing, :Self],
+    "playSE"          => "Anim/SludgeWave",
+    "speech"          => "Leafeon's growth is poisoned!",
+    "text"            => "You withered the Grass part!"
+  },
+  # Phase 2: Destroy Fairy Part (Steel SE hit)
+  "UserMoveEffective_STEEL_foe" => {
+    "ignoreUntil"     => "UserMoveEffective_POISON_foe",
+    "ignoreAfter"     => "UserMoveEffective_FAIRY_foe",
+    "addVariable"     => 1,
+    "battlerStats"    => [:SPECIAL_DEFENSE, 2],
+    "battlerForm"     => [9, "Fairy sparkles shatter like glass!"],
+    "battlerHP"       => [100, "{1} pierces through illusion!"],
+    "playAnim"        => [:IRONHEAD, :Opposing, :Self],
+    "playSE"          => "Anim/IronHead",
+    "speech"          => "The Fairy magic breaks!",
+    "text"            => "You pierced the Fairy part!"
+  },
+  # Phase 2 FINAL: Destroy Dragon Part (Fairy SE hit) → NO HEAL, BATTLE CONTINUES NORMALLY
+  "UserMoveEffective_FAIRY_foe" => {
+    "ignoreUntil"     => "UserMoveEffective_STEEL_foe",
+    "battlerStats"    => [:ATTACK, 2],
+    "battlerForm"     => [0, "All cores collapse! Abominaceon unravels!"],
+    "playAnim"        => [:PLAYROUGH, :Opposing, :Self],
+    "playSE"          => "Anim/PlayRough",
+    "speech"          => ["No... all elements... unified... defeated!"],
+    "playCry"         => :Self,
+    "text"            => "You shattered the Dragon heart! She's vulnerable now!"
+  },
+  # Optional: Epic final stand on low HP
+  "BattlerHPCritical_foe" => {
+    "ignoreUntil"     => "UserMoveEffective_FAIRY_foe",
+    "speech"          => "Abominaceon... will not... fade!",
+    "battlerHP"       => [50, "{1} draws on lingering chaos!"],
+    "battlerStats"    => [:ATTACK, 1, :SPECIAL_ATTACK, 1, :SPEED, 1]
+  }
+}
 #===============================================
 #
 # Professional's MIDBATTLE SCRIPTS!

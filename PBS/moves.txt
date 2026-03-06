@@ -10072,3 +10072,26 @@ Target = AllNearFoes
 FunctionCode = ChangeUserHattereneForm
 Flags = CanProtect,CanMirrorMove,Sound,CannotMetronome
 Description = An ancient song appeals to the hearts of those listening. It may also induce sleep.
+#-------------------------------
+[CRUSHCONDITIONS]
+Name = Crush Conditions
+Type = NORMAL
+Category = Physical
+Power = 65
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TypeAndPowerDependOnWeather
+Flags = CanProtect,CanMirrorMove
+Description = An attack move that varies in power and type depending on the weather.
+#-------------------------------
+[LEECHSEEDEX]
+Name = Leech Seed
+Type = GRASS
+Category = Status
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = StartLeechSeedTarget
+Flags = CanProtect,CanMirrorMove,ZPower_ResetStats
+Description = A seed is planted on the target. It steals some HP from the target every turn.
