@@ -2367,7 +2367,6 @@ ABOMINACEON_MIDBATTLE = {
   # Optional: Epic final stand on low HP
   "BattlerHPCritical_foe" => {
     "ignoreUntil"     => "UserMoveEffective_FAIRY_foe",
-    "speech"          => "Abominaceon... will not... fade!",
     "battlerHP"       => [50, "{1} draws on lingering chaos!"],
     "battlerStats"    => [:ATTACK, 1, :SPECIAL_ATTACK, 1, :SPEED, 1]
   }
