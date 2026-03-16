@@ -2970,25 +2970,25 @@ Moves = 0,STRENGTHSAP,1,TRIATTACK,1,ARMORPIERCER,1,GATLINGRUSH
 [SMEARGLEsg,1]
 FormName = Clone
 Abilities = IMPOSTER
-BaseStats = 160,105,110,200,250,110
+BaseStats = 105,60,90,160,100,90
 Moves = 0,STRENGTHSAP,1,TRIATTACK,1,ARMORPIERCER,1,GATLINGRUSH
 #--------------------------------
 [SMEARGLEsg,2]
 FormName = Fire craft
 Abilities = IMPOSTER
-BaseStats = 160,105,110,200,250,110
+BaseStats = 105,60,90,160,100,90
 Moves = 0,STRENGTHSAP,1,TRIATTACK,1,ARMORPIERCER,1,GATLINGRUSH
 #--------------------------------
 [SMEARGLEsg,3]
 FormName = Water craft
 Abilities = IMPOSTER
-BaseStats = 160,105,110,200,250,110
+BaseStats = 105,60,90,160,100,90
 Moves = 0,STRENGTHSAP,1,TRIATTACK,1,ARMORPIERCER,1,GATLINGRUSH
 #--------------------------------
 [SMEARGLEsg,4]
 FormName = Electric craft
 Abilities = IMPOSTER
-BaseStats = 160,105,110,200,250,110
+BaseStats = 105,60,90,160,100,90
 Moves = 0,STRENGTHSAP,1,TRIATTACK,1,ARMORPIERCER,1,GATLINGRUSH
 #--------------------------------
 [MARACTUSx,1]
