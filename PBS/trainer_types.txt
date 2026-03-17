@@ -594,6 +594,13 @@ BaseMoney = 30
 SkillLevel = 100
 BattleBGM = ZUN - Beloved Tomboyish Girl
 #-------------------------------
+[FAIRY_Daiyousei]
+Name = The Nameless Fairy
+Gender = Female
+BaseMoney = 30
+SkillLevel = 100
+BattleBGM = Lunate Elf
+#-------------------------------
 [POSSESSED_SONIA]
 Name = Possessed
 Gender = Female

@@ -2141,6 +2141,46 @@ BRAIXEN_MAGI_MIDBATTLE1 = {
 # MDH MIDBATTLE SCRIPTS!
 #
 #===============================================
+DAIYOUSEI_MIDBATTLE = {
+  "RoundStartCommand_1_foe" => {
+    "setVariable"   => 0,
+    "changeTerrain" => :Misty,
+    "changeWeather" => :Rain,
+    "speech" => ["U-um... P-please go easy on me..."]
+  },
+  "AfterSendOut_ALTARIA" => {
+	"battlerEffects" => [:Reflect, 5],
+	"playSE" => "Spellactive",
+    "speech"       => ["Spell Card ~ Gentle Breeze of Healing Petals ~"],
+    "battlerStats" => [:DEFENSE, 1, :SPECIAL_DEFENSE, 1]
+  },
+  "AfterSendOut_RIBOMBEE" => {
+    "battlerStats" => [:SPECIAL_ATTACK, 1, :SPEED, 1],
+    "battlerEffects" => [:Safeguard, 1],
+    "speech"       => ["Spell Card ~ Shimmering Fairy Bullet Dance ~"]
+  },
+  "AfterSendOut_EMOLGA" => {
+    "battlerStats" => [:SPEED, 2, :EVASION, 1],
+    "battlerEffects" => [:LightScreen, 4],
+    "speech"       => ["Spell Card ~ Lightning Fairy Escape Maneuver ~"]
+  },
+  "AfterSendOut_TROPIUS" => {
+    "battlerStats" => [:DEFENSE, 1, :SPECIAL_DEFENSE, 1],
+    "battlerEffects" => [:Ingrain],
+    "speech"       => ["Spell Card ~ Tropical Sanctuary of Fairy Rain ~"]
+  },
+  "AfterSendOut_TOGEKISS" => {
+    "battlerStats" => [:SPECIAL_DEFENSE, 2, :SPEED, 1],
+    "battlerEffects" => [:Tailwind,5],
+    "speech"       => ["Spell Card ~ Wish Upon a Shy Fairy Star ~"]
+  },
+ "AfterSendOut_DAIYOUSEI" => {
+    "battlerStats" => [:SPECIAL_DEFENSE, 3, :DEFENSE, 3],
+    "battlerEffects" => [:Tailwind,5],
+    "speech"       => ["S-Spell Card... ~ Tiny Starlight of Hope ~"]
+    }
+}
+
 RATTATAm_MIDBATTLE = {
   "RoundStartCommand_1_foe" => {
     "addWild" => [:RATTATAm, 40],
