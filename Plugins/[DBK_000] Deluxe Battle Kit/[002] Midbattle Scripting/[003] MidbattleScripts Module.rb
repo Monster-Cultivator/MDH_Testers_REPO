@@ -2171,7 +2171,7 @@ DAIYOUSEI_MIDBATTLE = {
   },
   "AfterSendOut_TOGEKISS" => {
     "battlerStats" => [:SPECIAL_DEFENSE, 2, :SPEED, 1],
-    "battlerEffects" => [:Tailwind,5],
+    "teamEffects" => [:Tailwind, 5],
     "speech"       => ["Spell Card ~ Wish Upon a Shy Fairy Star ~"]
   },
  "AfterSendOut_DAIYOUSEI" => {
@@ -2266,35 +2266,69 @@ LEAFEON_BOSS = {
 
 ABOMINACEON_MIDBATTLE = {
   "RoundStartCommand_1_foe" => {
-    "changeTerrain" => :Electric,
     "setVariable"   => 0,
     "battlerForm"   => [1, "Abominaceon manifests as a chaotic fusion of elements!"],
     "playSE"        => "Anim/ElectricTerrain",
     "text"          => "Electric Terrain crackles to life!",
-    "setChoices"    => [:phase1, nil, {
-      "Fire Core"   => "The fiery core shatters!",
-      "Water Core"  => "The watery veins evaporate!",
-      "Grass Core"  => "The grassy vines wither!"
+    "setChoices"    => [:Gen1, nil, {
+      "Fire Core"   => "You take aim for the Fire Core!",
+      "Water Core"  => "You take aim for the Water Core!",
+      "Electric Core"  => "You take aim for the Electric Core!"
+    }],
+    "speech"        => ["Abominaceon pulses with elemental power!\nWhich core will you strike?", :Choices]
+  },
+  # Phase 1 Choices
+  "Choice_Gen1_1" => { # Fire
+    "battlerStats" => [:ATTACK, 2, :SPEED, 2],
+    "battlerForm" => 2,
+    "text"         => "You struck the Fire part!"
+  },
+  "Choice_Gen1_2" => { # Water
+    "battlerStats" => [:SPECIAL_DEFENSE, 2, :SPEED, 2],
+    "battlerForm" => 3,
+    "text"         => "You targeted the Water part!"
+  },
+  "Choice_Gen1_3" => { # Electric
+    "battlerStats" => [:DEFENSE, 2, :SPEED, 2],
+    "battlerForm" => 4,
+    "text"         => "You withered the Grass part!"
+  },
+  "BeforeStatusMove_foe_repeat" => {
+    "addVariable" => 1,
+	"text" => ["{1} sees you're lack of aggregation as an opening!"]
+  },
+
+ABOMINACEON_MIDBATTLE = {
+  "RoundStartCommand_1_foe" => {
+    "changeTerrain" => :Electric,
+    "setVariable"   => 0,
+    "playSE"        => "Anim/ElectricTerrain",
+    "text"          => "Electric Terrain crackles to life!",
+    "setChoices"    => [:Gen1, nil, {
+      "Fire Core"   => "You take aim for the Fire Core!",
+      "Water Core"  => "You take aim for the Water Core!",
+      "Electric Core"  => "You take aim for the Electric Core!"
     }],
     "speech"        => ["Abominaceon pulses with elemental power!\nWhich core will you strike?", :Choices]
   },
 
   # Phase 1 Choices
-  "Choice_phase1_1" => { # Fire
-    "battlerStats" => [:ATTACK, 2],
-    "battlerForm"  => [2, "Fire core destroyed!"],
-    "text"         => "You struck the Fire part!"
+  "Choice_Gen1_1" => { # Fire
+    "changeWeather" => :Sun,
+    "battlerStats" => [:ATTACK, 2, :SPEED, 2],
+    "battlerForm" => 1
   },
-  "Choice_phase1_2" => { # Water
-    "battlerStats" => [:SPECIAL_DEFENSE, 2],
-    "battlerForm"  => [3, "Water core destroyed!"],
-    "text"         => "You targeted the Water part!"
+  "Choice_Gen1_2" => { # Water
+    "changeWeather" => :Rain,
+    "battlerStats" => [:SPECIAL_DEFENSE, 2, :SPEED, 2],
+    "battlerForm" => 2
   },
-  "Choice_phase1_3" => { # Grass
-    "battlerStats" => [:SPEED, 2],
-    "battlerForm"  => [4, "Grass core destroyed!"],
-    "text"         => "You withered the Grass part!"
-  },
+  "Choice_Gen1_3" => { # Electric
+    "changeTerrain" => :Electric,
+    "battlerStats" => [:DEFENSE, 2, :SPEED, 2],
+    "battlerForm" => 3
+    }
+}
 
   # After Phase 1 "faint" (revive to Phase 2)
   "BattlerHPCritical_foe" => {
@@ -2404,13 +2438,13 @@ HERO_DUO_MIDBATTLE = {
     "battlerStats"  => [:SPEED, 2, :EVASION, 1],
     "playSE"        => "Anim/Charge",
     "playAnim"      => [:BULKUP, :Self],
-    "text"          => "The twin heroes strike a synchronized pose in their chibi armored forms!"
+    "text"          => "The twin heroes strike a synchronized pose !"
   },
   "TargetTookDamage_foe_repeat" => {
-    "ignoreAfter" => "BattlerHPCritical_foe",
+    "ignoreAfter" => "TargetHPHalf_foe",
     "addVariable" => 1,
-    "text"        => "Their unbreakable heroic bond synchronizes the damage!",
-    "battlerHP"   => [-6]
+    "text"        => "Their heroic bond lets them shrug off the pain together!",
+    "battlerHP"   => [-4]
   },
   "Variable_repeat_every_3" => {
     "text"         => "Synchronized heroic strike!",
@@ -2421,20 +2455,19 @@ HERO_DUO_MIDBATTLE = {
   "TargetHPHalf_foe" => {
     "ignoreAfter"   => "BattlerHPCritical_foe",
     "text"          => "Heroic energy surges through their shared core!",
-    "battlerHP"     => [60],
-    "battlerStats"  => [:DEFENSE, 2, :SPECIAL_DEFENSE, 2],
+    "battlerHP"     => [40],
+    "battlerStats"  => [:SPECIAL_DEFENSE, 2, :SPEED, 1],
+    "teamEffects"   => [:Reflect, 4],
     "playSE"        => "Anim/Recover"
   },
   "BattlerHPCritical_foe" => {
-    "battlerForm"   => [2, "The duo ascends to their true heroic form!"],
-    "dynamax"       => "Capes billow as the heroes unleash their ultimate power!",
+    "battlerForm"    => [2, "The duo ascends to their true heroic form!"],
     "changeBackdrop" => "city_night",
-    "battlerHP"     => [85],
-    "battlerStats"  => [:ATTACK, 3, :SPECIAL_ATTACK, 3, :SPEED, 3, :EVASION, 2],
-    "teamEffects"   => [:Rainbow, 5],
-    "playSE"        => "Anim/MaxLightning",
-    "playCry"       => :Self,
-    "text"          => "The battlefield trembles as the twin heroes glow in legendary caped glory!"
+    "battlerHP"      => [60],
+    "battlerStats"   => [:ATTACK, 2, :SPECIAL_ATTACK, 2, :SPEED, 2],
+    "teamEffects"    => [:Rainbow, 5],
+    "playSE"         => "Anim/MaxLightning",
+    "playCry"        => :Self
   }
 }
 #===============================================
