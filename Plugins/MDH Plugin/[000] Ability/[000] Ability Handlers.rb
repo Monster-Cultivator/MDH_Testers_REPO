@@ -72,3 +72,13 @@ Battle::AbilityEffects::OnDealingHit.add(:DEVIOUSLICK,
   }
 )
 
+#===============================================================================
+# Ability: TREBLECLEF
+# Changes the user's Sound-Based moves into the Flying-Type.
+#===============================================================================
+
+Battle::AbilityEffects::ModifyMoveBaseType.add(:TREBLECLEF,
+  proc { |ability, user, move, type|
+    next :FLYING if GameData::Type.exists?(:FLYING) && move.soundMove?
+  }
+)

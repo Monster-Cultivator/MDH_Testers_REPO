@@ -1287,3 +1287,7 @@ Description = Boosts the Pokémon's evasion in the sun.
 [DEVIOUSLICK]
 Name = Devious Lick
 Description = Boosts the Pokémon's evasion on super-effective attacks.
+#-------------------------------
+[TREBLECLEF]
+Name = Treble Clef
+Description = User's Sound-Based moves turn into Flying-Type.
