@@ -2296,7 +2296,8 @@ ABOMINACEON_MIDBATTLE = {
   "BeforeStatusMove_foe_repeat" => {
     "addVariable" => 1,
 	"text" => ["{1} sees you're lack of aggregation as an opening!"]
-  },
+  }
+}
 
 ABOMINACEON_MIDBATTLE = {
   "RoundStartCommand_1_foe" => {
@@ -2327,9 +2328,7 @@ ABOMINACEON_MIDBATTLE = {
     "changeTerrain" => :Electric,
     "battlerStats" => [:DEFENSE, 2, :SPEED, 2],
     "battlerForm" => 3
-    }
-}
-
+    },
   # After Phase 1 "faint" (revive to Phase 2)
   "BattlerHPCritical_foe" => {
     "ignoreUntil" => "Variable_0",
