@@ -7352,6 +7352,17 @@ FieldUse = OnPokemon
 Flags = EvolutionStone,Fling_30
 Description = The outfit worn by the STRONGEST that makes certain species of Pokémon evolve!
 #-------------------------------
+[BIGFAIRYDRESS]
+Name = Big Fairy Dress
+NamePlural = Big Fairy Dresses
+Pocket = 1
+Price = 3000
+SellPrice = 750
+BPPrice = 5
+FieldUse = OnPokemon
+Flags = EvolutionStone,Fling_30
+Description = The outfit worn by the STRONGEST that makes certain species of Pokémon evolve!
+#-------------------------------
 [PANDEMONICDRIP]
 Name = Pandemonic Drip
 NamePlural = Pandemonic Drips

@@ -134,3 +134,6 @@ Innates = EIGHTHPLAGUE
 #-------------------------------
 [WEAVILE_1]
 Innates = DEVIOUSLICK
+#-------------------------------
+[DAIYOUSEI]
+Innates = OVERCOAT,THERMALEXCHANGE,BEASTBOOST
