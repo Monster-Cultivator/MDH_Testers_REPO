@@ -2264,7 +2264,7 @@ LEAFEON_BOSS = {
   }
 }
 
-ABOMINACEON_MIDBATTLE = {
+ABOMINACEON_INTRO_MIDBATTLE = {
   "RoundStartCommand_1_foe" => {
     "setVariable"   => 0,
     "battlerForm"   => [1, "Abominaceon manifests as a chaotic fusion of elements!"],
@@ -2279,19 +2279,19 @@ ABOMINACEON_MIDBATTLE = {
   },
   # Phase 1 Choices
   "Choice_Gen1_1" => { # Fire
-    "battlerStats" => [:ATTACK, 2, :SPEED, 2],
+    "battlerStats" => [:ATTACK, 2, :SPEED, 2, SPECIAL_DEFENSE, 1, :DEFENSE, 1],
     "battlerForm" => 2,
-    "text"         => "You struck the Fire part!"
+    "text"         => "You targeted the Fire part!"
   },
   "Choice_Gen1_2" => { # Water
-    "battlerStats" => [:SPECIAL_DEFENSE, 2, :SPEED, 2],
+    "battlerStats" => [:ATTACK, 1, :SPEED, 2, SPECIAL_DEFENSE, 2, :DEFENSE, 1],
     "battlerForm" => 3,
     "text"         => "You targeted the Water part!"
   },
   "Choice_Gen1_3" => { # Electric
-    "battlerStats" => [:DEFENSE, 2, :SPEED, 2],
+    "battlerStats" => [:ATTACK, 1, :SPEED, 3, SPECIAL_DEFENSE, 1, :DEFENSE, 2],
     "battlerForm" => 4,
-    "text"         => "You withered the Grass part!"
+    "text"         => "You targeted the Grass part!"
   },
   "BeforeStatusMove_foe_repeat" => {
     "addVariable" => 1,
@@ -2460,7 +2460,6 @@ HERO_DUO_MIDBATTLE = {
     "playSE"        => "Anim/Recover"
   },
   "BattlerHPCritical_foe" => {
-    "battlerForm"    => [2, "The duo ascends to their true heroic form!"],
     "changeBackdrop" => "city_night",
     "battlerHP"      => [60],
     "battlerStats"   => [:ATTACK, 2, :SPECIAL_ATTACK, 2, :SPEED, 2],
