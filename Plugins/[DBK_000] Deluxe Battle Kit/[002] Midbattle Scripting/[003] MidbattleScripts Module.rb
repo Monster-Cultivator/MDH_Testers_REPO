@@ -2280,14 +2280,14 @@ ABOMINACEON_INTRO_MIDBATTLE = {
   # Phase 1 Choices
   "Choice_Gen1_1" => { # Fire
 	"changeWeather" => :Sun,
-    "battlerStats" => [:ATTACK, 2, :SPEED, 2, SPECIAL_DEFENSE, 1, :DEFENSE, 1],
+    "battlerStats" => [:ATTACK, 2, :SPEED, 2, :SPECIAL_DEFENSE, 1, :DEFENSE, 1],
 	"battlerMoves" => [:RAGINGFURY, :EARTHQUAKE, :SOLARBLADE, :DRAGONDANCE],
     "battlerForm" => 2,
     "text"         => "You targeted the Fire part!"
   },
   "Choice_Gen1_2" => { # Water
 	"changeWeather" => :Rain,
-    "battlerStats" => [:ATTACK, 1, :SPEED, 2, SPECIAL_DEFENSE, 2, :DEFENSE, 1],
+    "battlerStats" => [:ATTACK, 1, :SPEED, 2, :SPECIAL_DEFENSE, 2, :DEFENSE, 1],
 	"battlerMoves" => [:WEATHERBALL, :SCALD, :HURRICANE, :NASTYPLOT],
     "battlerForm" => 3,
     "text"         => "You targeted the Water part!"
@@ -2301,6 +2301,8 @@ ABOMINACEON_INTRO_MIDBATTLE = {
   },
   "BeforeStatusMove_foe_repeat" => {
     "addVariable" => 1,
+    "setBattler" => :Opposing,
+	"battlerHP" => -8,
 	"text" => ["{1} sees you're lack of aggregation as an opening!"]
   }
 }
@@ -2458,7 +2460,7 @@ HERO_DUO_MIDBATTLE = {
     "battlerStats" => [:ATTACK, 1, :SPECIAL_ATTACK, 1]
   },
    "BattlerStatusCured_foe" => {
-    "text"         => "They take this as an opening!".
+    "text"         => "They take this as an opening!",
 	"setBattler" => :Opposing,
 	"battlerStats" => [:ATTACK, -1, :SPECIAL_ATTACK, -1, :SPECIAL_DEFENSE, -2]	
   },

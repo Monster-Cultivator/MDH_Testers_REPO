@@ -31982,7 +31982,7 @@ Habitat = WatersEdge
 Category = Bubble Frog
 Pokedex = It can throw bubble-covered pebbles with precise control, hitting empty cans up to a hundred feet away.
 Generation = 6
-Evolutions = GRENINJAh,Level,36
+Evolutions = GRENINJAi,Level,36
 RaidRanks = 2,3
 #-------------------------------
 [HOUNDOURh]
@@ -32252,6 +32252,36 @@ Category = Painter
 Pokedex = A Smeargle marks its territory using a fluid that leaks out from the tip of its tail. About 5,000 different marks left by this Pokémon have been found.
 Generation = 2
 CallRateSOS = 9
+#-------------------------------
+[PLUSLEMINUN]
+Name = Plusle Minun
+Types = ELECTRIC
+BaseStats = 120,80,100,200,150,220
+GenderRatio = AlwaysFemale
+GrowthRate = Medium
+BaseExp = 142
+EVs = SPEED,1
+CatchRate = 200
+Happiness = 50
+Abilities = PLUS
+HiddenAbilities = LIGHTNINGROD
+Moves = 0,NUZZLE,1,PLAYNICE,1,GROWL,1,THUNDERWAVE,1,QUICKATTACK,4,HELPINGHAND,7,SPARK,10,ENCORE,13,SWITCHEROO,16,SWIFT,19,ELECTROBALL,22,COPYCAT,26,CHARGE,29,ELECTRIFY,31,DISCHARGE,34,BATONPASS,37,AGILITY,40,LASTRESORT,43,THUNDER,46,NASTYPLOT,49,ENTRAINMENT,53,THUNDERCLAP
+TutorMoves = AGILITY,ALLURINGVOICE,BATONPASS,CHARGE,CHARGEBEAM,CHARM,EERIEIMPULSE,ELECTRICTERRAIN,ELECTROBALL,ELECTROWEB,ENCORE,ENDEAVOR,ENDURE,FACADE,FAKETEARS,FLASH,FLING,GRASSKNOT,HELPINGHAND,LIGHTSCREEN,MUDSLAP,NASTYPLOT,PLAYROUGH,PROTECT,RAINDANCE,REST,SKILLSWAP,SLEEPTALK,SUBSTITUTE,SUPERFANG,SWIFT,THUNDER,THUNDERBOLT,THUNDERPUNCH,THUNDERWAVE,TRAILBLAZE,UPROAR,VOLTSWITCH,WILDCHARGE
+EggMoves = CHARM,SING,SWEETKISS,WISH
+EggGroups = Fairy
+HatchSteps = 5120
+Height = 0.4
+Weight = 4.2
+Color = Yellow
+Shape = BipedalTail
+Habitat = Grassland
+Category = Cheering
+Pokedex = It has the trait of cheering on its fellow Pokémon. By shorting out the electricity it releases from its paws, it creates pom-poms for cheering.
+Generation = 3
+WildItemUncommon = CELLBATTERY
+SpeciesSOS = PLUSLE,MINUN
+CallRateSOS = 15
+RaidRanks = 2,3
 #-------------------------------
 [SUICUNEh]
 Name = Suicune
