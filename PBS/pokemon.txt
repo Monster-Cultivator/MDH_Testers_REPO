@@ -31733,7 +31733,7 @@ RaidRanks = 3,4,5
 [ABOMINACEON]
 Name = Abominaceon
 Types = NORMAL
-BaseStats = 250,250,250,250,250,250
+BaseStats = 300,250,250,250,250,250
 GenderRatio = AlwaysFemale
 GrowthRate = Medium
 BaseEXP = 65

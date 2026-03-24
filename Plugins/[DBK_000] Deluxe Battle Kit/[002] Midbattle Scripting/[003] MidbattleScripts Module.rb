@@ -2279,19 +2279,25 @@ ABOMINACEON_INTRO_MIDBATTLE = {
   },
   # Phase 1 Choices
   "Choice_Gen1_1" => { # Fire
+	"changeWeather" => :Sun,
     "battlerStats" => [:ATTACK, 2, :SPEED, 2, SPECIAL_DEFENSE, 1, :DEFENSE, 1],
+	"battlerMoves" => [:RAGINGFURY, :EARTHQUAKE, :SOLARBLADE, :DRAGONDANCE],
     "battlerForm" => 2,
     "text"         => "You targeted the Fire part!"
   },
   "Choice_Gen1_2" => { # Water
+	"changeWeather" => :Rain,
     "battlerStats" => [:ATTACK, 1, :SPEED, 2, SPECIAL_DEFENSE, 2, :DEFENSE, 1],
+	"battlerMoves" => [:WEATHERBALL, :SCALD, :HURRICANE, :NASTYPLOT],
     "battlerForm" => 3,
     "text"         => "You targeted the Water part!"
   },
   "Choice_Gen1_3" => { # Electric
-    "battlerStats" => [:ATTACK, 1, :SPEED, 3, SPECIAL_DEFENSE, 1, :DEFENSE, 2],
+	"changeTerrain" => :Electric,
+    "battlerStats" => [:SPECIAL_ATTACK, 1, :SPEED, 3, :ATTACK, 1],
+	"battlerMoves" => [:PSYBLADE, :THUNDERCAGE, :NORETREAT, :THUNDERBOLT],
     "battlerForm" => 4,
-    "text"         => "You targeted the Grass part!"
+    "text"         => "You targeted the electric part!"
   },
   "BeforeStatusMove_foe_repeat" => {
     "addVariable" => 1,
@@ -2434,7 +2440,7 @@ HERO_DUO_MIDBATTLE = {
     "setVariable"   => 0,
     "battlerForm"   => [1, "The heroic duo stands ready!"],
     "changeTerrain" => :Electric,
-    "battlerStats"  => [:SPEED, 2, :EVASION, 1],
+    "battlerStats"  => [:SPEED, 2, :EVASION, 1, :SPECIAL_ATTACK, 1],
     "playSE"        => "Anim/Charge",
     "playAnim"      => [:BULKUP, :Self],
     "text"          => "The twin heroes strike a synchronized pose !"
@@ -2450,6 +2456,11 @@ HERO_DUO_MIDBATTLE = {
     "playSE"       => "Anim/Discharge",
     "playAnim"     => [:FUSIONFLARE, :Self],
     "battlerStats" => [:ATTACK, 1, :SPECIAL_ATTACK, 1]
+  },
+   "BattlerStatusCured_foe" => {
+    "text"         => "They take this as an opening!".
+	"setBattler" => :Opposing,
+	"battlerStats" => [:ATTACK, -1, :SPECIAL_ATTACK, -1, :SPECIAL_DEFENSE, -2]	
   },
   "TargetHPHalf_foe" => {
     "ignoreAfter"   => "BattlerHPCritical_foe",
