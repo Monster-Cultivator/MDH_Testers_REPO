@@ -1291,3 +1291,7 @@ Description = Boosts the Pokémon's evasion on super-effective attacks.
 [TREBLECLEF]
 Name = Treble Clef
 Description = User's Sound-Based moves turn into Flying-Type.
+#-------------------------------
+[ICEFORCE]
+Name = Ice Force
+Description = In Hail, Sp. Atk is boosted but HP decreases.

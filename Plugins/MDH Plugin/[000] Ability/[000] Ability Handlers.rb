@@ -82,3 +82,29 @@ Battle::AbilityEffects::ModifyMoveBaseType.add(:TREBLECLEF,
     next :FLYING if GameData::Type.exists?(:FLYING) && move.soundMove?
   }
 )
+
+#===============================================================================
+# Ability: ICEFORCE
+# Increases Special Attack in Hail.
+#===============================================================================
+
+Battle::AbilityEffects::DamageCalcFromUser.add(:ICEFORCE,
+  proc { |ability, user, target, move, mults, power, type|
+    if move.specialMove? && [:Hail, :Snow].include?(user.effectiveWeather)
+      mults[:attack_multiplier] *= 1.5
+    end
+  }
+)
+
+Battle::AbilityEffects::EndOfRoundWeather.add(:ICEFORCE,
+  proc { |ability, weather, battler, battle|
+    next if ![:Hail, :Snow].include?(weather)
+    next if !battler.takesIndirectDamage?
+    battle.pbShowAbilitySplash(battler)
+    battle.scene.pbDamageAnimation(battler)
+    battler.pbReduceHP(battler.totalhp / 8, false)
+    battle.pbDisplay(_INTL("{1} was hurt by the Bitter Cold!", battler.pbThis))
+    battle.pbHideAbilitySplash(battler)
+    battler.pbItemHPHealCheck
+  }
+)
