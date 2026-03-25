@@ -10574,3 +10574,11 @@ ShadowX = 0
 ShadowSize = 2
 DmaxBackSprite = 0,0
 DmaxFrontSprite = 0,0
+#-------------------------------
+[PLUSLEMINUN]
+BackSprite = 0,48
+FrontSprite = 0,28
+ShadowX = 0
+ShadowSize = 1
+DmaxBackSprite = 0,0
+DmaxFrontSprite = 3,32
