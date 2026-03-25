@@ -403,6 +403,7 @@ ShowArea = true
 BattleBack = field
 #-------------------------------
 [082]   # Route 102 Fillertreestop
+Name = Route 102 Fillertreestop
 Outdoor = true
 Bicycle = true
 #-------------------------------
@@ -454,7 +455,7 @@ Name = Rustboro City
 Outdoor = true
 ShowArea = true
 #-------------------------------
-[108]   # Petalburg Woods
+[108]   # Grass Area
 Name = Petalburg Woods
 Outdoor = true
 ShowArea = true
@@ -924,7 +925,7 @@ Name = Pokemon Den-Silicobra
 SnapEdges = true
 BattleBack = Den3
 #-------------------------------
-[284]   # Pokemon Den-Mankey
+[284]   # Pokemon Den-117
 Name = Pokemon Den-Mankey
 SnapEdges = true
 BattleBack = Den3
@@ -934,7 +935,7 @@ Name = Pokemon Den-Maractus
 SnapEdges = true
 BattleBack = Den3
 #-------------------------------
-[287]   # Pokemon Den-Mienfoo
+[287]   # Pokemon Den route 111
 Name = Pokemon Den-Mienfoo
 SnapEdges = true
 BattleBack = Den2
@@ -944,7 +945,7 @@ Name = Pokemon Den-Bounsweet
 SnapEdges = true
 BattleBack = Den1
 #-------------------------------
-[290]   # Pokemon Den-Bellsprout
+[290]   # Pokemon Den-Conkeldurr
 Name = Pokemon Den-Caterpie
 SnapEdges = true
 BattleBack = Den4
@@ -954,12 +955,12 @@ Name = Pokemon Den-Litleo
 SnapEdges = true
 BattleBack = Den4
 #-------------------------------
-[292]   # Pokemon Den-Starly
+[292]   # Pokemon Den-114-2
 Name = Pokemon Den-Starly
 SnapEdges = true
 BattleBack = Den4
 #-------------------------------
-[293]   # Pokemon Den-Weedle
+[293]   # Pokemon Den-114-3
 Name = Pokemon Den-Weedle
 SnapEdges = true
 BattleBack = Den4
@@ -969,7 +970,7 @@ Name = Pokemon Den-Phanpy
 SnapEdges = true
 BattleBack = Den4
 #-------------------------------
-[295]   # Pokemon Den-Deerling
+[295]   # Pokemon Den-113
 Name = Pokemon Den-Deerling
 SnapEdges = true
 BattleBack = Den1
@@ -1061,6 +1062,8 @@ Weather = Fog,100
 SnapEdges = true
 BattleBack = cave1
 TrainerBattleBGM = Trainer Battle.mp3
+#-------------------------------
+[377]   # Route 119
 #-------------------------------
 [390]   # Verdanturf City
 Name = Verdanturf City

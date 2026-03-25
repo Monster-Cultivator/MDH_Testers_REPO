@@ -52,16 +52,98 @@
 272,West,0,190,East,3
 # Route 111 Border 2 (273) - Mauville Border grass 1 (271)
 273,South,10,271,North,0
+# Fortree City (375) - Route 119 (377)
+375,West,0,377,East,1
+# Route 118 (176) - Route 119 (377)
+176,North,45,377,South,0
+# Route 123 North Border (380) - Route 119 (377)
+380,West,0,377,East,102
+# Route 123 (378) - Route 119 (377)
+378,West,0,377,East,142
+# Route 119 E Border (381) - Route 119 (377)
+381,West,0,377,East,21
+# Route 123 South Border (379) - Route 119 (377)
+379,West,0,377,East,162
+# Route 119 W Border (382) - Route 119 (377)
+382,East,0,377,West,0
+# Route 118 (176) - Fortree City (375)
+176,East,0,375,West,139
+# Route 119 E Border (381) - Fortree City (375)
+381,North,0,375,South,0
+# Route 120 (429) - Fortree City (375)
+429,West,0,375,East,1
+# Route 105 (136) - Route 118 (176)
+136,North,240,176,South,0
+# Route 111 (197) - Route 118 (176)
+197,East,141,176,West,0
+# Slateport City (148) - Route 118 (176)
+148,North,46,176,South,0
+# Route 110 (158) - Route 118 (176)
+158,East,0,176,West,25
+# Route 123 North Border (380) - Route 118 (176)
+380,West,38,176,East,0
+# Route 123 (378) - Route 118 (176)
+378,West,0,176,East,2
+# Route 119 E Border (381) - Route 118 (176)
+381,West,119,176,East,0
+# Route 123 South Border (379) - Route 118 (176)
+379,West,0,176,East,22
+# Route 111 (198) - Route 118 (176)
+198,East,171,176,West,0
+# Route 119 W Border (382) - Route 118 (176)
+382,South,0,176,North,25
+# Petalburg City (95) - Route 105 (136)
+95,West,35,136,East,0
+# 104 Border (114) - Route 105 (136)
+114,West,70,136,East,0
+# Route 104 (104) - Route 105 (136)
+104,South,0,136,North,0
+# 104 Border 3 (131) - Route 105 (136)
+131,East,140,136,West,0
+# Route 104  (109) - Route 105 (136)
+109,East,70,136,West,0
+# Route 106 (139) - Route 105 (136)
+139,West,0,136,East,100
+# Route 106 (137) - Route 105 (136)
+137,North,0,136,South,0
+# 104 BORDER 2 (130) - Route 105 (136)
+130,East,104,136,West,0
+# Route 116 (112) - Route 105 (136)
+112,West,140,136,East,0
+# 105 border (248) - Route 105 (136)
+248,East,0,136,West,10
+# 115 BORDER LEFT (267) - Route 105 (136)
+267,East,220,136,West,0
+# 115 BORDER LEFT 2 (269) - Route 105 (136)
+269,East,240,136,West,0
+# 110 border (165) - Route 105 (136)
+165,South,0,136,North,180
+# Route 110 (158) - Route 105 (136)
+158,South,0,136,North,200
+# 107 BORDER UP (270) - Route 105 (136)
+270,North,0,136,South,80
+# Route 102 (81) - Petalburg City (95)
+81,West,0,95,East,14
+# Route 102 Fillertreesdown (83) - Petalburg City (95)
+83,West,0,95,East,34
+# 104 Border (114) - Petalburg City (95)
+114,South,0,95,North,0
+# Route 102 Fillertreestop (82) - Petalburg City (95)
+82,West,1,95,East,0
+# Route 104 (104) - Petalburg City (95)
+104,East,45,95,West,0
+# Rustboro City (106) - Petalburg City (95)
+106,East,105,95,West,0
+# 106 border 2 (140) - Petalburg City (95)
+140,East,0,95,West,135
 # Route 101 (80) - Route 102 (81)
 80,North,0,81,South,44
 # Route 102 Fillertreesdown (83) - Route 102 (81)
 83,North,0,81,South,0
-# Petalburg City (95) - Route 102 (81)
-95,East,14,81,West,0
-# Route 102 Fillertreestop (82) - Route 102 (81)
-82,South,0,81,North,0
 # 104 Border (114) - Route 102 (81)
 114,East,49,81,West,0
+# Route 102 Fillertreestop (82) - Route 102 (81)
+82,South,0,81,North,0
 # Route 103 (84) - Route 102 (81)
 84,South,0,81,North,44
 # Oldale Town (85) - Route 102 (81)
@@ -76,42 +158,18 @@
 85,South,0,80,North,6
 # Route 102 Fillertreesdown (83) - Littleroot Town (33)
 83,South,42,33,North,0
-# Petalburg City (95) - Route 102 Fillertreesdown (83)
-95,East,34,83,West,0
 # 104 Border (114) - Route 102 Fillertreesdown (83)
 114,East,69,83,West,0
 # Route 103 (84) - Route 102 Fillertreesdown (83)
 84,West,42,83,East,0
-# Oldale Town (85) - Route 102 Fillertreesdown (83)
-85,South,0,83,North,50
 # 103 Border (93) - Route 102 Fillertreesdown (83)
 93,West,57,83,East,0
-# Route 102 Fillertreestop (82) - Petalburg City (95)
-82,West,1,95,East,0
-# 104 Border (114) - Petalburg City (95)
-114,South,0,95,North,0
-# Route 104 (104) - Petalburg City (95)
-104,East,45,95,West,0
-# Route 105 (136) - Petalburg City (95)
-136,East,0,95,West,35
-# Rustboro City (106) - Petalburg City (95)
-106,East,105,95,West,0
-# 106 border 2 (140) - Petalburg City (95)
-140,East,0,95,West,135
-# 104 Border (114) - Route 102 Fillertreestop (82)
-114,East,34,82,West,0
-# Route 103 (84) - Route 102 Fillertreestop (82)
-84,West,7,82,East,0
-# 110 border (165) - Route 102 Fillertreestop (82)
-165,North,0,82,South,110
-# Oldale Town (85) - Route 102 Fillertreestop (82)
-85,North,0,82,South,50
-# 103 Border (93) - Route 102 Fillertreestop (82)
-93,West,22,82,East,0
+# Oldale Town (85) - Route 102 Fillertreesdown (83)
+85,South,0,83,North,50
+# Route 102 Fillertreestop (82) - 104 Border (114)
+82,West,0,114,East,34
 # Route 104 (104) - 104 Border (114)
 104,East,10,114,West,0
-# Route 105 (136) - 104 Border (114)
-136,East,0,114,West,70
 # Rustboro City (106) - 104 Border (114)
 106,East,70,114,West,0
 # 104 BORDER 2 (130) - 104 Border (114)
@@ -120,58 +178,16 @@
 112,South,0,114,North,0
 # 106 border 2 (140) - 104 Border (114)
 140,East,0,114,West,170
-# 110 border (165) - Route 103 (84)
-165,North,0,84,South,66
-# Oldale Town (85) - Route 103 (84)
-85,North,0,84,South,6
-# 103 Border (93) - Route 103 (84)
-93,South,0,84,North,0
-# route 103 and 110 border (188) - Route 103 (84)
-188,South,0,84,North,46
-# Mauville City (169) - Route 103 (84)
-169,West,80,84,East,0
-# Route 109 (151) - Route 103 (84)
-151,West,0,84,East,103
-# Route 110 (158) - Route 103 (84)
-158,West,60,84,East,0
-# Route 105 (136) - 110 border (165)
-136,North,180,165,South,0
-# Mauville City (169) - 110 border (165)
-169,West,102,165,East,0
-# Slateport City (148) - 110 border (165)
-148,North,0,165,South,14
-# Route 109 (151) - 110 border (165)
-151,West,0,165,East,81
-# Route 110 (158) - 110 border (165)
-158,West,82,165,East,0
-# route 103 and 110 border (188) - 103 Border (93)
-188,West,46,93,East,0
-# 104 Border 3 (131) - route 103 and 110 border (188)
-131,South,185,188,North,0
-# Mauville City (169) - route 103 and 110 border (188)
-169,West,19,188,East,0
-# Route 109 (151) - route 103 and 110 border (188)
-151,West,0,188,East,164
-# Route 110 (158) - route 103 and 110 border (188)
-158,West,0,188,East,1
-# Route 104 (104) - 104 Border 3 (131)
-104,West,0,131,East,60
-# Route 105 (136) - 104 Border 3 (131)
-136,West,0,131,East,140
-# Rustboro City (106) - 104 Border 3 (131)
-106,West,0,131,East,0
-# Route 106 (137) - 104 Border 3 (131)
-137,West,0,131,East,220
-# 104 BORDER 2 (130) - 104 Border 3 (131)
-130,North,5,131,South,0
-# Route 115 (128) - 104 Border 3 (131)
-128,West,80,131,East,0
-# 115 BORDER UP (268) - 104 Border 3 (131)
-268,West,95,131,East,0
-# 115 BORDER LEFT (267) - 104 Border 3 (131)
-267,South,0,131,North,0
-# Route 105 (136) - Route 104 (104)
-136,North,0,104,South,0
+# Route 103 (84) - Route 102 Fillertreestop (82)
+84,West,7,82,East,0
+# 110 border (165) - Route 102 Fillertreestop (82)
+165,North,0,82,South,110
+# 103 Border (93) - Route 102 Fillertreestop (82)
+93,West,22,82,East,0
+# Oldale Town (85) - Route 102 Fillertreestop (82)
+85,North,0,82,South,50
+# 104 Border 3 (131) - Route 104 (104)
+131,East,60,104,West,0
 # Route 104  (109) - Route 104 (104)
 109,East,0,104,West,10
 # Rustboro City (106) - Route 104 (104)
@@ -190,28 +206,20 @@
 269,East,160,104,West,0
 # Slateport City (148) - Route 104 (104)
 148,North,0,104,South,194
-# Route 104  (109) - Route 105 (136)
-109,East,70,136,West,0
-# Route 106 (139) - Route 105 (136)
-139,West,0,136,East,100
-# Route 106 (137) - Route 105 (136)
-137,North,0,136,South,0
-# 104 BORDER 2 (130) - Route 105 (136)
-130,East,104,136,West,0
-# Route 116 (112) - Route 105 (136)
-112,West,140,136,East,0
-# 105 border (248) - Route 105 (136)
-248,East,0,136,West,10
-# 115 BORDER LEFT (267) - Route 105 (136)
-267,East,220,136,West,0
-# 115 BORDER LEFT 2 (269) - Route 105 (136)
-269,East,240,136,West,0
-# 107 BORDER UP (270) - Route 105 (136)
-270,North,0,136,South,80
-# Route 110 (158) - Route 105 (136)
-158,South,0,136,North,200
-# Route 118 (176) - Route 105 (136)
-176,South,0,136,North,240
+# Rustboro City (106) - 104 Border 3 (131)
+106,West,0,131,East,0
+# Route 106 (137) - 104 Border 3 (131)
+137,West,0,131,East,220
+# 104 BORDER 2 (130) - 104 Border 3 (131)
+130,North,5,131,South,0
+# Route 115 (128) - 104 Border 3 (131)
+128,West,80,131,East,0
+# 115 BORDER UP (268) - 104 Border 3 (131)
+268,West,95,131,East,0
+# 115 BORDER LEFT (267) - 104 Border 3 (131)
+267,South,0,131,North,0
+# route 103 and 110 border (188) - 104 Border 3 (131)
+188,North,0,131,South,185
 # Rustboro City (106) - Route 104  (109)
 106,West,70,109,East,0
 # Route 106 (137) - Route 104  (109)
@@ -324,136 +332,130 @@
 211,North,0,209,South,0
 # Mauville City (169) - Route 111 (197)
 169,North,0,197,South,1
-# Route 118 (176) - Route 111 (197)
-176,West,0,197,East,141
-# Route 111 (198) - Route 111 (197)
-198,South,0,197,North,0
 # Verdanturf City (390) - Route 111 (197)
 390,East,0,197,West,88
+# Route 111 (198) - Route 111 (197)
+198,South,0,197,North,0
 # Route 111 Border (199) - Route 111 (197)
 199,West,9,197,East,0
 # Route 112 (203) - Route 111 (197)
 203,East,0,197,West,36
 # Route 112 Border (204) - Route 111 (197)
 204,East,0,197,West,17
-# Route 108 (150) - Mauville City (169)
-150,East,0,169,West,222
+# Route 103 (84) - Mauville City (169)
+84,East,0,169,West,80
+# 110 border (165) - Mauville City (169)
+165,East,0,169,West,102
 # 109 border (164) - Mauville City (169)
 164,East,0,169,West,183
+# Route 108 (150) - Mauville City (169)
+150,East,0,169,West,222
 # Route 110 (158) - Mauville City (169)
 158,North,0,169,South,0
+# route 103 and 110 border (188) - Mauville City (169)
+188,East,0,169,West,19
 # Route 117 (170) - Mauville City (169)
 170,East,3,169,West,0
-# Route 107 (138) - Route 108 (150)
-138,East,0,150,West,1
-# 107 BORDER UP (270) - Route 108 (150)
-270,East,19,150,West,0
-# 109 border (164) - Route 108 (150)
-164,South,0,150,North,0
-# Route 109 (151) - Route 108 (150)
-151,West,39,150,East,0
-# Route 110 (158) - Route 108 (150)
-158,West,202,150,East,0
-# 107 BORDER UP (270) - Route 107 (138)
-270,South,0,138,North,0
-# 109 border (164) - Route 107 (138)
-164,West,40,138,East,0
-# Route 117 (170) - Route 107 (138)
-170,West,226,138,East,0
-# 109 border (164) - 107 BORDER UP (270)
-164,West,20,270,East,0
-# Route 117 (170) - 107 BORDER UP (270)
-170,West,206,270,East,0
-# Slateport City (148) - 109 border (164)
-148,South,0,164,North,54
-# Route 109 (151) - 109 border (164)
-151,West,0,164,East,0
-# Route 110 (158) - 109 border (164)
-158,West,163,164,East,0
-# Route 109 (151) - Slateport City (148)
-151,North,0,148,South,6
+# 110 border (165) - Route 103 (84)
+165,North,0,84,South,66
+# Route 110 (158) - Route 103 (84)
+158,West,60,84,East,0
+# Route 109 (151) - Route 103 (84)
+151,West,0,84,East,103
+# route 103 and 110 border (188) - Route 103 (84)
+188,South,0,84,North,46
+# 103 Border (93) - Route 103 (84)
+93,South,0,84,North,0
+# Oldale Town (85) - Route 103 (84)
+85,North,0,84,South,6
+# Slateport City (148) - 110 border (165)
+148,North,0,165,South,14
+# Route 110 (158) - 110 border (165)
+158,West,82,165,East,0
+# Route 109 (151) - 110 border (165)
+151,West,0,165,East,81
+# 109 border (164) - Slateport City (148)
+164,North,54,148,South,0
 # Route 110 (158) - Slateport City (148)
 158,South,0,148,North,6
-# Route 118 (176) - Slateport City (148)
-176,South,0,148,North,46
-# Route 117 (170) - Route 109 (151)
-170,East,186,151,West,0
-# Route 118 (176) - Route 110 (158)
-176,West,25,158,East,0
+# Route 109 (151) - Slateport City (148)
+151,North,0,148,South,6
+# Route 107 (138) - 109 border (164)
+138,East,0,164,West,40
+# Route 108 (150) - 109 border (164)
+150,North,0,164,South,0
+# Route 110 (158) - 109 border (164)
+158,West,163,164,East,0
+# Route 109 (151) - 109 border (164)
+151,West,0,164,East,0
+# 107 BORDER UP (270) - 109 border (164)
+270,East,0,164,West,20
+# Route 108 (150) - Route 107 (138)
+150,West,1,138,East,0
+# Route 117 (170) - Route 107 (138)
+170,West,226,138,East,0
+# 107 BORDER UP (270) - Route 107 (138)
+270,South,0,138,North,0
+# Route 110 (158) - Route 108 (150)
+158,West,202,150,East,0
+# Route 109 (151) - Route 108 (150)
+151,West,39,150,East,0
+# 107 BORDER UP (270) - Route 108 (150)
+270,East,19,150,West,0
+# route 103 and 110 border (188) - Route 110 (158)
+188,East,1,158,West,0
 # Route 117 (170) - Route 110 (158)
 170,East,23,158,West,0
 # Route 111 Border (199) - Route 110 (158)
 199,West,175,158,East,0
-# Route 111 (198) - Route 118 (176)
-198,East,171,176,West,0
-# Route 123 North Border (380) - Route 118 (176)
-380,West,38,176,East,0
-# Fortree City (375) - Route 118 (176)
-375,West,139,176,East,0
-# Route 123 (378) - Route 118 (176)
-378,West,0,176,East,2
-# Route 119 E Border (381) - Route 118 (176)
-381,West,119,176,East,0
-# Route 123 South Border (379) - Route 118 (176)
-379,West,0,176,East,22
-# Route 119 W Border (382) - Route 118 (176)
-382,South,0,176,North,25
-# Verdanturf City (390) - Route 111 (198)
-390,East,0,198,West,118
+# route 103 and 110 border (188) - Route 109 (151)
+188,East,164,151,West,0
+# Route 117 (170) - Route 109 (151)
+170,East,186,151,West,0
+# 103 Border (93) - route 103 and 110 border (188)
+93,East,0,188,West,46
+# 107 BORDER UP (270) - Route 117 (170)
+270,East,0,170,West,206
+# Verdanturf City (390) - Route 117 (170)
+390,South,17,170,North,0
+# Route 123 North Border (380) - Route 117 (170)
+380,South,0,170,North,185
+# Route 122 (428) - Route 117 (170)
+428,South,0,170,North,279
+# Route 123 (378) - Verdanturf City (390)
+378,North,0,390,South,202
+# Route 111 (198) - Verdanturf City (390)
+198,West,118,390,East,0
+# Route 123 (378) - Route 123 North Border (380)
+378,North,0,380,South,0
+# Route 119 E Border (381) - Route 123 North Border (380)
+381,South,0,380,North,0
+# Route 120 (429) - Route 123 North Border (380)
+429,South,0,380,North,40
+# Route 121 (439) - Route 123 North Border (380)
+439,South,0,380,North,80
+# Route 122 (428) - Route 123 (378)
+428,South,0,378,North,94
+# Route 123 South Border (379) - Route 123 (378)
+379,North,0,378,South,0
+# Route 119 E Border (381) - Route 122 (428)
+381,South,94,428,North,0
+# Route 120 (429) - Route 122 (428)
+429,South,54,428,North,0
+# Route 121 (439) - Route 122 (428)
+439,South,14,428,North,0
+# Route 120 (429) - Route 119 E Border (381)
+429,West,19,381,East,0
+# Route 121 (439) - Route 120 (429)
+439,West,0,429,East,78
+# Lilycove City (376) - Route 121 (439)
+376,West,9,439,East,0
 # Route 111 Border (199) - Route 111 (198)
 199,West,0,198,East,21
 # Route 112 (203) - Route 111 (198)
 203,East,0,198,West,66
 # Route 112 Border (204) - Route 111 (198)
 204,East,0,198,West,47
-# Route 117 (170) - Verdanturf City (390)
-170,North,0,390,South,17
-# Route 123 (378) - Verdanturf City (390)
-378,North,0,390,South,202
-# Route 123 North Border (380) - Route 117 (170)
-380,South,0,170,North,185
-# Route 122 (428) - Route 117 (170)
-428,South,0,170,North,279
-# Route 119 (377) - Route 123 North Border (380)
-377,East,101,380,West,0
-# Route 120 (429) - Route 123 North Border (380)
-429,South,0,380,North,40
-# Route 123 (378) - Route 123 North Border (380)
-378,North,0,380,South,0
-# Route 121 (439) - Route 123 North Border (380)
-439,South,0,380,North,80
-# Route 119 E Border (381) - Route 123 North Border (380)
-381,South,0,380,North,0
-# Fortree City (375) - Route 119 (377)
-375,West,0,377,East,0
-# Route 123 (378) - Route 119 (377)
-378,West,0,377,East,141
-# Route 119 E Border (381) - Route 119 (377)
-381,West,0,377,East,20
-# Route 123 South Border (379) - Route 119 (377)
-379,West,0,377,East,161
-# Route 119 W Border (382) - Route 119 (377)
-382,East,1,377,West,0
-# Route 120 (429) - Fortree City (375)
-429,West,0,375,East,1
-# Route 119 E Border (381) - Fortree City (375)
-381,North,0,375,South,0
-# Route 121 (439) - Route 120 (429)
-439,West,0,429,East,78
-# Route 122 (428) - Route 120 (429)
-428,North,0,429,South,54
-# Route 119 E Border (381) - Route 120 (429)
-381,East,0,429,West,19
-# Route 122 (428) - Route 123 (378)
-428,South,0,378,North,94
-# Route 123 South Border (379) - Route 123 (378)
-379,North,0,378,South,0
-# Lilycove City (376) - Route 121 (439)
-376,West,9,439,East,0
-# Route 122 (428) - Route 121 (439)
-428,North,0,439,South,14
-# Route 119 E Border (381) - Route 122 (428)
-381,South,94,428,North,0
 # Lavaridge Town (231) - Route 112 (203)
 231,East,0,203,West,17
 # Route 112 Border (204) - Route 112 (203)
