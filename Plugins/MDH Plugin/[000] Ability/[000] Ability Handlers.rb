@@ -7,12 +7,13 @@ Console.echo_warn("LOADING: MyAbilities.rb")
 
 Battle::AbilityEffects::DamageCalcFromUser.add(:FIVEMAGICS,
   proc { |ability, user, target, move, mults, power, type|
-    next if !move.damagingMove?
+    next unless move.damagingMove?
     next unless [:POISON, :PSYCHIC, :GHOST, :FIRE, :ELECTRIC].include?(type)
+    battle = user.battle
     battle.pbShowAbilitySplash(user)
-	mults[:final_damage_multiplier] *= 1.2
-	battle.pbDisplay(_INTL("{1} has mastered {2}", user.pbThis))
-	battle.pbHideAbilitySplash(user)
+    mults[:final_damage_multiplier] *= 1.2
+    battle.pbDisplay(_INTL("{1} has mastered the five magics!", user.pbThis))
+    battle.pbHideAbilitySplash(user)
   }
 )
 
@@ -45,14 +46,16 @@ Battle::AbilityEffects::DamageCalcFromTarget.add(:TRUEEMBRACE,
 
 Battle::AbilityEffects::AccuracyCalcFromTarget.add(:KITSUNECROSS,
   proc { |ability, mods, user, target, move, type|
-    mods[:evasion_multiplier] *= 1.25 if target.effectiveWeather == [:Sun, :HarshSun]
+    if [:Sun, :HarshSun].include?(target.effectiveWeather)
+      mods[:evasion_multiplier] *= 1.25
+    end
   }
 )
 
 Battle::AbilityEffects::DamageCalcFromUser.add(:KITSUNECROSS,
   proc { |ability, user, target, move, mults, power, type|
-    next if !move.damagingMove?
-    next unless [:FIRE, GHOST].include?(type)
+    next unless move.damagingMove?
+    next unless [:FIRE, :GHOST].include?(type)
     mults[:final_damage_multiplier] *= 1.2
   }
 )
