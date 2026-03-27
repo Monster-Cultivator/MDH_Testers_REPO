@@ -137,3 +137,6 @@ Innates = DEVIOUSLICK
 #-------------------------------
 [DAIYOUSEI]
 Innates = OVERCOAT,THERMALEXCHANGE,BEASTBOOST
+#-------------------------------
+[ABOMINACEON]
+Innates = TINTEDLENS,THERMALEXCHANGE,BEASTBOOST

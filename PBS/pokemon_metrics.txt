@@ -10582,3 +10582,10 @@ ShadowX = 0
 ShadowSize = 1
 DmaxBackSprite = 0,0
 DmaxFrontSprite = 3,32
+#-------------------------------
+[ABOMINACEON]
+BackSprite = 0,0
+FrontSprite = 0,8
+ShadowX = 0
+ShadowSize = 2
+DmaxFrontSprite = 0,0
