@@ -29438,7 +29438,7 @@ Category = Superpower
 Pokedex = It continually undertakes strenuous training to master all forms of martial arts. Its strength lets it easily hoist a sumo wrestler onto its shoulders.
 Generation = 1
 WildItemUncommon = FOCUSBAND
-Evolutions = MACHOKE,Level,28
+Evolutions = MACHOKEh,Level,28
 CallRateSOS = 9
 RaidRanks = 1,2
 #-------------------------------
@@ -29467,7 +29467,7 @@ Category = Superpower
 Pokedex = A belt is worn by a Machoke to keep its overwhelming power under control. Because it is so dangerous, no one has ever removed the belt.
 Generation = 1
 WildItemUncommon = FOCUSBAND
-Evolutions = MACHAMP,Trade,,MACHAMP,Item,LINKINGCORD
+Evolutions = MACHAMPh,Trade,,MACHAMP,Item,LINKINGCORD
 CallRateSOS = 6
 RaidRanks = 2,3
 #-------------------------------
