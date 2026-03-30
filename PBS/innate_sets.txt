@@ -21,6 +21,9 @@ Innates = ROUGHSKIN
 [NINETALES_3]
 Innates = SHADOWTAG
 #-------------------------------
+[NINETALESha]
+Innates = FURCOAT
+#-------------------------------
 [DELPHOX_1]
 Innates = FURCOAT
 #-------------------------------
@@ -119,6 +122,9 @@ Innates = FILTER,JUSTIFIED,ROCKHEAD
 #-------------------------------
 [DRAGONITE_1]
 Innates = PHOENIXDOWN,AERILATE
+#-------------------------------
+[MACHAMPh]
+Innates = ONETWO
 #-------------------------------
 [WHIMSICOTT_1]
 Innates = AIRSUPPORT
