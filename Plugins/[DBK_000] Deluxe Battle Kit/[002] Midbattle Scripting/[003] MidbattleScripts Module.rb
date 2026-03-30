@@ -1622,14 +1622,9 @@ ZOE_MIDBATTLE   = {
     "speech_A" => ["You will experence the might of Zoe, Grizzbolt, and the Rayne Syndicate!"],
 	"changeTerrain" => :Electric,
 	"teamEffects" => [:Chargestone, "There seems to be some kind of explosive ordnance!"],
+	"battlerStats" => [:SPECIAL_ATTACK, 1, :DEFENSE, 2],
     "battlerHPCap" => 49,
 	"text" => ["The hair on you arms are standing, Something Powerful is coming"]
-	},
-"TurnStart_1_foe" => {
-    "useMove" => :THUNDER,
-	"setBattler" => :Self,
-	"battlerStats" => [:SPECIAL_ATTACK, 1, :DEFENSE, 2],
-	"text" => ["There seems to be some kind of explosive ordnance!"]
 	},
 "RoundEnd_foe_repeat_even" => {
 	"ignoreAfter"	=> "BattlerReachedHPCap_foe",
@@ -1648,15 +1643,15 @@ ZOE_MIDBATTLE   = {
     "battlerHP"     => [4, "{1} regenerated some HP!"]
   },
 "BattlerReachedHPCap_foe" => {
-    "speech_A" => ["Time to pull out all the stops!"]
+    "speech_A" => ["Time to pull out all the stops!"],
+	"playSE"        => "Anim/Sound2",
+    "battlerForm"   => [2, "{1} Grizzbolt's gun is running!!"],
+	"battlerMoves" => [:FLAMETHROWER, :HYDROSTEAM, :SHOCKWAVE, :GATLINGRUSH],
   },
 "RoundEnd_foe" => {
     "ignoreUntil"   => "BattlerReachedHPCap_foe",
-    "playSE"        => "Anim/Sound2",
-    "battlerForm"   => [2, "{1} Grizzbolt's gun is running!!"],
     "playCry"       => :Self,
-	"battlerMoves" => [:FLAMETHROWER, :HYDROSTEAM, :SHOCKWAVE, :GATLINGRUSH],
-    "battlerHP"     => [4, "{1} regenerated some HP!"]
+    "battlerHP"     => [6, "{1} regenerated some HP!"]
   }
  }
  
