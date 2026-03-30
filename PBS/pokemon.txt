@@ -29467,7 +29467,7 @@ Category = Superpower
 Pokedex = A belt is worn by a Machoke to keep its overwhelming power under control. Because it is so dangerous, no one has ever removed the belt.
 Generation = 1
 WildItemUncommon = FOCUSBAND
-Evolutions = MACHAMPh,Trade,,MACHAMP,Item,LINKINGCORD
+Evolutions = MACHAMPh,Item,LINKINGCORD
 CallRateSOS = 6
 RaidRanks = 2,3
 #-------------------------------
