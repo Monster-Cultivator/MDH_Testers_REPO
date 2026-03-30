@@ -324,6 +324,7 @@ OldRod
 GoodRod
     20,MAGIKARP,10,30
     10,TENTACOOL,10,30
+    10,INKAY,10,30
     5,WAILMER,10,30
 SuperRod
     20,WAILMER,25,45
@@ -626,6 +627,17 @@ Cave,5
     7,ARON,7,10
     2,MAKUHITA,7,10
     1,BELDUM,7,10
+#-------------------------------
+[373] # New Mauville
+Cave,5
+    20,JOLTIK,24,26
+    20,MAGNEMITE,24,26
+    20,MAREEP,23,24
+    15,KLINK,22,24
+    15,SHINX,23,24
+    7,DIGLETT_1,24,27
+    2,ELEKID,26
+    1,DRILBUR,26
 #-------------------------------
 [377] # Route 119
 Land,15
