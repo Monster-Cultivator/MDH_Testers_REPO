@@ -3051,14 +3051,14 @@ BaseExp = 350
 [ABOMINACEON,1]
 FormName = Fire
 Types = FIRE
-Abilities = ADAPTABILITY
+Abilities = HUSTLE
 #--------------------------------
 [ABOMINACEON,2]
 FormName = Water
 Types = WATER
-Abilities = ADAPTABILITY
+Abilities = HYDRATION
 #--------------------------------
 [ABOMINACEON,3]
 FormName = Electric
 Types = ELECTRIC
-Abilities = ADAPTABILITY
+Abilities = SURGESURFER

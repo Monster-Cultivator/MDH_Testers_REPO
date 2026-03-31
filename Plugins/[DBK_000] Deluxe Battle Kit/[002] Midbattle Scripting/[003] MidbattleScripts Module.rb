@@ -2263,6 +2263,7 @@ LEAFEON_BOSS = {
 ABOMINACEON_INTRO_MIDBATTLE = {
   "RoundStartCommand_1_foe" => {
     "setVariable"   => 0,
+	"changeBGM" => "ULT_BattleLegendary",
     "setChoices"    => [:Gen1, nil, {
       "Fire Core"   => "You take aim for the Fire Core!",
       "Water Core"  => "You take aim for the Water Core!",
@@ -2273,14 +2274,14 @@ ABOMINACEON_INTRO_MIDBATTLE = {
   # Phase 1 Choices
   "Choice_Gen1_1" => { # Fire
 	"changeWeather" => :Sun,
-    "battlerStats" => [:ATTACK, 2, :SPEED, 1, :SPECIAL_DEFENSE, 1, :DEFENSE, 1],
+    "battlerStats" => [:ATTACK, 2, :SPEED, 1, :SPECIAL_DEFENSE, 1],
 	"battlerMoves" => [:RAGINGFURY, :EARTHQUAKE, :SOLARBLADE, :DRAGONDANCE],
     "battlerForm" => 1,
     "text"         => "You targeted the Fire part!"
   },
   "Choice_Gen1_2" => { # Water
 	"changeWeather" => :Rain,
-    "battlerStats" => [:ATTACK, 1, :SPEED, 1, :SPECIAL_DEFENSE, 2, :DEFENSE, 1],
+    "battlerStats" => [:SPECIAL_ATTACK, 1, :SPEED, 1, :SPECIAL_DEFENSE, 2],
 	"battlerMoves" => [:WEATHERBALL, :SCALD, :HURRICANE, :NASTYPLOT],
     "battlerForm" => 2,
     "text"         => "You targeted the Water part!"
