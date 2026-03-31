@@ -3051,14 +3051,17 @@ BaseExp = 350
 [ABOMINACEON,1]
 FormName = Fire
 Types = FIRE
-Abilities = HUSTLE
+Abilities = LEAFGUARD
+BaseStats = 300,250,200,200,225,225
 #--------------------------------
 [ABOMINACEON,2]
 FormName = Water
 Types = WATER
 Abilities = HYDRATION
+BaseStats = 300,200,200,225,250,225
 #--------------------------------
 [ABOMINACEON,3]
 FormName = Electric
 Types = ELECTRIC
 Abilities = SURGESURFER
+BaseStats = 300,225,200,250,250,225
