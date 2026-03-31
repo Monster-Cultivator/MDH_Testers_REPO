@@ -2208,7 +2208,7 @@ LEAFEON_BOSS = {
     "text" => "The tree form shrugs off all attacks!"
   },
   "TargetTookDamage_foe_repeat" => {
-    "ignoreAfter" => "Variable_12",
+    "ignoreAfter" => "Variable_6",
     "addVariable" => 1,
     "battlerHP" => [100, "The ancient tree absorbs the blow into its bark!"],
     "playAnim" => [:WOODHAMMER, :Opposing, :Self],
@@ -2234,27 +2234,29 @@ LEAFEON_BOSS = {
     "battlerHP" => [12, "{1} draws vitality from the rain!"]
   },
   "TargetHPHalf_foe" => {
-    "ignoreAfter" => "Variable_12",
+    "ignoreUntil" => "Variable_6",
     "battlerHP" => [100, "Leafeon melds back into the tree!"],
     "battlerForm" => [1, "The shattered tree miraculously reforms!"],
     "battlerHPCap" => 100,
     "playSE" => "Anim/GrassyTerrain",
     "text" => "The guardian endures!"
   },
-  "Variable_9" => {
-    "battlerForm" => [2, "Deep fissures crack open in the reformed tree!"],
+  "Variable_3" => {
+	"ignoreUntil" => "TargetHPHalf_foe",
+    "battlerForm" => [2, "Cracks spiderweb across the tree bark!"],
     "playSE" => "Mining collapse",
-    "text" => "The tree strains under the assault!"
+    "text" => "The tree trembles!"
   },
-  "Variable_12" => {
-    "battlerForm" => [0, "The tree explodes in a burst of leaves!"],
+  "Variable_6" => {
+	"ignoreUntil" => "TargetHPHalf_foe",
+    "battlerForm" => [0, "The tree shatters spectacularly!"],
     "battlerHPCap" => -1,
-    "changeWeather" => :Sun,
-    "battlerStats" => [:ATTACK, 3, :SPEED, 3, :EVASION, 2],
-    "speech" => ["Leafeon reveals her true fury!\nFeel the sun's wrath!"],
-    "playSE" => "Anim/SunnyDay",
-    "playAnim" => [:SUNNYDAY, :Self],
-    "text" => "Leafeon surges with solar power!"
+    "changeWeather" => :Rain,
+	"battlerMoves" => [:DEFENSECURL,nil,nil,nil],
+    "battlerStats" => [:DEFENSE, -6, :SPECIAL_DEFENSE, -6, :ATTACK, -6, :SPEED, -6, :SPECIAL_ATTACK, -6],
+    "speech" => ["Leafeon emerges!\nThe rain nourishes her!"],
+    "playSE" => "Anim/Rain",
+    "text" => "Leafeon doesn't want to battle."
   }
 }
 
@@ -2273,21 +2275,21 @@ ABOMINACEON_INTRO_MIDBATTLE = {
 	"changeWeather" => :Sun,
     "battlerStats" => [:ATTACK, 2, :SPEED, 2, :SPECIAL_DEFENSE, 1, :DEFENSE, 1],
 	"battlerMoves" => [:RAGINGFURY, :EARTHQUAKE, :SOLARBLADE, :DRAGONDANCE],
-    "battlerForm" => 2,
+    "battlerForm" => 1,
     "text"         => "You targeted the Fire part!"
   },
   "Choice_Gen1_2" => { # Water
 	"changeWeather" => :Rain,
     "battlerStats" => [:ATTACK, 1, :SPEED, 2, :SPECIAL_DEFENSE, 2, :DEFENSE, 1],
 	"battlerMoves" => [:WEATHERBALL, :SCALD, :HURRICANE, :NASTYPLOT],
-    "battlerForm" => 3,
+    "battlerForm" => 2,
     "text"         => "You targeted the Water part!"
   },
   "Choice_Gen1_3" => { # Electric
 	"changeTerrain" => :Electric,
     "battlerStats" => [:SPECIAL_ATTACK, 1, :SPEED, 3, :ATTACK, 1],
 	"battlerMoves" => [:PSYBLADE, :THUNDERCAGE, :NORETREAT, :THUNDERBOLT],
-    "battlerForm" => 4,
+    "battlerForm" => 3,
     "text"         => "You targeted the electric part!"
   },
   "BeforeStatusMove_foe_repeat" => {
@@ -2433,6 +2435,7 @@ HERO_DUO_MIDBATTLE = {
     "setVariable"   => 0,
     "battlerForm"   => [1, "The heroic duo stands ready!"],
     "changeTerrain" => :Electric,
+	"battlerHPCap" => 49,
     "battlerStats"  => [:SPEED, 2, :EVASION, 1, :SPECIAL_ATTACK, 1],
     "playSE"        => "Anim/Charge",
     "playAnim"      => [:BULKUP, :Self],
@@ -2455,19 +2458,16 @@ HERO_DUO_MIDBATTLE = {
 	"setBattler" => :Opposing,
 	"battlerStats" => [:ATTACK, -1, :SPECIAL_ATTACK, -1, :SPECIAL_DEFENSE, -2]	
   },
-  "TargetHPHalf_foe" => {
-    "ignoreAfter"   => "BattlerHPCritical_foe",
+  "BattlerReachedHPCap_foe" => {
     "text"          => "Heroic energy surges through their shared core!",
     "battlerHP"     => [40],
     "battlerStats"  => [:SPECIAL_DEFENSE, 2, :SPEED, 1],
-    "teamEffects"   => [:Reflect, 4],
     "playSE"        => "Anim/Recover"
   },
   "BattlerHPCritical_foe" => {
     "changeBackdrop" => "city_night",
     "battlerHP"      => [60],
     "battlerStats"   => [:ATTACK, 2, :SPECIAL_ATTACK, 2, :SPEED, 2],
-    "teamEffects"    => [:Rainbow, 5],
     "playSE"         => "Anim/MaxLightning",
     "playCry"        => :Self
   }

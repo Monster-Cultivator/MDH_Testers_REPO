@@ -3049,21 +3049,16 @@ BaseStats = 600,120,700,1,120,700
 BaseExp = 350
 #--------------------------------
 [ABOMINACEON,1]
-FormName = Fire Water Electric
-Moves = 0,WEATHERBALL,1,TRIATTACK,1,ARMORPIERCER,1,GATLINGRUSH
+FormName = Fire
+Types = FIRE
+Abilities = ADAPTABILITY
 #--------------------------------
 [ABOMINACEON,2]
-FormName = Water Electric
-BaseStats = 160,105,110,200,250,110
-Moves = 0,STRENGTHSAP,1,TRIATTACK,1,ARMORPIERCER,1,GATLINGRUSH
+FormName = Water
+Types = WATER
+Abilities = ADAPTABILITY
 #--------------------------------
 [ABOMINACEON,3]
 FormName = Electric
-BaseStats = 160,105,110,200,250,110
-Moves = 0,STRENGTHSAP,1,TRIATTACK,1,ARMORPIERCER,1,GATLINGRUSH
-#--------------------------------
-[ABOMINACEON,4]
-FormName = Electric craft
-Abilities = IMPOSTER
-BaseStats = 160,105,110,200,250,110
-Moves = 0,STRENGTHSAP,1,TRIATTACK,1,ARMORPIERCER,1,GATLINGRUSH
+Types = ELECTRIC
+Abilities = ADAPTABILITY

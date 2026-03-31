@@ -146,3 +146,12 @@ Innates = OVERCOAT,THERMALEXCHANGE,BEASTBOOST
 #-------------------------------
 [ABOMINACEON]
 Innates = TINTEDLENS,THERMALEXCHANGE,BEASTBOOST
+#-------------------------------
+[ABOMINACEON_1]
+Innates = TINTEDLENS,FLASHFIRE,BEASTBOOST
+#-------------------------------
+[ABOMINACEON_2]
+Innates = TINTEDLENS,WATERABSORB,BEASTBOOST
+#-------------------------------
+[ABOMINACEON_3]
+Innates = TINTEDLENS,VOLTABSORB,BEASTBOOST
