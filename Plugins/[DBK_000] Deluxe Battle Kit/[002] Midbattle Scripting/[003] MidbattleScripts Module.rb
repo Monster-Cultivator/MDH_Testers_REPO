@@ -2273,21 +2273,21 @@ ABOMINACEON_INTRO_MIDBATTLE = {
   # Phase 1 Choices
   "Choice_Gen1_1" => { # Fire
 	"changeWeather" => :Sun,
-    "battlerStats" => [:ATTACK, 2, :SPEED, 2, :SPECIAL_DEFENSE, 1, :DEFENSE, 1],
+    "battlerStats" => [:ATTACK, 2, :SPEED, 1, :SPECIAL_DEFENSE, 1, :DEFENSE, 1],
 	"battlerMoves" => [:RAGINGFURY, :EARTHQUAKE, :SOLARBLADE, :DRAGONDANCE],
     "battlerForm" => 1,
     "text"         => "You targeted the Fire part!"
   },
   "Choice_Gen1_2" => { # Water
 	"changeWeather" => :Rain,
-    "battlerStats" => [:ATTACK, 1, :SPEED, 2, :SPECIAL_DEFENSE, 2, :DEFENSE, 1],
+    "battlerStats" => [:ATTACK, 1, :SPEED, 1, :SPECIAL_DEFENSE, 2, :DEFENSE, 1],
 	"battlerMoves" => [:WEATHERBALL, :SCALD, :HURRICANE, :NASTYPLOT],
     "battlerForm" => 2,
     "text"         => "You targeted the Water part!"
   },
   "Choice_Gen1_3" => { # Electric
 	"changeTerrain" => :Electric,
-    "battlerStats" => [:SPECIAL_ATTACK, 1, :SPEED, 3, :ATTACK, 1],
+    "battlerStats" => [:SPECIAL_ATTACK, 1, :SPEED, 2, :ATTACK, 1],
 	"battlerMoves" => [:PSYBLADE, :THUNDERCAGE, :NORETREAT, :THUNDERBOLT],
     "battlerForm" => 3,
     "text"         => "You targeted the electric part!"
