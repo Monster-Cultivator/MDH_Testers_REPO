@@ -129,6 +129,9 @@ Innates = ONETWO
 [WHIMSICOTT_1]
 Innates = AIRSUPPORT
 #-------------------------------
+[WHIMSICOTTud]
+Innates = WINDRIDER
+#-------------------------------
 [CORVIKNIGHT_2]
 Innates = TINTEDLENS
 #-------------------------------

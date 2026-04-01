@@ -2297,7 +2297,7 @@ ABOMINACEON_INTRO_MIDBATTLE = {
     "addVariable" => 1,
     "setBattler" => :Opposing,
 	"battlerHP" => -8,
-	"text" => ["{1} sees you're lack of aggregation as an opening!"]
+	"text" => ["{1} sees you're lack of aggression as an opening!"]
   }
 }
 
