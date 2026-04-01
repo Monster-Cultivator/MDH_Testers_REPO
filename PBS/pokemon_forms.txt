@@ -2957,9 +2957,8 @@ Flags = Legendary,TeraType_STELLAR
 FormName = Busted
 Pokedex = What... what is that thing?
 #--------------------------------
-[PENNY,2]
-FormName = Pennys?!
-Abilities = DISGUISE
+[PENNY_2,1]
+FormName = Busted
 BaseStats = 5,120,30,220,95,40
 Pokedex = What... what is that thing?
 #--------------------------------

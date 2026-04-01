@@ -862,12 +862,6 @@ Battle::AbilityEffects::OnSwitchIn.add(:ANTITHESIS,
     battler.eachOpposing do |opponent|
       next unless opponent.pokemon.species_data.has_flag?("Entities")  # Check if the opponent has the Restricted flag
 
-      # Trap the opponent
-      battle.pbShowAbilitySplash(battler)
-      opponent.effects[PBEffects::Trapping] = battler
-      opponent.effects[PBEffects::TrappingMove] = battler.lastMoveUsed
-      battle.pbDisplay(_INTL("{1}'s {2} trapped {3}!", battler.pbThis, battler.abilityName, opponent.pbThis(true)))
-
       # Lower all of the opponent's stats by one stage
       lowered_stats = [:ATTACK, :DEFENSE, :SPEED, :SPECIAL_ATTACK, :SPECIAL_DEFENSE, :EVASION]
       lowered_stats.each do |stat|

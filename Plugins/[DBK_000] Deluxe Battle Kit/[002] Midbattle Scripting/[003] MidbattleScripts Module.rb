@@ -2261,6 +2261,11 @@ LEAFEON_BOSS = {
 }
 
 ABOMINACEON_INTRO_MIDBATTLE = {
+"AfterSendOut_PENNY" => {
+    "battlerEvolve" => [:PENNY_2],
+	"setSpeaker" => :MUDKIP,
+    "speech"       => ["They . . . evolved?!"]
+    },
   "RoundStartCommand_1_foe" => {
     "setVariable"   => 0,
 	"changeBGM" => "ULT_BattleLegendary",
