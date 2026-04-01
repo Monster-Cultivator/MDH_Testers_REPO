@@ -10592,9 +10592,10 @@ DmaxFrontSprite = 0,0
 #-------------------------------
 [FROGADIERh]
 BackSprite = 0,0
-FrontSprite = 0,0
+FrontSprite = 0,23
 ShadowX = 0
 ShadowSize = 2
+DmaxFrontSprite = 0,0
 #-------------------------------
 [MAWILEmgq]
 BackSprite = 0,36
@@ -10616,4 +10617,11 @@ FrontSprite = 0,17
 ShadowX = 0
 ShadowSize = 2
 DmaxBackSprite = 0,0
+DmaxFrontSprite = 0,0
+#-------------------------------
+[VAPOREONmgq]
+BackSprite = 0,0
+FrontSprite = -11,13
+ShadowX = 0
+ShadowSize = 2
 DmaxFrontSprite = 0,0

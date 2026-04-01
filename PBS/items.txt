@@ -7396,6 +7396,28 @@ FieldUse = OnPokemon
 Flags = EvolutionStone,Fling_30
 Description = A strange golden coin. It makes certain species of Pokémon evolve!
 #-------------------------------
+[FROZENHEART]
+Name = Frozen Heart
+NamePlural = Frozen Hearts
+Pocket = 1
+Price = 10000
+SellPrice = 750
+BPPrice = 5
+FieldUse = OnPokemon
+Flags = EvolutionStone,Fling_30
+Description = A soul chilled by a ghostly frost. It makes certain species of Pokémon evolve!
+#-------------------------------
+[MIZUHAARMOR]
+Name = Mizuha Armor
+NamePlural = Mizuha Armor
+Pocket = 1
+Price = 10000
+SellPrice = 750
+BPPrice = 5
+FieldUse = OnPokemon
+Flags = EvolutionStone,Fling_30
+Description = Armor woven with flowing scales and pale mist. It makes certain species of Pokémon evolve!
+#-------------------------------
 [DHAMPIRRAPIER]
 Name = Dhampir Rapier
 NamePlural = Dhampir Rapiers
