@@ -1295,3 +1295,7 @@ Description = User's Sound-Based moves turn into Flying-Type.
 [ICEFORCE]
 Name = Ice Force
 Description = In Hail, Sp. Atk is boosted but HP decreases.
+#-------------------------------
+[ANTITHESIS]
+Name = Antithesis
+Description = Weakens unnatural Pokemon

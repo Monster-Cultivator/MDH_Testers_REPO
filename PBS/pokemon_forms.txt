@@ -2957,6 +2957,12 @@ Flags = Legendary,TeraType_STELLAR
 FormName = Busted
 Pokedex = What... what is that thing?
 #--------------------------------
+[PENNY,2]
+FormName = Pennys?!
+Abilities = DISGUISE
+BaseStats = 5,120,30,220,95,40
+Pokedex = What... what is that thing?
+#--------------------------------
 [ZOEGRIZZBOLT,1]
 FormName = Zoe
 Moves = 0,STRENGTHSAP,1,TRIATTACK,1,ARMORPIERCER,1,NASTYPLOT

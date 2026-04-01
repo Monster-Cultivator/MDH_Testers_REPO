@@ -31197,7 +31197,7 @@ Category = Cotton Puff
 Pokedex = They go wherever the wind takes them. On rainy days, their bodies are heavier, so they take shelter beneath big trees.
 Generation = 5
 WildItemUncommon = ABSORBBULB
-Evolutions = WHIMSICOTT_1,Item,SUNSTONE
+Evolutions = WHIMSICOTT_1,Item,SUNSTONE,WHIMSICOTTud,Item,BIGFAIRYDRESS
 CallRateSOS = 9
 RaidRanks = 3,4,5
 #-------------------------------
@@ -31839,7 +31839,7 @@ Kind = Evolution
 Pokedex = Thanks to its unstable genetic makeup, this special Pokémon conceals many different possible evolutions.
 Generation = 1
 RaidRanks = 3,4,5
-
+Flags = Entities
 #-------------------------------
 [FEEBASh]
 Name = Feebas

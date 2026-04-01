@@ -4,6 +4,12 @@ MultipleForms.register(:PENNY, {
   }
 })
 
+MultipleForms.register(:PENNY_2, {
+  "getFormOnLeavingBattle" => proc { |pkmn, battle, usedInBattle, endBattle|
+    next 0 if pkmn.fainted? || endBattle
+  }
+})
+
 class Battle::Move
   def pbCheckDamageAbsorption(user, target)
     # Substitute will take the damage
@@ -19,7 +25,7 @@ class Battle::Move
       return
     end
     # Disguise
-    if !@battle.moldBreaker && (target.isSpecies?(:MIMIKYU) || target.isSpecies?(:PENNY)) &&
+    if !@battle.moldBreaker && (target.isSpecies?(:MIMIKYU) || target.isSpecies?(:PENNY) || target.isSpecies?(:PENNY_2)) &&
       target.form == 0 && target.ability == :DISGUISE
       target.damageState.disguise = true
     end

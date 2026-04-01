@@ -10576,8 +10576,8 @@ DmaxBackSprite = 0,0
 DmaxFrontSprite = 0,0
 #-------------------------------
 [PLUSLEMINUN]
-BackSprite = 0,48
-FrontSprite = 0,28
+BackSprite = 0,36
+FrontSprite = 0,19
 ShadowX = 0
 ShadowSize = 1
 DmaxBackSprite = 0,0
@@ -10588,4 +10588,32 @@ BackSprite = 0,0
 FrontSprite = 0,8
 ShadowX = 0
 ShadowSize = 2
+DmaxFrontSprite = 0,0
+#-------------------------------
+[FROGADIERh]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[MAWILEmgq]
+BackSprite = 0,36
+FrontSprite = 0,11
+ShadowX = 0
+ShadowSize = 2
+DmaxBackSprite = 0,0
+DmaxFrontSprite = 0,0
+#-------------------------------
+[LEAFEONx]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[WHIMSICOTTud]
+BackSprite = 0,36
+FrontSprite = 0,17
+ShadowX = 0
+ShadowSize = 2
+DmaxBackSprite = 0,0
 DmaxFrontSprite = 0,0

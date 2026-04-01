@@ -852,6 +852,44 @@ Battle::AbilityEffects::OnSwitchIn.add(:REDCHAIN,
     end
   }
 )
+
+#===============================================
+# Red Chain
+# Lake Trio Unique Ability. Might be TOO busted, but idk.
+#===============================================
+Battle::AbilityEffects::OnSwitchIn.add(:ANTITHESIS,
+  proc { |ability, battler, battle|
+    battler.eachOpposing do |opponent|
+      next unless opponent.pokemon.species_data.has_flag?("Entities")  # Check if the opponent has the Restricted flag
+
+      # Trap the opponent
+      battle.pbShowAbilitySplash(battler)
+      opponent.effects[PBEffects::Trapping] = battler
+      opponent.effects[PBEffects::TrappingMove] = battler.lastMoveUsed
+      battle.pbDisplay(_INTL("{1}'s {2} trapped {3}!", battler.pbThis, battler.abilityName, opponent.pbThis(true)))
+
+      # Lower all of the opponent's stats by one stage
+      lowered_stats = [:ATTACK, :DEFENSE, :SPEED, :SPECIAL_ATTACK, :SPECIAL_DEFENSE, :EVASION]
+      lowered_stats.each do |stat|
+        if opponent.hasActiveAbility?(:CONTRARY)
+          # Contrary check. Also want to notify the user that they've been bamboozled.
+          if opponent.pbCanRaiseStatStage?(stat, battler, Battle::Scene::USE_ABILITY_SPLASH)
+            opponent.pbRaiseStatStage(stat, 1, battler)
+            battle.pbDisplay(_INTL("{1}'s Contrary inverted the stat drop!", opponent.pbThis))
+          end
+        else
+          # Normal stat-lowering behavior
+          if opponent.pbCanLowerStatStage?(stat, battler, Battle::Scene::USE_ABILITY_SPLASH)
+            opponent.pbLowerStatStage(stat, 1, battler)
+          end
+        end
+      end
+
+      battle.pbHideAbilitySplash(battler)
+    end
+  }
+)
+
 #==================================================
 # Time Warp!
 #==================================================

@@ -7385,6 +7385,17 @@ FieldUse = OnPokemon
 Flags = EvolutionStone,Fling_30
 Description = A Scythe who's oxner govern black masses! It makes certain species of Pokémon evolve!
 #-------------------------------
+[MIMICGOLD]
+Name = Mimic Gold
+NamePlural = Mimic Golds
+Pocket = 1
+Price = 10000
+SellPrice = 750
+BPPrice = 5
+FieldUse = OnPokemon
+Flags = EvolutionStone,Fling_30
+Description = A strange golden coin. It makes certain species of Pokémon evolve!
+#-------------------------------
 [DHAMPIRRAPIER]
 Name = Dhampir Rapier
 NamePlural = Dhampir Rapiers
