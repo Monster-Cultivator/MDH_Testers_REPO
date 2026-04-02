@@ -1064,6 +1064,12 @@ BattleBack = cave1
 TrainerBattleBGM = Trainer Battle.mp3
 #-------------------------------
 [377]   # Route 119
+Name = Route 119
+Outdoor = true
+ShowArea = true
+Bicycle = true
+BattleBack = field
+TrainerBattleBGM = Trainer Battle.mp3
 #-------------------------------
 [390]   # Verdanturf City
 Name = Verdanturf City
