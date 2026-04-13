@@ -36,40 +36,49 @@ Battle::AbilityEffects::DamageCalcFromUser.add(:ASSUREDVICTORY,
 # Dual Wield
 # Ceruledge, Lopunny, [Blastoise (Please?)]
 #===============================================================================
+#===============================================================================
+# Dual Wield
+# Ceruledge, Lopunny, [Blastoise (Please?)]
+#===============================================================================
 class Battle::Move
-	alias mag_pbNumHits pbNumHits
-	def pbNumHits(user, targets)
-		mag_pbNumHits(user, targets)
-		if user.hasActiveAbility?(:DUALWIELD) && pbDamagingMove? &&
-			!chargingTurnMove? && targets.length == 1
+    alias mag_pbNumHits pbNumHits
+    def pbNumHits(user, targets)
+        mag_pbNumHits(user, targets)
+        if user.hasActiveAbility?(:DUALWIELD) && pbDamagingMove? &&
+            !chargingTurnMove? && targets.length == 1
         if slicingMove? || pulseMove?
         # Record that Parental Bond applies, to weaken the second attack
-				user.effects[PBEffects::ParentalBond] = 3
-				return 2
-			end
-		end
-		# Encore
-		if user.hasActiveAbility?(:ENCORE) && pbDamagingMove? &&
-			!chargingTurnMove? && targets.length == 1
+                user.effects[PBEffects::ParentalBond] = 3
+                return 2
+            end
+        end
+        # Encore
+        if user.hasActiveAbility?(:ENCORE) && pbDamagingMove? &&
+            !chargingTurnMove? && targets.length == 1
         if soundMove?
-				# Record that Parental Bond applies, to weaken the second attack
-				user.effects[PBEffects::ParentalBond] = 3
-				return 2
-			end
-		end
-		# One-Two
-		if user.hasActiveAbility?(:ONETWO) && pbDamagingMove? &&
-			!chargingTurnMove? && targets.length == 1
+                # Record that Parental Bond applies, to weaken the second attack
+                user.effects[PBEffects::ParentalBond] = 3
+                return 2
+            end
+        end
+        # One-Two
+        if user.hasActiveAbility?(:ONETWO) && pbDamagingMove? &&
+            !chargingTurnMove? && targets.length == 1
         if punchingMove?
-				# Record that Parental Bond applies, to weaken the second attack
-				user.effects[PBEffects::ParentalBond] = 3
-				return 2
-			end
-		end
-		return 1
-	end
+                # Record that Parental Bond applies, to weaken the second attack
+                user.effects[PBEffects::ParentalBond] = 3
+                return 2
+            end
+    end
+    if user.hasActiveAbility?(:PARENTALBOND) && pbDamagingMove? &&
+       !chargingTurnMove? && targets.length == 1
+        # Record that Parental Bond applies, to weaken the second attack
+        user.effects[PBEffects::ParentalBond] = 3
+      return 2
+        end
+        return 1
+    end
 end
-
 
 #===============================================================================
 # Encore
