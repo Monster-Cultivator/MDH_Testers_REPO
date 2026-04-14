@@ -207,9 +207,11 @@ MapPosition = 2,11,7
 MapSize = 1,111
 #-------------------------------
 [042]   # Birch's lab
+Name = Birch's lab
 MapPosition = 0,5,13
 #-------------------------------
 [043]   # Dawn's Home
+Name = Dawn's Home
 MapPosition = 0,5,13
 #-------------------------------
 [044]   # Route 6
@@ -243,6 +245,7 @@ MapSize = 2,11
 Environment = Rock
 #-------------------------------
 [048]   # Dawn's Room
+Name = Dawn's Room
 MapPosition = 0,5,13
 #-------------------------------
 [049]   # Rock Cave
@@ -401,9 +404,11 @@ MapPosition = 1,13,16
 BattleBack = city
 #-------------------------------
 [076]   # May's House
+Name = May's House
 MapPosition = 0,5,13
 #-------------------------------
 [077]   # May's Home
+Name = May's Home
 MapPosition = 0,5,13
 #-------------------------------
 [080]   # Route 101
@@ -444,18 +449,23 @@ ShowArea = true
 MapPosition = 0,5,11
 #-------------------------------
 [088]   # Oldale Pc
+Name = Oldale Pc
 MapPosition = 0,5,11
 #-------------------------------
 [089]   # Oldale Pc
+Name = Oldale Pc
 MapPosition = 0,5,11
 #-------------------------------
 [090]   # Oldale Mart
+Name = Oldale Mart
 MapPosition = 0,5,11
 #-------------------------------
 [091]   # Oldale Town Home
+Name = Oldale Town Home
 MapPosition = 0,5,11
 #-------------------------------
 [092]   # Oldale sell Home
+Name = Oldale sell Home
 MapPosition = 0,5,11
 #-------------------------------
 [094]   # Route 102 Underground
@@ -471,12 +481,15 @@ ShowArea = true
 MapPosition = 0,2,11
 #-------------------------------
 [096]   # Petalburg PC
+Name = Petalburg PC
 MapPosition = 0,2,11
 #-------------------------------
 [097]   # Petalburg Pc
+Name = Petalburg Pc
 MapPosition = 0,2,11
 #-------------------------------
 [098]   # Petalburg Mart
+Name = Petalburg Mart
 MapPosition = 0,2,11
 #-------------------------------
 [099]   # Route 101 Underground
@@ -486,15 +499,19 @@ SnapEdges = true
 BattleBack = cave4
 #-------------------------------
 [100]   # Petalburg Gym
+Name = Petalburg Gym
 MapPosition = 0,2,11
 #-------------------------------
 [101]   # Petalburg Home
+Name = Petalburg Home
 MapPosition = 0,2,11
 #-------------------------------
 [102]   # Petalburg Home
+Name = Petalburg Home
 MapPosition = 0,2,11
 #-------------------------------
 [103]   # Wally's Home
+Name = Wally's Home
 MapPosition = 0,2,11
 #-------------------------------
 [104]   # Route 104
@@ -523,6 +540,7 @@ MapPosition = 0,1,7
 MapSize = 1,11
 #-------------------------------
 [107]   # Mr. Briney's Home
+Name = Mr. Briney's Home
 MapPosition = 0,1,11
 #-------------------------------
 [108]   # Grass Area
@@ -540,6 +558,7 @@ MapPosition = 0,1,11
 BattleBack = cave1
 #-------------------------------
 [111]   # Pretty Petal Flower Shop
+Name = Pretty Petal Flower Shop
 MapPosition = 0,1,9
 #-------------------------------
 [112]   # Route 116
@@ -552,38 +571,47 @@ TrainerBattleBGM = Trainer Battle.mp3
 MapSize = 4,1111
 #-------------------------------
 [115]   # Rustboro City Apartment
+Name = Rustboro City Apartment
 MapPosition = 0,1,8
 MapSize = 1,1
 #-------------------------------
 [116]   # Rustboro Home
+Name = Rustboro Home
 MapPosition = 0,1,7
 MapSize = 1,11
 #-------------------------------
 [117]   # Rustboro Home
+Name = Rustboro Home
 MapPosition = 0,1,8
 MapSize = 1,1
 #-------------------------------
 [118]   # Gal Goodgirl's office
+Name = Gal Goodgirl's office
 MapPosition = 0,1,7
 MapSize = 1,1
 #-------------------------------
 [119]   # Rustboro Apartment
+Name = Rustboro Apartment
 MapPosition = 0,1,7
 MapSize = 1,11
 #-------------------------------
 [120]   # Rustboro Home
+Name = Rustboro Home
 MapPosition = 0,1,7
 MapSize = 1,1
 #-------------------------------
 [121]   # Trainer School
+Name = Trainer School
 MapPosition = 0,1,7
 MapSize = 1,11
 #-------------------------------
 [122]   # Devon Corporation
+Name = Devon Corporation
 MapPosition = 0,1,7
 MapSize = 1,1
 #-------------------------------
 [123]   # Rustboro City Pc
+Name = Rustboro City Pc
 MapPosition = 0,1,7
 MapSize = 1,11
 #-------------------------------
@@ -602,6 +630,7 @@ BattleBack = cave1
 TrainerBattleBGM = Trainer Battle.mp3
 #-------------------------------
 [127]   # Hoeen Underground House
+Name = Hoeen Underground House
 MapPosition = 0,3,7
 #-------------------------------
 [128]   # Route 115
@@ -623,12 +652,15 @@ MapPosition = 0,3,16
 BattleBack = water
 #-------------------------------
 [133]   # Dewford Home
+Name = Dewford Home
 MapPosition = 0,3,16
 #-------------------------------
 [134]   # Dewford Home
+Name = Dewford Home
 MapPosition = 0,3,16
 #-------------------------------
 [135]   # Dewford Home
+Name = Dewford Home
 MapPosition = 0,3,16
 #-------------------------------
 [136]   # Route 105
@@ -667,9 +699,11 @@ MapPosition = 0,2,16
 BattleBack = water
 #-------------------------------
 [141]   # Dewford Town PC
+Name = Dewford Town PC
 MapPosition = 0,3,16
 #-------------------------------
 [142]   # Dewford Ranger Guild
+Name = Dewford Ranger Guild
 MapPosition = 0,3,16
 #-------------------------------
 [143]   # Granite Cave
@@ -717,6 +751,7 @@ MapPosition = 0,9,12
 MapSize = 1,11
 #-------------------------------
 [149]   # Slateport Harbor
+Name = Slateport Harbor
 MapPosition = 0,9,12
 #-------------------------------
 [150]   # Route 108
@@ -752,6 +787,7 @@ BattleBack = indoor5
 TrainerBattleBGM = Trainer Battle.mp3
 #-------------------------------
 [154]   # Shipyard
+Name = Shipyard
 MapPosition = 0,9,13
 #-------------------------------
 [155]   # Oceanic Museum
@@ -761,9 +797,11 @@ MapPosition = 0,9,12
 BattleBack = Oceanic
 #-------------------------------
 [156]   # Slateport PC
+Name = Slateport PC
 MapPosition = 0,9,12
 #-------------------------------
 [157]   # Slateport Mart
+Name = Slateport Mart
 MapPosition = 0,9,12
 #-------------------------------
 [158]   # Route 110
@@ -783,15 +821,19 @@ BattleBack = indoor5
 TrainerBattleBGM = Trainer Battle.mp3
 #-------------------------------
 [160]   # Battle Tent Room 2
+Name = Battle Tent Room 2
 MapPosition = 0,9,12
 #-------------------------------
 [161]   # Slateport City Home
+Name = Slateport City Home
 MapPosition = 0,9,12
 #-------------------------------
 [162]   # Pokemon Fan Club
+Name = Pokemon Fan Club
 MapPosition = 0,9,12
 #-------------------------------
 [163]   # Name Rater Home
+Name = Name Rater Home
 MapPosition = 0,9,12
 #-------------------------------
 [166]   # Cycling Road
@@ -801,6 +843,7 @@ MapPosition = 0,9,9
 MapSize = 1,101
 #-------------------------------
 [167]   # Trick House
+Name = Trick House
 MapPosition = 0,9,10
 #-------------------------------
 [168]   # Trick House 1
@@ -842,18 +885,23 @@ TrainerBattleBGM = Trainer Battle.mp3
 MapSize = 2,11
 #-------------------------------
 [178]   # Mauville Pc
+Name = Mauville Pc
 MapPosition = 0,10,8
 #-------------------------------
 [179]   # Mauville Mart
+Name = Mauville Mart
 MapPosition = 0,10,8
 #-------------------------------
 [180]   # Mauville City Home
+Name = Mauville City Home
 MapPosition = 0,10,8
 #-------------------------------
 [181]   # Mauville City Home
+Name = Mauville City Home
 MapPosition = 0,9,8
 #-------------------------------
 [182]   # Game Corner
+Name = Game Corner
 MapPosition = 0,9,8
 #-------------------------------
 [183]   # Mauville Gym
@@ -870,9 +918,11 @@ BattleBack = Gym3
 TrainerBattleBGM = Trainer Battle.mp3
 #-------------------------------
 [185]   # Bike Shop
+Name = Bike Shop
 MapPosition = 0,10,8
 #-------------------------------
 [186]   # Pokemon Daycare
+Name = Pokemon Daycare
 MapPosition = 0,8,8
 #-------------------------------
 [187]   # Verdanturf Town
@@ -896,6 +946,7 @@ Bicycle = true
 MapPosition = 0,9,2
 #-------------------------------
 [200]   # Winstrate Family Home
+Name = Winstrate Family Home
 MapPosition = 0,9,7
 #-------------------------------
 [201]   # Route 112
@@ -926,6 +977,7 @@ SnapEdges = true
 BattleBack = cave1
 #-------------------------------
 [206]   # Hoeen Underground House
+Name = Hoeen Underground House
 #-------------------------------
 [207]   # Fiery Path
 Name = Fiery Path
@@ -936,6 +988,7 @@ BattleBack = Fierycave
 TrainerBattleBGM = Trainer Battle.mp3
 #-------------------------------
 [208]   # Route 11 Home
+Name = Route 11 Home
 MapPosition = 0,9,2
 #-------------------------------
 [209]   # Route 113
@@ -957,18 +1010,23 @@ Bicycle = true
 MapPosition = 0,4,2
 #-------------------------------
 [212]   # Fallarbor Pc
+Name = Fallarbor Pc
 MapPosition = 0,4,2
 #-------------------------------
 [213]   # Fallarbor Mart
+Name = Fallarbor Mart
 MapPosition = 0,4,2
 #-------------------------------
 [214]   # Fallarbor Home
+Name = Fallarbor Home
 MapPosition = 0,4,2
 #-------------------------------
 [215]   # Fallarbor Home
+Name = Fallarbor Home
 MapPosition = 0,4,2
 #-------------------------------
 [216]   # Old Chateau
+Name = Old Chateau
 MapPosition = 0,6,7
 #-------------------------------
 [217]   # Route 114
@@ -983,15 +1041,19 @@ TrainerBattleBGM = Trainer Battle.mp3
 MapSize = 1,111
 #-------------------------------
 [218]   # Route 114 Border
+Name = Route 114 Border
 MapPosition = 0,2,2
 #-------------------------------
 [219]   # Landon's Home
+Name = Landon's Home
 MapPosition = 0,6,2
 #-------------------------------
 [220]   # Battle Tent
+Name = Battle Tent
 MapPosition = 0,4,2
 #-------------------------------
 [221]   # Battle Tent Room
+Name = Battle Tent Room
 MapPosition = 0,4,2
 #-------------------------------
 [222]   # Trick House 2
@@ -1001,6 +1063,7 @@ BattleBack = Trickhouse
 TrainerBattleBGM = Trainer Battle.mp3
 #-------------------------------
 [223]   # Fossil Home
+Name = Fossil Home
 MapPosition = 0,2,2
 #-------------------------------
 [224]   # Fossil Home
@@ -1009,6 +1072,7 @@ MapPosition = 0,2,2
 SnapEdges = true
 #-------------------------------
 [225]   # Lannette's Home
+Name = Lannette's Home
 MapPosition = 0,2,3
 #-------------------------------
 [226]   # Meteor Falls
@@ -1031,9 +1095,11 @@ BattleBack = Lava
 TrainerBattleBGM = Trainer Battle.mp3
 #-------------------------------
 [228]   # Cable Car
+Name = Cable Car
 MapPosition = 0,8,5
 #-------------------------------
 [229]   # Cable Car
+Name = Cable Car
 MapPosition = 0,8,5
 #-------------------------------
 [230]   # Jagged Pass
@@ -1055,15 +1121,19 @@ Bicycle = true
 MapPosition = 0,6,5
 #-------------------------------
 [232]   # Lavaridge Mart
+Name = Lavaridge Mart
 MapPosition = 0,6,5
 #-------------------------------
 [233]   # Lavaridge Home
+Name = Lavaridge Home
 MapPosition = 0,6,5
 #-------------------------------
 [234]   # Lavaridge Pc
+Name = Lavaridge Pc
 MapPosition = 0,6,5
 #-------------------------------
 [235]   # Herb Shop
+Name = Herb Shop
 MapPosition = 0,6,5
 #-------------------------------
 [236]   # Lavaridge Gym
@@ -1102,6 +1172,7 @@ SnapEdges = true
 BattleBack = 113
 #-------------------------------
 [241]   # Vulpix Basement
+Name = Vulpix Basement
 MapPosition = 0,5,11
 #-------------------------------
 [242]   # Petalburg Gym
@@ -1182,9 +1253,11 @@ BattleBack = ship2
 TrainerBattleBGM = Trainer Battle.mp3
 #-------------------------------
 [255]   # Abandoned Ship 6
+Name = Abandoned Ship 6
 MapPosition = 0,7,16
 #-------------------------------
 [256]   # Abandoned Ship 7
+Name = Abandoned Ship 7
 MapPosition = 0,7,16
 #-------------------------------
 [257]   # Abandoned Ship 8
@@ -1194,15 +1267,19 @@ BattleBack = ship2
 TrainerBattleBGM = Trainer Battle.mp3
 #-------------------------------
 [258]   # Abandoned Ship 9
+Name = Abandoned Ship 9
 MapPosition = 0,7,16
 #-------------------------------
 [259]   # Abandoned Ship 10
+Name = Abandoned Ship 10
 MapPosition = 0,7,16
 #-------------------------------
 [260]   # Abandoned Ship 11
+Name = Abandoned Ship 11
 MapPosition = 0,7,16
 #-------------------------------
 [261]   # Abandoned Ship 12
+Name = Abandoned Ship 12
 MapPosition = 0,7,16
 #-------------------------------
 [262]   # New Mauville
@@ -1393,12 +1470,15 @@ SnapEdges = true
 BattleBack = Den2
 #-------------------------------
 [313]   # Trick House
+Name = Trick House
 MapPosition = 0,9,10
 #-------------------------------
 [314]   # Trick House
+Name = Trick House
 MapPosition = 0,9,10
 #-------------------------------
 [315]   # Trick House
+Name = Trick House
 MapPosition = 0,9,10
 #-------------------------------
 [317]   # \PN's Home
@@ -1414,77 +1494,101 @@ BattleBack = indoor6
 TrainerBattleBGM = Trainer Battle.mp3
 #-------------------------------
 [319]   # Dewford Gym-won
+Name = Dewford Gym-won
 MapPosition = 0,3,16
 #-------------------------------
 [320]   # Ralts Basement
+Name = Ralts Basement
 MapPosition = 0,5,11
 #-------------------------------
 [322]   # Braixen Basement
+Name = Braixen Basement
 MapPosition = 0,5,11
 #-------------------------------
 [323]   # Eevee[1] Basement
+Name = Eevee[1] Basement
 MapPosition = 0,5,11
 #-------------------------------
 [324]   # Rocket Basement
+Name = Rocket Basement
 MapPosition = 0,1,7
 MapSize = 1,1
 #-------------------------------
 [325]   # Wak cave
+Name = Wak cave
 MapPosition = 0,5,7
 #-------------------------------
 [326]   # Mawile Basement
+Name = Mawile Basement
 MapPosition = 0,5,11
 #-------------------------------
 [327]   # Noibat Basement
+Name = Noibat Basement
 MapPosition = 0,5,11
 #-------------------------------
 [328]   # Magma&Aqua Cell
+Name = Magma&Aqua Cell
 MapPosition = 0,1,7
 MapSize = 1,1
 #-------------------------------
 [329]   # Wak chambers
+Name = Wak chambers
 MapPosition = 0,5,7
 #-------------------------------
 [332]   # Misdreavus Basement
+Name = Misdreavus Basement
 MapPosition = 0,5,11
 #-------------------------------
 [344]   # Goodra Cave
+Name = Goodra Cave
 MapPosition = 0,3,16
 #-------------------------------
 [345]   # Icicle Ruins
+Name = Icicle Ruins
 MapPosition = 0,5,10
 #-------------------------------
 [346]   # Icicle Ruins B1
+Name = Icicle Ruins B1
 MapPosition = 0,5,10
 #-------------------------------
 [347]   # Icicle Ruins
+Name = Icicle Ruins
 MapPosition = 0,5,10
 #-------------------------------
 [348]   # Petalburg Ranger Guild F2
+Name = Petalburg Ranger Guild F2
 MapPosition = 0,2,11
 #-------------------------------
 [349]   # Petalburg Ranger Guild F1
+Name = Petalburg Ranger Guild F1
 MapPosition = 0,2,11
 #-------------------------------
 [350]   # Old Chapel
+Name = Old Chapel
 MapPosition = 0,6,7
 #-------------------------------
 [351]   # Daybreak Chamber
+Name = Daybreak Chamber
 MapPosition = 0,3,16
 #-------------------------------
 [352]   # Pokemon Den
+Name = Pokemon Den
 MapPosition = 0,3,7
 #-------------------------------
 [353]   # Rustboro Ranger Guild
+Name = Rustboro Ranger Guild
 MapPosition = 0,1,8
 #-------------------------------
 [357]   # Old Chateau
+Name = Old Chateau
 MapPosition = 0,6,7
 #-------------------------------
 [359]   # Harrow Cave
+Name = Harrow Cave
 MapPosition = 0,5,7
 #-------------------------------
 [362]   # Route 102 GYM
+Name = Route 102 GYM
 MapPosition = 0,3,11
 #-------------------------------
 [363]   # Harrow Cave 2
@@ -1497,30 +1601,39 @@ BattleBack = cave1
 TrainerBattleBGM = Trainer Battle.mp3
 #-------------------------------
 [364]   # Route 102 Underground ft2
+Name = Route 102 Underground ft2
 MapPosition = 0,1,5
 #-------------------------------
 [365]   # Petalburg Groto
+Name = Petalburg Groto
 MapPosition = 0,1,9
 #-------------------------------
 [367]   # Fire Area
+Name = Fire Area
 MapPosition = 0,5,11
 #-------------------------------
 [369]   # Grave Area
+Name = Grave Area
 MapPosition = 0,5,11
 #-------------------------------
 [371]   # Ranger Guild F1
+Name = Ranger Guild F1
 MapPosition = 0,10,8
 #-------------------------------
 [372]   # Hidden Room
+Name = Hidden Room
 MapPosition = 0,10,9
 #-------------------------------
 [373]   # New Mauville
+Name = New Mauville
 MapPosition = 0,10,9
 #-------------------------------
 [375]   # Fortree City
+Name = Fortree City
 MapPosition = 0,13,2
 #-------------------------------
 [376]   # Lilycove City
+Name = Lilycove City
 MapPosition = 0,19,5
 MapSize = 2,11
 #-------------------------------
@@ -1535,13 +1648,16 @@ TrainerBattleBGM = Trainer Battle.mp3
 MapSize = 1,111111
 #-------------------------------
 [378]   # Route 123
+Name = Route 123
 MapPosition = 0,13,8
 MapSize = 5,11111
 #-------------------------------
 [383]   # Fiery Connector
+Name = Fiery Connector
 MapPosition = 0,7,4
 #-------------------------------
 [384]   # OLD VERDANTURF CITY!
+Name = OLD VERDANTURF CITY!
 MapPosition = 0,5,8
 #-------------------------------
 [390]   # Verdanturf City
@@ -1554,63 +1670,83 @@ Environment = TallGrass
 SpecialSOS = BULBASAUR,1,Any,Environment,TallGrass
 #-------------------------------
 [392]   # Verdanturf Home
+Name = Verdanturf Home
 MapPosition = 0,5,8
 #-------------------------------
 [393]   # Verdanturf Home
+Name = Verdanturf Home
 MapPosition = 0,5,8
 #-------------------------------
 [394]   # Wally's Home
+Name = Wally's Home
 MapPosition = 0,5,8
 #-------------------------------
 [395]   # Verdanturf Home
+Name = Verdanturf Home
 MapPosition = 0,5,8
 #-------------------------------
 [396]   # Vulpix Den
+Name = Vulpix Den
 MapPosition = 0,9,11
 #-------------------------------
 [397]   # Ranger Guild B1
+Name = Ranger Guild B1
 MapPosition = 0,10,8
 #-------------------------------
 [398]   # Game Corner Basement
+Name = Game Corner Basement
 MapPosition = 0,9,8
 #-------------------------------
 [399]   # Verdanturf Home
+Name = Verdanturf Home
 MapPosition = 0,5,8
 #-------------------------------
 [400]   # Fortree City Gym
+Name = Fortree City Gym
 MapPosition = 0,13,2
 #-------------------------------
 [401]   # Fortree City
+Name = Fortree City
 MapPosition = 0,13,2
 #-------------------------------
 [402]   # Verdanturf PC
+Name = Verdanturf PC
 MapPosition = 0,5,8
 #-------------------------------
 [403]   # Verdanturf Mart
+Name = Verdanturf Mart
 MapPosition = 0,5,8
 #-------------------------------
 [405]   # Game Corner
+Name = Game Corner
 MapPosition = 0,5,8
 #-------------------------------
 [407]   # Alolan Vulpix Basement
+Name = Alolan Vulpix Basement
 MapPosition = 0,5,11
 #-------------------------------
 [408]   # Rookidee Basement
+Name = Rookidee Basement
 MapPosition = 0,5,11
 #-------------------------------
 [409]   # Fomatis Basement
+Name = Fomatis Basement
 MapPosition = 0,5,11
 #-------------------------------
 [410]   # Eevee[2] Basement
+Name = Eevee[2] Basement
 MapPosition = 0,5,11
 #-------------------------------
 [411]   # Eevee[3] Basement
+Name = Eevee[3] Basement
 MapPosition = 0,5,11
 #-------------------------------
 [412]   # Game Corner
+Name = Game Corner
 MapPosition = 0,5,8
 #-------------------------------
 [413]   # Dragonair Basement
+Name = Dragonair Basement
 MapPosition = 0,5,11
 #-------------------------------
 [414]   # Trackless Forest
@@ -1627,9 +1763,11 @@ MapPosition = 0,6,7
 TrainerBattleBGM = Trainer Battle.mp3
 #-------------------------------
 [416]   # Whimsicott Basement
+Name = Whimsicott Basement
 MapPosition = 0,5,11
 #-------------------------------
 [417]   # Water Area
+Name = Water Area
 MapPosition = 0,5,11
 #-------------------------------
 [418]   # Lost Woods
@@ -1668,120 +1806,158 @@ TrainerBattleBGM = Trainer Battle.mp3
 Environment = Graveyard
 #-------------------------------
 [423]   # Lost Woods Grotto
+Name = Lost Woods Grotto
 MapPosition = 0,6,7
 #-------------------------------
 [424]   # Luxio Basement
+Name = Luxio Basement
 MapPosition = 0,5,11
 #-------------------------------
 [425]   # Inner Lost Woods
+Name = Inner Lost Woods
 MapPosition = 0,6,7
 #-------------------------------
 [426]   # PWT Lobby
+Name = PWT Lobby
 MapPosition = 0,5,8
 #-------------------------------
 [427]   # PWT
+Name = PWT
 MapPosition = 0,5,8
 #-------------------------------
 [428]   # Route 122
+Name = Route 122
 MapPosition = 0,17,6
 MapSize = 1,11
 #-------------------------------
 [429]   # Route 120
+Name = Route 120
 MapPosition = 0,14,2
 MapSize = 1,1111
 #-------------------------------
 [430]   # Mt. Pyre
+Name = Mt. Pyre
 MapPosition = 0,17,7
 #-------------------------------
 [431]   # Mt. Pyre
+Name = Mt. Pyre
 MapPosition = 0,17,7
 #-------------------------------
 [432]   # Mt. Pyre
+Name = Mt. Pyre
 MapPosition = 0,17,7
 #-------------------------------
 [433]   # Mt. Pyre
+Name = Mt. Pyre
 MapPosition = 0,17,7
 #-------------------------------
 [434]   # Mt. Pyre
+Name = Mt. Pyre
 MapPosition = 0,17,7
 #-------------------------------
 [435]   # Mt. Pyre
+Name = Mt. Pyre
 MapPosition = 0,17,7
 #-------------------------------
 [436]   # Mt. Pyre
+Name = Mt. Pyre
 MapPosition = 0,17,7
 #-------------------------------
 [437]   # Mt. Pyre Summit
+Name = Mt. Pyre Summit
 MapPosition = 0,17,7
 #-------------------------------
 [438]   # Route 118 Gate
+Name = Route 118 Gate
 MapPosition = 0,11,8
 #-------------------------------
 [439]   # Route 121
+Name = Route 121
 MapPosition = 0,15,5
 MapSize = 4,1111
 #-------------------------------
 [440]   # Fiery Overlook
+Name = Fiery Overlook
 MapPosition = 0,7,4
 #-------------------------------
 [441]   # Connecting Cave
+Name = Connecting Cave
 MapPosition = 0,6,7
 #-------------------------------
 [442]   # Weather Institute
+Name = Weather Institute
 MapPosition = 0,12,3
 #-------------------------------
 [443]   # Weather Institute F2
+Name = Weather Institute F2
 MapPosition = 0,12,3
 #-------------------------------
 [444]   # Weather Institute F3
+Name = Weather Institute F3
 MapPosition = 0,12,3
 #-------------------------------
 [445]   # Weather Institute F4
+Name = Weather Institute F4
 MapPosition = 0,12,3
 #-------------------------------
 [446]   # Weather Institute F5
+Name = Weather Institute F5
 MapPosition = 0,12,3
 #-------------------------------
 [449]   # Lopunny Basement
+Name = Lopunny Basement
 MapPosition = 0,5,11
 #-------------------------------
 [450]   # Abandoned Ship [W]
+Name = Abandoned Ship [W]
 MapPosition = 0,7,16
 #-------------------------------
 [451]   # Abandoned Ship 1[W]
+Name = Abandoned Ship 1[W]
 MapPosition = 0,7,16
 #-------------------------------
 [452]   # Abandoned Ship 2[W]
+Name = Abandoned Ship 2[W]
 MapPosition = 0,7,16
 #-------------------------------
 [453]   # Abandoned Ship 3[W]
+Name = Abandoned Ship 3[W]
 MapPosition = 0,7,16
 #-------------------------------
 [454]   # Abandoned Ship 4[W]
+Name = Abandoned Ship 4[W]
 MapPosition = 0,7,16
 #-------------------------------
 [455]   # Abandoned Ship 5[W]
+Name = Abandoned Ship 5[W]
 MapPosition = 0,7,16
 #-------------------------------
 [456]   # Abandoned Ship 6[W]
+Name = Abandoned Ship 6[W]
 MapPosition = 0,7,16
 #-------------------------------
 [457]   # Abandoned Ship 7[W]
+Name = Abandoned Ship 7[W]
 MapPosition = 0,7,16
 #-------------------------------
 [458]   # Abandoned Ship 8[W]
+Name = Abandoned Ship 8[W]
 MapPosition = 0,7,16
 #-------------------------------
 [459]   # Abandoned Ship 9[W]
+Name = Abandoned Ship 9[W]
 MapPosition = 0,7,16
 #-------------------------------
 [460]   # Abandoned Ship 10[W]
+Name = Abandoned Ship 10[W]
 MapPosition = 0,7,16
 #-------------------------------
 [461]   # Abandoned Ship 11[W]
+Name = Abandoned Ship 11[W]
 MapPosition = 0,7,16
 #-------------------------------
 [462]   # Abandoned Ship 12[W]
+Name = Abandoned Ship 12[W]
 MapPosition = 0,7,16
 #-------------------------------
 [464]   # Dewford Lagoon
@@ -1790,25 +1966,63 @@ Outdoor = true
 Weather = Rain,20
 #-------------------------------
 [465]   # Fiery Connector[SG]
+Name = Fiery Connector[SG]
 MapPosition = 0,7,4
 #-------------------------------
 [466]   # Desert Area
+Name = Desert Area
 MapPosition = 0,5,11
 #-------------------------------
 [467]   # Smeargle Basement
+Name = Smeargle Basement
 MapPosition = 0,5,11
 #-------------------------------
 [468]   # Serperior Basement
+Name = Serperior Basement
 MapPosition = 0,5,11
 #-------------------------------
 [469]   # Frozen Area
+Name = Frozen Area
 MapPosition = 0,5,11
 #-------------------------------
 [470]   # Hatenna Poke Fan Club
+Name = Hatenna Poke Fan Club
 MapPosition = 0,9,12
 #-------------------------------
 [472]   # Paint Oceanic Museum
+Name = Paint Oceanic Museum
 MapPosition = 0,9,12
 #-------------------------------
 [476]   # Fiery Connector[NonSG]
+Name = Fiery Connector[NonSG]
 MapPosition = 0,7,4
+#-------------------------------
+[521]   # Lilycove House
+MapPosition = 0,19,5
+#-------------------------------
+[522]   # Lilycove Pc Upper Floor
+MapPosition = 0,19,5
+#-------------------------------
+[523]   # Lilycove Pc
+MapPosition = 0,19,5
+#-------------------------------
+[524]   # Pokémon Trainer Fan Club
+MapPosition = 0,19,5
+#-------------------------------
+[525]   # Abandoned Home
+MapPosition = 0,20,5
+#-------------------------------
+[526]   # Lilycove House
+MapPosition = 0,20,5
+#-------------------------------
+[527]   # Lilycove House
+MapPosition = 0,20,5
+#-------------------------------
+[528]   # Lilycove Cove Lily
+MapPosition = 0,20,5
+#-------------------------------
+[529]   # Lilycove Cove Lily 2F
+MapPosition = 0,20,5
+#-------------------------------
+[530]   # Lilycove House
+MapPosition = 0,19,5
