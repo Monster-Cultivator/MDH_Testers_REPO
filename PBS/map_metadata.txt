@@ -2026,3 +2026,7 @@ MapPosition = 0,20,5
 #-------------------------------
 [530]   # Lilycove House
 MapPosition = 0,19,5
+#-------------------------------
+[537]   # Lilycove Department Store Roof
+Outdoor = true
+MapPosition = 0,19,5

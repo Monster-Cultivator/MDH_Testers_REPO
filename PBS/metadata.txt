@@ -19,7 +19,7 @@ RunCharset = trainer_MALEMC_RUN
 CycleCharset = trainer_MALEMC_BIKE
 SurfCharset = trainer_MALEMC_SURF
 DiveCharset = trainer_MALEMC_SURF
-FishCharset = trainer_MALEMC_FISH
+FishCharset = trainer_MALEMC_FISH_offset
 SurfFishCharset = trainer_MALEMC_FISH
 #-------------------------------
 [2]
@@ -29,7 +29,7 @@ RunCharset = trainer_FUTAMC_RUN
 CycleCharset = trainer_FUTAMC_BIKE
 SurfCharset = trainer_FUTAMC_SURF
 DiveCharset = trainer_FUTAMC_SURF
-FishCharset = girl_fish_offset
+FishCharset = trainer_FUTAMC_FISH_offset
 SurfFishCharset = girl_fish_offset
 #-------------------------------
 [3]
