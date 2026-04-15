@@ -1634,6 +1634,7 @@ MapPosition = 0,13,2
 #-------------------------------
 [376]   # Lilycove City
 Name = Lilycove City
+Outdoor = true
 MapPosition = 0,19,5
 MapSize = 2,11
 #-------------------------------
@@ -1998,35 +1999,83 @@ Name = Fiery Connector[NonSG]
 MapPosition = 0,7,4
 #-------------------------------
 [521]   # Lilycove House
+Name = Lilycove House
 MapPosition = 0,19,5
 #-------------------------------
-[522]   # Lilycove Pc Upper Floor
+[522]   # Lilycove PC 2F
+Name = Lilycove Pc Upper Floor
 MapPosition = 0,19,5
 #-------------------------------
-[523]   # Lilycove Pc
+[523]   # Lilycove PC
+Name = Lilycove Pc
 MapPosition = 0,19,5
 #-------------------------------
 [524]   # Pokémon Trainer Fan Club
+Name = Pokémon Trainer Fan Club
 MapPosition = 0,19,5
 #-------------------------------
 [525]   # Abandoned Home
+Name = Abandoned Home
 MapPosition = 0,20,5
 #-------------------------------
 [526]   # Lilycove House
+Name = Lilycove House
 MapPosition = 0,20,5
 #-------------------------------
 [527]   # Lilycove House
+Name = Lilycove House
 MapPosition = 0,20,5
 #-------------------------------
 [528]   # Lilycove Cove Lily
+Name = Lilycove Cove Lily
 MapPosition = 0,20,5
 #-------------------------------
 [529]   # Lilycove Cove Lily 2F
+Name = Lilycove Cove Lily 2F
 MapPosition = 0,20,5
 #-------------------------------
 [530]   # Lilycove House
+Name = Lilycove House
 MapPosition = 0,19,5
 #-------------------------------
-[537]   # Lilycove Department Store Roof
+[531]   # Lilycove Dept. Store 1F
+Name = Lilycove Dept. Store 1F
+MapPosition = 0,19,5
+#-------------------------------
+[532]   # Lilycove Harbor
+Name = Slateport Harbor
+MapPosition = 0,19,5
+#-------------------------------
+[533]   # Lilycove Dept. Store 2F
+Name = Lilycove Dept. Store 2F
+MapPosition = 0,19,5
+#-------------------------------
+[534]   # Lilycove Dept. Store 3F
+Name = Lilycove Dept. Store 3F
+MapPosition = 0,19,5
+#-------------------------------
+[535]   # Lilycove Dept. Store 4F
+Name = Lilycove Dept. Store 4F
+MapPosition = 0,19,5
+#-------------------------------
+[536]   # Lilycove Dept. Store 5F
+Name = Lilycove Dept. Store 5F
+MapPosition = 0,19,5
+#-------------------------------
+[537]   # Lilycove Dept. Store Roof
+Name = Lilycove Dept. Store Roof
 Outdoor = true
+MapPosition = 0,19,5
+#-------------------------------
+[539]   # Lilycove Dept. Elevator
+Name = Lilycove Dept. Elevator
+MapPosition = 0,19,5
+#-------------------------------
+[542]   # Lilycove Museum
+MapPosition = 0,19,5
+#-------------------------------
+[543]   # Lilycove Museum B1F
+MapPosition = 0,19,5
+#-------------------------------
+[545]   # Lilycove Ranger Guild
 MapPosition = 0,19,5
