@@ -936,6 +936,7 @@ Outdoor = true
 ShowArea = true
 MapPosition = 0,9,2
 BattleBack = desert
+WildBattleBGM = Wild Pokémon Battle
 TrainerBattleBGM = Trainer Battle.mp3
 MapSize = 1,111111
 #-------------------------------
@@ -957,6 +958,7 @@ Bicycle = true
 MapPosition = 0,7,5
 SnapEdges = true
 BattleBack = field
+WildBattleBGM = Wild Pokémon Battle
 TrainerBattleBGM = Trainer Battle.mp3
 MapSize = 2,11
 #-------------------------------
@@ -967,6 +969,7 @@ ShowArea = true
 Bicycle = true
 MapPosition = 0,7,5
 BattleBack = field
+WildBattleBGM = Wild Pokémon Battle
 TrainerBattleBGM = Trainer Battle.mp3
 MapSize = 2,11
 #-------------------------------
@@ -985,6 +988,7 @@ ShowArea = true
 MapPosition = 0,8,5
 SnapEdges = true
 BattleBack = Fierycave
+WildBattleBGM = Wild Pokémon Battle
 TrainerBattleBGM = Trainer Battle.mp3
 #-------------------------------
 [208]   # Route 11 Home
