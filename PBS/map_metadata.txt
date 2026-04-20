@@ -417,6 +417,7 @@ Outdoor = true
 ShowArea = true
 MapPosition = 0,5,12
 BattleBack = field
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [081]   # Route 102
 Name = Route 102
@@ -424,6 +425,7 @@ Outdoor = true
 ShowArea = true
 MapPosition = 0,3,11
 BattleBack = field
+WildBattleBGM = Wild Pokémon Battle
 MapSize = 2,11
 #-------------------------------
 [082]   # Route 102 Fillertreestop
@@ -479,6 +481,8 @@ Name = Petalburg City
 Outdoor = true
 ShowArea = true
 MapPosition = 0,2,11
+WildBattleBGM = Wild Pokémon Battle
+TrainerBattleBGM = Team Magma & Aqua Battle
 #-------------------------------
 [096]   # Petalburg PC
 Name = Petalburg PC
@@ -520,6 +524,7 @@ Outdoor = true
 ShowArea = true
 MapPosition = 0,1,9
 BattleBack = field
+WildBattleBGM = Wild Pokémon Battle
 TrainerBattleBGM = Trainer Battle.mp3
 MapSize = 1,111
 #-------------------------------
@@ -530,6 +535,7 @@ ShowArea = true
 MapPosition = 0,1,9
 SnapEdges = true
 BattleBack = forest
+WildBattleBGM = Wild Pokémon Battle
 TrainerBattleBGM = Trainer Battle.mp3
 #-------------------------------
 [106]   # Rustboro City
@@ -567,6 +573,7 @@ Outdoor = true
 ShowArea = true
 MapPosition = 0,2,7
 BattleBack = field
+WildBattleBGM = Wild Pokémon Battle
 TrainerBattleBGM = Trainer Battle.mp3
 MapSize = 4,1111
 #-------------------------------
@@ -626,7 +633,8 @@ ShowArea = true
 Weather = Fog,100
 MapPosition = 0,5,7
 SnapEdges = true
-BattleBack = cave1
+BattleBack = caveF
+WildBattleBGM = Wild Pokémon Battle
 TrainerBattleBGM = Trainer Battle.mp3
 #-------------------------------
 [127]   # Hoeen Underground House
@@ -650,6 +658,7 @@ ShowArea = true
 Bicycle = true
 MapPosition = 0,3,16
 BattleBack = water
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [133]   # Dewford Home
 Name = Dewford Home
@@ -669,6 +678,7 @@ Outdoor = true
 ShowArea = true
 MapPosition = 0,1,12
 BattleBack = water
+WildBattleBGM = Wild Pokémon Battle
 TrainerBattleBGM = Trainer Battle.mp3
 MapSize = 1,111
 #-------------------------------
@@ -678,6 +688,7 @@ Outdoor = true
 ShowArea = true
 MapPosition = 0,1,15
 BattleBack = water
+WildBattleBGM = Wild Pokémon Battle
 TrainerBattleBGM = Trainer Battle.mp3
 MapSize = 3,111
 #-------------------------------
@@ -687,6 +698,7 @@ Outdoor = true
 ShowArea = true
 MapPosition = 0,4,16
 BattleBack = water
+WildBattleBGM = Wild Pokémon Battle
 TrainerBattleBGM = Trainer Battle.mp3
 MapSize = 3,111
 #-------------------------------
@@ -697,6 +709,7 @@ ShowArea = true
 Bicycle = true
 MapPosition = 0,2,16
 BattleBack = water
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [141]   # Dewford Town PC
 Name = Dewford Town PC
@@ -713,6 +726,7 @@ Bicycle = true
 MapPosition = 0,3,16
 SnapEdges = true
 BattleBack = cave1
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [144]   # Granite Cave
 Name = Granite Cave
@@ -720,6 +734,7 @@ Bicycle = true
 MapPosition = 0,3,16
 DarkMap = true
 BattleBack = cave1
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [145]   # Granite Cave
 Name = Granite Cave
@@ -727,6 +742,7 @@ Bicycle = true
 MapPosition = 0,3,16
 DarkMap = true
 BattleBack = cave1
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [146]   # Granite Cave
 Name = Granite Cave
@@ -735,6 +751,7 @@ Bicycle = true
 MapPosition = 0,3,16
 SnapEdges = true
 BattleBack = cave1
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [147]   # Dewford Gym
 Name = Dewford Gym
@@ -748,6 +765,7 @@ Name = Slateport City
 Outdoor = true
 ShowArea = true
 MapPosition = 0,9,12
+WildBattleBGM = Wild Pokémon Battle
 MapSize = 1,11
 #-------------------------------
 [149]   # Slateport Harbor
@@ -760,6 +778,7 @@ Outdoor = true
 ShowArea = true
 MapPosition = 0,7,16
 BattleBack = water
+WildBattleBGM = Wild Pokémon Battle
 TrainerBattleBGM = Trainer Battle.mp3
 MapSize = 2,11
 #-------------------------------
@@ -769,6 +788,7 @@ Outdoor = true
 ShowArea = true
 MapPosition = 0,9,14
 BattleBack = Beach
+WildBattleBGM = Wild Pokémon Battle
 TrainerBattleBGM = Trainer Battle.mp3
 MapSize = 1,111
 #-------------------------------
@@ -811,6 +831,7 @@ ShowArea = true
 Bicycle = true
 MapPosition = 0,9,9
 BattleBack = field
+WildBattleBGM = Wild Pokémon Battle
 TrainerBattleBGM = Trainer Battle.mp3
 MapSize = 1,111
 #-------------------------------
@@ -866,6 +887,7 @@ Outdoor = true
 ShowArea = true
 MapPosition = 0,6,8
 BattleBack = field
+WildBattleBGM = Wild Pokémon Battle
 TrainerBattleBGM = Trainer Battle.mp3
 MapSize = 3,111
 #-------------------------------
@@ -881,6 +903,7 @@ Outdoor = true
 ShowArea = true
 MapPosition = 0,11,8
 BattleBack = Beach
+WildBattleBGM = Wild Pokémon Battle
 TrainerBattleBGM = Trainer Battle.mp3
 MapSize = 2,11
 #-------------------------------
@@ -1003,6 +1026,7 @@ Bicycle = true
 Weather = None,99
 MapPosition = 0,5,2
 BattleBack = 113
+WildBattleBGM = Wild Pokémon Battle
 TrainerBattleBGM = Trainer Battle.mp3
 MapSize = 4,1111
 #-------------------------------
@@ -1041,6 +1065,7 @@ Bicycle = true
 MapPosition = 0,2,2
 SnapEdges = true
 BattleBack = 113
+WildBattleBGM = Wild Pokémon Battle
 TrainerBattleBGM = Trainer Battle.mp3
 MapSize = 1,111
 #-------------------------------
@@ -1191,6 +1216,7 @@ Bicycle = true
 MapPosition = 0,9,4
 SnapEdges = true
 BattleBack = cave1
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [244]   # Mirage Tower 1
 Name = Mirage Tower 1
@@ -1198,6 +1224,7 @@ Bicycle = true
 MapPosition = 0,9,4
 SnapEdges = true
 BattleBack = cave1
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [245]   # Mirage Tower 2
 Name = Mirage Tower 2
@@ -1205,6 +1232,7 @@ Bicycle = true
 MapPosition = 0,9,4
 SnapEdges = true
 BattleBack = cave1
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [246]   # Mirage Tower 3
 Name = Mirage Tower 3
@@ -1212,6 +1240,7 @@ Bicycle = true
 MapPosition = 0,9,4
 SnapEdges = true
 BattleBack = cave1
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [247]   # Mirage Tower 4
 Name = Mirage Tower 4
@@ -1219,6 +1248,7 @@ Bicycle = true
 MapPosition = 0,9,4
 SnapEdges = true
 BattleBack = cave1
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [249]   # Abandoned Ship
 Name = Abandoned Ship
@@ -1249,6 +1279,7 @@ TrainerBattleBGM = Trainer Battle.mp3
 Name = Abandoned Ship 4
 MapPosition = 0,7,16
 BattleBack = ship2
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [254]   # Abandoned Ship 5
 Name = Abandoned Ship 5
@@ -1281,6 +1312,7 @@ MapPosition = 0,7,16
 [260]   # Abandoned Ship 11
 Name = Abandoned Ship 11
 MapPosition = 0,7,16
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [261]   # Abandoned Ship 12
 Name = Abandoned Ship 12
@@ -1296,6 +1328,7 @@ SnapEdges = true
 Name = New Mauville
 MapPosition = 0,10,9
 BattleBack = newmauville
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [265]   # Southern Island
 Name = Southern Island
@@ -1590,6 +1623,8 @@ MapPosition = 0,6,7
 [359]   # Harrow Cave
 Name = Harrow Cave
 MapPosition = 0,5,7
+BattleBack = CaveF
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [362]   # Route 102 GYM
 Name = Route 102 GYM
@@ -1601,7 +1636,8 @@ ShowArea = true
 Weather = Fog,100
 MapPosition = 0,5,7
 SnapEdges = true
-BattleBack = cave1
+BattleBack = caveF
+WildBattleBGM = Wild Pokémon Battle
 TrainerBattleBGM = Trainer Battle.mp3
 #-------------------------------
 [364]   # Route 102 Underground ft2
@@ -1631,6 +1667,7 @@ MapPosition = 0,10,9
 [373]   # New Mauville
 Name = New Mauville
 MapPosition = 0,10,9
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [375]   # Fortree City
 Name = Fortree City
@@ -1649,17 +1686,21 @@ ShowArea = true
 Bicycle = true
 MapPosition = 0,12,2
 BattleBack = field
+WildBattleBGM = Wild Pokémon Battle
 TrainerBattleBGM = Trainer Battle.mp3
 MapSize = 1,111111
 #-------------------------------
 [378]   # Route 123
 Name = Route 123
 MapPosition = 0,13,8
+WildBattleBGM = Wild Pokémon Battle
 MapSize = 5,11111
 #-------------------------------
 [383]   # Fiery Connector
 Name = Fiery Connector
 MapPosition = 0,7,4
+BattleBack = Fierycave
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [384]   # OLD VERDANTURF CITY!
 Name = OLD VERDANTURF CITY!
@@ -1670,6 +1711,7 @@ Name = Verdanturf City
 Outdoor = true
 Weather = Rain,15
 MapPosition = 0,5,8
+WildBattleBGM = Wild Pokémon Battle
 TrainerBattleBGM = Trainer Battle.mp3
 Environment = TallGrass
 SpecialSOS = BULBASAUR,1,Any,Environment,TallGrass
@@ -1693,6 +1735,7 @@ MapPosition = 0,5,8
 [396]   # Vulpix Den
 Name = Vulpix Den
 MapPosition = 0,9,11
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [397]   # Ranger Guild B1
 Name = Ranger Guild B1
@@ -1759,12 +1802,15 @@ Name = Trackless Forest
 Outdoor = true
 MapPosition = 0,6,7
 BattleBack = forest
+WildBattleBGM = Wild Pokémon Battle
 TrainerBattleBGM = Trainer Battle.mp3
 #-------------------------------
 [415]   # Secret Jungle
 Name = Secret Jungle
 Outdoor = true
 MapPosition = 0,6,7
+BattleBack = forest
+WildBattleBGM = Wild Pokémon Battle
 TrainerBattleBGM = Trainer Battle.mp3
 #-------------------------------
 [416]   # Whimsicott Basement
@@ -1779,6 +1825,7 @@ MapPosition = 0,5,11
 Name = Gnarled Woods
 MapPosition = 0,6,7
 BattleBack = spook_forest
+WildBattleBGM = Wild Pokémon Battle
 TrainerBattleBGM = Trainer Battle.mp3
 Environment = Graveyard
 #-------------------------------
@@ -1786,6 +1833,7 @@ Environment = Graveyard
 Name = Gnarled Woods
 MapPosition = 0,6,7
 BattleBack = spook_forest
+WildBattleBGM = Wild Pokémon Battle
 TrainerBattleBGM = Trainer Battle.mp3
 Environment = Graveyard
 #-------------------------------
@@ -1793,6 +1841,7 @@ Environment = Graveyard
 Name = Gnarled Woods
 MapPosition = 0,6,7
 BattleBack = spook_forest
+WildBattleBGM = Wild Pokémon Battle
 TrainerBattleBGM = Trainer Battle.mp3
 Environment = Graveyard
 #-------------------------------
@@ -1800,6 +1849,7 @@ Environment = Graveyard
 Name = Gnarled Woods
 MapPosition = 0,6,7
 BattleBack = spook_forest
+WildBattleBGM = Wild Pokémon Battle
 TrainerBattleBGM = Trainer Battle.mp3
 Environment = Graveyard
 #-------------------------------
@@ -1807,6 +1857,7 @@ Environment = Graveyard
 Name = Gnarled Woods
 MapPosition = 0,6,7
 BattleBack = spook_forest
+WildBattleBGM = Wild Pokémon Battle
 TrainerBattleBGM = Trainer Battle.mp3
 Environment = Graveyard
 #-------------------------------
@@ -1833,44 +1884,54 @@ MapPosition = 0,5,8
 [428]   # Route 122
 Name = Route 122
 MapPosition = 0,17,6
+WildBattleBGM = Wild Pokémon Battle
 MapSize = 1,11
 #-------------------------------
 [429]   # Route 120
 Name = Route 120
 MapPosition = 0,14,2
+WildBattleBGM = Wild Pokémon Battle
 MapSize = 1,1111
 #-------------------------------
 [430]   # Mt. Pyre
 Name = Mt. Pyre
 MapPosition = 0,17,7
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [431]   # Mt. Pyre
 Name = Mt. Pyre
 MapPosition = 0,17,7
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [432]   # Mt. Pyre
 Name = Mt. Pyre
 MapPosition = 0,17,7
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [433]   # Mt. Pyre
 Name = Mt. Pyre
 MapPosition = 0,17,7
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [434]   # Mt. Pyre
 Name = Mt. Pyre
 MapPosition = 0,17,7
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [435]   # Mt. Pyre
 Name = Mt. Pyre
 MapPosition = 0,17,7
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [436]   # Mt. Pyre
 Name = Mt. Pyre
 MapPosition = 0,17,7
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [437]   # Mt. Pyre Summit
 Name = Mt. Pyre Summit
 MapPosition = 0,17,7
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [438]   # Route 118 Gate
 Name = Route 118 Gate
@@ -1879,11 +1940,13 @@ MapPosition = 0,11,8
 [439]   # Route 121
 Name = Route 121
 MapPosition = 0,15,5
+WildBattleBGM = Wild Pokémon Battle
 MapSize = 4,1111
 #-------------------------------
 [440]   # Fiery Overlook
 Name = Fiery Overlook
 MapPosition = 0,7,4
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [441]   # Connecting Cave
 Name = Connecting Cave
@@ -1932,6 +1995,7 @@ MapPosition = 0,7,16
 [454]   # Abandoned Ship 4[W]
 Name = Abandoned Ship 4[W]
 MapPosition = 0,7,16
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [455]   # Abandoned Ship 5[W]
 Name = Abandoned Ship 5[W]
@@ -1960,6 +2024,7 @@ MapPosition = 0,7,16
 [461]   # Abandoned Ship 11[W]
 Name = Abandoned Ship 11[W]
 MapPosition = 0,7,16
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [462]   # Abandoned Ship 12[W]
 Name = Abandoned Ship 12[W]
@@ -1973,6 +2038,8 @@ Weather = Rain,20
 [465]   # Fiery Connector[SG]
 Name = Fiery Connector[SG]
 MapPosition = 0,7,4
+BattleBack = Fierycave
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [466]   # Desert Area
 Name = Desert Area
@@ -2001,6 +2068,17 @@ MapPosition = 0,9,12
 [476]   # Fiery Connector[NonSG]
 Name = Fiery Connector[NonSG]
 MapPosition = 0,7,4
+BattleBack = Fierycave
+WildBattleBGM = Wild Pokémon Battle
+#-------------------------------
+[518]   # Mirror Cavern
+WildBattleBGM = Wild Pokémon Battle
+#-------------------------------
+[519]   # Mirror Cavern 2F
+WildBattleBGM = Wild Pokémon Battle
+#-------------------------------
+[520]   # Mirror Cavern 2F Room
+WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [521]   # Lilycove House
 Name = Lilycove House
@@ -2076,10 +2154,13 @@ Name = Lilycove Dept. Elevator
 MapPosition = 0,19,5
 #-------------------------------
 [542]   # Lilycove Museum
+Name = Lilycove Museum
 MapPosition = 0,19,5
 #-------------------------------
 [543]   # Lilycove Museum B1F
+Name = Lilycove Museum B1F
 MapPosition = 0,19,5
 #-------------------------------
 [545]   # Lilycove Ranger Guild
+Name = Lilycove Ranger Guild
 MapPosition = 0,19,5

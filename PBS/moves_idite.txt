@@ -24,3 +24,15 @@ EffectChance = 33
 Flags = CanProtect,CannotMetronome
 Description = The user calls upon the Lord Almighty to smite their foe. Bless'd be.
 #-------------------------------
+[ELEMENTALLASH]
+Name = Elemental Lash
+Type = NORMAL
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = TypeIsUserCurrentType
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user attacks the target by using its tongue. The user's type determines the type of this move.
+#-------------------------------
