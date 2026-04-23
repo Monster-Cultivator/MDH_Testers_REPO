@@ -5323,6 +5323,17 @@ Flags = Fling_90
 Move = ROCKCLIMB
 Description = A charging attack that may also leave the foe confused.
 #-------------------------------
+[TM101]
+Name = TM101
+NamePlural = TM101s
+Pocket = 4
+Price = 1000
+BPPrice = 16
+FieldUse = TR
+Flags = Fling_90
+Move = HIDDENPOWER
+Description = A unique attack that varies in type and intensity depending on the Pokémon using it.
+#-------------------------------
 [HM01]
 Name = HM01
 NamePlural = HM01s

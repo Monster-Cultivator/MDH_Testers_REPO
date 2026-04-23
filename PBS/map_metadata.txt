@@ -2072,12 +2072,19 @@ BattleBack = Fierycave
 WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [518]   # Mirror Cavern
+Name = Mirror Cavern
+BattleBack = caveM
 WildBattleBGM = Wild Pokémon Battle
+TrainerBattleBGM = Aqua Magma Grunt
 #-------------------------------
 [519]   # Mirror Cavern 2F
+Name = Mirror Cavern 2F
+BattleBack = caveM
 WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [520]   # Mirror Cavern 2F Room
+Name = Mirror Cavern 2F Room
+BattleBack = caveM
 WildBattleBGM = Wild Pokémon Battle
 #-------------------------------
 [521]   # Lilycove House
