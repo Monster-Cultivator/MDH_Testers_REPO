@@ -161,3 +161,9 @@ Innates = PRESSURE,VOLTABSORB,BEASTBOOST
 #-------------------------------
 [PENNY_2]
 Innates1 = SERENEGRACE,PARENTALBOND,ANTITHESIS
+#-------------------------------
+[FLYGONh]
+Innates1 = STRIKER,SANDVEIL
+#-------------------------------
+[GRENINJAh]
+Innates1 = SUPERLUCK,OPPORTUNIST

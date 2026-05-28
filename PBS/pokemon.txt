@@ -31755,7 +31755,7 @@ RaidRanks = 3,4,5
 Name = Trapinch
 Types = GROUND
 BaseStats = 45,120,45,40,45,45
-GenderRatio = Female50Percent
+GenderRatio = AlwaysFemale
 GrowthRate = Parabolic
 BaseExp = 58
 EVs = ATTACK,1
@@ -31777,8 +31777,61 @@ Category = Ant Pit
 Pokedex = Its big jaws crunch through boulders. Because its head is so big, it has a hard time getting back upright if it tips over onto its back.
 Generation = 3
 WildItemUncommon = SOFTSAND
+Evolutions = VIBRAVA,Level,35
 CallRateSOS = 9
 RaidRanks = 1,2
+#-------------------------------
+[VIBRAVAh]
+Name = Vibrava
+Types = GROUND,DRAGON
+BaseStats = 60,90,50,90,50,50
+GenderRatio = AlwaysFemale
+GrowthRate = Parabolic
+BaseExp = 119
+EVs = ATTACK,1,SPEED,1
+CatchRate = 120
+Happiness = 50
+Abilities = LEVITATE
+Moves = 0,SUPERSONIC,0,FISSURE,0,CRUNCH,0,SUPERPOWER,0,ASTONISH,0,BULLDOZE,0,DRAGONBREATH,1,BITE,1,DIG,1,SANDATTACK,12,MUDSLAP,16,SANDTOMB,20,DRAGONTAIL,24,SCREECH,28,BUGBUZZ,32,SANDSTORM,38,EARTHPOWER,44,EARTHQUAKE,50,UPROAR,56,DRAGONRUSH,62,BOOMBURST
+TutorMoves = AERIALACE,AIRCUTTER,AIRSLASH,BODYSLAM,BUGBITE,BUGBUZZ,BULLDOZE,CRUNCH,DIG,DRACOMETEOR,DRAGONCLAW,DRAGONPULSE,DRAGONTAIL,DUALWINGBEAT,EARTHPOWER,EARTHQUAKE,ENDURE,FACADE,FLY,GIGADRAIN,GIGAIMPACT,HEATWAVE,HYPERBEAM,MUDSHOT,MUDSLAP,OUTRAGE,PROTECT,REST,ROCKSLIDE,ROCKSMASH,ROCKTOMB,SANDSTORM,SANDTOMB,SCORCHINGSANDS,SLEEPTALK,SOLARBEAM,STEALTHROCK,STONEEDGE,STRUGGLEBUG,SUBSTITUTE,SUNNYDAY,SWIFT,TAILWIND,TAKEDOWN,THROATCHOP,UPROAR,UTURN
+EggGroups = Bug,Dragon
+HatchSteps = 5120
+Height = 1.1
+Weight = 15.3
+Color = Green
+Shape = MultiWinged
+Habitat = RoughTerrain
+Category = Vibration
+Pokedex = It looses ultrasonic waves by rubbing its wings together. Since a Vibrava's wings are still in the process of growing, it can only fly short distances.
+Generation = 3
+Evolutions = FLYGONh,Level,45
+CallRateSOS = 6
+RaidRanks = 2,3
+#-------------------------------
+[FLYGONh]
+Name = Flygon
+Types = GROUND,DRAGON
+BaseStats = 80,130,90,120,80,90
+GenderRatio = AlwaysFemale
+GrowthRate = Parabolic
+BaseExp = 260
+EVs = ATTACK,1,SPEED,2
+CatchRate = 45
+Happiness = 50
+Abilities = EARTHEATER
+Moves = 0,BITE,0,FISSURE,0,DIG,0,CRUNCH,0,SUPERPOWER,0,ASTONISH,0,DRAGONDANCE,0,FEINT,0,DRAGONCLAW,1,SANDATTACK,1,SUPERSONIC,1,DRAGONBREATH,1,BULLDOZE,12,MUDSLAP,16,SANDTOMB,20,DRAGONTAIL,24,SCREECH,28,BUGBUZZ,32,SANDSTORM,38,EARTHPOWER,44,EARTHQUAKE,52,UPROAR,60,DRAGONRUSH,68,BOOMBURST
+TutorMoves = AERIALACE,AGILITY,AIRCUTTER,AIRSLASH,ALLURINGVOICE,BODYSLAM,BREAKINGSWIPE,BUGBITE,BUGBUZZ,BULLDOZE,CRUNCH,DIG,DOUBLEEDGE,DRACOMETEOR,DRAGONCHEER,DRAGONCLAW,DRAGONDANCE,DRAGONPULSE,DRAGONTAIL,DUALWINGBEAT,EARTHPOWER,EARTHQUAKE,ENDURE,FACADE,FIREBLAST,FIREPUNCH,FIRESPIN,FLAMETHROWER,FLY,GIGADRAIN,GIGAIMPACT,HEATWAVE,HELPINGHAND,HYPERBEAM,MUDSHOT,MUDSLAP,OUTRAGE,PROTECT,PSYCHICNOISE,REST,ROCKSLIDE,ROCKSMASH,ROCKTOMB,SANDSTORM,SANDTOMB,SCALESHOT,SCORCHINGSANDS,SLEEPTALK,SOLARBEAM,STEALTHROCK,STONEEDGE,STRUGGLEBUG,SUBSTITUTE,SUNNYDAY,SWIFT,TAILWIND,TAKEDOWN,THROATCHOP,THUNDERPUNCH,UPROAR,UTURN,VACUUMWAVE
+EggGroups = Bug,Dragon
+HatchSteps = 5120
+Height = 2.0
+Weight = 82.0
+Color = Green
+Shape = Winged
+Habitat = RoughTerrain
+Category = Mystic
+Pokedex = The flapping of its wings sounds like singing. To prevent detection by enemies, it hides itself by flapping up a cloud of desert sand.
+Generation = 3
+RaidRanks = 3,4,5
 #-------------------------------
 [MARACTUSx]
 Name = Maractus
@@ -32120,8 +32173,34 @@ Habitat = WatersEdge
 Category = Bubble Frog
 Pokedex = It can throw bubble-covered pebbles with precise control, hitting empty cans up to a hundred feet away.
 Generation = 6
-Evolutions = GRENINJAi,Level,36
+Evolutions = GRENINJAh,Level,36
 RaidRanks = 2,3
+#-------------------------------
+[GRENINJAh]
+Name = Greninja
+Types = WATER,DARK
+BaseStats = 82,95,67,142,123,71
+GenderRatio = AlwaysFemale
+GrowthRate = Parabolic
+BaseExp = 265
+EVs = SPEED,3
+CatchRate = 45
+Happiness = 50
+Abilities = TORRENT
+HiddenAbilities = PROTEAN
+Moves = 0,WATERSHURIKEN,1,NIGHTSLASH,1,ROLEPLAY,1,HAZE,1,POUND,1,WATERGUN,1,GROWL,1,QUICKATTACK,10,LICK,14,WATERPULSE,19,SMOKESCREEN,23,SHADOWSNEAK,28,SPIKES,33,AERIALACE,42,SUBSTITUTE,49,EXTRASENSORY,56,DOUBLETEAM,68,HYDROPUMP
+TutorMoves = ACROBATICS,AERIALACE,BLIZZARD,BRICKBREAK,CHILLINGWATER,DARKPULSE,DIG,ENDURE,FACADE,FALSESWIPE,FLING,GIGAIMPACT,GRASSKNOT,GUNKSHOT,HAZE,HELPINGHAND,HYDROCANNON,HYDROPUMP,HYPERBEAM,ICEBEAM,ICEPUNCH,ICYWIND,LIQUIDATION,LOWKICK,LOWSWEEP,MUDSHOT,MUDSLAP,PROTECT,RAINDANCE,REST,ROCKSLIDE,ROCKTOMB,SLEEPTALK,SLUDGEWAVE,SMACKDOWN,SNOWSCAPE,SPIKES,SUBSTITUTE,SURF,SWIFT,SWORDSDANCE,TAKEDOWN,TAUNT,THIEF,TOXICSPIKES,TRAILBLAZE,UPPERHAND,UTURN,WATERFALL,WATERPLEDGE,WATERPULSE,WEATHERBALL
+EggGroups = Water1
+HatchSteps = 5120
+Height = 1.5
+Weight = 40.0
+Color = Blue
+Shape = Bipedal
+Habitat = WatersEdge
+Category = Ninja
+Pokedex = It appears and vanishes with a ninja's grace. It toys with its enemies using swift movements, while slicing them with throwing stars of sharpest water.
+Generation = 6
+RaidRanks = 3,4,5
 #-------------------------------
 [HOUNDOURh]
 Name = Houndour
