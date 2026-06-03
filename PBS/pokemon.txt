@@ -31777,7 +31777,7 @@ Category = Ant Pit
 Pokedex = Its big jaws crunch through boulders. Because its head is so big, it has a hard time getting back upright if it tips over onto its back.
 Generation = 3
 WildItemUncommon = SOFTSAND
-Evolutions = VIBRAVA,Level,35
+Evolutions = VIBRAVAh,Level,35
 CallRateSOS = 9
 RaidRanks = 1,2
 #-------------------------------
