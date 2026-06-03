@@ -98,6 +98,18 @@ Breeding Kink
 Breeding Kink
 Loose Ends
 Loose Ends
+True Embrace
+True Embrace
+Kitsune Cross
+Kitsune Cross
+Devious Lick
+Devious Lick
+Treble Clef
+Treble Clef
+Ice Force
+Ice Force
+Antithesis
+Antithesis
 No Ability
 No Ability
 Bad Company
@@ -148,8 +160,8 @@ Pre-Fae
 Pre-Fae
 Heater
 Heater
-Dimensional warp
-Dimensional warp
+Dimensional Warp
+Dimensional Warp
 Circuit Phantom
 Circuit Phantom
 Antartic
@@ -200,3 +212,7 @@ Neko Neko Rush
 Neko Neko Rush
 Pirate Garb
 Pirate Garb
+Tremble Before Me
+Tremble Before Me
+Purification
+Purification

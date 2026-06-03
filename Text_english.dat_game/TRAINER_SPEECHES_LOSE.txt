@@ -20,34 +20,36 @@
 "How'd this happen? It's not like me to lose this way!"
 "This is not the outcome I was aiming for."
 "This is not the outcome I was aiming for."
-"Whoah, wow! You made a much bigger splash than I expected! You swamped me! Okay, you've got me. Take this GYM BADGE!"
-"Whoah, wow! You made a much bigger splash than I expected! You swamped me! Okay, you've got me. Take this GYM BADGE!"
-Wahahahah! Fine, I lost! You ended up giving me a thrill! Take this BADGE!
-Wahahahah! Fine, I lost! You ended up giving me a thrill! Take this BADGE!
-Maybe I need to relax in the Hot Springs.
-Maybe I need to relax in the Hot Springs.
-Great... Now I'm stressed again!
-Great... Now I'm stressed again!
-Some sources say that MAGCARGO can get hotter than the surface of the sun!
-Some sources say that MAGCARGO can get hotter than the surface of the sun!
-Flannery is so pretty! ...Uh, pretty strong!
-Flannery is so pretty! ...Uh, pretty strong!
-Ooooooooh, you want to rest in the sand! No? Aw, snap.
-Ooooooooh, you want to rest in the sand! No? Aw, snap.
-Mt. Chimney is my favorite place to hike.
-Mt. Chimney is my favorite place to hike.
-You're on fire!
-You're on fire!
-My fire still burns red-hot!
-My fire still burns red-hot!
-Burnt up and toasted! Great battle!
-Burnt up and toasted! Great battle!
+"Whoa, wow! You made a much bigger splash than I expected! You swamped me! Okay, you've got me. Take this Gym Badge!"
+"Whoa, wow! You made a much bigger splash than I expected! You swamped me! Okay, you've got me. Take this Gym Badge!"
+"Wahahahah! Fine, I lost! You ended up giving me a thrill! Take this Badge!"
+"Wahahahah! Fine, I lost! You ended up giving me a thrill! Take this Badge!"
+"Maybe I need to relax in the Hot Springs."
+"Maybe I need to relax in the Hot Springs."
+"Great... Now I'm stressed again!"
+"Great... Now I'm stressed again!"
+"Some sources say that Magcargo can get hotter than the surface of the sun!"
+"Some sources say that Magcargo can get hotter than the surface of the sun!"
+"Flannery is so pretty! ...Uh, pretty strong!"
+"Flannery is so pretty! ...Uh, pretty strong!"
+"Ooooooooh, you want to rest in the sand! No? Aw, snap."
+"Ooooooooh, you want to rest in the sand! No? Aw, snap."
+"Mt. Chimney is my favorite place to hike."
+"Mt. Chimney is my favorite place to hike."
+"You're on fire!"
+"You're on fire!"
+"My fire still burns red-hot!"
+"My fire still burns red-hot!"
+"Burnt up and toasted! Great battle!"
+"Burnt up and toasted! Great battle!"
 "You're too good for me!"
 "You're too good for me!"
 "You beat me again!"
 "You beat me again!"
 "Defeated! Oh my!"
 "Defeated! Oh my!"
+"Defeated! Again!"
+"Defeated! Again!"
 "My Skitty!"
 "My Skitty!"
 "You didn't have to win so convincingly!"
@@ -56,8 +58,30 @@ Burnt up and toasted! Great battle!
 "Our teamwork failed!"
 "Washed out!"
 "Washed out!"
+"My head... it's clearing... what happened?"
+"My head... it's clearing... what happened?"
+"I... I wasn't myself... Thank you for snapping me out of it."
+"I... I wasn't myself... Thank you for snapping me out of it."
+"Huh? Why was I fighting? My mind feels fuzzy..."
+"Huh? Why was I fighting? My mind feels fuzzy..."
+"The fog in my mind is lifting... That Pokémon... it controlled us!"
+"The fog in my mind is lifting... That Pokémon... it controlled us!"
 "I need to train harder..."
 "I need to train harder..."
+"Shoot, I thought I had it!"
+"Shoot, I thought I had it!"
+"I lost again?"
+"I lost again?"
+"Aw man, I lost again?"
+"Aw man, I lost again?"
+"I feel like I'm getting better!"
+"I feel like I'm getting better!"
+"Lost again!?"
+"Lost again!?"
+"I lost, but I think we still had fun."
+"I lost, but I think we still had fun."
+"We'll continue to get stronger!"
+"We'll continue to get stronger!"
 "Argh! I lost! I should have trained more..."
 "Argh! I lost! I should have trained more..."
 "Ow. Down and out!"
@@ -74,18 +98,22 @@ Burnt up and toasted! Great battle!
 "Oh,my!"
 "She still writes like trash!"
 "She still writes like trash!"
-"I have all these POKEMON, but I couldn't win..."
-"I have all these POKEMON, but I couldn't win..."
+"I have all these Pokémon, but I couldn't win..."
+"I have all these Pokémon, but I couldn't win..."
 "I can't be popular if I lose."
 "I can't be popular if I lose."
-"Why, couldn't I win?"
-"Why, couldn't I win?"
-"I shouldn't have battled."
-"I shouldn't have battled."
-"I thought I wasn't to nad, If I may say so, but guess not... Bleah...x"
-"I thought I wasn't to nad, If I may say so, but guess not... Bleah...x"
-"You were to good for me..."
-"You were to good for me..."
+"You'll pay for this!"
+"You'll pay for this!"
+"This isn't over."
+"This isn't over."
+"Why couldn't I win?"
+"Why couldn't I win?"
+"I shouldn't have challenged you."
+"I shouldn't have challenged you."
+"I thought I wasn't too bad, but I guess not... Bleah..."
+"I thought I wasn't too bad, but I guess not... Bleah..."
+"You were too good for me..."
+"You were too good for me..."
 "Wow! You've got some potential!"
 "Wow! You've got some potential!"
 "Oh, man on man! Our challenger is one feisty customer!"
@@ -116,34 +144,56 @@ Burnt up and toasted! Great battle!
 "Like in deep-sea fishing, I lost spectacularly!"
 "I lost because I'm trying to not go to the washroom..."
 "I lost because I'm trying to not go to the washroom..."
+"My Pokémon!"
+"My Pokémon!"
+"Team Rocket will prevail!"
+"Team Rocket will prevail!"
+"You cannot stop the mighty Team Rocket!"
+"You cannot stop the mighty Team Rocket!"
+"Team Magma's goals are beyond your comprehension."
+"Team Magma's goals are beyond your comprehension."
+"H-hey, what are you doing?"
+"H-hey, what are you doing?"
+"Team Aqua's goals are too complex for you to understand!"
+"Team Aqua's goals are too complex for you to understand!"
+"Mixie and Vixie: How'd we lose!?"
+"Mixie and Vixie: How'd we lose!?"
+"That loss takes my mind off of things, at least."
+"That loss takes my mind off of things, at least."
+"I hope you're stronger from this."
+"I hope you're stronger from this."
+"I hope we satisfied you."
+"I hope we satisfied you."
 "We failed . . ."
 "We failed . . ."
 "I-I couldn't get them to join..."
 "I-I couldn't get them to join..."
-"I-I couldn't protect the Allmother..."
-"I-I couldn't protect the Allmother..."
-"The Allmother will never forgive me..."
-"The Allmother will never forgive me..."
+"I-I couldn't protect the All-Mother..."
+"I-I couldn't protect the All-Mother..."
+"The All-Mother will never forgive me..."
+"The All-Mother will never forgive me..."
 "Our devotion... not enough..."
 "Our devotion... not enough..."
-"The Allmother's power eludes me..."
-"The Allmother's power eludes me..."
-"I have failed the Allmother..."
-"I have failed the Allmother..."
+"The All-Mother's power eludes me..."
+"The All-Mother's power eludes me..."
+"I have failed the All-Mother..."
+"I have failed the All-Mother..."
 "No... we couldn't protect our faith.."
 "No... we couldn't protect our faith.."
-"Sorry . . . Mother"
-"Sorry . . . Mother"
+"Sorry . . . All-Mother."
+"Sorry . . . All-Mother."
 "No... we were meant to prevail..."
 "No... we were meant to prevail..."
-"The All Mother's protection... it falters..."
-"The All Mother's protection... it falters..."
+"The All-Mother's protection... it falters..."
+"The All-Mother's protection... it falters..."
 "Refining my tastes sounds like a good idea right now."
 "Refining my tastes sounds like a good idea right now."
 "You sure left me in the dust..."
 "You sure left me in the dust..."
-"But... I'm the strongest"
-"But... I'm the strongest"
+"But... I'm the strongest..."
+"But... I'm the strongest..."
+"I-I tried my best... Please don't be too hard on Cirno..."
+"I-I tried my best... Please don't be too hard on Cirno..."
 "I blew it!"
 "I blew it!"
 "No way, I lost?"
@@ -154,34 +204,56 @@ Burnt up and toasted! Great battle!
 "Doh, I'm done for!"
 "You got me!"
 "You got me!"
-"Arrrgh I never surrender!"
-"Arrrgh I never surrender!"
-"You're . . . powerful"
-"You're . . . powerful"
+"Arrrgh, I'll never surrender!"
+"Arrrgh, I'll never surrender!"
+"You're . . . powerful."
+"You're . . . powerful."
 "Thank . . . you."
 "Thank . . . you."
 "Darn!"
 "Darn!"
 "Very Good!"
 "Very Good!"
-"Defeated by a silent protagonist? How novel! You have my respect, trainer. Perhaps we'll meet again in another dimension."
-"Defeated by a silent protagonist? How novel! You have my respect, trainer. Perhaps we'll meet again in another dimension."
-"P-Pwease, stop . . . her"
-"P-Pwease, stop . . . her"
-"My hwead, all I feel is OwO"
-"My hwead, all I feel is OwO"
+"Defeated by a silent protagonist? How novel! You have my respect, Trainer. Perhaps we'll meet again in another dimension."
+"Defeated by a silent protagonist? How novel! You have my respect, Trainer. Perhaps we'll meet again in another dimension."
+"P-Pwease, stop . . . her."
+"P-Pwease, stop . . . her."
+"My hwead, all I feel is OwO."
+"My hwead, all I feel is OwO."
 "I'll leave it to you."
 "I'll leave it to you."
 "Awie?! You didn't faww fow our Snuggle-Wuggle tawk? B-but...how?! Don't chu wowwy, we'll be hugging you into our fluff-baww foweva soon, ehehe~."
 "Awie?! You didn't faww fow our Snuggle-Wuggle tawk? B-but...how?! Don't chu wowwy, we'll be hugging you into our fluff-baww foweva soon, ehehe~."
-"Well that is apparantly free berry for you."
-"Well that is apparantly free berry for you."
-"Oh how baby has grown."
-"Oh how baby has grown."
+"Well, we were apparently free pickings for you."
+"Well, we were apparently free pickings for you."
+"Oh, how my baby has grown!"
+"Oh, how my baby has grown!"
+"Aw man, we were bested!"
+"Aw man, we were bested!"
+"Congratulations, Trainer."
+"Congratulations, Trainer."
+"We can still get stronger."
+"We can still get stronger."
 "Lost to you again."
 "Lost to you again."
+"Did you enjoy my performance?"
+"Did you enjoy my performance?"
+"You broke through my defenses."
+"You broke through my defenses."
 "Fragrant winds your way, sweetie!"
 "Fragrant winds your way, sweetie!"
+"My ghosts!"
+"My ghosts!"
+"I can't believe you bested my Ghost-Types!"
+"I can't believe you bested my Ghost-Types!"
+"So that's how you are so strong!"
+"So that's how you are so strong!"
+"You have bested me, well played."
+"You have bested me, well played."
+"Lost, again?"
+"Lost, again?"
+"We... we lost?"
+"We... we lost?"
 "You're pretty cool!"
 "You're pretty cool!"
 "Wow - I'm impressed! I threw everything I had at you."
@@ -194,68 +266,80 @@ Burnt up and toasted! Great battle!
 "lEaVE oUR HomE."
 "No! I will not release my hold on this soul!"
 "No! I will not release my hold on this soul!"
-This is bullshit.
-This is bullshit.
-I'll get the last laugh, when I draw you pregnant!
-I'll get the last laugh, when I draw you pregnant!
+"I couldn't dig myself out of this situation."
+"I couldn't dig myself out of this situation."
+"It seems I have room to grow."
+"It seems I have room to grow."
+"I must train more."
+"I must train more."
+"This is bullshit."
+"This is bullshit."
+"I'll get the last laugh, when I draw you pregnant!"
+"I'll get the last laugh, when I draw you pregnant!"
 "There is just no way . . ."
 "There is just no way . . ."
-Wahahaha! You're as good as ever!
-Wahahaha! You're as good as ever!
-What?! This cannot be... The power of the RED ORB!
-What?! This cannot be... The power of the RED ORB!
-...Huh? What?
-...Huh? What?
-...What was I just doing?
-...What was I just doing?
-Wasn't I just over there?
-Wasn't I just over there?
-I feel fuzzy... What happened?
-I feel fuzzy... What happened?
-Now I'll never get out of these tubes...
-Now I'll never get out of these tubes...
+"Wahahaha! You're as good as ever!"
+"Wahahaha! You're as good as ever!"
+"What?! This cannot be... The power of the Red Orb!"
+"What?! This cannot be... The power of the Red Orb!"
+"...Huh? What?"
+"...Huh? What?"
+"...What was I just doing?"
+"...What was I just doing?"
+"Wasn't I just over there?"
+"Wasn't I just over there?"
+"I feel fuzzy... What happened?"
+"I feel fuzzy... What happened?"
+"Now I'll never get out of these tubes..."
+"Now I'll never get out of these tubes..."
 "Someday I'll become the best swimmer ever!"
 "Someday I'll become the best swimmer ever!"
 "Why is swimming so hard?!"
 "Why is swimming so hard?!"
 "Aye lad. You did good."
 "Aye lad. You did good."
-"Maybe that storm a-brewin was for me..."
-"Maybe that storm a-brewin was for me..."
-"I admire your tastes in Pokemon. How'd ya do it?"
-"I admire your tastes in Pokemon. How'd ya do it?"
-"Be careful out there trainer."
-"Be careful out there trainer."
+"Maybe that storm a-brewin' was for me..."
+"Maybe that storm a-brewin' was for me..."
+"I admire your tastes in Pokémon. How'd ya do it?"
+"I admire your tastes in Pokémon. How'd ya do it?"
+"Be careful out there, Trainer."
+"Be careful out there, Trainer."
 "Never skip Leg Day!"
 "Never skip Leg Day!"
-"You're no novice. That's for sure!"
-"You're no novice. That's for sure!"
-"Jam on Trainer!"
-"Jam on Trainer!"
+"You're no novice, that's for sure!"
+"You're no novice, that's for sure!"
+"Jam on, Trainer!"
+"Jam on, Trainer!"
 "Care to trade collectibles?"
 "Care to trade collectibles?"
 "So much for getting over it..."
 "So much for getting over it..."
 "The future says I need healing..."
 "The future says I need healing..."
-"Just what I needed. A brake..."
-"Just what I needed. A brake..."
+"Just what I needed, a brake..."
+"Just what I needed, a brake..."
 "I lost spectacularly!"
 "I lost spectacularly!"
 "Seems your light was that much brighter..."
 "Seems your light was that much brighter..."
-So long! Alola! Goodbye!
-So long! Alola! Goodbye!
-Aww, what? I lost?!
-Aww, what? I lost?!
-Haha! I have no relation to the Petalburg Gym Leader! Chalk it up to multiverse shenanigans or something!
-Haha! I have no relation to the Petalburg Gym Leader! Chalk it up to multiverse shenanigans or something!
-...
-...
-Iono: What?! I'm gonna say the gamer word!!
-Iono: What?! I'm gonna say the gamer word!!
+"Iono and Elesa: So long! Alola! Goodbye!"
+"Iono and Elesa: So long! Alola! Goodbye!"
+"Aww, what? I lost?!"
+"Aww, what? I lost?!"
+"Haha! I have no relation to the Petalburg Gym Leader! Chalk it up to multiverse shenanigans or something!"
+"Haha! I have no relation to the Petalburg Gym Leader! Chalk it up to multiverse shenanigans or something!"
+"Iono: What?! I'm gonna say the gamer word!!"
+"Iono: What?! I'm gonna say the gamer word!!"
 "Oh, my fairy friends!"
 "Oh, my fairy friends!"
+"We couldn't rock your world."
+"We couldn't rock your world."
+"We must meditate on this."
+"We must meditate on this."
+"I'm getting hungry..."
+"I'm getting hungry..."
+"You resisted the bodacious sounds of rock 'n' roll?"
+"You resisted the bodacious sounds of rock 'n' roll?"
 "But… they’re watching…!"
 "But… they’re watching…!"
 "Did I… do well?"
@@ -362,46 +446,78 @@ I'm never going to get out of here, am I?
 "That’s the price of a fun hike!"
 "That wasn’t the hike I was expecting!"
 "That wasn’t the hike I was expecting!"
-PLEH! Sand in my mouth!
-PLEH! Sand in my mouth!
-My favorite training spot... Ruined!
-My favorite training spot... Ruined!
+"You didn't have to win so absolutely!"
+"You didn't have to win so absolutely!"
+"You didn't have to win so truthfully!"
+"You didn't have to win so truthfully!"
+"My Best Friend will beat you to a pulp!"
+"My Best Friend will beat you to a pulp!"
+"You don't look nearly as good as my new Best Friend!"
+"You don't look nearly as good as my new Best Friend!"
+"Please, don't mention this loss to my new Best Friend."
+"Please, don't mention this loss to my new Best Friend."
+"I'm just gonna go back to being on my phone."
+"I'm just gonna go back to being on my phone."
+"My favorite training spot... ruined!"
+"My favorite training spot... ruined!"
 "The sweet scent of defeat..."
 "The sweet scent of defeat..."
 "My adorable Skitty still loves me!"
 "My adorable Skitty still loves me!"
-I guess my catch wasn’t enough!
-I guess my catch wasn’t enough!
+"I guess my catch wasn’t enough!"
+"I guess my catch wasn’t enough!"
 You’ve got strength!
 You’ve got strength!
-Rock and roll lost its beat...
-Rock and roll lost its beat...
-I need to focus harder...
-I need to focus harder...
-I guess I need more training!
-I guess I need more training!
-Even with my rare Pokémon...!
-Even with my rare Pokémon...!
-I foresaw my defeat... but not like this.
-I foresaw my defeat... but not like this.
-I need to train harder!
-I need to train harder!
-You're strong!
-You're strong!
-Ninja style needs work...
-Ninja style needs work...
-Ah, I see your strength.
-Ah, I see your strength.
-I need more practice...
-I need more practice...
-My vision was unclear...
-My vision was unclear...
-We’re seeing double!
-We’re seeing double!
-I guess I’m not as strong as I thought...
-I guess I’m not as strong as I thought...
-Impossible!
-Impossible!
+"Rock and roll lost its beat..."
+"Rock and roll lost its beat..."
+"I need to focus harder..."
+"I need to focus harder..."
+"I guess I need more training!"
+"I guess I need more training!"
+"Even with my rare Pokémon...!"
+"Even with my rare Pokémon...!"
+"This is turning into a bad camping experience!"
+"This is turning into a bad camping experience!"
+"You're putting out our embers of passion!"
+"You're putting out our embers of passion!"
+"This didn't go as planned..."
+"This didn't go as planned..."
+"I guess I'll let my Pokémon rest."
+"I guess I'll let my Pokémon rest."
+"Please, do not interrupt my exploration."
+"Please, do not interrupt my exploration."
+"I'm just here to hang with my buddies!"
+"I'm just here to hang with my buddies!"
+"This has been a learning experience."
+"This has been a learning experience."
+"I think some sand got in my eye!"
+"I think some sand got in my eye!"
+"I foresaw my defeat... but not like this."
+"I foresaw my defeat... but not like this."
+"I need to train harder!"
+"I need to train harder!"
+"You're strong!"
+"You're strong!"
+"Ninja style needs work..."
+"Ninja style needs work..."
+"Ah, I see your strength."
+"Ah, I see your strength."
+"I need more practice..."
+"I need more practice..."
+"My vision was unclear..."
+"My vision was unclear..."
+"We’re seeing double!"
+"We’re seeing double!"
+"I guess I’m not as strong as I thought..."
+"I guess I’m not as strong as I thought..."
+"Impossible!"
+"Impossible!"
+"Inconceivable!"
+"Inconceivable!"
+"You caught me in a net of surprise!"
+"You caught me in a net of surprise!"
+"Is this the strength that Dawn has?"
+"Is this the strength that Dawn has?"
 "What? Impossible!"
 "What? Impossible!"
 "Maybe the rocks were against me..."
@@ -438,95 +554,107 @@ Impossible!
 "Looks like my wealth couldn’t buy victory!"
 "My bugs gave it their all!"
 "My bugs gave it their all!"
-Ouch! Brock hard.
-Ouch! Brock hard.
-I was going to use the prize money to buy a new BIKE...
-I was going to use the prize money to buy a new BIKE...
-Ooh Rah! Shocked and awed!
-Ooh Rah! Shocked and awed!
-Still, what a lovely City to do battle in.
-Still, what a lovely City to do battle in.
-Hmph. I did not forsee this.
-Hmph. I did not forsee this.
-... Hmph.
-... Hmph.
-Burnt to a crisp! You're one heck of a Trainer, youngster.
-Burnt to a crisp! You're one heck of a Trainer, youngster.
-This cannot be! Young man, I have an offer for you...
-This cannot be! Young man, I have an offer for you...
-Clipped my wings! Damn!
-Clipped my wings! Damn!
-You really bugged me. Get it?
-You really bugged me. Get it?
-You channel your power well, Trainer.
-You channel your power well, Trainer.
-Hoohah! You're spry!
-Hoohah! You're spry!
-Well battled, Trainer. You're quite formidable.
-Well battled, Trainer. You're quite formidable.
-I can't keep up with all these new damn gimmicks...
-I can't keep up with all these new damn gimmicks...
-I'm not conceding this BADGE! ...Oh, wait. Nevermind.
-I'm not conceding this BADGE! ...Oh, wait. Nevermind.
-Don't ask too many questions, All Father.
-Don't ask too many questions, All Father.
-You thought they killed me? Nah, dude! Been catching some waves.
-You thought they killed me? Nah, dude! Been catching some waves.
-NO WAY! 0-2 against you... Not cool.
-NO WAY! 0-2 against you... Not cool.
-Selling my Gym was a great decision. Whitney has done just fine with it.
-Selling my Gym was a great decision. Whitney has done just fine with it.
-My wings were clipped.
-My wings were clipped.
-There's only one Juan!
-There's only one Juan!
-If I would've battled you with LIZA... Ugh!
-If I would've battled you with LIZA... Ugh!
-If TATE was here we would've kicked your ass!
-If TATE was here we would've kicked your ass!
-Candice: dick fit in yo mouth? HA! Zing!
-Candice: dick fit in yo mouth? HA! Zing!
+"Ouch! Brock hard."
+"Ouch! Brock hard."
+"I was going to use the prize money to buy a new Bike..."
+"I was going to use the prize money to buy a new Bike..."
+"Ooh Rah! Shocked and awed!"
+"Ooh Rah! Shocked and awed!"
+"Still, what a lovely City to do battle in."
+"Still, what a lovely City to do battle in."
+"Hmph. I did not foresee this."
+"Hmph. I did not foresee this."
+"... Hmph."
+"... Hmph."
+"Burnt to a crisp! You're one heck of a Trainer, youngster."
+"Burnt to a crisp! You're one heck of a Trainer, youngster."
+"This cannot be! Youngster, I have an offer for you..."
+"This cannot be! Youngster, I have an offer for you..."
+"Clipped my wings! Damn!"
+"Clipped my wings! Damn!"
+"You really bugged me. Get it?"
+"You really bugged me. Get it?"
+"You channel your power well, Trainer."
+"You channel your power well, Trainer."
+"Hoohah! You're spry!"
+"Hoohah! You're spry!"
+"Well battled, Trainer. You're quite formidable."
+"Well battled, Trainer. You're quite formidable."
+"I can't keep up with all these new damn gimmicks..."
+"I can't keep up with all these new damn gimmicks..."
+"I'm not conceding this Badge! ...Oh, wait. Nevermind."
+"I'm not conceding this Badge! ...Oh, wait. Nevermind."
+"Don't ask too many questions, All-Father."
+"Don't ask too many questions, All-Father."
+"You thought they killed me? Nah, dude! Been catching some waves."
+"You thought they killed me? Nah, dude! Been catching some waves."
+"No way! 0-2 against you... Not cool."
+"No way! 0-2 against you... Not cool."
+"Selling my Gym was a great decision. Whitney has done just fine with it."
+"Selling my Gym was a great decision. Whitney has done just fine with it."
+"My wings were clipped."
+"My wings were clipped."
+"There's only one Juan!"
+"There's only one Juan!"
+"If I would've battled you with Liza... Ugh!"
+"If I would've battled you with Liza... Ugh!"
+"If Tate was here, we would've kicked your ass!"
+"If Tate was here, we would've kicked your ass!"
+"Wah! Maybe I'll go train under waterfalls with Chuck..."
+"Wah! Maybe I'll go train under waterfalls with Chuck..."
+"Well done! We put up a great show!"
+"Well done! We put up a great show!"
+"I should've steeled myself for this outcome."
+"I should've steeled myself for this outcome."
+"Candice dick fit in yo mouth? HA! Zing!"
+"Candice dick fit in yo mouth? HA! Zing!"
+"This is a shocking conclusion."
+"This is a shocking conclusion."
 "Wahahahah!"
 "Wahahahah!"
-It just gets so wet here!
-It just gets so wet here!
-Splish splash, I was takin' a bath!
-Splish splash, I was takin' a bath!
-Fly away, little birds!
-Fly away, little birds!
-. . . But my SNEAK ATTACK!
-. . . But my SNEAK ATTACK!
-I can't believe you bested my completely fair and resonable tactics!!
-I can't believe you bested my completely fair and resonable tactics!!
-They say there is a cool Pokémon hidden in the Scorched Slab. . .
-They say there is a cool Pokémon hidden in the Scorched Slab. . .
-I'm at home out here in the wilderness!
-I'm at home out here in the wilderness!
-Dang! What a bummer.
-Dang! What a bummer.
-My precious bugs!
-My precious bugs!
-I came to investigate the Scorched Slab...
-I came to investigate the Scorched Slab...
-Aw, snap. My bugs were squished!
-Aw, snap. My bugs were squished!
-UwU?
-UwU?
-Ugh, what a drag.
-Ugh, what a drag.
-Good grief. I'm dizzy . . .
-Good grief. I'm dizzy . . .
-I just want to shop till I drop!
-I just want to shop till I drop!
-NO, MY BABIES!
-NO, MY BABIES!
-Listen, it's a tough job.
-Listen, it's a tough job.
-My recent diagnosis has led me to consider other options.
-My recent diagnosis has led me to consider other options.
-I just adore my darling PIKACHU !
-I just adore my darling PIKACHU !
-Gah - !
-Gah - !
-Wish I was back home on Rocky Top. . .
-Wish I was back home on Rocky Top. . .
+"It just gets so wet here!"
+"It just gets so wet here!"
+"Splish splash, I was takin' a bath!"
+"Splish splash, I was takin' a bath!"
+"Fly away, little birds!"
+"Fly away, little birds!"
+"My birds needed to spread their wings!"
+"My birds needed to spread their wings!"
+". . . But my Sneak Attack!"
+". . . But my Sneak Attack!"
+"I can't believe you bested my completely fair and reasonable tactics!"
+"I can't believe you bested my completely fair and reasonable tactics!"
+"They say there is a cool Pokémon hidden in the Scorched Slab. . ."
+"They say there is a cool Pokémon hidden in the Scorched Slab. . ."
+"I'm at home out here in the wilderness!"
+"I'm at home out here in the wilderness!"
+"Dang! What a bummer."
+"Dang! What a bummer."
+"My precious bugs!"
+"My precious bugs!"
+"I came to investigate the Scorched Slab..."
+"I came to investigate the Scorched Slab..."
+"Aw, snap. My bugs were squished!"
+"Aw, snap. My bugs were squished!"
+"UwU?"
+"UwU?"
+"Ugh, what a drag."
+"Ugh, what a drag."
+"Good grief. I'm dizzy . . ."
+"Good grief. I'm dizzy . . ."
+"I just want to shop till I drop!"
+"I just want to shop till I drop!"
+"No, my babies!"
+"No, my babies!"
+"Listen, it's a tough job."
+"Listen, it's a tough job."
+"My recent diagnosis has led me to consider other options."
+"My recent diagnosis has led me to consider other options."
+"I just adore my darling Pikachu!"
+"I just adore my darling Pikachu!"
+"Gah-!"
+"Gah-!"
+"Wish I was back home on Rocky Top. . ."
+"Wish I was back home on Rocky Top. . ."
+"Damn, impressive. Unless you used debug!"
+"Damn, impressive. Unless you used debug!"

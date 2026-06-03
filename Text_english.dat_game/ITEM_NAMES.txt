@@ -2,6 +2,8 @@
 # translate every second line of this file.
 #-------------------------------
 [ITEM_NAMES]
+TM101
+TM101
 Black Augurite
 Black Augurite
 Peat Block
@@ -122,22 +124,36 @@ Link Cable
 Link Cable
 Strongest Dress
 Strongest Dress
+Big Fairy Dress
+Big Fairy Dress
 Pandemonic Drip
 Pandemonic Drip
-Savage Axe
-Savage Axe
+Tyrant Scythe
+Tyrant Scythe
+Mimic Gold
+Mimic Gold
+Frozen Heart
+Frozen Heart
+Mizuha Armor
+Mizuha Armor
 Dhampir Rapier
 Dhampir Rapier
+Winter Drip
+Winter Drip
+Ancient Dress
+Ancient Dress
+Savage Axe
+Savage Axe
 Oath Sign
 Oath Sign
 Harp
 Harp
-Winter Drip
-Winter Drip
 Magus Garb
 Magus Garb
-Ancient Dress
-Ancient Dress
+Sacred Veil
+Sacred Veil
+Assassination Creed
+Assassination Creed
 Honchnite
 Honchnite
 Flygonite
@@ -212,6 +228,16 @@ Bottle Cap
 Bottle Cap
 Gold Bottle Cap
 Gold Bottle Cap
+Leaf Core
+Leaf Core
+Stone Core
+Stone Core
+Golden Scale
+Golden Scale
+TEST Item
+TEST Item
+Hook Sword
+Hook Sword
 Innate Shuffler
 Innate Shuffler
 TR001
@@ -678,6 +704,34 @@ Dynamax Candy XL
 Dynamax Candy XL
 Max Soup
 Max Soup
+Shiny Berry
+Shiny Berry
+Health Candy
+Health Candy
+Mighty Candy
+Mighty Candy
+Tough Candy
+Tough Candy
+Smart Candy
+Smart Candy
+Courage Candy
+Courage Candy
+Quick Candy
+Quick Candy
+Sickly Candy
+Sickly Candy
+Weak Candy
+Weak Candy
+Brittle Candy
+Brittle Candy
+Numb Candy
+Numb Candy
+Coward Candy
+Coward Candy
+Slow Candy
+Slow Candy
+Raid Bait
+Raid Bait
 Tera Orb
 Tera Orb
 Normal Tera Shard
@@ -730,8 +784,6 @@ Z-Ring
 Z-Ring
 Z-Power Ring
 Z-Power Ring
-Z-Gauntlet
-Z-Gauntlet
 Z-Booster
 Z-Booster
 Normalium Z

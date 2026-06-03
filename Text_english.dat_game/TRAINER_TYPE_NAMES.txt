@@ -2,6 +2,8 @@
 # translate every second line of this file.
 #-------------------------------
 [TRAINER_TYPE_NAMES]
+KAHUNA
+KAHUNA
 Ace Trainer
 Ace Trainer
 Expert
@@ -38,6 +40,8 @@ Mother's Chosen
 Mother's Chosen
 The Strongest!
 The Strongest!
+The Nameless Fairy
+The Nameless Fairy
 Possessed
 Possessed
 Hex Maniac
@@ -90,3 +94,5 @@ Admin Duo
 Admin Duo
 Rocket
 Rocket
+Programmer
+Programmer

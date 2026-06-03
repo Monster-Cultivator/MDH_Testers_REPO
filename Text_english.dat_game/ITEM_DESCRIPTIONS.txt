@@ -2,6 +2,8 @@
 # translate every second line of this file.
 #-------------------------------
 [ITEM_DESCRIPTIONS]
+A unique attack that varies in type and intensity depending on the Pokémon using it.
+A unique attack that varies in type and intensity depending on the Pokémon using it.
 A glassy black stone that produces a sharp cutting edge when split. It’s loved by a certain Pokémon.
 A glassy black stone that produces a sharp cutting edge when split. It’s loved by a certain Pokémon.
 A block of muddy material that is for fuel. It’s loved by a certain Pokémon.
@@ -132,20 +134,32 @@ The outfit worn by the STRONGEST that makes certain species of Pokémon evolve!
 The outfit worn by the STRONGEST that makes certain species of Pokémon evolve!
 The outfit worn by the Goddess of Hell! It makes certain species of Pokémon evolve!
 The outfit worn by the Goddess of Hell! It makes certain species of Pokémon evolve!
-An axe said to lower the intelligence of the wielder. It makes certain species of Pokémon evolve!
-An axe said to lower the intelligence of the wielder. It makes certain species of Pokémon evolve!
+A Scythe who's oxner govern black masses! It makes certain species of Pokémon evolve!
+A Scythe who's oxner govern black masses! It makes certain species of Pokémon evolve!
+A strange golden coin. It makes certain species of Pokémon evolve!
+A strange golden coin. It makes certain species of Pokémon evolve!
+A soul chilled by a ghostly frost. It makes certain species of Pokémon evolve!
+A soul chilled by a ghostly frost. It makes certain species of Pokémon evolve!
+Armor woven with flowing scales and pale mist. It makes certain species of Pokémon evolve!
+Armor woven with flowing scales and pale mist. It makes certain species of Pokémon evolve!
 A weapon for hybrid bloodsuckers! It makes certain species of Pokémon evolve!
 A weapon for hybrid bloodsuckers! It makes certain species of Pokémon evolve!
+An outfit filled with winter cheer. It makes certain species of Pokémon evolve!
+An outfit filled with winter cheer. It makes certain species of Pokémon evolve!
+A dress worn while dancing to Numel by Numel! It makes certain species of Pokémon evolve!
+A dress worn while dancing to Numel by Numel! It makes certain species of Pokémon evolve!
+An axe said to lower the intelligence of the wielder. It makes certain species of Pokémon evolve!
+An axe said to lower the intelligence of the wielder. It makes certain species of Pokémon evolve!
 A small trinket filled with love! It makes certain species of Pokémon evolve!
 A small trinket filled with love! It makes certain species of Pokémon evolve!
 A musical tool of mass seduction! It makes certain species of Pokémon evolve!
 A musical tool of mass seduction! It makes certain species of Pokémon evolve!
-An outfit filled with winter cheer. It makes certain species of Pokémon evolve!
-An outfit filled with winter cheer. It makes certain species of Pokémon evolve!
 Outfit worn by one who hunted the Abyss Lord. It makes certain species of Pokémon evolve!
 Outfit worn by one who hunted the Abyss Lord. It makes certain species of Pokémon evolve!
-A dress worn while dancing to Numel by Numel! It makes certain species of Pokémon evolve!
-A dress worn while dancing to Numel by Numel! It makes certain species of Pokémon evolve!
+A headdress that doubles as a spellcasting focus! It makes certain species of Pokémon evolve!
+A headdress that doubles as a spellcasting focus! It makes certain species of Pokémon evolve!
+An old manuscript encypted in Thieves' Cant! It makes certain species of Pokémon evolve!
+An old manuscript encypted in Thieves' Cant! It makes certain species of Pokémon evolve!
 One of a variety of mysterious Mega Stones. Have Honchkrow hold it, and it will be able to Mega Evolve.
 One of a variety of mysterious Mega Stones. Have Honchkrow hold it, and it will be able to Mega Evolve.
 One of a variety of mysterious Mega Stones. Have Flygon hold it, and it will be able to Mega Evolve.
@@ -210,6 +224,14 @@ For some reason, these caps are highly sought-after by master Trainers.
 For some reason, these caps are highly sought-after by master Trainers.
 Despite the gold being blatantly fake, these caps are extremely valuable amongst certain Trainers.
 Despite the gold being blatantly fake, these caps are extremely valuable amongst certain Trainers.
+A rare core that can be used to forge a sword!
+A rare core that can be used to forge a sword!
+A scale of pure gold that gives off a lustrous gleam. A maniac will buy it for a high price.
+A scale of pure gold that gives off a lustrous gleam. A maniac will buy it for a high price.
+This item is not meant to be gotten, this is just to update the PBS file in the github.
+This item is not meant to be gotten, this is just to update the PBS file in the github.
+A sword with a hook!
+A sword with a hook!
 Re-randomizes the innate abilities of a pokemon. Good luck!
 Re-randomizes the innate abilities of a pokemon. Good luck!
 The user gazes at the target rather charmingly, making it less wary. This harshly lowers the target's Attack stat.
@@ -624,6 +646,34 @@ Maxes out the Dynamax Level of a single Pokémon. A higher level means higher HP
 Maxes out the Dynamax Level of a single Pokémon. A higher level means higher HP when Dynamaxed.
 A soup that packs a huge kick. Certain Pokémon that consume it may be given the ability to Gigantamax.
 A soup that packs a huge kick. Certain Pokémon that consume it may be given the ability to Gigantamax.
+A rare berry that makes a Pokémon shiny when used.
+A rare berry that makes a Pokémon shiny when used.
+A sweet candy for Pokémon. It raises the base HP IV of a single Pokémon by 3 points.
+A sweet candy for Pokémon. It raises the base HP IV of a single Pokémon by 3 points.
+A sweet candy for Pokémon. It raises the base Atk IV of a single Pokémon by 3 points.
+A sweet candy for Pokémon. It raises the base Atk IV of a single Pokémon by 3 points.
+A sweet candy for Pokémon. It raises the base Def IV of a single Pokémon by 3 points.
+A sweet candy for Pokémon. It raises the base Def IV of a single Pokémon by 3 points.
+A sweet candy for Pokémon. It raises the base SpAtk IV of a single Pokémon by 3 points.
+A sweet candy for Pokémon. It raises the base SpAtk IV of a single Pokémon by 3 points.
+A sweet candy for Pokémon. It raises the base SpDef IV of a single Pokémon by 3 points.
+A sweet candy for Pokémon. It raises the base SpDef IV of a single Pokémon by 3 points.
+A sweet candy for Pokémon. It raises the base Speed IV of a single Pokémon by 3 points.
+A sweet candy for Pokémon. It raises the base Speed IV of a single Pokémon by 3 points.
+A bitter candy for Pokémon. It resets the base HP IV of a single Pokémon to 0.
+A bitter candy for Pokémon. It resets the base HP IV of a single Pokémon to 0.
+A bitter candy for Pokémon. It resets the base Attack IV of a single Pokémon to 0.
+A bitter candy for Pokémon. It resets the base Attack IV of a single Pokémon to 0.
+A bitter candy for Pokémon. It resets the base Defense IV of a single Pokémon to 0.
+A bitter candy for Pokémon. It resets the base Defense IV of a single Pokémon to 0.
+A bitter candy for Pokémon. It resets the base SpAtk IV of a single Pokémon to 0.
+A bitter candy for Pokémon. It resets the base SpAtk IV of a single Pokémon to 0.
+A bitter candy for Pokémon. It resets the base SpDef IV of a single Pokémon to 0.
+A bitter candy for Pokémon. It resets the base SpDef IV of a single Pokémon to 0.
+A bitter candy for Pokémon. It resets the base Speed IV of a single Pokémon to 0.
+A bitter candy for Pokémon. It resets the base Speed IV of a single Pokémon to 0.
+A box containing a helping of a special type of bait. It can be used to lure wild Pokémon to a raid den.
+A box containing a helping of a special type of bait. It can be used to lure wild Pokémon to a raid den.
 An orb that holds the power to crystallize. When charged, it allows Pokémon to Terastallize.
 An orb that holds the power to crystallize. When charged, it allows Pokémon to Terastallize.
 On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
@@ -638,8 +688,6 @@ A mysterious glimmering charm that increases the number of Tera Shards you recei
 A mysterious glimmering charm that increases the number of Tera Shards you receive from Tera Raid Battles.
 A mysterious ring that enables Pokémon to use Z-Power if they are holding a compatible Z-Crystal.
 A mysterious ring that enables Pokémon to use Z-Power if they are holding a compatible Z-Crystal.
-A mysterious gauntlet that enables Pokémon to use Z-Power if they are holding a compatible Z-Crystal.
-A mysterious gauntlet that enables Pokémon to use Z-Power if they are holding a compatible Z-Crystal.
 A crystal brimming with Z-Power. It can fully recharge your Z-Ring in battle.
 A crystal brimming with Z-Power. It can fully recharge your Z-Ring in battle.
 It converts Z-Power into crystals that upgrade Normal-type moves to Normal-type Z-Moves.

@@ -98,6 +98,8 @@ The user throws a rigged bouquet of flowers at the target, which always hits and
 The user throws a rigged bouquet of flowers at the target, which always hits and lands a critical hit.
 The user attacks with its huge hammer. This move can’t be used twice in a row.
 The user attacks with its huge hammer. This move can’t be used twice in a row.
+Fueled my the will of her mistress. This is Mega Houndoom's ultimate attack!
+Fueled my the will of her mistress. This is Mega Houndoom's ultimate attack!
 The user becomes highly vulnerable to attacks until its next turn after using this move.
 The user becomes highly vulnerable to attacks until its next turn after using this move.
 The user spins the pointed part of its body at high speed to pierce the target, ignoring protections.
@@ -196,6 +198,10 @@ Wraps the target in a toxic, corrosive chain. This may also leave the target bad
 Wraps the target in a toxic, corrosive chain. This may also leave the target badly poisoned.
 ???
 ???
+The user launches charged debris at the foe's side that harms and confuses any foe who switch in.
+The user launches charged debris at the foe's side that harms and confuses any foe who switch in.
+Penny is an ambush predator apparently?
+Penny is an ambush predator apparently?
 The user protects itself from all attacks, including Max Moves. May fail if used in succession.
 The user protects itself from all attacks, including Max Moves. May fail if used in succession.
 A Fighting-type attack Dynamax Pokémon use. This raises ally Pokémon's Attack stats.
@@ -302,6 +308,10 @@ A G-Max Move used by G-Max Urshifu. This rapid-strike move can ignore Max Guard.
 A G-Max Move used by G-Max Urshifu. This rapid-strike move can ignore Max Guard.
 The user blitzes the target and lashes out with an electrified bite. This attack never misses.
 The user blitzes the target and lashes out with an electrified bite. This attack never misses.
+The user calls upon the Lord Almighty to smite their foe. Bless'd be.
+The user calls upon the Lord Almighty to smite their foe. Bless'd be.
+The user attacks the target by using its tongue. The user's type determines the type of this move.
+The user attacks the target by using its tongue. The user's type determines the type of this move.
 Move type changes to match a Terastallized user's Tera Type. Deals damage based on user's higher stat.
 Move type changes to match a Terastallized user's Tera Type. Deals damage based on user's higher stat.
 The user builds up its momentum using its Z-Power and crashes into the target at full speed.

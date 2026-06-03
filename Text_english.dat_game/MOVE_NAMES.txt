@@ -2,6 +2,8 @@
 # translate every second line of this file.
 #-------------------------------
 [MOVE_NAMES]
+Gatling rush
+Gatling rush
 Dire Claw
 Dire Claw
 Springtide Storm
@@ -84,6 +86,8 @@ Flower Trick
 Flower Trick
 Gigaton Hammer
 Gigaton Hammer
+Destruction in three strikes
+Destruction in three strikes
 Glaive Rush
 Glaive Rush
 Hyper Drill
@@ -190,6 +194,18 @@ Volt Eater
 Volt Eater
 Armor Piercer
 Armor Piercer
+Chargestone
+Chargestone
+Flash Step
+Flash Step
+Illusionary Glomp
+Illusionary Glomp
+Heart Stomp
+Heart Stomp
+Wiccan Moon
+Wiccan Moon
+Crush Conditions
+Crush Conditions
 Max Guard
 Max Guard
 Max Knuckle
@@ -296,6 +312,10 @@ G-Max Rapid Flow
 G-Max Rapid Flow
 Induction Bolt
 Induction Bolt
+Divine Smite
+Divine Smite
+Elemental Lash
+Elemental Lash
 Tera Blast
 Tera Blast
 Breakneck Blitz

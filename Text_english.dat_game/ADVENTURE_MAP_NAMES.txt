@@ -1,8 +1,6 @@
 ﻿# To localize this text for a particular language, please
 # translate every second line of this file.
 #-------------------------------
-[POKEMON_NICKNAMES]
-Misdreavus
-Misdreavus
-Freddy
-Freddy
+[ADVENTURE_MAP_NAMES]
+Cavernous Lair
+Cavernous Lair

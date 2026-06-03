@@ -112,6 +112,18 @@ Eggs hatch significantly faster.
 Eggs hatch significantly faster.
 Being hit with a contact move scatters Spikes on the Opponent's side.
 Being hit with a contact move scatters Spikes on the Opponent's side.
+Powers up Fairy & Psychic type moves.
+Powers up Fairy & Psychic type moves.
+Boosts the Pokémon's evasion in the sun.
+Boosts the Pokémon's evasion in the sun.
+Boosts the Pokémon's evasion on super-effective attacks.
+Boosts the Pokémon's evasion on super-effective attacks.
+User's Sound-Based moves turn into Flying-Type.
+User's Sound-Based moves turn into Flying-Type.
+In Hail, Sp. Atk is boosted but HP decreases.
+In Hail, Sp. Atk is boosted but HP decreases.
+Weakens unnatural Pokemon
+Weakens unnatural Pokemon
 The user doesn't have any ability
 The user doesn't have any ability
 Stops self-lowering stats and prevents recoil.
@@ -216,3 +228,7 @@ HAHAHAHAHAHAHAHAHAHAHAHA
 HAHAHAHAHAHAHAHAHAHAHAHA
 50% Damage Reduction
 50% Damage Reduction
+Attacks against Paralyzed Pokémon always crit.
+Attacks against Paralyzed Pokémon always crit.
+Water attacks are super effective against the Poison type; poison immunity.
+Water attacks are super effective against the Poison type; poison immunity.

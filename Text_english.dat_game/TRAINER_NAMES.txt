@@ -58,6 +58,14 @@ Alice & Bob
 Alice & Bob
 Ariel
 Ariel
+Valorie
+Valorie
+Victoria
+Victoria
+Vivi
+Vivi
+Vicky
+Vicky
 May
 May
 Wally
@@ -152,6 +160,8 @@ Anthony
 Anthony
 Cirno
 Cirno
+Daiyousei
+Daiyousei
 Sonia
 Sonia
 Misdreavus
@@ -176,8 +186,8 @@ Valerie
 Valerie
 Steve
 Steve
-Jr
-Jr
+Junior
+Junior
 Mint
 Mint
 Samantha
@@ -378,6 +388,10 @@ Kiki
 Kiki
 Lyra
 Lyra
+Amy
+Amy
+Stacy
+Stacy
 Chloe
 Chloe
 Brandon
@@ -398,6 +412,22 @@ Cyndy
 Cyndy
 Hector
 Hector
+Beau
+Beau
+Heidi
+Heidi
+Drew
+Drew
+Becky
+Becky
+Bryan
+Bryan
+Branden
+Branden
+Celia
+Celia
+Dusty
+Dusty
 Marlene
 Marlene
 Kyra
@@ -420,6 +450,8 @@ Inesse
 Inesse
 Lana
 Lana
+Johanna
+Johanna
 Mars
 Mars
 Shelly & Courtney

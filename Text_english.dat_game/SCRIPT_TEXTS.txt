@@ -1538,6 +1538,26 @@ Banette
 Banette
 {1} consumed its charge to heal itself!
 {1} consumed its charge to heal itself!
+#{g}You don't have enough Pokémon in your party that can participate...
+#{g}You don't have enough Pokémon in your party that can participate...
+#{g}Come back when you have enough Pokémon to battle with.
+#{g}Come back when you have enough Pokémon to battle with.
+#{g}Huh? Changed your mind?
+#{g}Huh? Changed your mind?
+#{g}Come back when you have the right Pokéméon you want to battle with.
+#{g}Come back when you have the right Pokéméon you want to battle with.
+{1} made a wish!
+{1} made a wish!
+{1}'s Tera type changed to {2}!
+{1}'s Tera type changed to {2}!
+Normal sprites
+Normal sprites
+Dynamax sprites
+Dynamax sprites
+Are you sure you want to reposition all Dynamax sprites?
+Are you sure you want to reposition all Dynamax sprites?
+Edit Dynamax availability and Dynamax metrics.
+Edit Dynamax availability and Dynamax metrics.
 No usage found.
 No usage found.
 Results printed to {1} in the project folder.
@@ -1560,3 +1580,1317 @@ Find which events use a specific variable.
 Find which events use a specific variable.
 Search for which variable?
 Search for which variable?
+Beasts
+Beasts
+Show NPC Indicator
+Show NPC Indicator
+Show
+Show
+Hide
+Hide
+Choose whether indicator bubbles appear above NPCs.
+Choose whether indicator bubbles appear above NPCs.
+NPC Indicator Move
+NPC Indicator Move
+Don't Move
+Don't Move
+Choose whether indicator bubbles above NPCs move up and down.
+Choose whether indicator bubbles above NPCs move up and down.
+Storage
+Storage
+Connecting to PC Storage...
+Connecting to PC Storage...
+...Connection blocked! Something is jamming the signal!
+...Connection blocked! Something is jamming the signal!
+You need a Pokédex to access your PC remotely.
+You need a Pokédex to access your PC remotely.
+Enables all trainers to use the Cheer command.
+Enables all trainers to use the Cheer command.
+Determines the specific cheer commands displayed.
+Determines the specific cheer commands displayed.
+Set a cheer mode to determine the cheer commands displayed.
+Set a cheer mode to determine the cheer commands displayed.
+Raid settings...
+Raid settings...
+Edit and test features related to Raid Battles.
+Edit and test features related to Raid Battles.
+Empty all Raid Dens
+Empty all Raid Dens
+Reset all Raid Dens
+Reset all Raid Dens
+Endless Adventure Mode unlocked [{1}]
+Endless Adventure Mode unlocked [{1}]
+Edit saved Adventure routes
+Edit saved Adventure routes
+Edit Adventure maps
+Edit Adventure maps
+Playtest a Raid battle
+Playtest a Raid battle
+Playtest a Raid Adventure
+Playtest a Raid Adventure
+Raid events on all maps were emptied of all Pokémon.
+Raid events on all maps were emptied of all Pokémon.
+Raid events on all maps were reset with new Pokémon.
+Raid events on all maps were reset with new Pokémon.
+Select a type of Adventure to edit routes for.
+Select a type of Adventure to edit routes for.
+Add a new {1} route
+Add a new {1} route
+Clear an existing {1} route
+Clear an existing {1} route
+Clear all {1} routes
+Clear all {1} routes
+The max number of saved {1} routes has already been met.
+The max number of saved {1} routes has already been met.
+There aren't any eligible {1} boss species found.
+There aren't any eligible {1} boss species found.
+Choose a boss species for this {1} route.
+Choose a boss species for this {1} route.
+There is already an existing {1} route leading to {2}.
+There is already an existing {1} route leading to {2}.
+Choose an Adventure map to encounter {1} on.
+Choose an Adventure map to encounter {1} on.
+A new {1} route to {2} was found within {3}.
+A new {1} route to {2} was found within {3}.
+No saved {1} routes exist.
+No saved {1} routes exist.
+{1} in {2}
+{1} in {2}
+Select a saved {1} route to remove.
+Select a saved {1} route to remove.
+The {1} route to {2} was cleared.
+The {1} route to {2} was cleared.
+All saved {1} routes were cleared.
+All saved {1} routes were cleared.
+Select a type of raid to test.
+Select a type of raid to test.
+Choose a species to challenge in the {1} Raid.
+Choose a species to challenge in the {1} Raid.
+Select a type of lair to explore.
+Select a type of lair to explore.
+Apply Darkness Mode to this {1}?
+Apply Darkness Mode to this {1}?
+You don't have any Pokémon in your party to enter a Raid battle.
+You don't have any Pokémon in your party to enter a Raid battle.
+<<[>>Battle {1}<<]>>
+<<[>>Battle {1}<<]>>
+Set raid rank [{1}]
+Set raid rank [{1}]
+Set raid party [{1} PkMn]
+Set raid party [{1} PkMn]
+Set raid partner [{1}]
+Set raid partner [{1}]
+Set {1} Raid battle properties.
+Set {1} Raid battle properties.
+Choose a raid rank.
+Choose a raid rank.
+Do what with the existing raid partner? ({1})
+Do what with the existing raid partner? ({1})
+Set {1} as raid partner.
+Set {1} as raid partner.
+Are you sure you want to abandon this raid battle?
+Are you sure you want to abandon this raid battle?
+Cheer Levels
+Cheer Levels
+Current Cheer level of each trainer.
+Current Cheer level of each trainer.
+Choose a trainer's Cheer level to edit.
+Choose a trainer's Cheer level to edit.
+Set Cheer level (max={1}).
+Set Cheer level (max={1}).
+Cheer commands are not available in this battle.
+Cheer commands are not available in this battle.
+{1} replenished its Z-Power with a surge of energy!
+{1} replenished its Z-Power with a surge of energy!
+{1} recovered from fainting!<<n>>It will be sent back out next turn!
+{1} recovered from fainting!<<n>>It will be sent back out next turn!
+The raid ranks this species may appear in.
+The raid ranks this species may appear in.
+The types of raids this species may appear in.
+The types of raids this species may appear in.
+Raid Rank [Slot {1}]
+Raid Rank [Slot {1}]
+Raid Ranks that this species appears in.
+Raid Ranks that this species appears in.
+{1}{2}
+{1}{2}
+Online
+Online
+Raid Den
+Raid Den
+Raid Adventure
+Raid Adventure
+{1} emerged from within the den!
+{1} emerged from within the den!
+{1} disappeared somewhere into the den...
+{1} disappeared somewhere into the den...
+Ultra Raid Wormhole
+Ultra Raid Wormhole
+Ultra Adventure
+Ultra Adventure
+{1} emerged from the wormhole!
+{1} emerged from the wormhole!
+{1} disappeared through the wormhole...
+{1} disappeared through the wormhole...
+Max Raid Den
+Max Raid Den
+Dynamax Adventure
+Dynamax Adventure
+A Dynamaxed {1} emerged from within the den!
+A Dynamaxed {1} emerged from within the den!
+Tera Raid Den
+Tera Raid Den
+Terastal Adventure
+Terastal Adventure
+A Terastallized {1} emerged from within the den!
+A Terastallized {1} emerged from within the den!
+Graphics/Characters/
+Graphics/Characters/
+A new Pokémon appeared!
+A new Pokémon appeared!
+There doesn't seem to be anything here...
+There doesn't seem to be anything here...
+Want to throw in a {1} to lure a Pokémon?
+Want to throw in a {1} to lure a Pokémon?
+You tossed in a {1}!
+You tossed in a {1}!
+But you don't have any {1}...
+But you don't have any {1}...
+You peered into the {1} before you...
+You peered into the {1} before you...
+You must save the game before entering a new raid. Is this ok?
+You must save the game before entering a new raid. Is this ok?
+\se[]{1} saved the game.\me[GUI save game]\wtnp[30]
+\se[]{1} saved the game.\me[GUI save game]\wtnp[30]
+\se[]Save failed.\wtnp[30]
+\se[]Save failed.\wtnp[30]
+Graphics/Characters/trainer_#{trainer_type}
+Graphics/Characters/trainer_#{trainer_type}
+Change Party
+Change Party
+Change Pokémon
+Change Pokémon
+Begin Raid
+Begin Raid
+Leave Raid
+Leave Raid
+Would you like to leave the raid?
+Would you like to leave the raid?
+Enter the raid with the displayed {1}?
+Enter the raid with the displayed {1}?
+View
+View
+Lv. ???
+Lv. ???
+Abil: ???
+Abil: ???
+You caught {1}!
+You caught {1}!
+Abil: {1}
+Abil: {1}
+You lost to {1}!
+You lost to {1}!
+No Rewards Earned.
+No Rewards Earned.
+Next
+Next
+The energy around {1} grew out of control!
+The energy around {1} grew out of control!
+You were blown out of the den!
+You were blown out of the den!
+The energy around {1} is growing too strong to withstand!
+The energy around {1} is growing too strong to withstand!
+The energy around {1} is growing stronger!
+The energy around {1} is growing stronger!
+The mysterious barrier protected {1}!
+The mysterious barrier protected {1}!
+Energy has begun to gather around {1}!
+Energy has begun to gather around {1}!
+A mysterious barrier appeared in front of {1}!
+A mysterious barrier appeared in front of {1}!
+The mysterious barrier disappeared!
+The mysterious barrier disappeared!
+{1} removed negative effects from itself!
+{1} removed negative effects from itself!
+{1} nullified the stat changes and Abilities affecting your side!
+{1} nullified the stat changes and Abilities affecting your side!
+{1} reduced the effectiveness of cheering!
+{1} reduced the effectiveness of cheering!
+TURN:{1}
+TURN:{1}
+KO:{1}
+KO:{1}
+Offense Cheer
+Offense Cheer
+Go all-out!
+Go all-out!
+Requires Cheer Lv.1 or higher.
+Requires Cheer Lv.1 or higher.
+The team deals more damage with moves.
+The team deals more damage with moves.
+Increases potency of the team's moves.
+Increases potency of the team's moves.
+The team's moves may pierce protections.
+The team's moves may pierce protections.
+Defense Cheer
+Defense Cheer
+Hang tough!
+Hang tough!
+The team takes less damage from moves.
+The team takes less damage from moves.
+The team is immune to move effects.
+The team is immune to move effects.
+The team endures damage from moves.
+The team endures damage from moves.
+Healing Cheer
+Healing Cheer
+Heal up!
+Heal up!
+Heals some of the team's HP.
+Heals some of the team's HP.
+Heals the team's HP & cures status.
+Heals the team's HP & cures status.
+Grants the team a wish & fully heals.
+Grants the team a wish & fully heals.
+Counter Cheer
+Counter Cheer
+Turn the tables!
+Turn the tables!
+Reverses stat changes of both teams.
+Reverses stat changes of both teams.
+Swaps the field effects on both sides.
+Swaps the field effects on both sides.
+Removes and applies Heal Block to teams.
+Removes and applies Heal Block to teams.
+Basic Raid Cheer
+Basic Raid Cheer
+Keep it going!
+Keep it going!
+Requires Cheer Lv.2 or higher.
+Requires Cheer Lv.2 or higher.
+Extends the raid turn counter.
+Extends the raid turn counter.
+Extends the raid turn & KO counters.
+Extends the raid turn & KO counters.
+Ultra Raid Cheer
+Ultra Raid Cheer
+Let's use Z-Power!
+Let's use Z-Power!
+Requires Cheer Lv.MAX.
+Requires Cheer Lv.MAX.
+Allows you to use a Z-Move.
+Allows you to use a Z-Move.
+Max Raid Cheer
+Max Raid Cheer
+Let's Dynamax!
+Let's Dynamax!
+Allows you to use Dynamax.
+Allows you to use Dynamax.
+Tera Raid Cheer
+Tera Raid Cheer
+Let's Terastallize!
+Let's Terastallize!
+Allows you to use Terastallization.
+Allows you to use Terastallization.
+{1}'s cheer level is building!
+{1}'s cheer level is building!
+{1}'s cheer level is at its maximum!
+{1}'s cheer level is at its maximum!
+{1}'s inspiration to go all-out has faded!
+{1}'s inspiration to go all-out has faded!
+{1}'s inspiration to attack with more potency has faded!
+{1}'s inspiration to attack with more potency has faded!
+{1}'s inspiration to break through protections has faded!
+{1}'s inspiration to break through protections has faded!
+{1}'s inspiration to hang tough has faded!
+{1}'s inspiration to hang tough has faded!
+{1}'s inspiration to ignore critical hits and move effects has faded!
+{1}'s inspiration to ignore critical hits and move effects has faded!
+{1}'s inspiration to endure incoming attacks has faded!
+{1}'s inspiration to endure incoming attacks has faded!
+Cheers can't be used in this battle.
+Cheers can't be used in this battle.
+You already selected a cheer to use this round.
+You already selected a cheer to use this round.
+You don't have any cheers to use in this battle.
+You don't have any cheers to use in this battle.
+{1} cheered for {2}!<<n>>{3}
+{1} cheered for {2}!<<n>>{3}
+But the cheer echoed feebly around the area...
+But the cheer echoed feebly around the area...
+Cheer Lv. MAX
+Cheer Lv. MAX
+Cheer Lv. {1}
+Cheer Lv. {1}
+The cheer inspired {1} to attack with more power!
+The cheer inspired {1} to attack with more power!
+The cheer inspired {1} to attack with more potency!
+The cheer inspired {1} to attack with more potency!
+The cheer inspired {1} to break through protections!
+The cheer inspired {1} to break through protections!
+The cheer inspired {1} to resist incoming attacks!
+The cheer inspired {1} to resist incoming attacks!
+The cheer inspired {1} to resist incoming critical hits and move effects!
+The cheer inspired {1} to resist incoming critical hits and move effects!
+The cheer inspired {1} to endure incoming attacks!
+The cheer inspired {1} to endure incoming attacks!
+{1} was released from its curse.
+{1} was released from its curse.
+The cheer inspired {1} to make a wish!
+The cheer inspired {1} to make a wish!
+The cheer reversed the stat changes of all battlers!
+The cheer reversed the stat changes of all battlers!
+The cheer swapped the battle effects affecting each side of the field!
+The cheer swapped the battle effects affecting each side of the field!
+The cheer removed the Heal Block from {1}!
+The cheer removed the Heal Block from {1}!
+The cheer prevented {1} from healing!
+The cheer prevented {1} from healing!
+The energy surrounding {1} seems to have weakened...
+The energy surrounding {1} seems to have weakened...
+The cheer increased the number of remaining turns!
+The cheer increased the number of remaining turns!
+The cheer increased the number of remaining knock outs!
+The cheer increased the number of remaining knock outs!
+The cheer fully charged {1}'s {2}!<<n>>{1} can use Z-Moves now!
+The cheer fully charged {1}'s {2}!<<n>>{1} can use Z-Moves now!
+The cheer fully charged {1}'s {2}!<<n>>{1} can use Dynamax now!
+The cheer fully charged {1}'s {2}!<<n>>{1} can use Dynamax now!
+The cheer fully charged {1}'s {2}!<<n>>{1} can use Terastallization now!
+The cheer fully charged {1}'s {2}!<<n>>{1} can use Terastallization now!
+Adventure Map {1} '{2}':
+Adventure Map {1} '{2}':<<n>>
+Map has invalid dimensions. Each value must range from 1-32.<<n>>{3}
+Map has invalid dimensions. Each value must range from 1-32.<<n>>{3}
+Coordinates '{1}' is used twice by two different tiles.<<n>>{3}
+Coordinates '{1}' is used twice by two different tiles.<<n>>{3}
+Coordinates '{1}' for {2} are invalid. Must be 4 characters long.<<n>>{3}
+Coordinates '{1}' for {2} are invalid. Must be 4 characters long.<<n>>{3}
+A {1} tile is set with 'Tile' instead of '{2}'.<<n>>{3}
+A {1} tile is set with 'Tile' instead of '{2}'.<<n>>{3}
+Invalid number of {1} tiles. Requires {2}.<<n>>{3}
+Invalid number of {1} tiles. Requires {2}.<<n>>{3}
+Invalid number of {1} tiles. Requires {2}, but only found {3}.<<n>>{4}
+Invalid number of {1} tiles. Requires {2}, but only found {3}.<<n>>{4}
+Invalid number of {1} tiles. Maximum {2}, but found {3}.<<n>>{4}
+Invalid number of {1} tiles. Maximum {2}, but found {3}.<<n>>{4}
+Empty
+Empty
+Pathway
+Pathway
+Landmark
+Landmark
+Start Point
+Start Point
+This will always be the first tile you move towards.
+This will always be the first tile you move towards.
+Battle
+Battle
+Passing over this tile will initiate a raid battle against a wild Pokémon.
+Passing over this tile will initiate a raid battle against a wild Pokémon.
+Crossroad
+Crossroad
+Landing on this tile will allow you to choose a new path to travel in.
+Landing on this tile will allow you to choose a new path to travel in.
+Turn North
+Turn North
+Passing over this tile will force you to turn north.
+Passing over this tile will force you to turn north.
+Directional
+Directional
+Turn South
+Turn South
+Passing over this tile will force you to turn south.
+Passing over this tile will force you to turn south.
+Turn West
+Turn West
+Passing over this tile will force you to turn west.
+Passing over this tile will force you to turn west.
+Turn East
+Turn East
+Passing over this tile will force you to turn east.
+Passing over this tile will force you to turn east.
+Random Turn
+Random Turn
+Passing over this tile may force you to turn in a random direction.
+Passing over this tile may force you to turn in a random direction.
+Reverse Turn
+Reverse Turn
+Landing on this tile will force you to turn in the opposite direction.
+Landing on this tile will force you to turn in the opposite direction.
+Door
+Door
+Prevents movement on this path unless a key is consumed to unlock it.
+Prevents movement on this path unless a key is consumed to unlock it.
+Object
+Object
+Passing over this tile will flip the switch, which may reveal or hide other tiles.
+Passing over this tile will flip the switch, which may reveal or hide other tiles.
+Warp
+Warp
+Landing on this tile will transport you to another warp tile elsewhere on the map.
+Landing on this tile will transport you to another warp tile elsewhere on the map.
+Portal
+Portal
+Landing on this tile will teleport you back to the beginning of this map.
+Landing on this tile will teleport you back to the beginning of this map.
+Teleporter
+Teleporter
+Stepping on this tile will enable you to return to a previously visited crossroad tile.
+Stepping on this tile will enable you to return to a previously visited crossroad tile.
+Roadblock
+Roadblock
+An obstacle prevents movement on this path unless you have a Pokémon that can bypass it.
+An obstacle prevents movement on this path unless you have a Pokémon that can bypass it.
+Hidden Trap
+Hidden Trap
+Passing over this tile may spring a trap that may harm the Pokémon in your party.
+Passing over this tile may spring a trap that may harm the Pokémon in your party.
+Collecting berries will restore some HP of all Pokémon in the party.
+Collecting berries will restore some HP of all Pokémon in the party.
+Collectable
+Collectable
+Flare
+Flare
+Collecting flares will increase your visibility.
+Collecting flares will increase your visibility.
+Key
+Key
+Collecting keys may allow you to unlock door and chest tiles on the map.
+Collecting keys may allow you to unlock door and chest tiles on the map.
+Chest
+Chest
+You may collect the contents hidden in this chest if a key is consumed to unlock it.
+You may collect the contents hidden in this chest if a key is consumed to unlock it.
+Assistant
+Assistant
+Offers you new Pokémon in exchange for a current party member.
+Offers you new Pokémon in exchange for a current party member.
+Character
+Character
+Item Vendor
+Item Vendor
+Offers your party Pokémon items that may be given to hold.
+Offers your party Pokémon items that may be given to hold.
+Stat Trainer
+Stat Trainer
+Offers your party Pokémon special training to alter their stats.
+Offers your party Pokémon special training to alter their stats.
+Move Tutor
+Move Tutor
+Offers your party Pokémon tutoring to teach them different moves.
+Offers your party Pokémon tutoring to teach them different moves.
+Nurse
+Nurse
+Fully restores the HP/PP and status of your party Pokémon.
+Fully restores the HP/PP and status of your party Pokémon.
+Mystic
+Mystic
+Cleanses your weary spirit to fully replenish your heart count.
+Cleanses your weary spirit to fully replenish your heart count.
+Mystery NPC
+Mystery NPC
+An unknown person awaits you on this tile. Who could it be?
+An unknown person awaits you on this tile. Who could it be?
+Researcher
+Researcher
+Offers to change certain attributes on your party Pokémon depending on the lair style.
+Offers to change certain attributes on your party Pokémon depending on the lair style.
+Partner Brendan
+Partner Brendan
+Offers to tag along with you and join forces in battle.
+Offers to tag along with you and join forces in battle.
+Partner May
+Partner May
+No data for any Raid Adventure maps found.
+No data for any Raid Adventure maps found.
+#{advData[:prefix]}Would you like to embark on a {1}?
+#{advData[:prefix]}Would you like to embark on a {1}?
+#{g}According to my notes, it seems you might know how to find certain special Pokémon.
+#{g}According to my notes, it seems you might know how to find certain special Pokémon.
+Find {1}!
+Find {1}!
+Normal Adventure
+Normal Adventure
+Endless Adventure
+Endless Adventure
+View Record
+View Record
+Nevermind
+Nevermind
+#{g}Which type of adventure are you interested in today?
+#{g}Which type of adventure are you interested in today?
+#{g}Which lair would you like to explore?
+#{g}Which lair would you like to explore?
+#{g}This route seems particularly treacherous - visibility will be limited!<<n>>Please be careful!
+#{g}This route seems particularly treacherous - visibility will be limited!<<n>>Please be careful!
+#{g}Good luck on your search for {1}!
+#{g}Good luck on your search for {1}!
+#{g}Good luck on your adventure!
+#{g}Good luck on your adventure!
+#{g}Now THAT is what I call a fine performance! You set a new record! I keep track, you know.
+#{g}Now THAT is what I call a fine performance! You set a new record! I keep track, you know.
+#{g}Well done defeating that tough opponent!
+#{g}Well done defeating that tough opponent!
+#{g}Hey, you seem good at this - maybe next time you'll want to try diving even deeper into the lair?
+#{g}Hey, you seem good at this - maybe next time you'll want to try diving even deeper into the lair?
+#{g}Try your luck at an Endless Adventure and see what you're really made of!
+#{g}Try your luck at an Endless Adventure and see what you're really made of!
+#{g}Didn't make it quite far this time, eh?<<n>>That's ok, better luck next time!
+#{g}Didn't make it quite far this time, eh?<<n>>That's ok, better luck next time!
+#{g}Well done facing such a tough opponent!<<n>>Victory seemed so close - I could almost taste it!
+#{g}Well done facing such a tough opponent!<<n>>Victory seemed so close - I could almost taste it!
+#{g}Would you like me to jot down where you found {1} this time so that you might find it again?
+#{g}Would you like me to jot down where you found {1} this time so that you might find it again?
+#{g}You already have the maximum number of routes saved...
+#{g}You already have the maximum number of routes saved...
+#{g}Would you like to replace an existing route?
+#{g}Would you like to replace an existing route?
+#{g}Which route should be replaced?
+#{g}Which route should be replaced?
+#{g}The route to {1} was saved for future reference.
+#{g}The route to {1} was saved for future reference.
+#{g}Huh, you're giving up?<<n>>Please come back any time for a new adventure!
+#{g}Huh, you're giving up?<<n>>Please come back any time for a new adventure!
+#{g}I hope we'll see you again soon!
+#{g}I hope we'll see you again soon!
+Can't find three valid Pokémon to make an Adventure party with.
+Can't find three valid Pokémon to make an Adventure party with.
+{1}.
+{1}.
+Choose your path!
+Choose your path!
+<<[>>USE<<]>> Select Tile
+<<[>>USE<<]>> Select Tile
+ACTION: Fast Travel
+ACTION: Fast Travel
+CTRL: Forced Exit
+CTRL: Forced Exit
+ARROWS: Select
+ARROWS: Select
+USE: Confirm
+USE: Confirm
+ACTION: Options
+ACTION: Options
+<<[>>ACTION<<]>>
+<<[>>ACTION<<]>>
+<<[>>JUMP<<]>>
+<<[>>JUMP<<]>>
+<<[>>BACK<<]>>
+<<[>>BACK<<]>>
+Toggle Grid
+Toggle Grid
+Cycle Cursor
+Cycle Cursor
+Return
+Return
+<<[>>USE<<]>>
+<<[>>USE<<]>>
+Toggle Pokémon
+Toggle Pokémon
+<<[>>CTRL<<]>>
+<<[>>CTRL<<]>>
+Move Player
+Move Player
+This tile is currently disabled. Enable it by flipping a {1} tile to the 'ON' position.
+This tile is currently disabled. Enable it by flipping a {1} tile to the 'ON' position.
+\se[{1}]There's a strong {2}-type reaction coming from within the lair!\wtnp[30]
+\se[{1}]There's a strong {2}-type reaction coming from within the lair!\wtnp[30]
+You found a passageway that leads even deeper into the lair!
+You found a passageway that leads even deeper into the lair!
+Would you like to continue onwards to the next floor?
+Would you like to continue onwards to the next floor?
+Your {1} is over!
+Your {1} is over!
+No valid paths found!<<n>>You were forced to abandon the adventure!
+No valid paths found!<<n>>You were forced to abandon the adventure!
+Would you like to exit the lair?
+Would you like to exit the lair?
+Are you sure you want to follow this path?
+Are you sure you want to follow this path?
+View Map
+View Map
+Check Party
+Check Party
+End Adventure
+End Adventure
+What would you like to do?
+What would you like to do?
+End your playtesting?
+End your playtesting?
+End your {1}?<<n>>Any captured Pokémon and acquired treasure will be lost.
+End your {1}?<<n>>Any captured Pokémon and acquired treasure will be lost.
+Teleport to this tile?
+Teleport to this tile?
+You haven't visited that tile yet!
+You haven't visited that tile yet!
+Move to this tile?
+Move to this tile?
+The player can only be moved to {1} tiles.
+The player can only be moved to {1} tiles.
+A massive locked door blocks your path.
+A massive locked door blocks your path.
+You used a key to open the door!
+You used a key to open the door!
+Unable to proceed, you turned back the way you came.
+Unable to proceed, you turned back the way you came.
+You were transported back to the start of the lair!
+You were transported back to the start of the lair!
+You stepped on a {1}!
+You stepped on a {1}!
+Please select a previously visited {1} tile to teleport to.
+Please select a previously visited {1} tile to teleport to.
+You stepped on a {1}, but it doesn't seem to be operational at this time.
+You stepped on a {1}, but it doesn't seem to be operational at this time.
+You bypassed an obstacle in your path!
+You bypassed an obstacle in your path!
+A deep chasm blocks your path!
+A deep chasm blocks your path!
+A {1}-type Pokémon may be able to lift you safely across.
+A {1}-type Pokémon may be able to lift you safely across.
+{1} happily carried you across the chasm!
+{1} happily carried you across the chasm!
+A large pool of murky water blocks your path!
+A large pool of murky water blocks your path!
+A {1}-type Pokémon may be able to ferry you safely across.
+A {1}-type Pokémon may be able to ferry you safely across.
+{1} happily carried you across the water!
+{1} happily carried you across the water!
+You reached what appears to be a dead end, but the wall here seems thin.
+You reached what appears to be a dead end, but the wall here seems thin.
+A {1}-type Pokémon may be able to punch through the wall and forge a path forward!
+A {1}-type Pokémon may be able to punch through the wall and forge a path forward!
+{1} bashed through the wall with a mighty blow!
+{1} bashed through the wall with a mighty blow!
+The floor here seems unstable in certain spots - you may fall through if you proceed!
+The floor here seems unstable in certain spots - you may fall through if you proceed!
+A {1}-type Pokémon may be able to foresee the safest route forward and avoid any pitfalls.
+A {1}-type Pokémon may be able to foresee the safest route forward and avoid any pitfalls.
+{1} foresaw the dangers ahead and navigated around the pitfalls!
+{1} foresaw the dangers ahead and navigated around the pitfalls!
+Strong winds funneled through the passage have whipped up a storm of dust that blocks your path!
+Strong winds funneled through the passage have whipped up a storm of dust that blocks your path!
+A {1}, {2}, or {3}-type Pokémon may be able to safely guide you through the dust storm.
+A {1}, {2}, or {3}-type Pokémon may be able to safely guide you through the dust storm.
+{1} bravely traversed the dust storm and led you across!
+{1} bravely traversed the dust storm and led you across!
+An eerie wail howling from the depths of the lair stops you cold in your tracks...
+An eerie wail howling from the depths of the lair stops you cold in your tracks...
+A {1}, {2}, or {3}-type Pokémon may be able to scout the path ahead without fear!
+A {1}, {2}, or {3}-type Pokémon may be able to scout the path ahead without fear!
+{1} investigated the eerie wailing and discovered it was just the wind!
+{1} investigated the eerie wailing and discovered it was just the wind!
+A massive boulder blocks your path!
+A massive boulder blocks your path!
+A Pokémon sufficienty trained in {1} may be physically capable of moving it.
+A Pokémon sufficienty trained in {1} may be physically capable of moving it.
+{1} flexed its muscles and tossed the boulder aside with ease!
+{1} flexed its muscles and tossed the boulder aside with ease!
+Falling rocks makes it too dangerous to press on!
+Falling rocks makes it too dangerous to press on!
+A Pokémon sufficienty trained in {1} may be tough enough to shield you from harm.
+A Pokémon sufficienty trained in {1} may be tough enough to shield you from harm.
+{1} unflinchingly shrugged off the falling rocks as you moved on ahead!
+{1} unflinchingly shrugged off the falling rocks as you moved on ahead!
+A steep incline makes it too difficult to climb any further...
+A steep incline makes it too difficult to climb any further...
+A Pokémon sufficienty trained in {1} may be quick enough to carry you up with ease!
+A Pokémon sufficienty trained in {1} may be quick enough to carry you up with ease!
+{1} bolted you up the incline without breaking a sweat!
+{1} bolted you up the incline without breaking a sweat!
+An impenetrable barrier of mysterious energy blocks your path!
+An impenetrable barrier of mysterious energy blocks your path!
+A Pokémon sufficienty trained in {1} may be powerful enough to blast through it.
+A Pokémon sufficienty trained in {1} may be powerful enough to blast through it.
+{1} effortlessly blasted through the barrier with sheer willpower!
+{1} effortlessly blasted through the barrier with sheer willpower!
+A powerful wave of mysterious energy prevents you from moving forward!
+A powerful wave of mysterious energy prevents you from moving forward!
+A Pokémon sufficienty trained in {1} may have the fortitude to withstand the energy.
+A Pokémon sufficienty trained in {1} may have the fortitude to withstand the energy.
+{1} swatted away the waves of energy and guided you through unscathed!
+{1} swatted away the waves of energy and guided you through unscathed!
+An intimidating gauntlet of various challenges prevents you from pressing onwards...
+An intimidating gauntlet of various challenges prevents you from pressing onwards...
+A Pokémon with balanced training may be capable of overcoming the numerous obstacles.
+A Pokémon with balanced training may be capable of overcoming the numerous obstacles.
+{1} impressively traversed the gauntlet with perfect form!
+{1} impressively traversed the gauntlet with perfect form!
+You bypassed a hidden trap!
+You bypassed a hidden trap!
+You found some berries lying on the ground!
+You found some berries lying on the ground!
+\se[Anim/Recovery]Your Pokémon ate the berries and some of their HP was restored!
+\se[Anim/Recovery]Your Pokémon ate the berries and some of their HP was restored!
+But your Pokémon are already at full health...
+But your Pokémon are already at full health...
+You decided to leave the berries behind and press on!
+You decided to leave the berries behind and press on!
+\me[Bug catching 3rd]You found a flare!\wtnp[20]
+\me[Bug catching 3rd]You found a flare!\wtnp[20]
+You lit the flare and increased your visibility!
+You lit the flare and increased your visibility!
+But this is of no use to you in this lair...
+But this is of no use to you in this lair...
+\me[Bug catching 3rd]You found a lair key!\wtnp[20]
+\me[Bug catching 3rd]You found a lair key!\wtnp[20]
+You found a locked chest!
+You found a locked chest!
+Would you like to use one of your keys to unlock the chest?
+Would you like to use one of your keys to unlock the chest?
+With a heavy sigh, you decided to press on and leave the chest behind.
+With a heavy sigh, you decided to press on and leave the chest behind.
+But without any keys to unlock it, you decided to leave the chest behind.
+But without any keys to unlock it, you decided to leave the chest behind.
+You encountered an {1}!\wtnp[20]
+You encountered an {1}!\wtnp[20]
+#{g}How have the results of your adventure been so far?
+#{g}How have the results of your adventure been so far?
+#{g}I have a rental Pokémon here that I could swap with you, if you'd like.
+#{g}I have a rental Pokémon here that I could swap with you, if you'd like.
+#{g}I'll head back to study the new data I've gathered.
+#{g}I'll head back to study the new data I've gathered.
+#{g}Please report any new findings you may discover on your adventure!
+#{g}Please report any new findings you may discover on your adventure!
+#{g}I was worried I'd run into trouble in here, so I stocked up on more than I can carry...
+#{g}I was worried I'd run into trouble in here, so I stocked up on more than I can carry...
+#{g}I can share my supplies with you if you're in need. What items would you like?
+#{g}I can share my supplies with you if you're in need. What items would you like?
+#{g}Remember, preparation is the key to victory!
+#{g}Remember, preparation is the key to victory!
+You encountered a {1}!\wtnp[20]
+You encountered a {1}!\wtnp[20]
+#{g}I've been training deep in this lair so that I can grow strong like a Raid Pokémon!
+#{g}I've been training deep in this lair so that I can grow strong like a Raid Pokémon!
+#{g}Do you want to become strong, too? Let me share my secret training techniques with you!
+#{g}Do you want to become strong, too? Let me share my secret training techniques with you!
+#{g}Keep pushing yourself until you've reached your limits!
+#{g}Keep pushing yourself until you've reached your limits!
+#{g}I've been studying the most effective tactics to use in Raid battles.
+#{g}I've been studying the most effective tactics to use in Raid battles.
+#{g}If you'd like, I can teach one of your Pokémon a new move to help it excel in battle!
+#{g}If you'd like, I can teach one of your Pokémon a new move to help it excel in battle!
+#{g}A good strategy will help you overcome any obstacle!
+#{g}A good strategy will help you overcome any obstacle!
+#{g}Are your Pokémon feeling a bit worn out from your adventure?
+#{g}Are your Pokémon feeling a bit worn out from your adventure?
+\me[Pkmn healing]#{g}Please, let me heal them back to full health.\wtnp[40]
+\me[Pkmn healing]#{g}Please, let me heal them back to full health.\wtnp[40]
+#{g}I'll be going now.<<n>>Good luck with the rest of your adventure!
+#{g}I'll be going now.<<n>>Good luck with the rest of your adventure!
+#{g}Let me take a good look at you, child...
+#{g}Let me take a good look at you, child...
+#{g}Ah! So full of heart and soul!<<n>>You have no need for my services right now.
+#{g}Ah! So full of heart and soul!<<n>>You have no need for my services right now.
+#{g}Come back when your spirits grow weary and your heart gets low!
+#{g}Come back when your spirits grow weary and your heart gets low!
+#{g}Ah! Your spirit beckons to be cleansed of its weariness!
+#{g}Ah! Your spirit beckons to be cleansed of its weariness!
+#{g}Let me exorcise the demons that plague your heart and soul!
+#{g}Let me exorcise the demons that plague your heart and soul!
+#{g}...\wt[8] ...\wt[8] ...\wt[20]Begone!
+#{g}...\wt[8] ...\wt[8] ...\wt[20]Begone!
+\se[Use item in party]Your heart counter was restored to full!\wtnp[20]
+\se[Use item in party]Your heart counter was restored to full!\wtnp[20]
+#{g}What am I even doing here, you ask?<<n>>Haha! Let me tell you, child.
+#{g}What am I even doing here, you ask?<<n>>Haha! Let me tell you, child.
+#{g}I go where the spirits say I'm needed! Nothing more!
+#{g}I go where the spirits say I'm needed! Nothing more!
+#{g}I must go now, young one. There are many other souls that need saving!
+#{g}I must go now, young one. There are many other souls that need saving!
+#{g}I was once an adventurer like you who got lost in this lair.<<n>>Many...\wt<<[>>8<<]>>many years ago.\wt<<[>>8<<]>>
+#{g}I was once an adventurer like you who got lost in this lair.<<n>>Many...\wt<<[>>8<<]>>many years ago.\wt<<[>>8<<]>>
+Huh?<<n>>The {1} suddenly vanished into thin air!
+Huh?<<n>>The {1} suddenly vanished into thin air!
+#{g}What makes you think I was ever really here at all?<<n>>Oooooo....\wt<<[>>8<<]>>
+#{g}What makes you think I was ever really here at all?<<n>>Oooooo....\wt<<[>>8<<]>>
+...\wt[8] ...\wt[8] ...\wt[20]
+...\wt[8] ...\wt[8] ...\wt[20]
+The {1} tripped over a rock during their dramatic exit...
+The {1} tripped over a rock during their dramatic exit...
+#{g}I was summoned here by the wailing of souls crying out from this lair!
+#{g}I was summoned here by the wailing of souls crying out from this lair!
+#{g}...but now that I'm here, I think it was just the wind.
+#{g}...but now that I'm here, I think it was just the wind.
+#{g}Perhaps it was fate that drew me here to meet you?<<n>>Alas, it is now time for us to part ways.
+#{g}Perhaps it was fate that drew me here to meet you?<<n>>Alas, it is now time for us to part ways.
+#{g}Farewell, child. Good luck on your journeys!
+#{g}Farewell, child. Good luck on your journeys!
+#{g}If you must know, I...\wt[8]just got lost.
+#{g}If you must know, I...\wt[8]just got lost.
+#{g}The exit is back there, you say?<<n>>Thank you, child.
+#{g}The exit is back there, you say?<<n>>Thank you, child.
+#{g}May the spirits guide you better than they have me!
+#{g}May the spirits guide you better than they have me!
+#{g}Hiya! I've been conducting my research here to uncover the secrets of Z-Power.
+#{g}Hiya! I've been conducting my research here to uncover the secrets of Z-Power.
+#{g}I've discovered techniques that allows me to forge Z-Crystals for any Pokémon at will!
+#{g}I've discovered techniques that allows me to forge Z-Crystals for any Pokémon at will!
+#{g}At least, I think I have...let me practice on your-<<n>>Ehem...I mean, let me forge a Z-Crystal for your Pokémon!
+#{g}At least, I think I have...let me practice on your-<<n>>Ehem...I mean, let me forge a Z-Crystal for your Pokémon!
+#{g}Hiya! I've been conducting my research here to uncover the secrets of Dynamax.
+#{g}Hiya! I've been conducting my research here to uncover the secrets of Dynamax.
+#{g}I've discovered techniques that allows me to maximize the Dynamax level of any Pokémon at will!
+#{g}I've discovered techniques that allows me to maximize the Dynamax level of any Pokémon at will!
+#{g}At least, I think I have...let me practice on your-<<n>>Ehem...I mean, let me change the Dynamax level of your Pokémon!
+#{g}At least, I think I have...let me practice on your-<<n>>Ehem...I mean, let me change the Dynamax level of your Pokémon!
+#{g}Hiya! I've been conducting my research here to uncover the secrets of Terastallization.
+#{g}Hiya! I've been conducting my research here to uncover the secrets of Terastallization.
+#{g}I've discovered techniques that allows me to change the Tera type of any Pokémon at will!
+#{g}I've discovered techniques that allows me to change the Tera type of any Pokémon at will!
+#{g}At least, I think I have...let me practice on your-<<n>>Ehem...I mean, let me change the Tera types of your Pokémon!
+#{g}At least, I think I have...let me practice on your-<<n>>Ehem...I mean, let me change the Tera types of your Pokémon!
+#{g}Phew...hey! Nothing exploded this time!\wt<<[>>20<<]>> ...Huh?\wt<<[>>20<<]>><<n>>Oh, erm...nevermind that.
+#{g}Phew...hey! Nothing exploded this time!\wt<<[>>20<<]>> ...Huh?\wt<<[>>20<<]>><<n>>Oh, erm...nevermind that.
+#{g}Please come back any time so I can practice- I mean, further my research!
+#{g}Please come back any time so I can practice- I mean, further my research!
+You encountered {1}!\wtnp[20]
+You encountered {1}!\wtnp[20]
+#{g}Hey! \PN! Is that you?
+#{g}Hey! \PN! Is that you?
+#{g}I've been trying to explore this lair, but these raid Pokémon are no joke!
+#{g}I've been trying to explore this lair, but these raid Pokémon are no joke!
+#{g}Say...why don't we join forces? It might make battles a little easier.
+#{g}Say...why don't we join forces? It might make battles a little easier.
+#{g}...Huh?<<n>>Oh, it looks like you already teamed up with someone...
+#{g}...Huh?<<n>>Oh, it looks like you already teamed up with someone...
+#{g}Would you like me to join you instead?
+#{g}Would you like me to join you instead?
+#{g}What do you say? Should we team up?
+#{g}What do you say? Should we team up?
+#{g}Alright! Let's show these raid Pokémon what we're made of!
+#{g}Alright! Let's show these raid Pokémon what we're made of!
+\se[Pkmn level up]You partnered up with {1}!\wtnp[20]
+\se[Pkmn level up]You partnered up with {1}!\wtnp[20]
+You and your previous partner waved goodbye and parted ways.
+You and your previous partner waved goodbye and parted ways.
+#{g}Aww...well, you must have a lot of faith in your Pokémon!
+#{g}Aww...well, you must have a lot of faith in your Pokémon!
+#{g}Anyway, I'm gonna rest up here some more before continuing.
+#{g}Anyway, I'm gonna rest up here some more before continuing.
+#{g}Come back and see me if you change your mind!
+#{g}Come back and see me if you change your mind!
+Are you sure you want to clear all tiles on this map?
+Are you sure you want to clear all tiles on this map?
+Map properties saved.
+Map properties saved.
+No changes detected.<<n>>Exiting map.
+No changes detected.<<n>>Exiting map.
+You must playtest your map first to ensure it's clearable before it can be saved.
+You must playtest your map first to ensure it's clearable before it can be saved.
+Would you like to playtest your map?
+Would you like to playtest your map?
+This map has been cleared!<<n>>\se<<[>><<]>>All changes will now be saved.\me<<[>>GUI save game<<]>>\wtnp<<[>>20<<]>>
+This map has been cleared!<<n>>\se<<[>><<]>>All changes will now be saved.\me<<[>>GUI save game<<]>>\wtnp<<[>>20<<]>>
+A {1} tile is detected that doesn't have any warp coordinates set.
+A {1} tile is detected that doesn't have any warp coordinates set.
+Select 'Properties' on a {1} tile to set its warp coordinates.
+Select 'Properties' on a {1} tile to set its warp coordinates.
+Invalid number of {1} tiles detected.
+Invalid number of {1} tiles detected.
+The number of {1} tiles required must be exactly {2}.
+The number of {1} tiles required must be exactly {2}.
+The maximum number of {1} tiles per map cannot exceed {1}.
+The maximum number of {1} tiles per map cannot exceed {1}.
+Select an ID number for this new map.
+Select an ID number for this new map.
+A map with that ID already exists.
+A map with that ID already exists.
+Edit map tiles
+Edit map tiles
+Clear all tiles
+Clear all tiles
+Map properties
+Map properties
+Playtest map
+Playtest map
+Save map
+Save map
+Map changes detected.<<n>>Exit this map without saving?
+Map changes detected.<<n>>Exit this map without saving?
+{1} [{2}]
+{1} [{2}]
+New map
+New map
+Select a map.
+Select a map.
+Exit map editor?
+Exit map editor?
+Select a background.
+Select a background.
+Select a tile type.
+Select a tile type.
+Select a tile.
+Select a tile.
+The {1} tile count on this map aready meets the maximum amount. ({2})
+The {1} tile count on this map aready meets the maximum amount. ({2})
+Edit map name
+Edit map name
+Edit description
+Edit description
+Edit background
+Edit background
+Edit darkness chance
+Edit darkness chance
+Enter a name for this map.
+Enter a name for this map.
+Enter a description for this map.
+Enter a description for this map.
+WARNING!<<n>>Changing the background will erase all current tiles.
+WARNING!<<n>>Changing the background will erase all current tiles.
+Enter the odds of this map being played in Darkness Mode.
+Enter the odds of this map being played in Darkness Mode.
+The maximum amount of this tile has already been reached.
+The maximum amount of this tile has already been reached.
+Exiting paint mode.
+Exiting paint mode.
+The player cannot be placed on an occupied tile.
+The player cannot be placed on an occupied tile.
+Set the warp coordinates to this tile?
+Set the warp coordinates to this tile?
+You can't set the warp coodinates to that tile.
+You can't set the warp coodinates to that tile.
+Properties
+Properties
+Cannot replace a tile the player is standing on.
+Cannot replace a tile the player is standing on.
+Cannot clear a tile the player is standing on.
+Cannot clear a tile the player is standing on.
+Enter the ID number for this Battle tile.<<n>>(Boss = {1})
+Enter the ID number for this Battle tile.<<n>>(Boss = {1})
+Set tile to warp to
+Set tile to warp to
+Set switch toggle
+Set switch toggle
+Should this tile be disabled until a Switch tile is flipped ON?
+Should this tile be disabled until a Switch tile is flipped ON?
+Eraser
+Eraser
+Paint
+Paint
+Link
+Link
+Adventure Rental.
+Adventure Rental.
+RENTAL PARTY
+RENTAL PARTY
+Form a party of {1} rental Pokémon.
+Form a party of {1} rental Pokémon.
+Exit and end your {1}?
+Exit and end your {1}?
+Add {1} to your rental team?
+Add {1} to your rental team?
+{1} was added to the rental team!\wtnp[30]
+{1} was added to the rental team!\wtnp[30]
+Select {1} more rental Pokémon.
+Select {1} more rental Pokémon.
+Add {1} to the party?
+Add {1} to the party?
+New Pokémon!
+New Pokémon!
+View Summary
+View Summary
+Keep Party
+Keep Party
+Exit and keep your current party?
+Exit and keep your current party?
+Exchange {1} for {2}?
+Exchange {1} for {2}?
+{1} is currently holding the {2}...
+{1} is currently holding the {2}...
+Should this item replace {1}'s held {2}?
+Should this item replace {1}'s held {2}?
+Should this item be given to {1} to hold now instead?
+Should this item be given to {1} to hold now instead?
+{1} was removed from the party...\wtnp[30]
+{1} was removed from the party...\wtnp[30]
+And...\wtnp[10]
+And...\wtnp[10]
+CAPTURED POKéMON
+CAPTURED POKéMON
+Select a Pokémon to keep.
+Select a Pokémon to keep.
+Exit without claiming any of the captured Pokémon?
+Exit without claiming any of the captured Pokémon?
+Would you like to claim {1} and take it with you?
+Would you like to claim {1} and take it with you?
+You returned any remaining captured Pokémon and your rental party.
+You returned any remaining captured Pokémon and your rental party.
+{1} currently holds:<<n>>{2}.
+{1} currently holds:<<n>>{2}.
+Select a party member to equip.
+Select a party member to equip.
+<ac>{1}</ac>
+<ac>{1}</ac>
+Exit and stop equipping the party?
+Exit and stop equipping the party?
+Select an item for {1}.
+Select an item for {1}.
+Give {1} the {2} to hold?
+Give {1} the {2} to hold?
+{1} is already holding that item!
+{1} is already holding that item!
+{1} is already holding the {2}...<<n>>Would you like to switch items?
+{1} is already holding the {2}...<<n>>Would you like to switch items?
+Graphics/UI/category
+Graphics/UI/category
+PP: {1}
+PP: {1}
+Power: {1}
+Power: {1}
+Acc: {1}
+Acc: {1}
+{1} has no other moves to learn.
+{1} has no other moves to learn.
+Teach {1} one of the listed moves.
+Teach {1} one of the listed moves.
+Select a party member to tutor.
+Select a party member to tutor.
+Exit and stop tutoring the party?
+Exit and stop tutoring the party?
+Teach {1} a new move.
+Teach {1} a new move.
+Teach {1} the move {2}?
+Teach {1} the move {2}?
+Balanced
+Balanced
+Select a party member to train.
+Select a party member to train.
+Exit and stop training the party's stats?
+Exit and stop training the party's stats?
+Select training for {1}.
+Select training for {1}.
+{1} already has {2} training!
+{1} already has {2} training!
+Undo {1}'s current training and give it {2} training instead?
+Undo {1}'s current training and give it {2} training instead?
+{1} was given {2} training!
+{1} was given {2} training!
+{1} is currently using:<<n>>{2}.
+{1} is currently using:<<n>>{2}.
+Select a party member to empower.
+Select a party member to empower.
+Exit and stop changing the party's Z-Crystals?
+Exit and stop changing the party's Z-Crystals?
+Select {1}'s Z-Crystal.
+Select {1}'s Z-Crystal.
+Replace {1}'s {2} with the {3}?
+Replace {1}'s {2} with the {3}?
+The piece of {1} was given to {2} so that it may use its Z-Power!
+The piece of {1} was given to {2} so that it may use its Z-Power!
+Dynamax HP
+Dynamax HP
+Increasing party Dynamax levels...
+Increasing party Dynamax levels...
+The party's Dynamax levels cannot be increased any further!
+The party's Dynamax levels cannot be increased any further!
+The party's Dynamax levels were increased!
+The party's Dynamax levels were increased!
+Dynamax levels increased!
+Dynamax levels increased!
+Tera {1}
+Tera {1}
+Exit and stop changing the party's Tera types?
+Exit and stop changing the party's Tera types?
+Select {1}'s Tera type.
+Select {1}'s Tera type.
+{1}'s Tera type cannot be changed!
+{1}'s Tera type cannot be changed!
+{1} already has the {2} Tera type!
+{1} already has the {2} Tera type!
+Replace {1}'s Tera type with Tera {2}?
+Replace {1}'s Tera type with Tera {2}?
+{1}'s Tera type was changed to Tera {2}!
+{1}'s Tera type was changed to Tera {2}!
+Treasure Chest
+Treasure Chest
+Adventure Spoils
+Adventure Spoils
+You were able to salvage some of the treasure you stashed away during your Adventure...
+You were able to salvage some of the treasure you stashed away during your Adventure...
+All treasure acquired during your Adventure was added to your bag.
+All treasure acquired during your Adventure was added to your bag.
+All remaining treasure was added to your bag.
+All remaining treasure was added to your bag.
+You stashed away the contents of this chest for later.
+You stashed away the contents of this chest for later.
+Adventure Map:
+Adventure Map:
+Floor Reached:
+Floor Reached:
+Battles Won:
+Battles Won:
+RECORD DATA
+RECORD DATA
+Endless {1} party:
+Endless {1} party:
+Show Map Events
+Show Map Events
+Show Player Event
+Show Player Event
+Show Outline
+Show Outline
+Show Map Name
+Show Map Name
+Show Map ID
+Show Map ID
+Export Connected Maps
+Export Connected Maps
+Export Map
+Export Map
+Exporting...
+Exporting...
+The map has been exported successfully.
+The map has been exported successfully.
+Adventure complete!
+Adventure complete!
+Adventure failed...
+Adventure failed...
+The cheer had no effect...
+The cheer had no effect...
+{1} blew away the electrified debris!
+{1} blew away the electrified debris!
+Sparks of electricity zapped {1}!
+Sparks of electricity zapped {1}!
+{1} became confused from the shock!
+{1} became confused from the shock!
+Electrified debris floats in the air around {1}!
+Electrified debris floats in the air around {1}!
+The shock confused {1}!
+The shock confused {1}!
+{1} was seeded by {2}'s Seeding Touch!
+{1} was seeded by {2}'s Seeding Touch!
+{1} was seeded by {2}'s {3}!
+{1} was seeded by {2}'s {3}!
+{1} refuses to enter a PC box!
+{1} refuses to enter a PC box!
+{1} is already shiny!
+{1} is already shiny!
+The Shiny Berry has no effect on Eggs.
+The Shiny Berry has no effect on Eggs.
+Feed the Shiny Berry to {1}? This will make it shiny.
+Feed the Shiny Berry to {1}? This will make it shiny.
+{1} sparkled brightly! It's now shiny!
+{1} sparkled brightly! It's now shiny!
+It has no effect on an Egg.
+It has no effect on an Egg.
+{1} sparkled brilliantly! It's now shiny!
+{1} sparkled brilliantly! It's now shiny!
+Please pick up your gift from the deliverygirl in any Poké center.
+Please pick up your gift from the deliverygirl in any Poké center.
+Failed to save debug Mystery Gift file: {1}
+Failed to save debug Mystery Gift file: {1}
+The gift was saved to MysteryGiftMaster.txt<<n>>Debug file saved to {1}
+The gift was saved to MysteryGiftMaster.txt<<n>>Debug file saved to {1}
+Couldn't save the gift to MysteryGiftMaster.txt
+Couldn't save the gift to MysteryGiftMaster.txt
+Mystery Gift Internet
+Mystery Gift Internet
+Mystery Gift can only be accessed in-game.
+Mystery Gift can only be accessed in-game.
+Mystery Gift Password
+Mystery Gift Password
+Wonder Card Album
+Wonder Card Album
+You don't have any Wonder Cards yet.
+You don't have any Wonder Cards yet.
+You must enter a password.
+You must enter a password.
+You already have this gift.
+You already have this gift.
+No gift matches that password.
+No gift matches that password.
+Enter a password for this gift (optional):
+Enter a password for this gift (optional):
+{1}: {2} [{3}]
+{1}: {2} [{3}]
+Edit Mystery Gift passwords:
+Edit Mystery Gift passwords:
+Enter new password:
+Enter new password:
+Password updated!
+Password updated!
+Couldn't save the updated Mystery Gifts.
+Couldn't save the updated Mystery Gifts.
+What would you like to do with this Wonder Card?
+What would you like to do with this Wonder Card?
+This Wonder Card cannot be deleted.
+This Wonder Card cannot be deleted.
+You can't delete a Wonder Card with an unclaimed gift.
+You can't delete a Wonder Card with an unclaimed gift.
+Are you sure you want to delete this Wonder Card?
+Are you sure you want to delete this Wonder Card?
+The Wonder Card was deleted.
+The Wonder Card was deleted.
+Special Pokémon delivery!
+Special Pokémon delivery!
+Mystery Item delivery!
+Mystery Item delivery!
+Date Received: {1}
+Date Received:       {1}
+You already have this Wonder Card.
+You already have this Wonder Card.
+You already received this gift before.
+You already received this gift before.
+Your Wonder Card album is full. Delete one before receiving another.
+Your Wonder Card album is full. Delete one before receiving another.
+The Wonder Card was added to your album!
+The Wonder Card was added to your album!
+Gift data missing or unsupported.
+Gift data missing or unsupported.
+You have successfully claimed this gift!
+You have successfully claimed this gift!
+Enter a description for this gift.
+Enter a description for this gift.
+{1}: {2} - {3}
+{1}: {2} - {3}
+Edit Mystery Gift descriptions:
+Edit Mystery Gift descriptions:
+Edit description:
+Edit description:
+Stop editing this description?
+Stop editing this description?
+Description updated!
+Description updated!
+View Mystery Gift internal names:
+View Mystery Gift internal names:
+Special Pokédex
+Special Pokédex
+Hybrid Pokédex
+Hybrid Pokédex
+Undefined species constant name: {1}
+Undefined species constant name: {1}<<n>>
+{1}'s aura faded!
+{1}'s aura faded!
+{1}'s {2} IV increased.
+{1}'s {2} IV increased.
+{1}'s {2} individual values were reset to zero.
+{1}'s {2} individual values were reset to zero.
+{1} siphoned HP with its {2}!
+{1} siphoned HP with its {2}!
+{1}'s presence stirred up a strong wind!
+{1}'s presence stirred up a strong wind!
+{1} has mastered {2}
+{1} has mastered {2}
+{1} is unleashed!
+{1} is unleashed!
+You're holding Pokémon!
+You're holding Pokémon!
+Swap
+Swap
+Swap with which Box?
+Swap with which Box?
+Position {1}, {2} is not empty...
+Position {1}, {2} is not empty...
+You can't release an Egg!
+You can't release an Egg!
+Release these Pokémon?
+Release these Pokémon?
+The Pokémon were released.
+The Pokémon were released.
+Bye-bye, Pokémon!
+Bye-bye, Pokémon!
+{1} was hurt by the Bitter Cold!
+{1} was hurt by the Bitter Cold!
+{1} has mastered the five magics!
+{1} has mastered the five magics!

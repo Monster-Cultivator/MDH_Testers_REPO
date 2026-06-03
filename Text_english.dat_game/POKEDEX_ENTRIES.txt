@@ -8,8 +8,8 @@ A violent creature that fells towering trees with its crude axes and shields its
 A violent creature that fells towering trees with its crude axes and shields itself with hard stone. If one should chance upon this Pokémon in the wilds, one's only recourse is to flee.
 It is believed that the swampy terrain of its ancient home region that gave Ursaluna its burly physique and newfound capacity to manipulate peat at will.
 It is believed that the swampy terrain of its ancient home region that gave Ursaluna its burly physique and newfound capacity to manipulate peat at will.
-Clads itself in the souls of comrades that perished before fulfilling their goals of journeying upstream. No other species throughout other aquatic environments is Basculegion’s equal.
-Clads itself in the souls of comrades that perished before fulfilling their goals of journeying upstream. No other species throughout other aquatic environments is Basculegion’s equal.
+Clads itself in the souls of comrades that perished before fulfilling their goals of journeying upstream. Nothing Rivals its swim speed.
+Clads itself in the souls of comrades that perished before fulfilling their goals of journeying upstream. Nothing Rivals its swim speed.
 Because of Sneasler’s virulent poison and daunting physical prowess, no other species could hope to best it on frozen highlands. Preferring solitude, this species does not form packs.
 Because of Sneasler’s virulent poison and daunting physical prowess, no other species could hope to best it on frozen highlands. Preferring solitude, this species does not form packs.
 Its lancelike spikes and savage temperament have earned it the nickname "sea fiend." It slurps up poison to nourish itself.
@@ -312,6 +312,24 @@ Although this Pokémon isn't very strong, its body is coated in a caustic slime 
 Although this Pokémon isn't very strong, its body is coated in a caustic slime that can melt through anything, so predators steer clear of it.
 Sometimes it misunderstands instructions and appears dazed or bewildered. Many Trainers don't mind, finding this behavior to be adorable.
 Sometimes it misunderstands instructions and appears dazed or bewildered. Many Trainers don't mind, finding this behavior to be adorable.
+Her eyes can see through most solid objects... You're fairly confident she uses this on your clothes constantly.
+Her eyes can see through most solid objects... You're fairly confident she uses this on your clothes constantly.
+She's always dancing to some unknowable rhythm. Watching her is captivating, and she knows it!
+She's always dancing to some unknowable rhythm. Watching her is captivating, and she knows it!
+When Suicune steps near water, it becomes pure. Her presence calms even those with fiery tempers.
+When Suicune steps near water, it becomes pure. Her presence calms even those with fiery tempers.
+As creature from another world, Grizzbolt bears a resemblance to Electabuzz. As with Zoe, humans are not Pals.
+As creature from another world, Grizzbolt bears a resemblance to Electabuzz. As with Zoe, humans are not Pals.
+A Special Grade Serperior - it's skin is soft to the touch, however, when threatened, it can harden to be impenetrable.
+A Special Grade Serperior - it's skin is soft to the touch, however, when threatened, it can harden to be impenetrable.
+While Arcanine is definitely not your most intelligent Hybrid, her loyalty to you is only rivaled by Gardevoir.
+While Arcanine is definitely not your most intelligent Hybrid, her loyalty to you is only rivaled by Gardevoir.
+Froslass once resided in an ancient tomb. When she sees things she wants, she freezes them alive and takes them back to her lair.
+Froslass once resided in an ancient tomb. When she sees things she wants, she freezes them alive and takes them back to her lair.
+She is your quietest Hybrid by far, and prefers to pass as "indifferent". But sometimes you wake up at night to her standing guard over you - though you pretend not to notice.
+She is your quietest Hybrid by far, and prefers to pass as "indifferent". But sometimes you wake up at night to her standing guard over you - though you pretend not to notice.
+Flutter Mane is an anomoly, even anomgst your Hybrids. The only clue was an engraving of the Griseous Orb on the Pokéball.
+Flutter Mane is an anomoly, even anomgst your Hybrids. The only clue was an engraving of the Griseous Orb on the Pokéball.
 They patrol their territory in pairs. I believe the igneous rock components in the fur of this species are the result of volcanic activity in its habitat.
 They patrol their territory in pairs. I believe the igneous rock components in the fur of this species are the result of volcanic activity in its habitat.
 Snaps at its foes with fangs cloaked in blazing flame. Despite its bulk, it deftly feints every which way, leading opponents on a deceptively merry chase as it all but dances around them.
@@ -458,8 +476,8 @@ The energy released by this Pokémon's fists forms shock waves that can blow awa
 The energy released by this Pokémon's fists forms shock waves that can blow away Dynamax Pokémon in just one hit.
 As it waits for the right moment to unleash its Gigantamax power, this Pokémon maintains a perfect one-legged stance. It won't even twitch.
 As it waits for the right moment to unleash its Gigantamax power, this Pokémon maintains a perfect one-legged stance. It won't even twitch.
-Decades of built-up resentment caused this Banette to combine the phoenemonon of Mega Evolution with Dynamax.
-Decades of built-up resentment caused this Banette to combine the phoenemonon of Mega Evolution with Dynamax.
+Rogue Mega Energy reacted with the Dynamax Phenomenon and created something horrifying.
+Rogue Mega Energy reacted with the Dynamax Phenomenon and created something horrifying.
 The cap this Pikachu wears is filled with memories of this Pokémon and its partner traveling across lots of different regions together.
 The cap this Pikachu wears is filled with memories of this Pokémon and its partner traveling across lots of different regions together.
 The cap this Pikachu wears is filled with memories of this Pokémon and its partner traveling across the Hoenn region together.

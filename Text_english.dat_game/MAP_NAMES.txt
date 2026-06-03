@@ -76,12 +76,18 @@ Route 4
 Route 4
 Route 5
 Route 5
+Birch's lab
+Birch's lab
+Dawn's Home
+Dawn's Home
 Route 6
 Route 6
 Cycling Road gate
 Cycling Road gate
 Route 7
 Route 7
+Dawn's Room
+Dawn's Room
 Rock Cave
 Rock Cave
 Dungeon
@@ -130,50 +136,104 @@ Faraday Island
 Faraday Island
 Tiall Region
 Tiall Region
+May's House
+May's House
+May's Home
+May's Home
 Route 101
 Route 101
 Route 102
 Route 102
+Route 102 Fillertreestop
+Route 102 Fillertreestop
 Route 103
 Route 103
 Oldale Town
 Oldale Town
+Oldale Pc
+Oldale Pc
+Oldale Mart
+Oldale Mart
+Oldale Town Home
+Oldale Town Home
+Oldale sell Home
+Oldale sell Home
 Route 102 Underground
 Route 102 Underground
 Petalburg City
 Petalburg City
+Petalburg PC
+Petalburg PC
+Petalburg Pc
+Petalburg Pc
+Petalburg Mart
+Petalburg Mart
 Route 101 Underground
 Route 101 Underground
+Petalburg Gym
+Petalburg Gym
+Petalburg Home
+Petalburg Home
+Wally's Home
+Wally's Home
 Route 104
 Route 104
 Petalburg Woods
 Petalburg Woods
 Rustboro City
 Rustboro City
+Mr. Briney's Home
+Mr. Briney's Home
 Spring Cave
 Spring Cave
+Pretty Petal Flower Shop
+Pretty Petal Flower Shop
 Route 116
 Route 116
+Rustboro City Apartment
+Rustboro City Apartment
+Rustboro Home
+Rustboro Home
+Gal Goodgirl's office
+Gal Goodgirl's office
+Rustboro Apartment
+Rustboro Apartment
+Trainer School
+Trainer School
+Devon Corporation
+Devon Corporation
+Rustboro City Pc
+Rustboro City Pc
 Rustboro Gym
 Rustboro Gym
 Rusturf Tunnel
 Rusturf Tunnel
+Hoeen Underground House
+Hoeen Underground House
 Route 115
 Route 115
 Dewford Town
 Dewford Town
+Dewford Home
+Dewford Home
 Route 105
 Route 105
 Route 106
 Route 106
 Route 107
 Route 107
+Dewford Town PC
+Dewford Town PC
+Dewford Ranger Guild
+Dewford Ranger Guild
 Granite Cave
 Granite Cave
 Dewford Gym
 Dewford Gym
 Slateport City
 Slateport City
+Slateport Harbor
+Slateport Harbor
 Route 108
 Route 108
 Route 109
@@ -182,14 +242,30 @@ Seashore House
 Seashore House
 Battle Tent
 Battle Tent
+Shipyard
+Shipyard
 Oceanic Museum
 Oceanic Museum
+Slateport PC
+Slateport PC
+Slateport Mart
+Slateport Mart
 Route 110
 Route 110
 Battle Tent Room
 Battle Tent Room
+Battle Tent Room 2
+Battle Tent Room 2
+Slateport City Home
+Slateport City Home
+Pokemon Fan Club
+Pokemon Fan Club
+Name Rater Home
+Name Rater Home
 Cycling Road
 Cycling Road
+Trick House
+Trick House
 Trick House 1
 Trick House 1
 Mauville City
@@ -200,44 +276,82 @@ Verdanturf Town Basic
 Verdanturf Town Basic
 Route 118
 Route 118
+Mauville Pc
+Mauville Pc
+Mauville Mart
+Mauville Mart
+Mauville City Home
+Mauville City Home
 Mauville Gym
 Mauville Gym
+Bike Shop
+Bike Shop
+Pokemon Daycare
+Pokemon Daycare
 Verdanturf Town
 Verdanturf Town
 Route 111
 Route 111
+Winstrate Family Home
+Winstrate Family Home
 Route 112
 Route 112
 Route 103 Underground
 Route 103 Underground
 Fiery Path
 Fiery Path
+Route 11 Home
+Route 11 Home
 Route 113
 Route 113
 Fallarbor Town
 Fallarbor Town
+Fallarbor Pc
+Fallarbor Pc
+Fallarbor Mart
+Fallarbor Mart
+Fallarbor Home
+Fallarbor Home
+Old Chateau
+Old Chateau
 Route 114
 Route 114
+Route 114 Border
+Route 114 Border
+Landon's Home
+Landon's Home
 Trick House 2
 Trick House 2
 Fossil Home
 Fossil Home
+Lannette's Home
+Lannette's Home
 Meteor Falls
 Meteor Falls
 Mt. Chimney
 Mt. Chimney
+Cable Car
+Cable Car
 Jagged Pass
 Jagged Pass
 Lavaridge Town
 Lavaridge Town
+Lavaridge Mart
+Lavaridge Mart
+Lavaridge Home
+Lavaridge Home
+Lavaridge Pc
+Lavaridge Pc
+Herb Shop
+Herb Shop
 Lavaridge Gym
 Lavaridge Gym
 Lavaridge Hotsprings
 Lavaridge Hotsprings
 Rustboro Pc
 Rustboro Pc
-Petalburg Gym
-Petalburg Gym
+Vulpix Basement
+Vulpix Basement
 Mirage Tower
 Mirage Tower
 Mirage Tower 1
@@ -260,8 +374,20 @@ Abandoned Ship 4
 Abandoned Ship 4
 Abandoned Ship 5
 Abandoned Ship 5
+Abandoned Ship 6
+Abandoned Ship 6
+Abandoned Ship 7
+Abandoned Ship 7
 Abandoned Ship 8
 Abandoned Ship 8
+Abandoned Ship 9
+Abandoned Ship 9
+Abandoned Ship 10
+Abandoned Ship 10
+Abandoned Ship 11
+Abandoned Ship 11
+Abandoned Ship 12
+Abandoned Ship 12
 New Mauville
 New Mauville
 Southern Island
@@ -332,11 +458,229 @@ Pokemon Den-Spearow
 \PN's Home
 Dewford Town Pc
 Dewford Town Pc
+Dewford Gym-won
+Dewford Gym-won
+Ralts Basement
+Ralts Basement
+Braixen Basement
+Braixen Basement
+Eevee[1] Basement
+Eevee[1] Basement
+Rocket Basement
+Rocket Basement
+Mawile Basement
+Mawile Basement
+Noibat Basement
+Noibat Basement
+Magma&Aqua Cell
+Magma&Aqua Cell
+Wak chambers
+Wak chambers
+Misdreavus Basement
+Misdreavus Basement
+Goodra Cave
+Goodra Cave
+Icicle Ruins
+Icicle Ruins
+Icicle Ruins B1
+Icicle Ruins B1
+Petalburg Ranger Guild F2
+Petalburg Ranger Guild F2
+Petalburg Ranger Guild F1
+Petalburg Ranger Guild F1
+Old Chapel
+Old Chapel
+Daybreak Chamber
+Daybreak Chamber
+Pokemon Den
+Pokemon Den
+Rustboro Ranger Guild
+Rustboro Ranger Guild
+Harrow Cave
+Harrow Cave
+Route 102 GYM
+Route 102 GYM
+Route 102 Underground ft2
+Route 102 Underground ft2
+Petalburg Groto
+Petalburg Groto
+Fire Area
+Fire Area
+Grave Area
+Grave Area
+Ranger Guild F1
+Ranger Guild F1
+Hidden Room
+Hidden Room
+Fortree City
+Fortree City
+Lilycove City
+Lilycove City
+Route 119
+Route 119
+Route 123
+Route 123
+Fiery Connector
+Fiery Connector
+OLD VERDANTURF CITY!
+OLD VERDANTURF CITY!
 Verdanturf City
 Verdanturf City
+Verdanturf Home
+Verdanturf Home
+Vulpix Den
+Vulpix Den
+Ranger Guild B1
+Ranger Guild B1
+Game Corner Basement
+Game Corner Basement
+Fortree City Gym
+Fortree City Gym
+Verdanturf PC
+Verdanturf PC
+Verdanturf Mart
+Verdanturf Mart
+Alolan Vulpix Basement
+Alolan Vulpix Basement
+Rookidee Basement
+Rookidee Basement
+Fomatis Basement
+Fomatis Basement
+Eevee[2] Basement
+Eevee[2] Basement
+Eevee[3] Basement
+Eevee[3] Basement
+Dragonair Basement
+Dragonair Basement
 Trackless Forest
 Trackless Forest
 Secret Jungle
 Secret Jungle
+Whimsicott Basement
+Whimsicott Basement
+Water Area
+Water Area
 Gnarled Woods
 Gnarled Woods
+Lost Woods Grotto
+Lost Woods Grotto
+Luxio Basement
+Luxio Basement
+Inner Lost Woods
+Inner Lost Woods
+PWT Lobby
+PWT Lobby
+PWT
+PWT
+Route 122
+Route 122
+Route 120
+Route 120
+Mt. Pyre
+Mt. Pyre
+Mt. Pyre Summit
+Mt. Pyre Summit
+Route 118 Gate
+Route 118 Gate
+Route 121
+Route 121
+Fiery Overlook
+Fiery Overlook
+Connecting Cave
+Connecting Cave
+Weather Institute
+Weather Institute
+Weather Institute F2
+Weather Institute F2
+Weather Institute F3
+Weather Institute F3
+Weather Institute F4
+Weather Institute F4
+Weather Institute F5
+Weather Institute F5
+Lopunny Basement
+Lopunny Basement
+Abandoned Ship [W]
+Abandoned Ship [W]
+Abandoned Ship 1[W]
+Abandoned Ship 1[W]
+Abandoned Ship 2[W]
+Abandoned Ship 2[W]
+Abandoned Ship 3[W]
+Abandoned Ship 3[W]
+Abandoned Ship 4[W]
+Abandoned Ship 4[W]
+Abandoned Ship 5[W]
+Abandoned Ship 5[W]
+Abandoned Ship 6[W]
+Abandoned Ship 6[W]
+Abandoned Ship 7[W]
+Abandoned Ship 7[W]
+Abandoned Ship 8[W]
+Abandoned Ship 8[W]
+Abandoned Ship 9[W]
+Abandoned Ship 9[W]
+Abandoned Ship 10[W]
+Abandoned Ship 10[W]
+Abandoned Ship 11[W]
+Abandoned Ship 11[W]
+Abandoned Ship 12[W]
+Abandoned Ship 12[W]
+Dewford Lagoon
+Dewford Lagoon
+Fiery Connector[SG]
+Fiery Connector[SG]
+Desert Area
+Desert Area
+Smeargle Basement
+Smeargle Basement
+Serperior Basement
+Serperior Basement
+Frozen Area
+Frozen Area
+Hatenna Poke Fan Club
+Hatenna Poke Fan Club
+Paint Oceanic Museum
+Paint Oceanic Museum
+Fiery Connector[NonSG]
+Fiery Connector[NonSG]
+Mirror Cavern
+Mirror Cavern
+Mirror Cavern 2F
+Mirror Cavern 2F
+Mirror Cavern 2F Room
+Mirror Cavern 2F Room
+Lilycove House
+Lilycove House
+Lilycove Pc Upper Floor
+Lilycove Pc Upper Floor
+Lilycove Pc
+Lilycove Pc
+Pokémon Trainer Fan Club
+Pokémon Trainer Fan Club
+Abandoned Home
+Abandoned Home
+Lilycove Cove Lily
+Lilycove Cove Lily
+Lilycove Cove Lily 2F
+Lilycove Cove Lily 2F
+Lilycove Dept. Store 1F
+Lilycove Dept. Store 1F
+Lilycove Dept. Store 2F
+Lilycove Dept. Store 2F
+Lilycove Dept. Store 3F
+Lilycove Dept. Store 3F
+Lilycove Dept. Store 4F
+Lilycove Dept. Store 4F
+Lilycove Dept. Store 5F
+Lilycove Dept. Store 5F
+Lilycove Dept. Store Roof
+Lilycove Dept. Store Roof
+Lilycove Dept. Elevator
+Lilycove Dept. Elevator
+Lilycove Museum
+Lilycove Museum
+Lilycove Museum B1F
+Lilycove Museum B1F
+Lilycove Ranger Guild
+Lilycove Ranger Guild

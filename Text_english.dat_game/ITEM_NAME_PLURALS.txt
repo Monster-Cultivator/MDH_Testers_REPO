@@ -2,6 +2,8 @@
 # translate every second line of this file.
 #-------------------------------
 [ITEM_NAME_PLURALS]
+TM101s
+TM101s
 Black Augurites
 Black Augurites
 Peat Blocks
@@ -122,22 +124,36 @@ Link Cables
 Link Cables
 Strongest Dresses
 Strongest Dresses
+Big Fairy Dresses
+Big Fairy Dresses
 Pandemonic Drips
 Pandemonic Drips
-Savage Axes
-Savage Axes
+Tyrant Scythes
+Tyrant Scythes
+Mimic Golds
+Mimic Golds
+Frozen Hearts
+Frozen Hearts
+Mizuha Armor
+Mizuha Armor
 Dhampir Rapiers
 Dhampir Rapiers
+Winter Drips
+Winter Drips
+Ancient Dresses
+Ancient Dresses
+Savage Axes
+Savage Axes
 Oath Signs
 Oath Signs
 Harps
 Harps
-Winter Drips
-Winter Drips
 Magus Garbs
 Magus Garbs
-Ancient Dresses
-Ancient Dresses
+Sacred Veils
+Sacred Veils
+Assassination Creed
+Assassination Creed
 Honchnites
 Honchnites
 Flygonites
@@ -212,6 +228,16 @@ Bottle Caps
 Bottle Caps
 Gold Bottle Caps
 Gold Bottle Caps
+Leaf Cores
+Leaf Cores
+Stone Cores
+Stone Cores
+Golden Scales
+Golden Scales
+TEST Items
+TEST Items
+Hook Swords
+Hook Swords
 Innate Shufflers
 Innate Shufflers
 TR001s
@@ -678,6 +704,34 @@ Dynamax Candies XL
 Dynamax Candies XL
 Max Soups
 Max Soups
+Shiny Berries
+Shiny Berries
+Health Candies
+Health Candies
+Mighty Candies
+Mighty Candies
+Tough Candies
+Tough Candies
+Smart Candies
+Smart Candies
+Courage Candies
+Courage Candies
+Quick Candies
+Quick Candies
+Sickly Candies
+Sickly Candies
+Weak Candies
+Weak Candies
+Brittle Candies
+Brittle Candies
+Numb Candies
+Numb Candies
+Coward Candies
+Coward Candies
+Slow Candies
+Slow Candies
+Raid Baits
+Raid Baits
 Tera Orbs
 Tera Orbs
 Normal Tera Shards
@@ -730,8 +784,6 @@ Z-Rings
 Z-Rings
 Z-Power Rings
 Z-Power Rings
-Z-Gauntlets
-Z-Gauntlets
 Z-Boosters
 Z-Boosters
 Normalium Z
