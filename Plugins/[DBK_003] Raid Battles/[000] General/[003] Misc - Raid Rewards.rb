@@ -72,6 +72,11 @@ def pbGenerateRaidRewards(pokemon, style = :Basic, rank = nil, loot = nil, weath
       rewards.push([:MAXHONEY, 1])
     when :PARASECT, :BRELOOM, :AMOONGUS, :SHIINOTIC, :TOEDSCRUEL
       rewards.push([:MAXMUSHROOMS, 1])
+	when :MAHOKE, :SAWK, :THROH, :MACHOP, :MAKUHITA
+      rewards.push([:BLACKBELT, 1])
+	when :CLOYSTER, :SWALOT, :SHELLDER, :GULPIN
+      rewards.push([:BIGPEARL, 1])
+	  rewards.push([:PEARL, 1])
     when :ETERNATUS
       rewards.push([:WISHINGSTAR, 1])
     end
