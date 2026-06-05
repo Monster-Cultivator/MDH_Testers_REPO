@@ -2171,3 +2171,6 @@ MapPosition = 0,19,5
 [545]   # Lilycove Ranger Guild
 Name = Lilycove Ranger Guild
 MapPosition = 0,19,5
+#-------------------------------
+[554]   # MAP554
+Name = Ultra Deep Sea 1F
