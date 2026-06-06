@@ -804,28 +804,6 @@ Quest13 = {
 	
  }
  
-    Houndoom1 = {
-    :ID => "73",
-    :Name => "The Rebel's Yell",
-    :QuestGiver => "Houndoom",
-    :Stage1 => "Houndoom wants you to follow her",
-    :Location1 => "Mt. Chimney",
-    :QuestDescription => "After Defeating Inesse and Lopunny, Houndoom wants you to follow her somewhere.",
-    :RewardString => "Stuff!"
-	
-}
-    
-	Quest74 = {
-    :ID => "74",
-    :Name => "Sign of Love: Houndoom",
-    :QuestGiver => "Houndoom",
-    :Stage1 => "Increase her Affinity",
-    :Location1 => "...",
-    :QuestDescription => "Houndoom seems to have taken a liking to you! It would be best to show her some loving! Big Pearl, 5 Chesto Berries, Fire Gem, Pewter Crunchies, Heart Scale, Fire Gem",
-    :RewardString => ". . ."
-	
-}
- 
   #======================================================#
   #                                                      #
   #                      "Official"                      #
