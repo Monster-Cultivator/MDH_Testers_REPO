@@ -1967,6 +1967,27 @@ HOUNDOOM_MIDBATTLE = {
    "UserMoveEffective_player_repeat" => {
     "text" => [:Opposing, "{1} unleashes a crippling howl!"],
     "battlerStatus" => [:PARALYSIS, true]
+  }
+}
+
+HOUNDOOM_REMATCH_MIDBATTLE = {
+"RoundStartCommand_1_foe" => {
+    "setVariable" => 0,
+	"battlerHPCap" => 49,
+    "text" => ["{1} Seems to want to test your might!"]
+  },
+  "UserDealtDamage_foe_repeat" => {
+    "addVariable" => 1,
+	"text" => ["{1} is feeling herself!"]
+  },
+  "VariableUp_repeat_every_4" => {
+    "setBattler"   => :Self,
+    "battlerStats" => [:ATTACK, 1, :SPECIAL_DEFENSE, 1, :SPEED, 1],
+    "text" => ["{1} is getting pumped up! She's landing hits left and right!"]
+  },
+   "UserMoveEffective_player_repeat" => {
+    "text" => [:Opposing, "{1} unleashes a crippling howl!"],
+    "battlerStatus" => [:PARALYSIS, true]
   },
   "BattlerReachedHPCap_foe" => {
     "megaEvolve" => "It seems that her most Primal instints have awaken!",

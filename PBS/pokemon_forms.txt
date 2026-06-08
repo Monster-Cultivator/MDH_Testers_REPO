@@ -3016,7 +3016,7 @@ Moves = 0,SCALD,1,MUDSPORT,1,PROTECT,1,KNOCKOFF
 #-------------------------------
 [HOUNDOOMx,1]
 FormName = Mega Houndoom!
-MegaMove = DESTRUCTIONINTHREESTRIKES
+MegaMove = FIREFANG
 BaseStats = 150,200,165,115,100,165
 BaseExp = 350
 Abilities = APEXPREDATOR

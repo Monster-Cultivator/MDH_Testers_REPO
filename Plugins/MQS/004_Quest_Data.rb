@@ -804,6 +804,27 @@ Quest13 = {
 	
  }
  
+   Quest73 = {
+    :ID => "73",
+    :Name => "Sign of Love: Houndoom",
+    :QuestGiver => "Houndoom",
+    :Stage1 => "Increase her Affinity",
+    :Location1 => "...",
+    :QuestDescription => "Houndoom seems to have taken a liking to you! It would be best to show her some loving! Big Pearl, 5 Chesto Berries, Flame Plate, Pewter Crunchies, Heart Scale, Fire Gem",
+    :RewardString => ". . ." 
+ 
+  }
+ 
+   Houndoom1 = {
+    :ID => "74",
+    :Name => "Rebel Howl",
+    :QuestGiver => "Houndoom",
+    :Stage1 => "See what she wants",
+    :Location1 => "Mt. Chimney",
+    :QuestDescription => "Houndoom seems to want you to follow her to Mt. Chimney so something.",
+    :RewardString => ". . ." 
+	
+   }
   #======================================================#
   #                                                      #
   #                      "Official"                      #
