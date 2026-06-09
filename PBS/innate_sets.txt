@@ -160,10 +160,13 @@ Innates = PRESSURE,WATERABSORB,BEASTBOOST
 Innates = PRESSURE,VOLTABSORB,BEASTBOOST
 #-------------------------------
 [PENNY_2]
-Innates1 = SERENEGRACE,PARENTALBOND,ANTITHESIS
+Innates = SERENEGRACE,PARENTALBOND,ANTITHESIS
 #-------------------------------
 [FLYGONh]
-Innates1 = STRIKER,SANDVEIL
+Innates = STRIKER,SANDVEIL
 #-------------------------------
 [GRENINJAh]
-Innates1 = SUPERLUCK,OPPORTUNIST
+Innates = SUPERLUCK,OPPORTUNIST
+#-------------------------------
+[LAPRASh]
+Innates = REGENERATOR,UNAWARE
