@@ -29996,6 +29996,7 @@ Habitat = Forest
 Category = Spiteful Fox
 Pokedex = To protect themselves from danger, they hide their true identities by transforming into people and Pokémon.
 Generation = 5
+Evolutions = PENNY_2,Event,3
 CallRateSOS = 9
 RaidRanks = 3,4,5
 #-------------------------------

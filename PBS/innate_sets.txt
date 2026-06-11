@@ -1,7 +1,5 @@
 [PENNY]
-Innates1 = SERENEGRACE
-Innates2 = MAGICGUARD 
-Innates3 = CUTECHARM
+Innates = SERENEGRACE, MAGICGUARD, CUTECHARM
 #-------------------------------
 [HATTERENE_2]
 Innates = FATALPRECISION
