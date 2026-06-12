@@ -1,0 +1,48 @@
+================================
+==== Switch 769 Event Usage ====
+================================
+
+Map 230 - Jagged Pass
+  Event 21 - EV021 [6, 20]
+    Page 1
+      Event Commands
+        [Line 13] Control Switches command
+
+Map 317 - \PN's Home
+  Event 36 - Penny option switch  [19, 3]
+    Page 1
+      Conditions
+        Switch 1
+
+Map 377 - Route 119
+  Event 5 - EV005 [5, 34]
+    Page 2
+      Conditions
+        Switch 1
+  Event 6 - EV006 [6, 34]
+    Page 2
+      Conditions
+        Switch 1
+  Event 7 - EV007 [7, 34]
+    Page 2
+      Conditions
+        Switch 1
+  Event 8 - EV008 [6, 36]
+    Page 3
+      Conditions
+        Switch 1
+  Event 9 - Abom intro  Size(6,1) [7, 39]
+    Page 1
+      Event Commands
+        [Line 66] Control Switches command
+    Page 2
+      Event Commands
+        [Line 78] Control Switches command
+        [Line 121] Control Switches command
+    Page 3
+      Conditions
+        Switch 1
+  Event 10 - EV010 [6, 33]
+    Page 1
+      Conditions
+        Switch 1
