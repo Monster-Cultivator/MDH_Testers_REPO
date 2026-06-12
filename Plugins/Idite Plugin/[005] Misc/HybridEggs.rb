@@ -6,7 +6,7 @@ It's damn near the same as pbGenerateEgg, with two very important distinctions:
 1/100 Shiny Odds. 
 =end
 
-def pbGenerateSpecialEgg(pkmn, text = "")
+def pbGenerateSpecialEgg(pkmn, form = nil, text = "")
     return false if !pkmn || $player.party_full?
     pkmn = Pokemon.new(pkmn, Settings::EGG_LEVEL) if !pkmn.is_a?(Pokemon)
     # Set egg's details
@@ -29,6 +29,7 @@ def pbGenerateSpecialEgg(pkmn, text = "")
     # pkmn.givePokerus
     # pkmn.item = PPUP
     # Any way you can edit a Pokemon is valid in here. Go nuts, man.
+	pkmn.form = form if !form.nil?
     pkmn.poke_ball = :LUXURYBALL
     pkmn.calc_stats
     # Add egg to party
