@@ -32206,7 +32206,7 @@ RaidRanks = 3,4,5
 [HOUNDOURh]
 Name = Houndour
 Types = DARK,FIRE
-BaseStats = 45,60,30,65,80,50
+BaseStats = 75,70,30,75,80,50
 GenderRatio = AlwaysFemale
 GrowthRate = Slow
 BaseExp = 66
@@ -32235,7 +32235,7 @@ RaidRanks = 1,2
 [HOUNDOOMh]
 Name = Houndoom
 Types = DARK,FIRE
-BaseStats = 75,90,50,95,110,80
+BaseStats = 85,130,70,95,90,80
 GenderRatio = AlwaysFemale
 GrowthRate = Slow
 BaseExp = 175
