@@ -97,6 +97,12 @@ Innates = FATALPRECISION
 [NINETALES_4]
 Innates = MOLDBREAKER
 #-------------------------------
+[HOUNDOOMx]
+Innates = QUICKFEET,MOXIE,MOLDBREAKER
+#-------------------------------
+[HOUNDOOMx_1]
+Innates = QUICKFEET,MOXIE,SWORDOFRUIN
+#-------------------------------
 [FLORAGATO_2]
 Innates = EXFLAMEBODY
 #-------------------------------
@@ -168,3 +174,9 @@ Innates = SUPERLUCK,OPPORTUNIST
 #-------------------------------
 [LAPRASh]
 Innates = REGENERATOR,UNAWARE
+#-------------------------------
+[HOUNDOOMh_1]
+Innates = RIVALRY,INTIMIDATE,DEFIANT
+#-------------------------------
+[HOUNDOOMh]
+Innates = RIVALRY,INTIMIDATE,DEFIANT

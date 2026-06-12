@@ -1980,7 +1980,7 @@ HOUNDOOM_REMATCH_MIDBATTLE = {
     "addVariable" => 1,
 	"text" => ["{1} is feeling herself!"]
   },
-  "VariableUp_repeat_every_4" => {
+  "VariableUp_repeat_every_3" => {
     "setBattler"   => :Self,
     "battlerStats" => [:ATTACK, 1, :SPECIAL_DEFENSE, 1, :SPEED, 1],
     "text" => ["{1} is getting pumped up! She's landing hits left and right!"]
@@ -1995,6 +1995,11 @@ HOUNDOOM_REMATCH_MIDBATTLE = {
 	"battlerMoves" => [:FLAREBLITZ, :WICKEDBLOW, :DYNAMICPUNCH, :YAWN],
 	"teamEffects" => [:StealthRock, true, "{1} Shards of the rock fly across the battle feild!"],
 	"setVariable" => 0
+  },
+  "AfterSwitchIn_foe_repeat" => {
+    "ignoreUntil" => "BattlerReachedHPCap_foe",
+    "addVariable" => 1,
+	"text" => ["{1} is excited for new prey!"]
   },
   "VariableUp_repeat_every_5" => {
     "ignoreUntil" => "BattlerReachedHPCap_foe",

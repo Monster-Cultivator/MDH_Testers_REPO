@@ -3070,3 +3070,10 @@ FormName = Electric
 Types = ELECTRIC
 Abilities = SURGESURFER
 BaseStats = 300,225,200,250,250,225
+#-------------------------------
+[HOUNDOURh,1]
+FormName = No cap
+Evolutions = HOUNDOOMh,Level,24
+#-------------------------------
+[HOUNDOOMh,1]
+FormName = Pompadoom
