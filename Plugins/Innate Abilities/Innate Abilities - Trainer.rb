@@ -12,7 +12,7 @@ module GameData
             pkmn.add_innate(innate)
           end
         end
-        puts "Assigned Innates to #{pkmn.name}: #{pkmn.Innates.inspect}"  # Debug log
+        #puts "Assigned Innates to #{pkmn.name}: #{pkmn.Innates.inspect}"  # Debug log
         pkmn.calc_stats
       end
       return trainer

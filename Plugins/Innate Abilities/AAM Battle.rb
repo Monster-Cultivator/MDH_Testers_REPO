@@ -1,5 +1,4 @@
 class Battle
-
   alias aam_pbCanSwitch? pbCanSwitch?
   def pbCanSwitch?(idxBattler, idxParty = -1, partyScene = nil)
     $aam_trapping=false
@@ -26,20 +25,38 @@ class Battle
     $aam_trapping=true
     return aam_pbCanRun?(idxBattler)
   end  
-  
-  alias_method :original_pbShowAbilitySplash, :pbShowAbilitySplash
-  def pbShowAbilitySplash(battler, delay = false, logTrigger = true)
-  puts "[pbShowAbilitySplash] Battler ability: #{battler.abilityName}"
-  if battler.ability
-    puts "[pbShowAbilitySplash] Setting $aamName to #{battler.abilityName}"
-    $aamName = battler.abilityName
-  end
-  puts "[pbShowAbilitySplash] $aamName is now: #{$aamName}, $aamName2 is: #{$aamName2}"
 
-  original_pbShowAbilitySplash(battler, delay, logTrigger)
-  puts "[pbShowAbilitySplash] After original call: $aamName is: #{$aamName}, $aamName2 is: #{$aamName2}"
+=begin OLD, STUPID VERSION <3 Idite
+  alias aam_pbShowAbilitySplash pbShowAbilitySplash
+  def pbShowAbilitySplash(battler, delay = false, logTrigger = true, forcedAbility = nil)
+    if forcedAbility
+      battler.pushForcedSplashAbility(forcedAbility)
+    end
+    aam_pbShowAbilitySplash(battler, delay, logTrigger)
+    if forcedAbility
+      battler.popForcedSplashAbility
+    end
   end
-  
+=end
+# New, based version. <3 Idite
+unless method_defined?(:innates_fix_pbShowAbilitySplash)
+  alias innates_fix_pbShowAbilitySplash pbShowAbilitySplash
+  def pbShowAbilitySplash(battler, delay = false, logTrigger = true, forcedAbility = nil)
+    forcedAbility ||= battler.currentTriggeredAbility if battler.respond_to?(:currentTriggeredAbility)
+    echoln "[AAM] showing splash for #{battler.name} forced=#{forcedAbility.inspect}"
+    battler.pushForcedSplashAbility(forcedAbility) if forcedAbility
+    innates_fix_pbShowAbilitySplash(battler, delay, logTrigger)
+  end
+end
+
+unless method_defined?(:innates_fix_pbHideAbilitySplash)
+  alias innates_fix_pbHideAbilitySplash pbHideAbilitySplash
+  def pbHideAbilitySplash(battler)
+    innates_fix_pbHideAbilitySplash(battler)
+    battler.forcedSplashAbilityStack&.clear
+  end
+end
+
   #Code for once per use abilities by penelope=================================================
   attr_accessor :abils_triggered
 
@@ -48,12 +65,12 @@ class Battle
     fix_initialize(scene, p1, p2, player, opponent)
     @abils_triggered  = [Array.new(@party1.length) { [] }, Array.new(@party2.length) { [] }]
   end
-
-  def pbAbilityTriggered?(battler, check_ability)
-    return @abils_triggered[battler.index & 1][battler.pokemonIndex].include?(check_ability)
+  
+  def pbAbilityTriggered?(battler, check_ability = battler.ability)
+	return @abils_triggered[battler.index & 1][battler.pokemonIndex].include?(check_ability)
   end
 
-  def pbSetAbilityTrigger(battler, check_ability)
+  def pbSetAbilityTrigger(battler, check_ability = battler.ability)
     @abils_triggered[battler.index & 1][battler.pokemonIndex].push(check_ability)
   end
 
@@ -85,7 +102,7 @@ class Battle
 
   def battle_limit_ability(battler) # add once per battle ability here
     ret = [:EMBODYASPECT, :EMBODYASPECT_1, :EMBODYASPECT_2, :EMBODYASPECT_3,
-           :INTIMIDATE,
+           :INTIMIDATE, :TERAFORMZERO,
            :SCARE]
     #ret = [] if !battler.pbOwnedByPlayer?
     return ret

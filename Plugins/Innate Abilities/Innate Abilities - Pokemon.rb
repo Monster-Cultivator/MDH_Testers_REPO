@@ -3,114 +3,138 @@ class Pokemon
 	attr_accessor :active_innates
 	attr_accessor :fixed_innates
 	attr_accessor :original_innates
-#Adds the innates to a species datta
+	attr_accessor :form_innates
+	attr_accessor :innateset
+  attr_accessor :unlocked_innate_count
+  #Adds the innates to a species datta
 	def species=(species_id)
 		new_species_data = GameData::Species.get(species_id)
 		return if @species == new_species_data.species
 		@species     = new_species_data.species
 		default_form = new_species_data.default_form
-		if default_form >= 0
+    if default_form >= 0
 			@form      = default_form
-			elsif new_species_data.form > 0
+    elsif new_species_data.form > 0
 			@form      = new_species_data.form
-		end
+    end
 		@forced_form = nil
 		@gender      = nil if singleGendered?
-		@level       = nil   # In case growth rate is different for the new species
+		@level       = nil
 		@ability     = nil
 		@innate      = nil
 		calc_stats
-		assign_innate_abilities
+    assign_innate_abilities if respond_to?(:assign_innate_abilities)
 	end
 #=============================================================================
-# Stuff related to innate abilities. Basically a copy of Ability
+# Stuff related to innate abilities in a Pokemon.
 #=============================================================================
-
-  # The index of this Pokémon's ability (0, 1 are natural abilities, 2+ are
-  # hidden abilities) as defined for its species/form. An ability may not be
-  # defined at this index. Is recalculated (as 0 or 1) if made nil.
-  # @return [Integer] the index of this Pokémon's ability
-  def innate_index
-    @innate_index = (@personalID & 1) if !@innate_index
-    return @innate_index
+  def unlocked_innate_count
+    return @unlocked_innate_count || 0
   end
 
-  # @param value [Integer, nil] forced ability index (nil if none is set)
-  def innate_index=(value)
-    @innate_index = value
-    @innate = nil
+  def hasInnate?(ability)
+    return true if self.active_innates.include?(ability)
+    return false
   end
 
-  # @return [GameData::Ability, nil] an Ability object corresponding to this Pokémon's ability
-  def innate
-    return GameData::Innate.try_get(innate_id)
-  end
+  def getInnateList
+	  innate_set = GameData::InnateSet.get(species)
+	  return [] unless innate_set
 
-  # @return [Symbol, nil] the ability symbol of this Pokémon's ability
-  def innate_id
-    if !@innate
-      sp_data = species_data
-      inna_index = innate_index
-      #if abil_index >= 2   # Hidden ability
-      #  @ability = sp_data.hidden_abilities[abil_index - 2]
-      #  abil_index = (@personalID & 1) if !@ability
-      #end
-      if !@innate   # Natural ability or no hidden ability defined
-        @innate = sp_data.innates[inna_index] || sp_data.innates[0]
+	  puts "[Innate Debug] Getting innate list for #{species}, form #{@form}"
+
+	  if @form && @form > 0
+		  innate_set = GameData::InnateSet.get_species_form(species, @form)
+		  return [] unless innate_set
+	  end
+
+	  # Use evolution context if available
+	  if defined?(@__previous_innates) && @__previous_innates
+		  puts "[Innate Debug] Attempting to match evolved Pokémon's previous innate set..."
+		  inherited_sorted = @__previous_innates.sort
+
+		  innate_set.innates.each_with_index do |set, i|
+		    puts "[Innate Debug] Comparing with Innates#{i + 1}: #{set.inspect}"
+        if set.sort == inherited_sorted
+			    puts "[Innate Debug] Match found with Innates#{i + 1}!"
+			    return set
+        end
       end
+
+	    puts "[Innate Debug] No match found; selecting random set."
+	  end
+
+	  chosen = innate_set.innates.sample
+	  puts "[Innate Debug] Randomly selected innate set: #{chosen.inspect}"
+	  return chosen || []
+  end
+  #========================================================================================
+  #Helper methods for the whole innate index requested by Uzi
+  #========================================================================================
+  def getInnateListFull
+	  innate_set = GameData::InnateSet.get(species)
+	  return [] unless innate_set
+
+	  if form && form > 0
+		  innate_set = GameData::InnateSet.get_species_form(species, form)
+		  return [] unless innate_set
+	  end
+
+	  return innate_set.innates || []
+  end
+  
+  def getInnateSetByIndex(index)
+	  sets = getInnateListFull
+	  return nil if index.nil? || index <= 0 || index > sets.length
+	  return sets[index - 1]
+  end
+  
+  def getInnateIndex
+	  return 0 unless respond_to?(:species) && respond_to?(:active_innates)
+
+	  species = self.species
+	  form = self.form || 0
+	  current_innates = self.active_innates&.map(&:to_sym)
+	  return 0 if current_innates.nil? || current_innates.empty?
+
+	  puts "[Innate Debug] Checking innate index for #{GameData::Species.get(species).name}, Form #{form}"
+	  puts "[Innate Debug] Current innates: #{current_innates.inspect}"
+
+	  sets = getInnateListFull
+	  sets.each_with_index do |set, index|
+		  puts "[Innate Debug] Comparing with set #{index + 1}: #{set.inspect}"
+		  return index + 1 if set.sort == current_innates.sort
+	  end
+
+	  puts "[Innate Debug] No matching innate set found. Returning 0."
+	  return 0
+  end
+  
+  def innateset=(index)
+    set = getInnateSetByIndex(index)
+
+    if set.nil?
+      puts "[Innate Debug] Tried to set invalid innate set index #{index}."
+      return
     end
-    return @innate
+
+    list = set.compact.map(&:to_sym)
+
+    @innateset = index
+    @Innates = nil
+
+    @active_innates = list.clone
+    @fixed_innates  = list.clone
+
+    @form_innates ||= {}
+    @form_innates[[self.species, self.form || 0]] = list.clone
+
+    @manual_active_innates = true
+
+    puts "[Innate Debug] Changed innate set to #{@innateset}: #{list.inspect}"
   end
-
-  # @param value [Symbol, String, GameData::Ability, nil] ability to set
-  def innate=(value)
-    return if value && !GameData::Innate.exists?(value)
-    @innate = (value) ? GameData::Innate.get(value).id : value
-  end
-
-  # Returns whether this Pokémon has a particular ability. If no value
-  # is given, returns whether this Pokémon has an ability set.
-  # @param check_ability [Symbol, String, GameData::Ability, nil] ability ID to check
-  # @return [Boolean] whether this Pokémon has a particular ability or
-  #   an ability at all
-  def hasInnate?(check_innate = nil)
-    current_innate = self.innate
-    return !current_innate.nil? if check_innate.nil?
-    return current_innate == check_innate
-  end
-
-
-  # @return [Array<Array<Symbol,Integer>>] the abilities this Pokémon can have,
-  #   where every element is [ability ID, ability index]
-=begin
-  def getInnateList
-    ret = []
-    sp_data = species_data
-    sp_data.innates.each_with_index { |a, i| ret.push([a, i]) if a }
-   # sp_data.hidden_abilities.each_with_index { |a, i| ret.push([a, i + 2]) if a }
-    return ret
-  end
-=end
-
-  def getInnateList
-  innate_set = GameData::InnateSet.get(species)
-  return [] unless innate_set
-
-  # Use the form if it's greater than 0
-  if @form && @form > 0
-    innate_set = GameData::InnateSet.get_species_form(species, @form)
-	return [] unless innate_set
-  end
-  
-  # Select a random set of innates if there are multiple sets
-  selected_innates = innate_set.innates.sample
-
-  # Ensure this returns an array of innate symbols
-  #return innate_set ? innate_set.innates : []
-  return selected_innates || []
-  end
-  
-  
+#========================================================================================
+#========================================================================================
   def getInnateListName
     ret = []
     sp_data = species_data
@@ -118,9 +142,7 @@ class Pokemon
    # sp_data.hidden_abilities.each_with_index { |a, i| ret.push([a, i + 2]) if a }
     return ret
   end
-  
-  
-  
+
   #Add one single innate
   def add_innate(innate)
     #return unless innate && GameData::Innate.exists?(innate)
@@ -148,15 +170,12 @@ class Pokemon
   def select_random_innates(max_innates, primary_ability)
     # Load all innate abilities into "Available Innates"
     available_innates = getInnateList#.map(&:first)
-
     # Remove the primary ability from the available innates
     available_innates.reject! { |ability| ability == primary_ability }
-	
-	# If shuffling is disabled and the number of available innates is <= max_innates, return the innates as is
-	if !Settings::ALWAYS_SHUFFLE_RANDOMS && available_innates.size <= max_innates
-		return available_innates.take(max_innates)
-	end
-
+	  # If shuffling is disabled and the number of available innates is <= max_innates, return the innates as is
+	  if !alwaysShuffleEnabled? && available_innates.size <= max_innates
+		  return available_innates.take(max_innates)
+	  end
     # Ensure max_innates does not exceed the number of available innates
     chosen_innates = []
     max_innates.times do
@@ -165,118 +184,284 @@ class Pokemon
       chosen_innates.push(chosen_innate)
       available_innates.delete(chosen_innate)  # Remove the chosen innate to prevent duplicates
     end
-
-    # Set the instance variables
-    #self.active_innates = available_innates
-    #self.fixed_innates = self.active_innates
-	
-	puts "Possible Innates Randomized"
-
+	  puts "Possible Innates Randomized"
     return chosen_innates
   end
   
-  #Moved the code here for consistency sake
-  def assign_innate_abilities
-	if @Innates && !(@Innates.empty? || @Innates.nil?)
-		# Use the custom Innate Abilities if set
-		self.active_innates = @Innates
-		puts "Using customly given Innates..."
-	else
-		# Load all innate abilities into "Available Innates"
-		available_innates = getInnateList#.map(&:first)
+  # Method to randomly select innate abilities from all available abilities in the game
+  def max_innate_randomizer(max_innates, primary_ability)
+    # Initialize an empty array for available innates
+    available_innates = []
 
-		# Remove the regular/hidden ability from the list of available innates
-		available_innates.reject! { |innate| innate == self.ability_id }
-
-		# Initialize the "Active Innates" array
-		self.active_innates = []
-
-		# Check if INNATE_RANDOMIZER is enabled and loads the randomizer
-		if Settings::INNATE_RANDOMIZER == true
-			self.active_innates = select_random_innates(Settings::INNATE_MAX_AMOUNT, @ability_id)
-			puts "Using possible randomized innates..."
-		else
-			# If randomizer is not enabled, use all available innates
-			self.active_innates = available_innates
-			puts "Using innates straight from the pbs..."
-		end
-	end
-
-	# Store the fixed innates with the Pokémon
-	self.fixed_innates = self.active_innates
-	puts "#{self.name}'s Innates set!"
-  end
-  
-  #WIP
-  def save_original_innates
-	if self.original_innates.empty?
-		self.original_innates = self.active_innates.clone
-		puts "Original Innate saved!"
-	else
-		puts "The innates were already salved"
-	end
-  end
-  
-  def restore_original_innates
-	if self.original_innates.empty?
-		puts "There was nothing to restore here"
-	else
-		self.active_innates = self.original_innates.clone
-		self.original_innates.clear
-		puts "Innates Restored"
-	end
-  end
-  
-  
-#===========================================================
-  #Migrated the code from pbInitPokemon to here for more consistency
-  def set_innate_limits
-    speciesAbilities = [self.ability_id].flatten.compact#[@ability_id].compact
-    active_innates = self.active_innates
-
-    if self.hasAbilityMutation?
-      if Settings::INNATE_PROGRESS_WITH_VARIABLE && !Settings::INNATE_PROGRESS_WITH_LEVEL
-        push_ability_count = case $game_variables[Settings::INNATE_PROGRESS_VARIABLE]
-                             when 1 then 1
-                             when 2 then 2
-                             when 3 then active_innates.size
-                             else 0
-                             end
-        active_innates.each_with_index do |ability, index|
-          speciesAbilities.push(ability)
-          break if index + 1 >= push_ability_count
-        end
-      elsif Settings::INNATE_PROGRESS_WITH_LEVEL && !Settings::INNATE_PROGRESS_WITH_VARIABLE
-        levels_to_unlock = Settings::LEVELS_TO_UNLOCK.find { |entry| entry.first == self.species }&.drop(1) || Settings::LEVELS_TO_UNLOCK.last
-        levels_to_unlock.each_with_index do |min_level, index|
-          if self.level >= min_level && active_innates.size > index
-            speciesAbilities.push(active_innates[index])
-          end
-        end
-      else
-        active_innates.each { |ability| speciesAbilities.push(ability) }
-      end
+    # Iterate through each ability and filter based on blacklist and primary ability
+    GameData::Ability.each do |ability|
+      next if Settings::BLACKLIST.include?(ability.id) || ability.id == primary_ability
+      available_innates << ability.id
     end
 
-    speciesAbilities.push(:NOABILITY) if speciesAbilities.empty?
+    # Choose a random selection of innate abilities up to the specified max
+    chosen_innates = available_innates.sample(max_innates)
 
-    return speciesAbilities
+    puts "Innate abilities randomized and assigned"
+    return chosen_innates
   end
-#===========================================================
   
-#===========================================================
-  # Alias the original initialize method
-  alias_method :original_initialize, :initialize
-  # Define the new initialize method to add the Innates
-  def initialize(species, level, owner = $player, withMoves = true, recheck_form = true)
-    # Call the original initialize method
-    original_initialize(species, level, owner, withMoves, recheck_form)
-    
-    # Initialize the new attribute
-    @Innates = []
-	@active_innates = []
-    @fixed_innates = []
-	@original_innates = []
+  
+# Custom method to reset and re-roll innates for a form
+  def reset_innates_for_form(form)
+    @form_innates ||= {}
+
+    species_form_key = [self.species, form]
+
+    # Get correct ability for this form based on current ability_index
+    species_data = GameData::Species.get_species_form(self.species, form)
+    ability_list = species_data.abilities
+    form_ability_id = ability_list[self.ability_index]
+
+    # Clear previous innates
+    @form_innates[species_form_key] = []
+
+    if randomizerEnabled?
+      if maxRandomizerEnabled?
+        new_innates = max_innate_randomizer(maxInnates, form_ability_id)
+        puts "#{self.name}'s innates for form #{form} re-rolled using max innate randomizer!"
+      else
+        new_innates = select_random_innates(maxInnates, form_ability_id)
+        puts "#{self.name}'s innates for form #{form} re-rolled with randomized innates!"
+      end
+    else
+      puts "#{self.name}'s innates for form #{form} are not randomized, kept as is."
+      return
+    end
+
+    def active_innates
+      @active_innates ||= []
+      return @active_innates
+    end
+
+    def active_innates=(value)
+      list = value || []
+      list = list.compact.map(&:to_sym)
+
+      @active_innates = list.clone
+
+      # If this setter is called directly by outside code, preserve it.
+      # assign_innate_abilities uses @active_innates directly, so it won't trip this.
+      if !@__assigning_innates
+        @manual_active_innates = true
+        @form_innates ||= {}
+        @form_innates[[self.species, self.form || 0]] = list.clone if !list.empty?
+      end
+    end
+  # Prevent ability duplication in innates
+  new_innates.reject! { |innate| innate == form_ability_id }
+
+  @form_innates[species_form_key] = new_innates
   end
-#===========================================================
+  #======================================================================================================
+  #Master method
+  # Edited by idite to handle Possession/Control stuff.
+  #======================================================================================================
+  def assign_innate_abilities
+    @form_innates ||= {}
+
+    species_form_key = [self.species, self.form || 0]
+
+    #---------------------------------------------------------------------------
+    # 1. Custom Innates must ALWAYS win.
+    # This supports setBattleRule code that directly sets @Innates.
+    #---------------------------------------------------------------------------
+    custom = @Innates
+    if custom && !custom.empty?
+      list = custom.compact.map(&:to_sym)
+
+      @active_innates = list.clone
+      @fixed_innates  = list.clone
+      @form_innates[species_form_key] = list.clone
+
+      puts "Using customly given Innates..."
+      puts "#{self.name}'s custom Innates set for species #{self.species} form #{self.form || 0}!"
+      return
+    end
+
+    #---------------------------------------------------------------------------
+    # 2. If something manually set active_innates, respect it.
+    # This supports code that does pkmn.active_innates = [...]
+    #---------------------------------------------------------------------------
+    if @manual_active_innates && @active_innates && !@active_innates.empty?
+      list = @active_innates.compact.map(&:to_sym)
+
+      @active_innates = list.clone
+      @fixed_innates  = list.clone
+      @form_innates[species_form_key] = list.clone
+
+      puts "Using manually assigned active Innates..."
+      return
+    end
+
+    #---------------------------------------------------------------------------
+    # 3. Forced innate set.
+    #---------------------------------------------------------------------------
+    if @innateset && (set = getInnateSetByIndex(@innateset))
+      list = set.compact.map(&:to_sym)
+
+      @active_innates = list.clone
+      @fixed_innates  = list.clone
+      @form_innates[species_form_key] = list.clone
+
+      puts "Using Innate Set ##{@innateset}: #{list.inspect}"
+      return
+    end
+
+    #---------------------------------------------------------------------------
+    # 4. Existing form cache.
+    # IMPORTANT: [] is truthy in Ruby, so only use the cache if it has contents.
+    #---------------------------------------------------------------------------
+    cached = @form_innates[species_form_key]
+    if cached && !cached.empty?
+      list = cached.compact.map(&:to_sym)
+
+      @active_innates = list.clone
+      @fixed_innates  = list.clone
+
+      puts "Innates already assigned for species #{self.species} form #{self.form || 0}."
+      return
+    end
+
+    #---------------------------------------------------------------------------
+    # 5. Normal PBS/randomizer assignment.
+    #---------------------------------------------------------------------------
+    available_innates = getInnateList
+    available_innates = [] if !available_innates
+    available_innates = available_innates.compact.map(&:to_sym)
+    available_innates.reject! { |innate| innate == self.ability_id }
+
+    if randomizerEnabled?
+      if maxRandomizerEnabled?
+        @active_innates = max_innate_randomizer(maxInnates, self.ability_id)
+        puts "Using fully random innates..."
+      else
+        @active_innates = select_random_innates(maxInnates, @ability_id)
+        puts "Using possible randomized innates..."
+      end
+    else
+      @active_innates = available_innates
+      puts "Using innates straight from the pbs..."
+    end
+
+    @active_innates = [] if !@active_innates
+    @active_innates = @active_innates.compact.map(&:to_sym)
+    @fixed_innates  = @active_innates.clone
+
+    @form_innates[species_form_key] = @active_innates.clone
+
+    # This was normal automatic assignment, not a manual override.
+    @manual_active_innates = false
+
+    puts "#{self.name}'s Innates set for species #{self.species} form #{self.form || 0}!"
+
+    if instance_variable_defined?(:@__previous_innates)
+      remove_instance_variable(:@__previous_innates)
+      puts "[Innate Debug] Removed stored innates from evolution."
+    end
+  end
+#======================================================================================================
+#======================================================================================================
+  
+  def Innates=(value)
+    @form_innates ||= {}
+    species_form_key = [self.species, self.form || 0]
+
+    if value.nil? || value.empty?
+      @Innates = nil
+      @form_innates.delete(species_form_key)
+      @manual_active_innates = false
+      return
+    end
+
+    list = value.compact.map(&:to_sym)
+
+    @Innates = list.clone
+    @active_innates = list.clone
+    @fixed_innates  = list.clone
+    @form_innates[species_form_key] = list.clone
+
+    @manual_active_innates = true
+
+    puts "Innates= directly set #{self.name}'s Innates to #{list.inspect}"
+  end
+
+  def innate_unlock_limit(ignore_lock = false)
+    return self.active_innates.size if ignore_lock || !innateLocked? || !self.hasAbilityMutation?
+    
+    extra_unlocks = @unlocked_innate_count || 0
+    return self.active_innates.size if extra_unlocks == -1
+
+    current_method = lockedMethod
+    base_count = 0
+    
+    case current_method
+    when :variable
+      base_count = $game_variables[Settings::INNATE_PROGRESS_VARIABLE]
+    when :level
+      lvl_array = Settings::LEVELS_TO_UNLOCK.find { |e| e.is_a?(Array) && e.first == self.species }&.drop(1) || 
+                  Settings::LEVELS_TO_UNLOCK.last
+      base_count = lvl_array.count { |lvl| self.level >= lvl }
+    else
+      base_count = 0
+    end
+
+    return [0, base_count + extra_unlocks].max
+  end
+
+  def unlocked_innates
+    limit = self.innate_unlock_limit
+    return (self.active_innates || [])[0...limit]
+  end
+
+  def set_innate_limits(battler = nil)
+    is_wild_or_npc = battler && !battler.pbOwnedByPlayer?
+    ignore = onlyLockPlayer? && is_wild_or_npc
+    
+    limit = self.innate_unlock_limit(ignore)
+    
+    list = [self.ability_id].flatten.compact
+    active_all = self.active_innates || []
+    
+    active_all.each_with_index do |ability, i|
+      break if i >= limit
+      list.push(ability)
+    end
+    
+    list.push(:NOABILITY) if list.empty?
+    return list
+  end
+
+  def abilityAble?(ability)
+    return false if !ability
+    return true if self.hasAbility?(ability)
+    return self.unlocked_innates.include?(ability)
+  end
+  #===========================================================
+  # Aliasing the initialize method
+  #===========================================================
+  alias_method :original_initialize, :initialize
+  def initialize(species, level, owner = $player, withMoves = true, recheck_form = true)
+    original_initialize(species, level, owner, withMoves, recheck_form)
+    @Innates = []
+	  @active_innates = []
+    @fixed_innates = []
+	  @original_innates = []
+	  @form_innates ||= {}
+	  @innateset = nil
+    @unlocked_innate_count = 0
+  end
+  #===========================================================
+  #Form changing
+  #===========================================================
+  alias original_form= form=
+  def form=(value)
+    self.original_form = value
+    assign_innate_abilities
+  end
 end

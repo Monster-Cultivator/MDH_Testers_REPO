@@ -12,6 +12,5 @@ class Battle::Move
   def pbCalcAccuracyModifiers(user, target, modifiers)
     $aam_AccuracyCalcFromAlly=[]
     aam_pbCalcAccuracyModifiers(user, target, modifiers)
-  end#
-
+  end
 end  

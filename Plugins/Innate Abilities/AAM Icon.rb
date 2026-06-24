@@ -1,5 +1,5 @@
-
-
+#Deprecated
+=begin
 class Battle::Scene::PokemonDataBox < Sprite 
   
   alias aam_refresh refresh
@@ -63,3 +63,4 @@ def pbDisplayAbilityMutation(pokemon, overlay, xpos, ypos, vertical = false)
   end  
   pbDrawImagePositions(overlay, imagepos)
 end
+=end

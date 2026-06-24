@@ -2,6 +2,7 @@
 # Instances of this class are individual Pokémon.
 # The player's party Pokémon are stored in the array $player.party.
 #===============================================================================
+=begin
 class Pokemon
   attr_accessor :abilityMutation
 
@@ -28,8 +29,22 @@ class Pokemon
 	  end 		
 		
 	  def hasAbilityMutation?
-		if @abilityMutation==true || Settings::GLOBAL_MUTATION==true
+		if @abilityMutation==true
 			return true 
 		end	
 	  end
+end
+=end
+class Pokemon
+  attr_accessor :abilityMutation
+
+  alias innate_init initialize
+  def initialize(*args)
+    innate_init(*args)
+    @abilityMutation = true 
+  end
+
+  def hasAbilityMutation?
+    return true
+  end
 end
