@@ -167,7 +167,7 @@ Innates = PRESSURE,VOLTABSORB,BEASTBOOST
 Innates = SERENEGRACE,PARENTALBOND,ANTITHESIS
 #-------------------------------
 [FLYGONh]
-Innates = STRIKER,SANDVEIL
+Innates = STRIKER,SANDVEIL,DANCER
 #-------------------------------
 [GRENINJAh]
 Innates = SUPERLUCK,OPPORTUNIST

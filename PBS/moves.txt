@@ -10095,3 +10095,15 @@ Target = NearOther
 FunctionCode = StartLeechSeedTarget
 Flags = CanProtect,CanMirrorMove,ZPower_ResetStats
 Description = A seed is planted on the target. It steals some HP from the target every turn.
+#-------------------------------
+[BEATUPEX]
+Name = Pack Tactics
+Type = DARK
+Category = Physical
+Power = 1
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = HitOncePerUserHoundoom 
+Flags = CanProtect,CanMirrorMove
+Description = Running the ones is a fools errane. The more Houndooms, the more damage.
