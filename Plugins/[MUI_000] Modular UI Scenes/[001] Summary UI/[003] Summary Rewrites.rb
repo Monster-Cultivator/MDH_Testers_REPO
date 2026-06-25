@@ -108,7 +108,7 @@ class PokemonSummary_Scene
       when :item
         commands[:item] = _INTL("Give item")
         commands[:take] = _INTL("Take item") if @pokemon.hasItem?
-      when :nickname then commands[cmd] = _INTL("Nickname")      if Settings::MECHANICS_GENERATION >= 9 && !@pokemon.foreign?
+      when :nickname then commands[cmd] = _INTL("Nickname")      if Settings::MECHANICS_GENERATION >= 9 #&& !@pokemon.foreign?
       when :pokedex  then commands[cmd] = _INTL("View Pokédex")  if $player.has_pokedex
       when :moves    then commands[cmd] = _INTL("Check Moves")   if Settings::MECHANICS_GENERATION >= 9 && !@pokemon.moves.empty?
       when :remember then commands[cmd] = _INTL("Remember Move") if Settings::MECHANICS_GENERATION >= 9 && @pokemon.can_relearn_move?

@@ -40,7 +40,7 @@ UIHandlers.add(:summary, :page_info, {
 UIHandlers.add(:summary, :page_memo, {
   "name"      => "TRAINER MEMO",
   "suffix"    => "memo",
-  "order"     => 20,
+  "order"     => 40,
   "options"   => [:item, :nickname, :pokedex, :mark],
   "layout"    => proc { |pkmn, scene| scene.drawPageTwo }
 })
@@ -58,11 +58,12 @@ UIHandlers.add(:summary, :page_skills, {
 UIHandlers.add(:summary, :page_moves, {
   "name"      => "MOVES",
   "suffix"    => "moves",
-  "order"     => 40,
+  "order"     => 20,
   "options"   => [:moves, :remember, :forget, :tms],
   "layout"    => proc { |pkmn, scene| scene.drawPageFour }
 })
 
+=begin
 # Ribbons page.
 UIHandlers.add(:summary, :page_ribbons, {
   "name"      => "RIBBONS",
@@ -70,7 +71,7 @@ UIHandlers.add(:summary, :page_ribbons, {
   "order"     => 50,
   "layout"    => proc { |pkmn, scene| scene.drawPageFive }
 })
-
+=end
 #-------------------------------------------------------------------------------
 # Egg Summary handlers.
 #-------------------------------------------------------------------------------

@@ -49,7 +49,7 @@ class PokemonSummary_Scene
     #---------------------------------------------------------------------------
     # Example
     #---------------------------------------------------------------------------
-    if cmd == "Reset EV's"
+    if cmd == "Reset EVs"
       pbMessage(_INTL("{1}'s effort values were reset.", @pokemon.name))
       GameData::Stat.each_main { |s| @pokemon.ev[s.id] = 0 }
       @pokemon.calc_stats

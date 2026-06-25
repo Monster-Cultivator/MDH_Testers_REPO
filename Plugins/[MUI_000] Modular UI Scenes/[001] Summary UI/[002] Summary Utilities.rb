@@ -161,3 +161,18 @@ class PokemonBag
     return false
   end
 end
+
+
+
+#===============================================================================
+# EV Reset
+#===============================================================================
+def resetEVsPrompt
+  return if !@pokemon
+  if pbConfirmMessage("Do you want to reset all EVs for this Pokémon?")
+    GameData::Stat.each_main { |s| @pokemon.ev[s.id] = 0 }
+    @pokemon.calc_stats
+    pbMessage("All EVs were reset to 0.")
+    drawPage(@page)  
+  end
+end

@@ -63,6 +63,11 @@ class PokemonPokedexInfo_Scene
     overlay = @sprites["overlay"].bitmap
     overlay.clear
     drawPageIcons
+
+    # Cache the default position once, then always restore it before drawing a page
+    @infosprite_default_y ||= @sprites["infosprite"].y
+    @sprites["infosprite"].y = @infosprite_default_y
+
     @sprites["infosprite"].visible    = false
     @sprites["areamap"].visible       = false if @sprites["areamap"]
     @sprites["areahighlight"].visible = false if @sprites["areahighlight"]
@@ -181,4 +186,99 @@ class PokemonPokedexInfo_Scene
     end
     return @index
   end
+#==============================
+# Possession
+#==============================
+def drawPageInnates
+  overlay = @sprites["overlay"].bitmap
+  overlay.clear
+  @sprites["infosprite"].visible = true
+  @infosprite_default_y ||= @sprites["infosprite"].y
+  @sprites["infosprite"].y = @infosprite_default_y + 60
+
+  base_color        = Color.new(248, 248, 248)
+  shadow_color      = Color.new(104, 104, 104)
+  text_base_color   = Color.new(64, 64, 64)
+  text_shadow_color = Color.new(176, 176, 176)
+  max_width         = 140
+  small_font        = Settings::SMALL_FONT_IN_SUMMARY
+
+  entry   = @dexlist[@index]
+  species = entry[:species]
+  form    = entry[:form] || 0
+
+  # Flatten in case multiple Innates lines created nested arrays
+  innate_ids = GameData::InnateSet.get_species_form(species, form)&.innates&.flatten || []
+
+  textpos = [
+    [_INTL(" Innate 1"), 224, 80,  :left, base_color, shadow_color],
+    [_INTL(" Innate 2"), 224, 180, :left, base_color, shadow_color],
+    [_INTL(" Innate 3"), 224, 280, :left, base_color, shadow_color]
+  ]
+
+  3.times do |i|
+    innate_id   = innate_ids[i]
+    text_y      = 80 + i * 100
+    text_x      = 362
+    innate_data = GameData::Innate.try_get(innate_id)
+    name_text   = innate_data ? innate_data.name : "---"
+    desc_text   = innate_data ? innate_data.description : "--- No innate ---"
+
+    drawInnateName(overlay, name_text, text_x, text_y, max_width, text_base_color, text_shadow_color, small_font)
+
+    if small_font
+      pbSetSmallFont(overlay)
+      drawFormattedTextEx(overlay, 224, text_y + 32, 282, desc_text, text_base_color, text_shadow_color, 20)
+      pbSetSystemFont(overlay)
+    else
+      drawTextEx(overlay, 224, text_y + 32, 282, 2, desc_text, text_base_color, text_shadow_color)
+    end
+  end
+
+  [160, 260].each do |y|
+    overlay.fill_rect(224, y, 360, 2, Color.new(200, 200, 200))
+  end
+
+  pbDrawTextPositions(overlay, textpos)
+end
+
+
+
+  
+# Wrap Text, lmao
+  def wrap_text(text, max_width, overlay)
+    words = text.split(' ')
+    lines = []
+    current_line = ""
+
+    words.each do |word|
+      if overlay.text_size("#{current_line} #{word}").width > max_width
+        lines << current_line.strip
+        current_line = word
+      else
+        current_line += " #{word}"
+      end
+    end
+    lines << current_line.strip unless current_line.empty?
+    lines
+  end
+  def drawInnateName(overlay, innate_name_display, text_x, text_y, max_width, base_color, shadow_color, small_font)
+    if overlay.text_size(innate_name_display).width > max_width
+      pbSetSmallFont(overlay)
+      lines = wrap_text(innate_name_display, max_width, overlay)
+      if lines.size > 1
+        adjusted_y = text_y - 10
+        adjusted_x = text_x - 20
+        lines.each_with_index do |line, index|
+          drawTextEx(overlay, adjusted_x, adjusted_y + (index * 20), max_width, 2, line, base_color, shadow_color)
+        end
+      else
+        drawTextEx(overlay, text_x, text_y, max_width, 2, lines.first, base_color, shadow_color)
+      end
+      pbSetSystemFont(overlay)
+    else
+      drawTextEx(overlay, text_x, text_y, max_width, 2, innate_name_display, base_color, shadow_color)
+    end
+  end
+
 end

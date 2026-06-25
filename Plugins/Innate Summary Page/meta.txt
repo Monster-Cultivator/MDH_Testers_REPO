@@ -1,5 +1,5 @@
-﻿Name       = Innate summary page and stuff
-Version    = 1.5.2
+﻿Name       = Innate summary page
+Version    = 1.5.4
 Essentials = 21.1
 Requires   = Modular UI Scenes,2.0
 Link       = https://reliccastle.com/resources/1328/

@@ -39,3 +39,11 @@ UIHandlers.add(:pokedex, :page_forms, {
   "order"     => 30,
   "layout"    => proc { |species, scene| scene.drawPageForms }
 })
+
+UIHandlers.add(:pokedex, :page_innates, {
+  "name"      => "INNATES",
+  "suffix"    => "innates",
+  "order"     => 35,
+  "onlyOwned" => false,
+  "layout"    => proc { |species, scene| scene.drawPageInnates }
+})
