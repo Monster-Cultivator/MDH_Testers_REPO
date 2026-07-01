@@ -1,5 +1,0 @@
-Name         = Storage System Utilities
-Version      = 2023.07.07
-Website      = NONE
-Credits      = Swdfm
-Essentials   = 20
