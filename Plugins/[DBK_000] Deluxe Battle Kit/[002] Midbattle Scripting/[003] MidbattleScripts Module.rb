@@ -2499,6 +2499,48 @@ HERO_DUO_MIDBATTLE = {
     "playCry"        => :Self
   }
 }
+
+MOTHERBEAST_MIDBATTLE = {
+  "RoundStartCommand_1_foe" => {
+    "setVariable"   => 0,
+    "changeTerrain" => :Electric,
+	"battlerHPCap" => 49,
+    "battlerStats"  => [:SPEED, 2, :EVASION, 1, :SPECIAL_ATTACK, 1],
+    "playSE"        => "Anim/Charge",
+    "playAnim"      => [:BULKUP, :Self],
+    "text"          => "The twin heroes strike a synchronized pose !"
+  },
+  "TargetTookDamage_foe_repeat" => {
+    "ignoreAfter" => "TargetHPHalf_foe",
+    "addVariable" => 1,
+    "text"        => "Their heroic bond lets them shrug off the pain together!",
+    "battlerHP"   => [-4]
+  },
+  "Variable_repeat_every_3" => {
+    "text"         => "Synchronized heroic strike!",
+    "playSE"       => "Anim/Discharge",
+    "playAnim"     => [:FUSIONFLARE, :Self],
+    "battlerStats" => [:ATTACK, 1, :SPECIAL_ATTACK, 1]
+  },
+   "BattlerStatusCured_foe" => {
+    "text"         => "They take this as an opening!",
+	"setBattler" => :Opposing,
+	"battlerStats" => [:ATTACK, -1, :SPECIAL_ATTACK, -1, :SPECIAL_DEFENSE, -2]	
+  },
+  "BattlerReachedHPCap_foe" => {
+    "text"          => "Heroic energy surges through their shared core!",
+    "battlerHP"     => [40],
+    "battlerStats"  => [:SPECIAL_DEFENSE, 2, :SPEED, 1],
+    "playSE"        => "Anim/Recover"
+  },
+  "BattlerHPCritical_foe" => {
+    "changeBackdrop" => "city_night",
+    "battlerHP"      => [60],
+    "battlerStats"   => [:ATTACK, 2, :SPECIAL_ATTACK, 2, :SPEED, 2],
+    "playSE"         => "Anim/MaxLightning",
+    "playCry"        => :Self
+  }
+}
 #===============================================
 #
 # Professional's MIDBATTLE SCRIPTS!
