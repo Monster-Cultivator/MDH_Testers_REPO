@@ -2502,30 +2502,29 @@ HERO_DUO_MIDBATTLE = {
 
 MOTHERBEAST_MIDBATTLE = {
   "RoundStartCommand_1_foe" => {
-    "setVariable"   => 0,
-    "changeTerrain" => :Electric,
-	"battlerHPCap" => 49,
-    "battlerStats"  => [:SPEED, 2, :EVASION, 1, :SPECIAL_ATTACK, 1],
+    "setVariable"   => 3,
+    "changeTerrain" => :Misty,
+	"battlerHPCap" => 70,
+    "battlerStats"  => [:SPECIAL_DEFENSE, 1, :SPECIAL_ATTACK, 1],
     "playSE"        => "Anim/Charge",
     "playAnim"      => [:BULKUP, :Self],
     "text"          => "The twin heroes strike a synchronized pose !"
   },
-  "TargetTookDamage_foe_repeat" => {
+  "TurnStart_1_foe_repeat_every_3" => {
     "ignoreAfter" => "TargetHPHalf_foe",
     "addVariable" => 1,
-    "text"        => "Their heroic bond lets them shrug off the pain together!",
-    "battlerHP"   => [-4]
+	"battlerStats"  => [:SPECIAL_DEFENSE, 1, :SPECIAL_ATTACK, 1],
+    "text"        => "Their heroic bond lets them shrug off the pain together!"
   },
-  "Variable_repeat_every_3" => {
+  "UserMoveEffective_player_repeat" => {
     "text"         => "Synchronized heroic strike!",
     "playSE"       => "Anim/Discharge",
-    "playAnim"     => [:FUSIONFLARE, :Self],
-    "battlerStats" => [:ATTACK, 1, :SPECIAL_ATTACK, 1]
+	"addVariable" => [-2]
   },
-   "BattlerStatusCured_foe" => {
+   "TargetTookDamage_foe_repeat" => {
     "text"         => "They take this as an opening!",
 	"setBattler" => :Opposing,
-	"battlerStats" => [:ATTACK, -1, :SPECIAL_ATTACK, -1, :SPECIAL_DEFENSE, -2]	
+	"addVariable" => [-1]	
   },
   "BattlerReachedHPCap_foe" => {
     "text"          => "Heroic energy surges through their shared core!",
