@@ -2502,42 +2502,105 @@ HERO_DUO_MIDBATTLE = {
 
 MOTHERBEAST_MIDBATTLE = {
   "RoundStartCommand_1_foe" => {
-    "setVariable"   => 3,
+    "setVariable" => 0,
+    "battlerHPCap" => 70,
     "changeTerrain" => :Misty,
-	"battlerHPCap" => 70,
-    "battlerStats"  => [:SPECIAL_DEFENSE, 1, :SPECIAL_ATTACK, 1],
-    "playSE"        => "Anim/Charge",
-    "playAnim"      => [:BULKUP, :Self],
-    "text"          => "The twin heroes strike a synchronized pose !"
+    "battlerStats" => [:SPECIAL_ATTACK, 1, :SPECIAL_DEFENSE, 1],
+    "playSE" => "Anim/Charge",
+    "text" => [
+      "Motherbeast Lusamine floats silently above the battlefield...",
+      "Nihilego's crystalline tendrils wrap tightly around her body!",
+      "Three layers of crystal protect Motherbeast!"
+    ]
   },
-  "TurnStart_1_foe_repeat_every_3" => {
-    "ignoreAfter" => "TargetHPHalf_foe",
+  "TargetTookDamage_foe_repeat" => {
+    "ignoreAfter" => "Variable_3",
     "addVariable" => 1,
-	"battlerStats"  => [:SPECIAL_DEFENSE, 1, :SPECIAL_ATTACK, 1],
-    "text"        => "Their heroic bond lets them shrug off the pain together!"
+    "text" => "The impact cracks Motherbeast's crystalline protection!"
   },
-  "UserMoveEffective_player_repeat" => {
-    "text"         => "Synchronized heroic strike!",
-    "playSE"       => "Anim/Discharge",
-	"addVariable" => [-2]
+  "Variable_1" => {
+    "playSE" => "Mining collapse",
+    "text" => [
+      "Cracks spread through the outer tendrils!",
+      "Tentacle Guard: 2 layers remaining!"
+    ]
   },
-   "TargetTookDamage_foe_repeat" => {
-    "text"         => "They take this as an opening!",
-	"setBattler" => :Opposing,
-	"addVariable" => [-1]	
+  "Variable_2" => {
+    "playSE" => "Mining collapse",
+    "battlerStats" => [:DEFENSE, -1, :SPECIAL_DEFENSE, -1],
+    "text" => [
+      "Another section of the crystal armor shatters!",
+      "Tentacle Guard: 1 layer remaining!"
+    ]
   },
-  "BattlerReachedHPCap_foe" => {
-    "text"          => "Heroic energy surges through their shared core!",
-    "battlerHP"     => [40],
-    "battlerStats"  => [:SPECIAL_DEFENSE, 2, :SPEED, 1],
-    "playSE"        => "Anim/Recover"
+  "Variable_3" => {
+    "playSE" => "Mining collapse",
+    "playAnim" => [:ROCKSMASH, :Self],
+    "battlerStats" => [:DEFENSE, -2, :SPECIAL_DEFENSE, -2],
+    "text" => [
+      "Motherbeast's crystalline tendrils SHATTER!",
+      "Her body is completely exposed!"
+    ]
+  },
+  "RoundEnd_foe_repeat_every_3" => {
+    "text" => [
+      "Nihilego's toxins pulse through Lusamine!",
+      "The fusion grows stronger... but increasingly unstable!"
+    ],
+    "playSE" => "Anim/Poison",
+    "battlerStats" => [:SPECIAL_ATTACK, 1, :SPEED, 1, :DEFENSE, -1]
+  },
+  "TargetHPHalf_foe" => {
+    "text_A" => [
+      "Lusamine convulses as Nihilego tightens its grip!",
+      "\"No... we're not separate anymore...\""
+    ],
+    "battlerStatus" => :NONE,
+    "playAnim" => [:ACIDARMOR, :Self],
+    "battlerHP" => [20, "Nihilego's energy restores Motherbeast!"],
+    "battlerStats" => [:SPECIAL_ATTACK, 1, :SPEED, 1, :DEFENSE, -1],
+    "battlerMoves" => [:POWERGEM, :SLUDGEWAVE, :PSYCHIC, :DAZZLINGGLEAM],
+    "text_B" => "Motherbeast's movements become faster and more erratic!"
+  },
+  "TurnStart_3_foe_repeat_every_3" => {
+    "ignoreUntil" => "TargetHPHalf_foe",
+    "text_A" => "Motherbeast's tendrils begin glowing with a sickly light...",
+    "setBattler" => :Opposing,
+    "battlerStats" => [:SPEED, -1, :ACCURACY, -1],
+    "text_B" => "Nihilego's neurotoxins distort {1}'s senses!"
+  },
+  "TargetHPLow_foe" => {
+    "speech" => [
+      "\"Stay away from me!\"",
+      "\"My children... protect your mother!\""
+    ],
+    "battlerHP" => [15, "Motherbeast draws energy from Ultra Space!"],
+    "addWild" => [:NIHILEGO, 45],
+    "text_A" => "A Nihilego fragment tears its way into the battlefield!",
+    "addWild" => [:NIHILEGO, 45],
+    "text_B" => "Another Nihilego fragment emerges beside Motherbeast!"
+  },
+  "BattlerFainted_NIHILEGO_foe_repeat" => {
+    "text_A" => "The psychic link between Nihilego and Motherbeast shatters!",
+    "playSE" => "Mining collapse",
+    "setBattler" => :Opposing,
+    "battlerStats" => [:SPECIAL_ATTACK, -1, :SPECIAL_DEFENSE, -1],
+    "text_B" => "Motherbeast weakens as part of the symbiosis collapses!"
   },
   "BattlerHPCritical_foe" => {
-    "changeBackdrop" => "city_night",
-    "battlerHP"      => [60],
-    "battlerStats"   => [:ATTACK, 2, :SPECIAL_ATTACK, 2, :SPEED, 2],
-    "playSE"         => "Anim/MaxLightning",
-    "playCry"        => :Self
+    "battlerHPCap" => 0,
+    "speech" => [
+      "\"Everything I did was for you!\"",
+      "\"WHY CAN'T YOU UNDERSTAND?!\""
+    ],
+    "changeTerrain" => :Psychic,
+    "playAnim" => [:NASTYPLOT, :Self],
+    "battlerStats" => [:SPECIAL_ATTACK, 2, :SPEED, 2, :DEFENSE, -2, :SPECIAL_DEFENSE, -2],
+    "battlerMoves" => [:POWERGEM, :SLUDGEWAVE, :PSYCHIC, :DAZZLINGGLEAM],
+    "text" => [
+      "The fusion begins tearing itself apart!",
+      "Motherbeast's power skyrockets—but her crystalline armor shatters!"
+    ]
   }
 }
 #===============================================
