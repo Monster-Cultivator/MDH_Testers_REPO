@@ -180,3 +180,12 @@ Innates = RIVALRY,INTIMIDATE,DEFIANT
 #-------------------------------
 [HOUNDOOMh]
 Innates = RIVALRY,INTIMIDATE,DEFIANT
+#-------------------------------
+[MOTHERBEAST]
+Innates = RIVALRY,INTIMIDATE,DEFIANT
+#-------------------------------
+[DAUGHTERBEAST]
+Innates = RIVALRY,INTIMIDATE,DEFIANT
+#-------------------------------
+[UNIONBEAST]
+Innates = RIVALRY,INTIMIDATE,DEFIANT

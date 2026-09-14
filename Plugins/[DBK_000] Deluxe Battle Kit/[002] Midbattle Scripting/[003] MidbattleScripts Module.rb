@@ -2572,7 +2572,7 @@ MOTHERBEAST_MIDBATTLE = {
   "TargetHPLow_foe" => {
     "speech" => [
       "\"Stay away from me!\"",
-      "\"My children... protect your mother!\""
+      "\"My child... protect your mother!\""
     ],
     "battlerHP" => [15, "Motherbeast draws energy from Ultra Space!"],
     "addWild" => [:NIHILEGO, 45],
@@ -2590,7 +2590,7 @@ MOTHERBEAST_MIDBATTLE = {
   "BattlerHPCritical_foe" => {
     "battlerHPCap" => 0,
     "speech" => [
-      "\"Everything I did was for you!\"",
+      "\"Everything I did was for you, Lille!\"",
       "\"WHY CAN'T YOU UNDERSTAND?!\""
     ],
     "changeTerrain" => :Psychic,
@@ -2599,7 +2599,7 @@ MOTHERBEAST_MIDBATTLE = {
     "battlerMoves" => [:POWERGEM, :SLUDGEWAVE, :PSYCHIC, :DAZZLINGGLEAM],
     "text" => [
       "The fusion begins tearing itself apart!",
-      "Motherbeast's power skyrockets—but her crystalline armor shatters!"
+      "Motherbeast's power skyrockets! but her crystalline armor shatters!"
     ]
   }
 }
