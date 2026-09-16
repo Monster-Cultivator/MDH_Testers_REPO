@@ -149,3 +149,60 @@ class Battle::Move
 		return 1
 	end
 end
+
+#===============================================================================
+# Damage Armor!
+#===============================================================================
+
+class Battle::Move
+  alias damagearmor_pbInflictHPDamage pbInflictHPDamage
+
+  def pbInflictHPDamage(target)
+    if !target.damageState.substitute &&
+       target.damageState.hpLost > 0 &&
+       target.hasActiveAbility?(:DAMAGEARMOR) &&
+       target.form == 0 &&
+       target.effects[PBEffects::DamageArmor] > 0
+
+      damage = target.damageState.hpLost
+      armor  = target.effects[PBEffects::DamageArmor]
+
+      #-------------------------------------------------------------------------
+      # Armor completely absorbs the hit
+      #-------------------------------------------------------------------------
+      if damage < armor
+        target.effects[PBEffects::DamageArmor] -= damage
+        target.damageState.hpLost = 0
+        return
+      end
+
+      #-------------------------------------------------------------------------
+      # Armor breaks
+      #-------------------------------------------------------------------------
+      remaining_damage = damage - armor
+
+      target.effects[PBEffects::DamageArmor] = 0
+      target.damageState.hpLost = remaining_damage
+
+      @battle.pbShowAbilitySplash(target)
+
+      target.pbChangeForm(
+        1,
+        _INTL("{1}'s armor broke!", target.pbThis)
+      )
+
+      @battle.pbHideAbilitySplash(target)
+
+      return if remaining_damage <= 0
+    end
+
+    damagearmor_pbInflictHPDamage(target)
+  end
+end
+
+Battle::AbilityEffects::OnSwitchIn.add(:DAMAGEARMOR,
+  proc { |ability, battler, battle, switch_in|
+    next if battler.form != 0
+    battler.effects[PBEffects::DamageArmor] = (battler.totalhp * 0.3).round
+  }
+)

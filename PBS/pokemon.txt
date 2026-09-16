@@ -32634,7 +32634,7 @@ Pokedex = A Special Grade Serperior - it's skin is soft to the touch, however, w
 Generation = 5
 #-------------------------------
 [MOTHERBEAST]
-Name = Nihilego
+Name = MotherBeast
 Types = ROCK,POISON
 BaseStats = 179,63,77,123,157,201
 GenderRatio = Genderless
@@ -32710,6 +32710,3 @@ Pokedex = One of several mysterious Ultra Beasts. People on the street report ob
 Generation = 7
 Flags = UltraBeast
 RaidRanks = 6
-#-------------------------------
-Crossover Pokemon
-#-------------------------------

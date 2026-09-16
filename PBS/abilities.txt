@@ -1299,3 +1299,7 @@ Description = In Hail, Sp. Atk is boosted but HP decreases.
 [ANTITHESIS]
 Name = Antithesis
 Description = Weakens unnatural Pokemon
+#-------------------------------
+[DAMAGEARMOR]
+Name = DAMAGEARMOR
+Description = Weakens attacks
