@@ -2576,9 +2576,7 @@ MOTHERBEAST_MIDBATTLE = {
     ],
     "battlerHP" => [15, "Motherbeast draws energy from Ultra Space!"],
     "addWild" => [:NIHILEGO, 45],
-    "text_A" => "A Nihilego fragment tears its way into the battlefield!",
-    "addWild" => [:NIHILEGO, 45],
-    "text_B" => "Another Nihilego fragment emerges beside Motherbeast!"
+    "text_A" => "A Nihilego fragment tears its way into the battlefield!"
   },
   "BattlerFainted_NIHILEGO_foe_repeat" => {
     "text_A" => "The psychic link between Nihilego and Motherbeast shatters!",
@@ -2601,6 +2599,83 @@ MOTHERBEAST_MIDBATTLE = {
       "The fusion begins tearing itself apart!",
       "Motherbeast's power skyrockets! but her crystalline armor shatters!"
     ]
+  }
+}
+
+DAUGHTERBEAST_MIDBATTLE = {
+  "RoundStartCommand_1_foe" => {
+    "battlerHPCap" => 50,
+    "changeTerrain" => :Misty,
+    "battlerStats" => [:SPECIAL_DEFENSE, 1],
+    "text" => [
+      "Lusamine: \"Go on, Lillie. Show them how beautiful you've become.\"",
+      "Lillie lowers her head as Nihilego's energy surges through her body..."
+    ]
+  },
+  "RoundEnd_3_foe" => {
+    "ignoreAfter" => "BattlerReachedHPCap_foe",
+    "text" => "Lusamine: \"Don't hold back, Lillie.\"",
+    "battlerStats" => [:SPECIAL_ATTACK, 1, :SPEED, 1, :DEFENSE, -1],
+    "text_B" => "Daughterbeast's power rises as the fusion becomes unstable!"
+  },
+
+  "RoundEnd_6_foe" => {
+    "ignoreAfter" => "BattlerReachedHPCap_foe",
+    "text" => "Lusamine: \"You don't want to disappoint your mother, do you?\"",
+    "battlerStats" => [:SPECIAL_ATTACK, 1, :SPEED, 1, :SPECIAL_DEFENSE, -1],
+    "text_B" => "Nihilego's influence digs deeper into Lillie!"
+  },
+
+  "RoundEnd_9_foe" => {
+    "ignoreAfter" => "BattlerReachedHPCap_foe",
+    "text" => "Lusamine: \"Enough hesitation! Destroy them!\"",
+    "battlerStats" => [:SPECIAL_ATTACK, 2, :SPEED, 1, :DEFENSE, -1, :SPECIAL_DEFENSE, -1],
+    "text_B" => "Daughterbeast's body struggles to contain the growing power!"
+  },
+
+  "TargetWeakToMove_foe" => {
+    "ignoreAfter" => "BattlerReachedHPCap_foe",
+    "text" => [
+      "Daughterbeast recoils from the attack!",
+      "For a moment, Lillie's expression returns to normal...",
+      "Lillie: \"I... I don't want to do this...\""
+    ],
+    "battlerStats" => [:SPECIAL_ATTACK, -1, :SPEED, -1]
+  },
+
+  "BattlerReachedHPCap_foe" => {
+    "battlerHPCap" => 0,
+    "battlerStatus" => :NONE,
+    "battlerHP" => [10, "Nihilego's energy surges through Daughterbeast!"],
+    "text_A" => [
+      "Lillie screans as the fusion violently pulses!",
+    ],
+    "battlerStats" => [:SPECIAL_ATTACK, -1, :SPEED, -1, :DEFENSE, -1],
+    "battlerMoves" => [:DAZZLINGGLEAM, :POWERGEM, :PSYCHIC, :SLUDGEBOMB],
+    "text_B" => [
+      "Lillie: \"Mother... this hurts...\"",
+      "Lusamine: \"Pain is temporary. Perfection is forever.\"",
+	  "Lusamine: \"Let Mommy help you.\"",
+	  "addTrainer" => ["EASTEREGG", "BunnE", 1]
+    ]
+  },
+
+  "RoundEnd_foe_repeat_even" => {
+    "ignoreUntil" => "BattlerReachedHPCap_foe",
+    "ignoreAfter" => "BattlerHPLow_foe",
+    "text" => "Lusamine forces more Ultra Beast energy into Lillie!",
+    "battlerStats" => [:SPECIAL_ATTACK, 1, :SPEED, 1, :DEFENSE, -1, :SPECIAL_DEFENSE, -1],
+    "text_B" => "Daughterbeast grows stronger, but the fusion becomes increasingly unstable!"
+  },
+
+  "BattlerHPLow_foe" => {
+    "text_A" => [
+      "Lusamine: \"Lillie! Finish them! Welcome Daddy with open arms!\"",
+      "Lillie: \"...Yes, Mother.\""
+    ],
+    "changeTerrain" => :Psychic,
+    "battlerStats" => [:SPECIAL_ATTACK, 1, :SPEED, 2, :DEFENSE, -2, :SPECIAL_DEFENSE, -2],
+    "battlerMoves" => [:MOONBLAST, :POWERGEM, :PSYCHIC, :SLUDGEWAVE]
   }
 }
 #===============================================

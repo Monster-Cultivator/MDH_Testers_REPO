@@ -32660,7 +32660,7 @@ Flags = UltraBeast
 RaidRanks = 6
 #-------------------------------
 [DAUGHTERBEAST]
-Name = Nihilego
+Name = DaughterBeast
 Types = ROCK,POISON
 BaseStats = 179,63,77,123,157,201
 GenderRatio = Genderless
@@ -32710,3 +32710,180 @@ Pokedex = One of several mysterious Ultra Beasts. People on the street report ob
 Generation = 7
 Flags = UltraBeast
 RaidRanks = 6
+#---------------------------------
+#Haxa Hybrids
+#-------------------------------
+[JUNIPER]
+Name = Junipurr
+Types = DARK
+BaseStats = 64,88,50,106,88,50
+GenderRatio = AlwaysFemale
+GrowthRate = Medium
+BaseExp = 156
+EVs = SPEED,2
+CatchRate = 90
+Happiness = 50
+Abilities = ADAPTABILITY
+Moves = 1,SCRATCH,1,GROWL,1,SANDATTACK,1,FAKEOUT,12,FURYSWIPES,16,TORMENT,23,ASSURANCE,28,HONECLAWS,34,SUCKERPUNCH,40,NASTYPLOT,46,NIGHTSLASH,52,PLAYROUGH
+TutorMoves = CALMMIND
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 1.1
+Weight = 37.5
+Color = Purple
+Shape = Quadruped
+Habitat = None
+Category = Hybrid
+Pokedex = A Pokemon Professor that was mind controlled by Team Rocket before turned into a hybrid with a Purrloin by Haxa.
+Generation = 10
+#-------------------------------
+[HAXA_2]
+Name = Haxa
+Types = GHOST
+BaseStats = 160,110,130,100,100,120
+GenderRatio = AlwaysFemale
+GrowthRate = Slow
+BaseExp = 290
+EVs = SPECIAL_ATTACK,3
+CatchRate = 75
+Happiness = 50
+Abilities = INTIMIDATE
+Moves = 1,GROWL,1,MAGICALLEAF,1,POWERGEM,1,PHANTOMFORCE,1,MYSTICALFIRE,1,CONFUSION,10,ASTONISH,14,CONFUSERAY,19,MEANLOOK,23,HEX,28,PSYBEAM,32,PAINSPLIT,37,PAYBACK,41,SHADOWBALL,46,PERISHSONG,50,POWERGEM
+TutorMoves = CALMMIND
+EggGroups = Undiscovered
+HatchSteps = 20480
+Height = 0.9
+Weight = 4.4
+Color = Purple
+Shape = Head
+Habitat = Cave
+Category = Hybrid
+Pokedex = Haxa was an narscism before but now she is downright insane devloped a god complex after evolving and becoming Ghost incarnate
+Generation = 4
+Flags = Legendary
+#-------------------------------
+[SLITHERQUEEN]
+Name = Ariana
+Types = BUG,FIGHTING
+BaseStats = 85,135,79,81,85,105
+GenderRatio = AlwaysFemale
+GrowthRate = Slow
+BaseExp = 285
+EVs = ATTACK,3
+CatchRate = 30
+Happiness = 0
+Abilities = PROTOSYNTHESIS
+Moves = -1,SUNNYDAY,1,GUST,1,EMBER,1,BUGBITE,7,POISONPOWDER,7,STUNSPORE,14,FLAMECHARGE,21,STOMP,28,LOWSWEEP,35,MORNINGSUN,42,LUNGE,49,SUPERPOWER,56,BULKUP,63,DUALWINGBEAT,70,FIRSTIMPRESSION,77,WHIRLWIND,84,LEECHLIFE,91,THRASH
+TutorMoves = CALMMIND
+EggGroups = Undiscovered
+HatchSteps = 12800
+Height = 3.2
+Weight = 92.0
+Color = Red
+Shape = Insectoid
+Habitat = None
+Category = Hybrid
+Pokedex = A Team Rocket Administrator who was merged with the SLEEPY WING she brought to life from a Fossil with a mispent wish.
+Generation = 9
+Flags = Paradox
+WildItemUncommon = BOOSTERENERGY
+#-------------------------------
+[GARDENIA_TORTERRA]
+Name = Gardenia
+Types = GRASS,GROUND
+BaseStats = 105,119,115,66,85,95
+GenderRatio = AlwaysFemale
+GrowthRate = Parabolic
+BaseExp = 263
+EVs = ATTACK,2,DEFENSE,1
+CatchRate = 45
+Happiness = 50
+Abilities = SHELLFIGHT
+Moves = 0,EARTHQUAKE,1,WOODHAMMER,1,TACKLE,1,WITHDRAW,1,ABSORB,1,RAZORLEAF,5,WITHDRAW,6,LEAFAGE,10,GROWTH,13,RAZORLEAF,17,CURSE,22,BITE,27,MEGADRAIN,33,LEECHSEED,39,SYNTHESIS,45,CRUNCH,51,GIGADRAIN,57,LEAFSTORM
+TutorMoves = CALMMIND
+EggGroups = Monster,Grass
+HatchSteps = 5120
+Height = 2.2
+Weight = 310.0
+Color = Green
+Shape = Quadruped
+Habitat = Urban
+Category = Hybrid
+Pokedex = Small Pokémon occasionally gather on its unmoving back to begin building their nests.
+Generation = 4
+#---------------------------------
+#LURA Hybrids
+#---------------------------------
+[IONOROTOM]
+Name = Iono
+Types = ELECTRIC,GHOST
+BaseStats = 65,65,92,106,110,92
+GenderRatio = AlwaysFemale
+GrowthRate = Medium
+BaseExp = 154
+EVs = SPECIAL_ATTACK,1,SPEED,1
+CatchRate = 45
+Happiness = 50
+Abilities = MOTORDRIVE
+Moves = 1,DOUBLETEAM,1,ASTONISH,5,THUNDERSHOCK,10,CONFUSERAY,15,CHARGE,17,ELECTROWEB,20,ELECTROBALL,25,THUNDERWAVE,30,SHOCKWAVE,35,HEX,40,SUBSTITUTE,45,TRICK,50,DISCHARGE,55,UPROAR
+TutorMoves = CALMMIND
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 1.6
+Weight = 7.5
+Color = Red
+Shape = Quadruped
+Habitat = None
+Category = Hybrid
+Pokedex = Its body is composed of plasma. It is known to infiltrate electronic devices and wreak havoc.
+FormName = Base
+Flags = Legendary
+#---------------------------------
+[KATE]
+Name = Kate
+Types = ROCK,FLYING
+BaseStats = 80,105,65,130,60,75
+GenderRatio = AlwaysFemale
+GrowthRate = Slow
+BaseExp = 180
+EVs = SPEED,2
+CatchRate = 0
+Happiness = 50
+Abilities = TOUGHCLAWS
+Moves = 1,BITE,1,ANCIENTPOWER,5,SUPERSONIC,10,WINGATTACK,15,SCARYFACE,20,ROCKSLIDE,25,ROAR,30,CRUNCH,35,IRONHEAD,40,TAKEDOWN,45,STONEEDGE,50,AGILITY,55,HYPERBEAM,60,GIGAIMPACT
+TutorMoves = CALMMIND
+EggGroups = Undiscovered
+HatchSteps = 5120
+Height = 1.8
+Weight = 59.0
+Color = Purple
+Shape = Winged
+Habitat = None
+Category = Hybrid
+Pokedex = A former ranger who voluntarily became a hybrid to save the life of a dying Aerodactyl.
+Generation = 1
+#-------------------------------
+[HYBRIDJENNY]
+Name = Jenny
+Types = FIRE
+BaseStats = 100,120,90,105,110,90
+GenderRatio = AlwaysFemale
+GrowthRate = Slow
+BaseExp = 290
+EVs = ATTACK,2
+CatchRate = 75
+Happiness = 50
+Abilities = FLASHFIRE
+Moves = 0,EXTREMESPEED,1,PLAYROUGH,1,FIREFANG,1,FLAREBLITZ,1,HOWL,1,HELPINGHAND,1,CRUNCH,1,RETALIATE,1,REVERSAL,1,AGILITY,1,EMBER,1,ROAR,1,BITE,1,LEER,1,FLAMEWHEEL,1,TAKEDOWN,5,FLAMETHROWER
+TutorMoves = CALMMIND
+EggGroups = Undiscovered
+HatchSteps = 20480
+Height = 2.0
+Weight = 60.0
+Color = Yellow
+Shape = Winged
+Habitat = None
+Category = Hybrid
+Pokedex = A once-human officer transformed through strange experiments, Jenny now blends human intelligence with Arcanine instincts. Though energetic and playful, her fiery loyalty burns brightest when protecting her pack.
+Generation = 1
+Flags = Legendary

@@ -206,3 +206,18 @@ Battle::AbilityEffects::OnSwitchIn.add(:DAMAGEARMOR,
     battler.effects[PBEffects::DamageArmor] = (battler.totalhp * 0.3).round
   }
 )
+
+#===============================================================================
+# PROTECTED IMPOSTER
+#===============================================================================
+
+Battle::AbilityEffects::DamageCalcFromTargetNonIgnorable.add(:SHELLFIGHT,
+  proc { |ability, user, target, move, mults, power, type|
+    if move.physicalMove? && user.form == 0 
+      mults[:final_damage_multiplier] *= 0.5
+    end
+    if move.specialMove? && user.form == 1 
+      mults[:final_damage_multiplier] *= 0.5
+    end
+  }
+)

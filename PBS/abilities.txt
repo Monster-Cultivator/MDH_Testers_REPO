@@ -1303,3 +1303,7 @@ Description = Weakens unnatural Pokemon
 [DAMAGEARMOR]
 Name = DAMAGEARMOR
 Description = Weakens attacks
+#-------------------------------
+[SHELLFIGHT]
+Name = Shell Fight
+Description = Changes between Shell and Shell-less Form with attacks.
