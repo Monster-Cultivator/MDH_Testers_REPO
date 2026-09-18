@@ -1179,7 +1179,7 @@ Pokemon = DAIYOUSEI,60
 #-------------------------------------
 [LEADER_Winona,Winona]
     LoseText = "My wings were clipped."
-Pokemon = SWELLOW,50
+Pokemon = SWELLOW,60
     Moves = BOOMBURST,HURRICANE,HEATWAVE,UTURN
     Nature = ADAMANT
     Ability = GUTS
@@ -1187,7 +1187,7 @@ Pokemon = SWELLOW,50
     IV = 31,0,31,31,31,31
     EV = 4,0,0,252,0,252
     Ball = POKEBALL
-Pokemon = GLISCOR,50
+Pokemon = GLISCOR,60
     Moves = EARTHQUAKE,KNOCKOFF,ROOST,TOXIC
     Nature = IMPISH
     Ability = POISONHEAL
@@ -1195,7 +1195,7 @@ Pokemon = GLISCOR,50
     IV = 31,31,31,0,31,31
     EV = 244,0,252,0,12,0
     Ball = TIMERBALL
-Pokemon = ALTARIA,50
+Pokemon = ALTARIA,60
     Moves = RETURN,DRAGONDANCE,EARTHQUAKE,ROOST
     Happiness = 255
     Nature = ADAMANT
@@ -1207,7 +1207,7 @@ Pokemon = ALTARIA,50
 #-------------------------------------
 [ONEABOVEALL,Haxa]
 LoseText = ...
-Pokemon = SLITHERQUEEN,50
+Pokemon = SLITHERQUEEN,60
     Name = Arirone
     Gender = female
     Moves = FIRESPIN,ACIDSPRAY,ELECTRICTERRAIN,DAZZLINGGLEAM
@@ -1215,12 +1215,31 @@ Pokemon = SLITHERQUEEN,50
     EV = 55,55,55,55,55,55
 Pokemon = HOUNDOOM,50
     Gender = female
-Pokemon = MRMIME,50
+Pokemon = MRMIME,60
     Name = LURA
-Pokemon = JUNIPER,50
+Pokemon = JUNIPER,60
     Name = Junipurr
     Gender = female
     Moves = POUND,UTURN,NIGHTSLASH,PLAYROUGH
+    IV = 20,20,20,20,20,20
+    EV = 55,55,55,55,55,55
+#-------------------------------------
+[TRAVELER_Lura,Lura]
+LoseText = ...
+Pokemon = IONOROTOM,60
+    Gender = female
+    Moves = THUNDERBOLT,WILLOWISP,PAINSPLIT,SHADOWBALL
+    IV = 20,20,20,20,20,20
+    EV = 55,55,55,55,55,55
+Pokemon = KATE,60
+    Gender = female
+	Gender = female
+    Moves = ROCKSLIDE,IRONHEAD,ROOST,TOXIC
+    IV = 20,20,20,20,20,20
+    EV = 55,55,55,55,55,55
+Pokemon = HYBRIDJENNY,60
+    Gender = female
+    Moves = FIREFANG,EXTREMESPEED,PLAYROUGH,CRUNCH
     IV = 20,20,20,20,20,20
     EV = 55,55,55,55,55,55
 #-------------------------------

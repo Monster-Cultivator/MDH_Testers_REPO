@@ -84,10 +84,14 @@ BaseMoney = 56
 Name = Biker
 Gender = male
 BaseMoney = 56
-#-------------------
 #-------------------------------
 [ONEABOVEALL]
 Name = One Above All
+Gender = Female
+BaseMoney = 32
+#-------------------------------
+[TRAVELER_Lura]
+Name = Traveler
 Gender = Female
 BaseMoney = 32
 #-------------------------------
