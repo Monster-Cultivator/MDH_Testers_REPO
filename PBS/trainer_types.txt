@@ -575,6 +575,13 @@ Name = Pokémon Trainer
 Gender = Female
 BaseMoney = 70
 #-------------------------------
+[LEADER_LUSAMINE]
+Name = Aether Leader
+Gender = Female
+BaseMoney = 100
+BattleBGM = Battle Gym Leader
+VictoryBGM = Battle victory leader
+#-------------------------------
 [POKEMONTRAINER_1]
 Name = Pokémon Trainer
 Gender = Female

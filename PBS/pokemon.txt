@@ -32788,6 +32788,30 @@ Generation = 9
 Flags = Paradox
 WildItemUncommon = BOOSTERENERGY
 #-------------------------------
+[CANARI_EELEKTROSS]
+Name = Canari
+Types = ELECTRIC
+BaseStats = 95,125,90,60,115,90
+GenderRatio = AlwaysFemale
+GrowthRate = Slow
+BaseExp = 258
+EVs = ATTACK,3
+CatchRate = 30
+Happiness = 50
+Abilities = LEVITATE
+Moves = 1,HEADBUTT,1,THRASH,1,ACID,1,ZAPCANNON,1,CRUNCH,1,CRUSHCLAW,1,GASTROACID,1,DISCHARGE,1,COIL,5,WILDCHARGE
+TutorMoves = CALMMIND
+EggGroups = Amorphous
+HatchSteps = 5120
+Height = 1.6
+Weight = 80
+Color = Blue
+Shape = Finned
+Habitat = Sea
+Category = Hybrid
+Pokedex = After seeing you with the Streamer Iono your rival wanted to show you up and caught her own streamer hybrid
+Generation = 5
+#-------------------------------
 [GARDENIA_TORTERRA]
 Name = Gardenia
 Types = GRASS,GROUND
