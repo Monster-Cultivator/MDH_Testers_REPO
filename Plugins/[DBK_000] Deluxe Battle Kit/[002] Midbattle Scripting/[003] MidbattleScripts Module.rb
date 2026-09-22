@@ -2504,180 +2504,511 @@ MOTHERBEAST_MIDBATTLE = {
   "RoundStartCommand_1_foe" => {
     "setVariable" => 0,
     "battlerHPCap" => 70,
-    "changeTerrain" => :Misty,
-    "battlerStats" => [:SPECIAL_ATTACK, 1, :SPECIAL_DEFENSE, 1],
+    "battlerStats" => [
+      :SPECIAL_ATTACK, 1,
+      :SPECIAL_DEFENSE, 1
+    ],
     "playSE" => "Anim/Charge",
     "text" => [
       "Motherbeast Lusamine floats silently above the battlefield...",
       "Nihilego's crystalline tendrils wrap tightly around her body!",
-      "Three layers of crystal protect Motherbeast!"
+      "A thick layer of crystal protects Motherbeast!"
     ]
   },
+
+  # Every damaging hit contributes toward breaking the armor.
   "TargetTookDamage_foe_repeat" => {
-    "ignoreAfter" => "Variable_3",
-    "addVariable" => 1,
-    "text" => "The impact cracks Motherbeast's crystalline protection!"
-  },
-  "Variable_1" => {
-    "playSE" => "Mining collapse",
-    "text" => [
-      "Cracks spread through the outer tendrils!",
-      "Tentacle Guard: 2 layers remaining!"
-    ]
+    "ignoreAfter" => "Variable_4",
+    "addVariable" => 1
   },
   "Variable_2" => {
     "playSE" => "Mining collapse",
-    "battlerStats" => [:DEFENSE, -1, :SPECIAL_DEFENSE, -1],
+    "battlerStats" => [
+      :DEFENSE, -1,
+      :SPECIAL_DEFENSE, -1
+    ],
     "text" => [
-      "Another section of the crystal armor shatters!",
-      "Tentacle Guard: 1 layer remaining!"
+      "Cracks spread across Motherbeast's crystalline armor!",
+      "Her protection is beginning to weaken!"
     ]
   },
-  "Variable_3" => {
+  "Variable_4" => {
     "playSE" => "Mining collapse",
     "playAnim" => [:ROCKSMASH, :Self],
-    "battlerStats" => [:DEFENSE, -2, :SPECIAL_DEFENSE, -2],
+    "battlerStats" => [
+      :DEFENSE, -2,
+      :SPECIAL_DEFENSE, -2
+    ],
     "text" => [
-      "Motherbeast's crystalline tendrils SHATTER!",
+      "Motherbeast's crystalline armor SHATTERS!",
       "Her body is completely exposed!"
     ]
   },
   "RoundEnd_foe_repeat_every_3" => {
-    "text" => [
-      "Nihilego's toxins pulse through Lusamine!",
+    "text_A" => [
+      "Nihilego's energy surges through Lusamine!",
       "The fusion grows stronger... but increasingly unstable!"
     ],
     "playSE" => "Anim/Poison",
-    "battlerStats" => [:SPECIAL_ATTACK, 1, :SPEED, 1, :DEFENSE, -1]
+    "battlerStats" => [
+      :SPECIAL_ATTACK, 1,
+      :SPEED, 1,
+      :DEFENSE, -1
+    ]
+  },
+  "BattlerReachedHPCap_foe" => {
+    "battlerHPCap" => 0,
+	"setBattler" => :Opposing,
+    "teamEffects" => [:ToxicSpikes, 3],
+    "text_A" => [
+      "The crystalline shell around Motherbeast finally gives way!",
+      "Lusamine smiles as Nihilego's tendrils spread across the battlefield.",
+      "\"Come now... let Mother take care of you.\""
+    ],
+
+    "text_B" => [
+      "Poisonous spikes scatter across the battlefield!",
+      "Motherbeast's symbiosis begins feeding on the toxins!"
+    ]
   },
   "TargetHPHalf_foe" => {
     "text_A" => [
-      "Lusamine convulses as Nihilego tightens its grip!",
-      "\"No... we're not separate anymore...\""
+      "Motherbeast's body suddenly convulses!",
+      "Nihilego tightens its grip around Lusamine!",
+      "\"More... give me more!\""
     ],
-    "battlerStatus" => :NONE,
     "playAnim" => [:ACIDARMOR, :Self],
-    "battlerHP" => [20, "Nihilego's energy restores Motherbeast!"],
-    "battlerStats" => [:SPECIAL_ATTACK, 1, :SPEED, 1, :DEFENSE, -1],
-    "battlerMoves" => [:POWERGEM, :SLUDGEWAVE, :PSYCHIC, :DAZZLINGGLEAM],
-    "text_B" => "Motherbeast's movements become faster and more erratic!"
-  },
-  "TurnStart_3_foe_repeat_every_3" => {
-    "ignoreUntil" => "TargetHPHalf_foe",
-    "text_A" => "Motherbeast's tendrils begin glowing with a sickly light...",
-    "setBattler" => :Opposing,
-    "battlerStats" => [:SPEED, -1, :ACCURACY, -1],
-    "text_B" => "Nihilego's neurotoxins distort {1}'s senses!"
+    "battlerHP" => [
+      20,
+      "Nihilego's energy restores Motherbeast!"
+    ],
+    "battlerStats" => [
+      :SPECIAL_ATTACK, 1,
+      :SPEED, 1,
+      :DEFENSE, -1,
+      :SPECIAL_DEFENSE, -1
+    ],
+    "text_B" => [
+      "Motherbeast forces even more Ultra Beast energy through her body!",
+      "Her power rises as the fusion becomes increasingly unstable!"
+    ]
   },
   "TargetHPLow_foe" => {
+    "battlerStatus" => :NONE,
     "speech" => [
-      "\"Stay away from me!\"",
-      "\"My child... protect your mother!\""
+      "\"You think you've won?!\"",
+      "\"My beautiful Nihilego would never abandon me!\""
     ],
-    "battlerHP" => [15, "Motherbeast draws energy from Ultra Space!"],
+    "playSE" => "Anim/Charge",
     "addWild" => [:NIHILEGO, 45],
-    "text_A" => "A Nihilego fragment tears its way into the battlefield!"
+    "text_A" => [
+      "Motherbeast purges the afflictions from her body!",
+      "A tear opens into Ultra Space!",
+      "A Nihilego descends to protect its host!"
+    ]
   },
   "BattlerFainted_NIHILEGO_foe_repeat" => {
-    "text_A" => "The psychic link between Nihilego and Motherbeast shatters!",
+    "text_A" => [
+      "The Nihilego shatters!",
+      "Its connection to Motherbeast is violently severed!"
+    ],
     "playSE" => "Mining collapse",
     "setBattler" => :Opposing,
-    "battlerStats" => [:SPECIAL_ATTACK, -1, :SPECIAL_DEFENSE, -1],
-    "text_B" => "Motherbeast weakens as part of the symbiosis collapses!"
+    "battlerStats" => [
+      :SPECIAL_ATTACK, -1,
+      :SPECIAL_DEFENSE, -1
+    ],
+    "text_B" => [
+      "Motherbeast recoils as part of the symbiosis collapses!"
+    ]
   },
   "BattlerHPCritical_foe" => {
     "battlerHPCap" => 0,
+    "disableItems" => true,
     "speech" => [
-      "\"Everything I did was for you, Lille!\"",
-      "\"WHY CAN'T YOU UNDERSTAND?!\""
+      "\"NO! I won't let you take this away from me!\"",
+      "\"I WILL NOT LOSE MY FAMILY AGAIN!\""
     ],
     "changeTerrain" => :Psychic,
+    "playSE" => "Anim/Charge",
     "playAnim" => [:NASTYPLOT, :Self],
-    "battlerStats" => [:SPECIAL_ATTACK, 2, :SPEED, 2, :DEFENSE, -2, :SPECIAL_DEFENSE, -2],
-    "battlerMoves" => [:POWERGEM, :SLUDGEWAVE, :PSYCHIC, :DAZZLINGGLEAM],
+    "battlerStats" => [
+      :SPECIAL_ATTACK, 2,
+      :SPEED, 2,
+      :DEFENSE, -2,
+      :SPECIAL_DEFENSE, -2
+    ],
+    "battlerMoves" => [
+      :POWERGEM,
+      :SLUDGEWAVE,
+      :PSYCHIC,
+      :DAZZLINGGLEAM
+    ],
     "text" => [
-      "The fusion begins tearing itself apart!",
-      "Motherbeast's power skyrockets! but her crystalline armor shatters!"
+      "Motherbeast abandons all attempts to stabilize the fusion!",
+      "Her remaining power erupts at once!",
+      "Motherbeast's defenses collapse!",
+      "There will be no more chances to recover!"
     ]
   }
 }
 
 DAUGHTERBEAST_MIDBATTLE = {
   "RoundStartCommand_1_foe" => {
-    "battlerHPCap" => 50,
-    "changeTerrain" => :Misty,
+    "setVariable" => 0,
+    "battlerHPCap" => 70,
     "battlerStats" => [:SPECIAL_DEFENSE, 1],
+    "playSE" => "Anim/Charge",
     "text" => [
-      "Lusamine: \"Go on, Lillie. Show them how beautiful you've become.\"",
-      "Lillie lowers her head as Nihilego's energy surges through her body..."
+      "Nihilego's crystalline tendrils tighten around Lillie!",
+      "A protective membrane forms around Daughterbeast!",
+      "Lusamine: \"Go on, Lillie. Show them what you've become.\""
     ]
   },
-  "RoundEnd_3_foe" => {
-    "ignoreAfter" => "BattlerReachedHPCap_foe",
-    "text" => "Lusamine: \"Don't hold back, Lillie.\"",
-    "battlerStats" => [:SPECIAL_ATTACK, 1, :SPEED, 1, :DEFENSE, -1],
-    "text_B" => "Daughterbeast's power rises as the fusion becomes unstable!"
+  "TargetTookDamage_foe_repeat" => {
+    "ignoreAfter" => "Variable_4",
+    "addVariable" => 1
   },
 
-  "RoundEnd_6_foe" => {
-    "ignoreAfter" => "BattlerReachedHPCap_foe",
-    "text" => "Lusamine: \"You don't want to disappoint your mother, do you?\"",
-    "battlerStats" => [:SPECIAL_ATTACK, 1, :SPEED, 1, :SPECIAL_DEFENSE, -1],
-    "text_B" => "Nihilego's influence digs deeper into Lillie!"
-  },
-
-  "RoundEnd_9_foe" => {
-    "ignoreAfter" => "BattlerReachedHPCap_foe",
-    "text" => "Lusamine: \"Enough hesitation! Destroy them!\"",
-    "battlerStats" => [:SPECIAL_ATTACK, 2, :SPEED, 1, :DEFENSE, -1, :SPECIAL_DEFENSE, -1],
-    "text_B" => "Daughterbeast's body struggles to contain the growing power!"
-  },
-
-  "TargetWeakToMove_foe" => {
-    "ignoreAfter" => "BattlerReachedHPCap_foe",
-    "text" => [
-      "Daughterbeast recoils from the attack!",
-      "For a moment, Lillie's expression returns to normal...",
-      "Lillie: \"I... I don't want to do this...\""
+  "Variable_2" => {
+    "playSE" => "Mining collapse",
+    "battlerStats" => [
+      :DEFENSE, -1,
+      :SPECIAL_DEFENSE, -1
     ],
-    "battlerStats" => [:SPECIAL_ATTACK, -1, :SPEED, -1]
+    "text" => [
+      "Cracks spread across Daughterbeast's crystalline armor!",
+      "Her protection begins to weaken!"
+    ]
   },
 
+  "Variable_4" => {
+    "playSE" => "Mining collapse",
+    "playAnim" => [:ROCKSMASH, :Self],
+    "battlerStats" => [
+      :DEFENSE, -2,
+      :SPECIAL_DEFENSE, -2
+    ],
+    "text" => [
+      "Daughterbeast's crystalline armor SHATTERS!",
+      "Lillie recoils as the protection surrounding her collapses!"
+    ]
+  },
+  "RoundEnd_foe_repeat_every_4" => {
+    "ignoreAfter" => "BattlerHPCritical_foe",
+    "text_A" => [
+      "Nihilego's influence spreads through the battlefield...",
+      "Lillie: \"Please... just stop...\""
+    ],
+    "setBattler" => :Opposing,
+    "battlerStats" => [
+      :ATTACK, -1,
+      :SPECIAL_ATTACK, -1
+    ],
+    "text_B" => [
+      "{1}'s strength is suppressed by Daughterbeast!"
+    ]
+  },
   "BattlerReachedHPCap_foe" => {
     "battlerHPCap" => 0,
-    "battlerStatus" => :NONE,
-    "battlerHP" => [10, "Nihilego's energy surges through Daughterbeast!"],
+
     "text_A" => [
-      "Lillie screans as the fusion violently pulses!",
+      "Daughterbeast's protection finally gives way!",
+      "Lillie stumbles backward...",
+      "Lusamine: \"That's enough.\"",
+      "Lusamine: \"You don't have to do this alone, Lillie.\"",
+      "\"Mommy will help you.\""
     ],
-    "battlerStats" => [:SPECIAL_ATTACK, -1, :SPEED, -1, :DEFENSE, -1],
-    "battlerMoves" => [:DAZZLINGGLEAM, :POWERGEM, :PSYCHIC, :SLUDGEBOMB],
+
+    "battlerStats" => [
+      :DEFENSE, 2,
+      :SPECIAL_DEFENSE, 2
+    ],
+
+    "addTrainer" => [
+      "LEADER_LUSAMINE",
+      "Lusamine"
+    ],
+
     "text_B" => [
-      "Lillie: \"Mother... this hurts...\"",
-      "Lusamine: \"Pain is temporary. Perfection is forever.\"",
-	  "Lusamine: \"Let Mommy help you.\"",
-	  "addTrainer" => ["EASTEREGG", "BunnE", 1]
+      "Lusamine enters the battle alongside her daughter!",
+      "Daughterbeast retreats behind her mother and begins disrupting the battlefield!"
+    ]
+  },
+  "BattlerHPCritical_foe" => {
+    "battlerStatus" => :NONE,
+
+    "text_A" => [
+      "Daughterbeast suddenly stops moving.",
+      "Lusamine: \"Lillie?\"",
+      "\"What are you doing?!\"",
+      "Lillie: \"...No.\"",
+      "Lusamine: \"What?\"",
+      "Lillie: \"I don't want to hurt them anymore.\""
+    ],
+
+    "playSE" => "Anim/Charge",
+
+    "battlerStats" => [
+      :DEFENSE, 6,
+      :SPECIAL_DEFENSE, 6
+    ],
+
+    "battlerMoves" => [
+      :STRUGGLE
+    ],
+
+    "text_B" => [
+      "Daughterbeast completely withdraws into herself!",
+      "Her defenses rise drastically!",
+      "But Lillie refuses to continue attacking!"
+    ]
+  }
+}
+
+UNIONBEAST_MIDBATTLE = {
+  "RoundStartCommand_1_foe" => {
+    "setVariable" => 0,
+    "battlerHPCap" => 70,
+    "battlerStats" => [
+      :SPECIAL_ATTACK, 1,
+      :SPECIAL_DEFENSE, 1
+    ],
+    "playSE" => "Anim/Charge",
+    "text" => [
+      "Mother and daughter have become one...",
+      "Nihilego's crystalline mass twists around the fused creature!",
+      "A powerful membrane forms around Union Beast!",
+      "Two consciousnesses struggle for control within the fusion..."
+    ]
+  },
+  "TargetTookDamage_foe_repeat" => {
+    "ignoreAfter" => "Variable_4",
+    "addVariable" => 1
+  },
+
+  "Variable_2" => {
+    "playSE" => "Mining collapse",
+    "battlerStats" => [
+      :DEFENSE, -1,
+      :SPECIAL_DEFENSE, -1
+    ],
+    "text" => [
+      "Cracks spread across Union Beast's crystalline armor!",
+      "The fusion's protection begins to weaken!"
     ]
   },
 
-  "RoundEnd_foe_repeat_even" => {
-    "ignoreUntil" => "BattlerReachedHPCap_foe",
-    "ignoreAfter" => "BattlerHPLow_foe",
-    "text" => "Lusamine forces more Ultra Beast energy into Lillie!",
-    "battlerStats" => [:SPECIAL_ATTACK, 1, :SPEED, 1, :DEFENSE, -1, :SPECIAL_DEFENSE, -1],
-    "text_B" => "Daughterbeast grows stronger, but the fusion becomes increasingly unstable!"
-  },
-
-  "BattlerHPLow_foe" => {
-    "text_A" => [
-      "Lusamine: \"Lillie! Finish them! Welcome Daddy with open arms!\"",
-      "Lillie: \"...Yes, Mother.\""
+  "Variable_4" => {
+    "playSE" => "Mining collapse",
+    "playAnim" => [:ROCKSMASH, :Self],
+    "battlerStats" => [
+      :DEFENSE, -2,
+      :SPECIAL_DEFENSE, -2
     ],
+    "text" => [
+      "Union Beast's crystalline armor SHATTERS!",
+      "The fusion is completely exposed!"
+    ]
+  },
+  "TurnStart_3_foe_repeat_every_6" => {
+    "ignoreAfter" => "BattlerHPCritical_foe",
+    "text_A" => [
+      "Union Beast's posture suddenly changes...",
+      "Lusamine's voice rises above Lillie's!",
+      "\"Let Mother handle this.\""
+    ],
+
+    "playSE" => "Anim/Charge",
+    "playAnim" => [:NASTYPLOT, :Self],
+
+    "battlerStats" => [
+      :SPECIAL_ATTACK, 2,
+      :SPEED, 1,
+      :DEFENSE, -1
+    ],
+
+    "text_B" => [
+      "Lusamine seizes control of the fusion!",
+      "Union Beast becomes more aggressive and unstable!"
+    ]
+  },
+  "TurnStart_6_foe_repeat_every_6" => {
+    "ignoreAfter" => "BattlerHPCritical_foe",
+    "text_A" => [
+      "Union Beast suddenly hesitates...",
+      "Lillie's voice breaks through the fusion.",
+      "\"Please... just stop fighting...\""
+    ],
+
+    "playSE" => "Anim/Poison",
+    "setBattler" => :Opposing,
+
+    "battlerStats" => [
+      :ATTACK, -2,
+      :SPECIAL_ATTACK, -2
+    ],
+
+    "text_B" => [
+      "Lillie's influence suppresses {1}'s strength!"
+    ]
+  },
+  "BattlerReachedHPCap_foe" => {
+    "battlerHPCap" => 0,
+    "text_A" => [
+      "Union Beast's protective membrane finally gives way!",
+      "The fusion screams with two overlapping voices!",
+      "\"You won't separate us!\"",
+      "Nihilego's tendrils plunge into the battlefield!"
+    ],
+
+    "playSE" => "Anim/Poison",
+
+    "text_B" => [
+      "Three layers of poisonous spikes spread across the battlefield!",
+      "Union Beast's symbiosis begins reacting to the poison!"
+    ]
+  },
+  "TargetHPHalf_foe" => {
+    "text_A" => [
+      "Union Beast suddenly stops moving...",
+      "Lusamine: \"Lillie...\"",
+      "Lillie: \"Mother...\"",
+      "\"Together.\""
+    ],
+
+    "playSE" => "Anim/Charge",
+    "playAnim" => [:ACIDARMOR, :Self],
+
+    "battlerHP" => [
+      20,
+      "The fusion draws strength from its shared consciousness!"
+    ],
+
+    "battlerStats" => [
+      :SPECIAL_ATTACK, 1,
+      :SPEED, 1,
+      :DEFENSE, -1,
+      :SPECIAL_DEFENSE, -1
+    ],
+
+    # Temporarily enable both PARASITICLOVE and MOTHERSINFLUENCE here.
+
+    "text_B" => [
+      "Mother and daughter's consciousnesses synchronize!",
+      "For a brief moment, both halves of Union Beast act as one!"
+    ]
+  },
+  "RoundEnd_foe_repeat_every_3" => {
+    "ignoreUntil" => "TargetHPHalf_foe",
+    "ignoreAfter" => "TargetHPLow_foe",
+
+    "text" => [
+      "The synchronization begins to fracture...",
+      "Lusamine and Lillie's consciousnesses struggle for control!"
+    ]
+  },
+  "TargetHPLow_foe" => {
+    "text_A" => [
+      "Union Beast's body begins to collapse!",
+      "Nihilego's tendrils lash desperately toward Ultra Space!",
+      "\"Don't leave us!\""
+    ],
+
+    "playSE" => "Anim/Charge",
+
+    "addWild" => [
+      :NIHILEGO,
+      45
+    ],
+
+    "text_B" => [
+      "A Nihilego fragment tears its way into the battlefield!",
+      "The parasite moves to protect Union Beast!"
+    ]
+  },
+  "BattlerFainted_NIHILEGO_foe_repeat" => {
+    "text_A" => [
+      "The Nihilego fragment shatters!",
+      "Its connection to Union Beast is violently severed!"
+    ],
+
+    "playSE" => "Mining collapse",
+
+    "setBattler" => :Opposing,
+
+    "battlerStats" => [
+      :DEFENSE, -1,
+      :SPECIAL_DEFENSE, -1
+    ],
+
+    "text_B" => [
+      "Union Beast screams as part of its symbiotic network collapses!"
+    ]
+  },
+  "BattlerHPCritical_foe" => {
+    "battlerHPCap" => 0,
+	"disableItems" => true,
+    #
+    # Stop personality switching.
+    #
+    # Enable both:
+    #   PARASITICLOVE
+    #   MOTHERSINFLUENCE
+    #
+    # Their defensive stat restoration should be disabled during this phase.
+
+    "speech" => [
+      "\"No more Mother...\"",
+      "\"No more Daughter...\"",
+      "\"WE ARE ONE!\""
+    ],
+
     "changeTerrain" => :Psychic,
-    "battlerStats" => [:SPECIAL_ATTACK, 1, :SPEED, 2, :DEFENSE, -2, :SPECIAL_DEFENSE, -2],
-    "battlerMoves" => [:MOONBLAST, :POWERGEM, :PSYCHIC, :SLUDGEWAVE]
+
+    "playSE" => "Anim/Charge",
+    "playAnim" => [:NASTYPLOT, :Self],
+
+    "battlerStats" => [
+      :SPECIAL_ATTACK, 2,
+      :SPEED, 2,
+      :DEFENSE, -2,
+      :SPECIAL_DEFENSE, -2
+    ],
+
+    "battlerMoves" => [
+      :SLUDGEWAVE,
+      :POWERGEM,
+      :GASTROACID,
+      :EERIEIMPULSE
+    ],
+
+    "text" => [
+      "Lusamine and Lillie's consciousnesses completely synchronize!",
+      "Union Beast abandons all attempts to stabilize itself!",
+      "Its offensive power skyrockets!",
+      "The fusion's defenses begin collapsing!",
+      "There will be no more chances to recover!"
+    ]
+  },
+  "TurnStart_3_foe_repeat_every_3" => {
+    "ignoreUntil" => "BattlerHPCritical_foe",
+
+    "playSE" => "Anim/Charge",
+
+    "battlerStats" => [
+      :SPECIAL_ATTACK, 1,
+      :DEFENSE, -1,
+      :SPECIAL_DEFENSE, -1
+    ],
+
+    "text" => [
+      "Union Beast's power continues to spiral out of control!",
+      "The fusion grows stronger as its body tears itself apart!"
+    ]
   }
 }
+
 #===============================================
 #
 # Professional's MIDBATTLE SCRIPTS!

@@ -1307,3 +1307,11 @@ Description = Weakens attacks
 [SHELLFIGHT]
 Name = Shell Fight
 Description = Changes between Shell and Shell-less Form with attacks.
+#-------------------------------
+[PARASITICLOVE]
+Name = Parasitic Love
+Description = Damaging a poisoned target restores HP and strengthens the user's weaker defense.
+#-------------------------------
+[MOTHERSINFLUENCE]
+Name = Mother's Influence
+Description = Status moves used on poisoned targets weaken their offense and strengthen the user's weaker defense.

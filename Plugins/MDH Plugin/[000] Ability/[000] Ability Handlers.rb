@@ -221,3 +221,141 @@ Battle::AbilityEffects::DamageCalcFromTargetNonIgnorable.add(:SHELLFIGHT,
     end
   }
 )
+
+#===============================================================================
+# Parasitic Love
+#
+# When this Pokemon damages a poisoned target:
+# - Restores 1/16 of its maximum HP.
+# - Raises whichever of Defense or Special Defense is currently lower by 1 stage.
+# - If both stages are equal, raises whichever actual defensive stat is lower.
+#===============================================================================
+
+Battle::AbilityEffects::OnDealingHit.add(:PARASITICLOVE,
+  proc { |ability, user, target, move, battle|
+    next if target.damageState.calcDamage <= 0
+    next if !target.poisoned?
+    next if user.fainted?
+
+    battle.pbShowAbilitySplash(user)
+
+    #---------------------------------------------------------------------------
+    # Restore HP
+    #---------------------------------------------------------------------------
+    if user.canHeal?
+      heal_amount = (user.totalhp / 16.0).ceil
+      user.pbRecoverHP(heal_amount)
+
+      battle.pbDisplay(
+        _INTL("{1} fed on the poison coursing through {2}!",
+          user.pbThis, target.pbThis)
+      )
+    end
+
+    #---------------------------------------------------------------------------
+    # Determine which defensive stat needs repairing.
+    #---------------------------------------------------------------------------
+
+    def_stage  = user.stages[:DEFENSE]
+    spdef_stage = user.stages[:SPECIAL_DEFENSE]
+
+    stat_to_raise = nil
+
+    if def_stage < spdef_stage
+      stat_to_raise = :DEFENSE
+    elsif spdef_stage < def_stage
+      stat_to_raise = :SPECIAL_DEFENSE
+    else
+      # If their stages are equal, compare the actual stats.
+      if user.defense < user.spdef
+        stat_to_raise = :DEFENSE
+      else
+        stat_to_raise = :SPECIAL_DEFENSE
+      end
+    end
+
+    #---------------------------------------------------------------------------
+    # Repair the weaker defense.
+    #---------------------------------------------------------------------------
+
+    if user.pbCanRaiseStatStage?(stat_to_raise, user)
+      user.pbRaiseStatStage(stat_to_raise, 1, user)
+    end
+
+    battle.pbHideAbilitySplash(user)
+  }
+)
+
+#===============================================================================
+# Mother's Influence
+#
+# When the user successfully uses a status move on a poisoned target:
+# - Lowers the target's stronger offensive stat by 1 stage.
+# - Raises the user's weaker defensive stat by 1 stage.
+#
+# If stages are tied, actual stats are compared instead.
+#===============================================================================
+
+Battle::AbilityEffects::OnDealingHit.add(:MOTHERSINFLUENCE,
+  proc { |ability, user, target, move, battle|
+    next if !move.statusMove?
+    next if !target.poisoned?
+    next if user.fainted?
+    
+    battle.pbShowAbilitySplash(user)
+
+    #=========================================================================
+    # LOWER THE TARGET'S STRONGER OFFENSIVE STAT
+    #=========================================================================
+
+    atk_stage   = target.stages[:ATTACK]
+    spatk_stage = target.stages[:SPECIAL_ATTACK]
+
+    stat_to_lower = nil
+
+    if atk_stage > spatk_stage
+      stat_to_lower = :ATTACK
+    elsif spatk_stage > atk_stage
+      stat_to_lower = :SPECIAL_ATTACK
+    else
+      # If stages are equal, compare actual stats.
+      if target.attack > target.spatk
+        stat_to_lower = :ATTACK
+      else
+        stat_to_lower = :SPECIAL_ATTACK
+      end
+    end
+
+    if target.pbCanLowerStatStage?(stat_to_lower, user)
+      target.pbLowerStatStage(stat_to_lower, 1, user)
+    end
+
+    #=========================================================================
+    # RAISE DAUGHTERBEAST'S WEAKER DEFENSIVE STAT
+    #=========================================================================
+
+    def_stage   = user.stages[:DEFENSE]
+    spdef_stage = user.stages[:SPECIAL_DEFENSE]
+
+    stat_to_raise = nil
+
+    if def_stage < spdef_stage
+      stat_to_raise = :DEFENSE
+    elsif spdef_stage < def_stage
+      stat_to_raise = :SPECIAL_DEFENSE
+    else
+      # If stages are equal, compare actual stats.
+      if user.defense < user.spdef
+        stat_to_raise = :DEFENSE
+      else
+        stat_to_raise = :SPECIAL_DEFENSE
+      end
+    end
+
+    if user.pbCanRaiseStatStage?(stat_to_raise, user)
+      user.pbRaiseStatStage(stat_to_raise, 1, user)
+    end
+
+    battle.pbHideAbilitySplash(user)
+  }
+)
