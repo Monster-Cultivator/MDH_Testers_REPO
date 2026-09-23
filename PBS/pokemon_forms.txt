@@ -3071,6 +3071,21 @@ Types = ELECTRIC
 Abilities = SURGESURFER
 BaseStats = 300,225,200,250,250,225
 #-------------------------------
+[MOTHERBEAST,1]
+FormName = Standard Form
+#-------------------------------
+[DAUGHTERBEAST,1]
+FormName = Standard Form
+#-------------------------------
+[UNIONBEAST,1]
+FormName = The Daughter
+#-------------------------------
+[UNIONBEAST,2]
+FormName = The Mother
+#-------------------------------
+[UNIONBEAST,3]
+FormName = Pure Union
+#-------------------------------
 [HOUNDOURh,1]
 FormName = No cap
 Evolutions = HOUNDOOMh,Level,24

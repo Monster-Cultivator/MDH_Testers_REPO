@@ -243,7 +243,7 @@ Battle::AbilityEffects::OnDealingHit.add(:PARASITICLOVE,
     # Restore HP
     #---------------------------------------------------------------------------
     if user.canHeal?
-      heal_amount = (user.totalhp / 16.0).ceil
+      heal_amount = (user.totalhp / 8.0).ceil
       user.pbRecoverHP(heal_amount)
 
       battle.pbDisplay(
@@ -298,7 +298,7 @@ Battle::AbilityEffects::OnDealingHit.add(:PARASITICLOVE,
 
 Battle::AbilityEffects::OnDealingHit.add(:MOTHERSINFLUENCE,
   proc { |ability, user, target, move, battle|
-    next if !move.statusMove?
+    next if target.damageState.calcDamage <= 0
     next if !target.poisoned?
     next if user.fainted?
     

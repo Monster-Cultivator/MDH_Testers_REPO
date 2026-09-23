@@ -182,10 +182,25 @@ Innates = RIVALRY,INTIMIDATE,DEFIANT
 Innates = RIVALRY,INTIMIDATE,DEFIANT
 #-------------------------------
 [MOTHERBEAST]
-Innates = RIVALRY,INTIMIDATE,DEFIANT
+Innates = DAMAGEARMOR,MAGICGUARD
+#-------------------------------
+[MOTHERBEAST_1]
+Innates = DAMAGEARMOR,PARASITICLOVE
 #-------------------------------
 [DAUGHTERBEAST]
-Innates = RIVALRY,INTIMIDATE,DEFIANT
+Innates = DAMAGEARMOR,MAGICGUARD
+#-------------------------------
+[DAUGHTERBEAST_1]
+Innates = DAMAGEARMOR,MOTHERSINFLUENCE
 #-------------------------------
 [UNIONBEAST]
-Innates = RIVALRY,INTIMIDATE,DEFIANT
+Innates = DAMAGEARMOR,MAGICGUARD
+#-------------------------------
+[UNIONBEAST_1]
+Innates = DAMAGEARMOR,MOTHERSINFLUENCE
+#-------------------------------
+[UNIONBEAST_2]
+Innates = DAMAGEARMOR,PARASITICLOVE
+#-------------------------------
+[UNIONBEAST_3]
+Innates = DAMAGEARMOR,MOTHERSINFLUENCE,PARASITICLOVE
