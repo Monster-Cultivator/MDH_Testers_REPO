@@ -359,3 +359,39 @@ Battle::AbilityEffects::OnDealingHit.add(:MOTHERSINFLUENCE,
     battle.pbHideAbilitySplash(user)
   }
 )
+
+#===============================================================================
+# Glitch Adaptation
+#
+# When hit by a damaging move:
+# - Physical move -> Defense +1
+# - Special move  -> Special Defense +1
+#===============================================================================
+
+Battle::AbilityEffects::OnBeingHit.add(:GLITCHADAPTATION,
+  proc { |ability, user, target, move, battle|
+    next if target.fainted?
+    next if target.damageState.calcDamage <= 0
+
+    stat = nil
+
+    if move.physicalMove?
+      stat = :DEFENSE
+    elsif move.specialMove?
+      stat = :SPECIAL_DEFENSE
+    end
+
+    next if !stat
+    next if !target.pbCanRaiseStatStage?(stat, target)
+
+    battle.pbShowAbilitySplash(target)
+
+    target.pbRaiseStatStage(stat, 1, target)
+
+    battle.pbDisplay(
+      _INTL("{1}'s corrupted data adapted to the attack!", target.pbThis)
+    )
+
+    battle.pbHideAbilitySplash(target)
+  }
+)

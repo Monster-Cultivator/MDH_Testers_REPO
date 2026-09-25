@@ -134,3 +134,10 @@ IconPosition = 19
 IsSpecialType = true
 Weaknesses = SHADOW
 Resistances = BUG,DARK,DRAGON,ELECTRIC,FAIRY,FIGHTING,FIRE,FLYING,GHOST,GRASS,GROUND,ICE,POISON,ROCK,STEEL,WATER,PSYCHIC
+#-------------------------------
+[GLITCH]
+Name = Glitch
+IconPosition = 19
+IsSpecialType = true
+Weaknesses = GLITCH
+Resistances = BUG,POISON

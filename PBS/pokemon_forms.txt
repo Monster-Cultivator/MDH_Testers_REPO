@@ -3048,6 +3048,13 @@ Generation = 6
 FormName = Released Form
 BaseStats = 80,29,105,90,150,103
 #-------------------------------
+[HOUNDOURh,1]
+FormName = No cap
+Evolutions = HOUNDOOMh,Level,24
+#-------------------------------
+[HOUNDOOMh,1]
+FormName = Pompadoom
+#-------------------------------
 [LEAFEONx,1]
 FormName = Treant form
 BaseStats = 600,120,700,1,120,700
@@ -3086,9 +3093,25 @@ FormName = The Mother
 [UNIONBEAST,3]
 FormName = Pure Union
 #-------------------------------
-[HOUNDOURh,1]
-FormName = No cap
-Evolutions = HOUNDOOMh,Level,24
+[KABUTOPGLITCH,1]
+FormName = Psychic
+Moves = 0,EXPANDINGFORCE,1,TRIATTACK,1,TERRAINPULSE,1,ANCIENTPOWER
+BaseStats = 120,105,155,30,145,100
 #-------------------------------
-[HOUNDOOMh,1]
-FormName = Pompadoom
+[KABUTOPGLITCH,2]
+FormName = Misty
+Moves = 0,NATUREPOWER,1,TRIATTACK,1,TERRAINPULSE,1,ANCIENTPOWER
+BaseStats = 120,105,155,30,145,100
+#-------------------------------
+[KABUTOPGLITCH,3]
+FormName = Electric
+Moves = 0,PSYBLADE,1,TRIATTACK,1,TERRAINPULSE,1,ANCIENTPOWER
+BaseStats = 120,105,155,30,145,100
+#-------------------------------
+[KABUTOPGLITCH,4]
+FormName = Grassy
+Moves = 0,GRASSYGLIDE,1,TRIATTACK,1,TERRAINPULSE,1,ANCIENTPOWER
+BaseStats = 120,105,155,30,145,100
+#-------------------------------
+[KABUTOPGLITCH,5]
+FormName = Chaos Fiction

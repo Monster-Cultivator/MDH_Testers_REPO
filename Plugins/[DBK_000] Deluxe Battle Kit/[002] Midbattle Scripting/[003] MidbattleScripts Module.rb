@@ -2515,7 +2515,6 @@ MOTHERBEAST_MIDBATTLE = {
       "A thick layer of crystal protects Motherbeast!"
     ]
   },
-
   # Every damaging hit contributes toward breaking the armor.
   "TargetTookDamage_foe_repeat" => {
     "ignoreAfter" => "Variable_4",
@@ -2649,6 +2648,323 @@ MOTHERBEAST_MIDBATTLE = {
       "Her remaining power erupts at once!",
       "Motherbeast's defenses collapse!",
       "There will be no more chances to recover!"
+    ]
+  }
+}
+
+MYSTERIOUS_LADY_MIDBATTLE = {
+ "RoundStartCommand_1_foe" => {
+    "battlerHPCap" => 70,
+    "playSE" => "Anim/Charge",
+    "text" => [
+      "Kabutops's body flickers violently...",
+      "Pieces of its body vanish and reappear out of place.",
+      "Mysterious Lady: \"There we are...\"",
+      "\"Let's see what you've learned.\""
+    ]
+  },
+  "RoundEnd_2_foe" => {
+    "ignoreAfter" => "BattlerReachedHPCap_foe",
+    "text" => [
+      "Mysterious Lady watches from the sidelines with an amused smile.",
+      "\"Don't mind me. I'm merely observing.\""
+    ]
+  },
+
+  "RoundEnd_5_foe" => {
+    "ignoreAfter" => "BattlerReachedHPCap_foe",
+    "text" => [
+      "Mysterious Lady: \"Fascinating...\"",
+      "\"How much of this is strategy, I wonder...\"",
+      "\"And how much is simply habit?\""
+    ]
+  },
+  "BattlerReachedHPCap_foe" => {
+    "battlerHPCap" => 0,
+    "text_A" => [
+      "Kabutops's corrupted body violently distorts!",
+      "Mysterious Lady: \"Oh? Already?\"",
+      "\"Hmm... perhaps our experiment needs another variable.\"",
+      "She casually steps onto the battlefield.",
+      "\"Would you mind if I joined you?\""
+    ],
+	"addWild" => [:MYSTERYLADY, 65],
+    "text_B" => [
+      "Mysterious Lady enters the battle!",
+      "The space surrounding the battlefield begins to bend...",
+      "\"Now then... let's make this interesting.\""
+    ]
+  },
+  "TurnStart_2_foe" => {
+    "ignoreUntil" => "BattlerReachedHPCap_foe",
+    "text" => [
+      "Reality begins bending around Mysterious Lady...",
+      "A strange psychic pressure fills the air.",
+      "Mysterious Lady: \"Do you feel that?\""
+    ]
+  },
+  "TurnStart_3_foe" => {
+    "ignoreUntil" => "BattlerReachedHPCap_foe",
+    "changeTerrain" => :Psychic,
+	"battlerForm"   => [1],
+    "text" => [
+      "The distortion erupts across the battlefield!",
+      "The battlefield became strange!",
+      "Mysterious Lady: \"Wonderful! Now let's see what changes.\""
+    ]
+  },
+  "TurnStart_5_foe" => {
+    "ignoreUntil" => "BattlerReachedHPCap_foe",
+    "text" => [
+      "A strange mist begins leaking through cracks in reality...",
+      "Mysterious Lady: \"Oh? Something new is coming through.\""
+    ]
+  },
+  "TurnStart_6_foe" => {
+    "ignoreUntil" => "BattlerReachedHPCap_foe",
+    "changeTerrain" => :Misty,
+	"battlerForm"   => [2],
+    "text" => [
+      "The distortion shifts again!",
+      "A mysterious mist covers the battlefield!",
+      "Mysterious Lady: \"Not what I expected...\"",
+      "\"Keep it. This is more interesting.\""
+    ]
+  },
+  #===========================================================================
+  # DISTORTION 3 - ELECTRIC TERRAIN
+  #===========================================================================
+
+  "TurnStart_8_foe" => {
+    "ignoreUntil" => "BattlerReachedHPCap_foe",
+    "text" => [
+      "Static begins crackling through the distortion...",
+      "The battlefield hums with unstable energy.",
+      "Mysterious Lady: \"I wonder what THIS one does?\""
+    ]
+  },
+  "TurnStart_9_foe" => {
+    "ignoreUntil" => "BattlerReachedHPCap_foe",
+    "changeTerrain" => :Electric,
+	"battlerForm"   => [3],
+    "text" => [
+      "Electricity explodes across the battlefield!",
+      "The terrain became electrified!",
+      "Mysterious Lady: \"Hahaha! Wonderful!\""
+    ]
+  },
+
+  #===========================================================================
+  # DISTORTION 4 - GRASSY TERRAIN
+  #===========================================================================
+
+  "TurnStart_11_foe" => {
+    "ignoreUntil" => "BattlerReachedHPCap_foe",
+    "text" => [
+      "Plants begin pushing through cracks in reality...",
+      "Mysterious Lady: \"Now THAT certainly wasn't there before.\""
+    ]
+  },
+  "TurnStart_12_foe" => {
+    "ignoreUntil" => "BattlerReachedHPCap_foe",
+    "changeTerrain" => :Grassy,
+	"battlerForm"   => [4],
+    "text" => [
+      "The battlefield suddenly erupts with vegetation!",
+      "Mysterious Lady: \"Beautiful, isn't it?\""
+    ]
+  }
+}
+
+MYSTERIOUS_LADY2_MIDBATTLE = {
+ "RoundStartCommand_1_foe" => {
+    "battlerHPCap" => 70,
+    "playSE" => "Anim/Charge",
+    "text" => [
+      "Kabutops's body flickers violently...",
+      "Pieces of its body vanish and reappear out of place.",
+      "Mysterious Lady: \"There we are...\"",
+      "\"Let's see what you've learned.\""
+    ]
+  },
+  "RoundEnd_2_foe" => {
+    "ignoreAfter" => "BattlerReachedHPCap_foe",
+    "text" => [
+      "Mysterious Lady watches from the sidelines with an amused smile.",
+      "\"Don't mind me. I'm merely observing.\""
+    ]
+  },
+
+  "RoundEnd_5_foe" => {
+    "ignoreAfter" => "BattlerReachedHPCap_foe",
+    "text" => [
+      "Mysterious Lady: \"Fascinating...\"",
+      "\"How much of this is strategy, I wonder...\"",
+      "\"And how much is simply habit?\""
+    ]
+  },
+  "BattlerReachedHPCap_foe" => {
+    "battlerHPCap" => 0,
+    "text_A" => [
+      "Kabutops's corrupted body violently distorts!",
+      "Mysterious Lady: \"Oh? Already?\"",
+      "\"Hmm... perhaps our experiment needs another variable.\"",
+      "She casually steps onto the battlefield.",
+      "\"Would you mind if I joined you?\""
+    ],
+	"addWild" => [:MYSTERYLADY, 65],
+    "text_B" => [
+      "Mysterious Lady enters the battle!",
+      "The space surrounding the battlefield begins to bend...",
+      "\"Now then... let's make this interesting.\""
+    ]
+  },
+  "TurnStart_2_foe" => {
+    "ignoreUntil" => "BattlerReachedHPCap_foe",
+    "text" => [
+      "Reality begins bending around Mysterious Lady...",
+      "A strange psychic pressure fills the air.",
+      "Mysterious Lady: \"Do you feel that?\""
+    ]
+  },
+  "TurnStart_3_foe" => {
+    "ignoreUntil" => "BattlerReachedHPCap_foe",
+    "changeTerrain" => :Psychic,
+	"battlerForm"   => [1],
+    "text" => [
+      "The distortion erupts across the battlefield!",
+      "The battlefield became strange!",
+      "Mysterious Lady: \"Wonderful! Now let's see what changes.\""
+    ]
+  },
+  "TurnStart_5_foe" => {
+    "ignoreUntil" => "BattlerReachedHPCap_foe",
+    "text" => [
+      "A strange mist begins leaking through cracks in reality...",
+      "Mysterious Lady: \"Oh? Something new is coming through.\""
+    ]
+  },
+  "TurnStart_6_foe" => {
+    "ignoreUntil" => "BattlerReachedHPCap_foe",
+    "changeTerrain" => :Misty,
+	"battlerForm"   => [2],
+    "text" => [
+      "The distortion shifts again!",
+      "A mysterious mist covers the battlefield!",
+      "Mysterious Lady: \"Not what I expected...\"",
+      "\"Keep it. This is more interesting.\""
+    ]
+  },
+  #===========================================================================
+  # DISTORTION 3 - ELECTRIC TERRAIN
+  #===========================================================================
+
+  "TurnStart_8_foe" => {
+    "ignoreUntil" => "BattlerReachedHPCap_foe",
+    "text" => [
+      "Static begins crackling through the distortion...",
+      "The battlefield hums with unstable energy.",
+      "Mysterious Lady: \"I wonder what THIS one does?\""
+    ]
+  },
+  "TurnStart_9_foe" => {
+    "ignoreUntil" => "BattlerReachedHPCap_foe",
+    "changeTerrain" => :Electric,
+	"battlerForm"   => [3],
+    "text" => [
+      "Electricity explodes across the battlefield!",
+      "The terrain became electrified!",
+      "Mysterious Lady: \"Hahaha! Wonderful!\""
+    ]
+  },
+
+  #===========================================================================
+  # DISTORTION 4 - GRASSY TERRAIN
+  #===========================================================================
+
+  "TurnStart_11_foe" => {
+    "ignoreUntil" => "BattlerReachedHPCap_foe",
+    "text" => [
+      "Plants begin pushing through cracks in reality...",
+      "Mysterious Lady: \"Now THAT certainly wasn't there before.\""
+    ]
+  },
+  "TurnStart_12_foe" => {
+    "ignoreUntil" => "BattlerReachedHPCap_foe",
+    "changeTerrain" => :Grassy,
+	"battlerForm"   => [4],
+    "text" => [
+      "The battlefield suddenly erupts with vegetation!",
+      "Mysterious Lady: \"Beautiful, isn't it?\""
+    ]
+  },
+  "BattlerHPCritical_foe" => {
+    "text_A" => [
+      "Kabutops suddenly freezes.",
+      "Its corrupted body begins tearing itself apart!",
+      "Mysterious Lady: \"...Oh.\"",
+      "\"Now THAT wasn't supposed to happen.\"",
+      "Streams of corrupted data lash toward Mysterious Lady!",
+      "\"Hahahaha!\"",
+      "\"Well then...\"",
+      "\"It would be terribly rude of me not to participate!\""
+    ],
+    "playSE" => "Anim/Charge",
+    "speech" => [
+      "\"Hahahahaha!\"",
+      "\"Do you feel it?!\"",
+      "\"No script! No certainty! No rules!\"",
+      "\"Just endless possibility!\""
+    ],
+    "playSE" => "Anim/Charge",
+    "playAnim" => [:NASTYPLOT, :Self],
+    "battlerStats" => [
+      :ATTACK, 2,
+      :SPECIAL_ATTACK, 2,
+      :SPEED, 2,
+      :DEFENSE, -2,
+      :SPECIAL_DEFENSE, -2
+    ]
+  },
+  "RoundEnd_foe_repeat_even" => {
+    "ignoreUntil" => "BattlerHPLow_foe",
+    "ignoreAfter" => "BattlerHPCritical_foe",
+    "playSE" => "Anim/Charge",
+    "text" => [
+      "The fusion sends another distortion rippling through reality!",
+      "\"Adapt! Improvise! Surprise me!\""
+    ]
+  },
+  "RoundEnd_2_foe" => {
+    "ignoreUntil" => "BattlerHPCritical_foe",
+    "changeTerrain" => :Electric,
+    "text" => [
+      "Static tears through the fractured battlefield!",
+      "Electric Terrain floods the distortion!"
+    ]
+  },
+  "RoundEnd_4_foe" => {
+    "ignoreUntil" => "BattlerHPCritical_foe",
+    "changeTerrain" => :Grassy,
+    "text" => [
+      "Reality shifts again!",
+      "Vegetation bursts through the broken battlefield!"
+    ]
+  },
+  "RoundEnd_6_foe" => {
+    "ignoreUntil" => "BattlerHPCritical_foe",
+    "changeTerrain" => :Psychic,
+    "text" => [
+      "The dimensions twist around the fusion!",
+      "Psychic energy floods the battlefield!"
+    ]
+  },
+  "RoundEnd_8_foe" => {
+    "ignoreUntil" => "BattlerHPCritical_foe",
+    "changeTerrain" => :Misty,
+    "text" => [
+      "The battlefield fractures once again!",
+      "A mysterious mist pours through the distortion!"
     ]
   }
 }
@@ -2865,7 +3181,10 @@ UNIONBEAST_MIDBATTLE = {
       :DEFENSE, -1,
       :SPECIAL_DEFENSE, -1
     ],
-    # Temporarily enable both PARASITICLOVE and MOTHERSINFLUENCE here.
+    "setBattler" => :Opposing,
+    "battlerStats" => [
+      :ATTACK, -1,
+      :SPECIAL_ATTACK, -1],
     "text_B" => [
       "Mother and daughter's consciousnesses synchronize!",
       "For a brief moment, both halves of Union Beast act as one!"

@@ -826,6 +826,23 @@ Quest13 = {
     :RewardString => ". . ." 
 	
    }
+   
+  EntrancingWish = {
+    :ID => "75",
+    :Name => "An Entrancing Wish",
+    :QuestGiver => "Lura",
+    :Stage1 => "Find Iono and Elisa"
+    :Stage2 => "Report to Stoic Lady",
+	:Stage3 => "Talk to Haxa Fans",
+	:Stage4 => "Confront Haxa",
+    :Location1 => "Mauville Gym",
+    :Location2 => "Route 119",
+	:Location3 => "Fortree City",
+	:Location4 => "Fortree Gym",
+    :QuestDescription => "Fortree City has fallen under the influence of a mysterious new star named Haxa. Help Lura investigate the festival, uncover what’s happening, and confront Haxa.",
+    :RewardString => "Captain Stern’s gratitude and a rare mechanical part!"
+	
+   }
   #======================================================#
   #                                                      #
   #                      "Official"                      #

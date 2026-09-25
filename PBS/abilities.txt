@@ -1315,3 +1315,7 @@ Description = Damaging a poisoned target restores HP and strengthens the user's 
 [MOTHERSINFLUENCE]
 Name = Mother's Influence
 Description = Status moves used on poisoned targets weaken their offense and strengthen the user's weaker defense.
+#-------------------------------
+[GLITCHADAPTATION]
+Name = Mother's Influence
+Description = Status moves used on poisoned targets weaken their offense and strengthen the user's weaker defense.

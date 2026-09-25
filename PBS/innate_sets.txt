@@ -204,3 +204,15 @@ Innates = DAMAGEARMOR,PARASITICLOVE
 #-------------------------------
 [UNIONBEAST_3]
 Innates = DAMAGEARMOR,MOTHERSINFLUENCE,PARASITICLOVE
+#-------------------------------
+[KABUTOPGLITCH_1]
+Innates = GRASSPELT,MAGICGUARD
+#-------------------------------
+[KABUTOPGLITCH_2]
+Innates = DAMAGEARMOR,MAGICGUARD
+#-------------------------------
+[KABUTOPGLITCH_3]
+Innates = QUARKDRIVE,MAGICGUARD
+#-------------------------------
+[KABUTOPGLITCH_4]
+Innates = GRASSPELT,MAGICGUARD
