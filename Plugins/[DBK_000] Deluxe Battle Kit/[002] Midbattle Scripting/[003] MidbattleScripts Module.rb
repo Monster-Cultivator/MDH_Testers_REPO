@@ -832,26 +832,50 @@ MIST_GRENINJA = {
 
 ANGRY_RALTS_RAMPAGE = {
   "RoundStartCommand_1_foe" => {
-    "text" => ["The Ralts stares at you with furious eyes, its rage palpable!"],
-    "setVariable" => 0, # Start hit/rage counter at 0
+    "setSpeaker" => :MUDKIP,
+    "speech" => [
+      "Wait... look at it.",
+      "That Ralts isn't normal anymore.",
+      "Sometimes a Pokemon develops such a strong sense of self that its body changes to match it.",
+      "That's what we call a Special Grade Pokemon.",
+      "And judging by that look on its face... anger is probably what shaped this one."
+    ],
+    "setVariable" => 0,
     "changeTerrain" => :Psychic
   },
+
   "TargetTookDamage_foe_repeat" => {
-    "addVariable" => 1, # Increment the hit counter
-    "text" => ["Ralts's rage intensifies from the pain!"]
+    "addVariable" => 1,
+    "text" => [
+      "Ralts's rage intensifies from the pain!"
+    ]
   },
+
   "VariableUp_repeat_every_3" => {
-    "text" => ["Ralts is in a full rampage! Its movements are unpredictable!"],
-    "battlerStats" => [:EVASION, 1, :DEFENSE, 1]
+    "text" => [
+      "Ralts's warped body reacts to its growing rage!"
+    ],
+    "battlerStats" => [
+      :SPECIAL_DEFENSE, 1,
+      :DEFENSE, 1
+    ]
   },
+
   "TargetHPHalf_foe" => {
-    "speech" => ["Ralts lets out a piercing scream, its power surging uncontrollably!"],
-    "battlerHP" => [20, "{1} channels its anger to recover some energy!"],
-    "battlerStats" => [:SPECIAL_ATTACK, 1, :SPECIAL_DEFENSE, 1],
+    "text" => [
+      "Ralts lets out a piercing scream, its identity overwhelming its original form!"
+    ],
+    "battlerStats" => [
+      :SPECIAL_ATTACK, 1,
+      :SPECIAL_DEFENSE, 1
+    ],
     "changeWeather" => :Hail
   },
+
   "BattlerFainted_foe" => {
-    "text" => ["The Ralts collapses, its rampage finally ended..."],
+    "text" => [
+      "The Ralts collapses, its rampage finally ended..."
+    ],
     "changeTerrain" => :None,
     "changeWeather" => :None
   }
@@ -1805,7 +1829,7 @@ DONPOLEON_MIDBATTLE = {
 MOTHERWAK_MIDBATTLE = {
 "RoundStartCommand_1_foe" => {
     "speech_A" => ["Thank you for protecting me MotherWak, I'm sorry."],
-	"battlerHPCap" => 49,
+	"battlerHPCap" => 30,
 	"setBattler" => :Opposing,
 	"teamEffects" => [:StealthRock, true, "{1} The ground obey's her motherly fury!"]
  },
@@ -1877,7 +1901,7 @@ SERPERIOR_MIDBATTLE = {
   },
   "VariableOver_3_repeat" => {
     "text" => ["{1} is ready!"],
-    "battlerStats" => [:SPEED, 1, :DEFENSE, 3, :SPECIAL_DEFENSE, 3],
+    "battlerStats" => [:SPEED, 1, :DEFENSE, 1, :SPECIAL_DEFENSE, 1],
 	"battlerMoves" => [:SPITUP,nil,nil,nil]
   },
   "AfterMove_SPITUP_repeat" => {
