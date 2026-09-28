@@ -843,6 +843,17 @@ Quest13 = {
     :RewardString => "Captain Stern’s gratitude and a rare mechanical part!"
 	
    }
+   
+   MotherSin = {
+    :ID => "76",
+    :Name => "Sins of the Mother",
+    :QuestGiver => "Wicke",
+    :Stage1 => "Track Lusamine",
+    :Location1 => "Granite Cave",
+    :QuestDescription => "Lusamine and Lillie are heading to that portal you found in Granite Cave! Go there and stop them!",
+    :RewardString => "Captain Stern’s gratitude and a rare mechanical part!"
+	
+   }
   #======================================================#
   #                                                      #
   #                      "Official"                      #
