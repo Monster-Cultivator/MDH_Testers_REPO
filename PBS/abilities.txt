@@ -1317,5 +1317,9 @@ Name = Mother's Influence
 Description = Status moves used on poisoned targets weaken their offense and strengthen the user's weaker defense.
 #-------------------------------
 [GLITCHADAPTATION]
-Name = Mother's Influence
+Name = Glitch Adaptation
 Description = Status moves used on poisoned targets weaken their offense and strengthen the user's weaker defense.
+#-------------------------------
+[ENRAGE]
+Name = Enrage
+Description = Reduces damage taken while the user is locked into a rampaging attack.

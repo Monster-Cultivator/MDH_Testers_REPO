@@ -395,3 +395,85 @@ Battle::AbilityEffects::OnBeingHit.add(:GLITCHADAPTATION,
     battle.pbHideAbilitySplash(target)
   }
 )
+
+#===============================================================================
+# Enrage
+#
+# While the user is locked into an Outrage-style rampage
+# (Outrage, Petal Dance, Thrash, etc.), damage taken is reduced by 25%.
+#===============================================================================
+Battle::AbilityEffects::DamageCalcFromTarget.add(:ENRAGE,
+  proc { |ability, user, target, move, multipliers, baseDmg, type|
+    next if target.effects[PBEffects::Outrage] <= 0
+
+    multipliers[:final_damage_multiplier] *= 0.75
+  }
+)
+
+#===============================================================================
+# EXECUTIONER
+#
+# If the user KOs a target with a Hyper Beam-style recharge move:
+# - Cancels the recharge turn.
+# - Raises the user's highest stat by 1 stage.
+#
+# If the move misses, fails, deals no damage, or doesn't KO:
+# - Recharge happens normally.
+#===============================================================================
+
+Battle::AbilityEffects::OnEndOfUsingMove.add(:EXECUTIONER,
+  proc { |ability, user, targets, move, battle|
+    next if !user.is_a?(Battle::Battler)
+    next if user.fainted?
+
+    # Only moves that use Hyper Beam's recharge effect.
+    next if move.function_code != "AttackAndSkipNextTurn"
+
+    # Check whether this move actually KO'd something.
+    num_fainted = 0
+
+    targets.each do |target|
+      next if !target
+      num_fainted += 1 if target.damageState.fainted
+    end
+
+    # No KO = keep the normal recharge.
+    next if num_fainted == 0
+
+    #---------------------------------------------------------------------------
+    # KO secured - remove recharge.
+    #---------------------------------------------------------------------------
+    user.effects[PBEffects::HyperBeam] = 0
+    user.currentMove = nil
+
+    battle.pbShowAbilitySplash(user)
+
+    battle.pbDisplay(
+      _INTL("{1} keeps its momentum after the knockout!", user.pbThis)
+    )
+
+    #---------------------------------------------------------------------------
+    # Find highest stat. Maybe I'll just make it an Omniboost?
+    #---------------------------------------------------------------------------
+
+    stats = {
+      :ATTACK          => user.attack,
+      :DEFENSE         => user.defense,
+      :SPECIAL_ATTACK  => user.spatk,
+      :SPECIAL_DEFENSE => user.spdef,
+      :SPEED           => user.speed
+    }
+
+    highest_value = stats.values.max
+    highest_stats = stats.select { |stat, value| value == highest_value }.keys
+
+    # Randomly choose if multiple stats are tied for highest.
+    stat_to_raise = highest_stats[battle.pbRandom(highest_stats.length)]
+
+    if user.pbCanRaiseStatStage?(stat_to_raise, user)
+      user.pbRaiseStatStage(stat_to_raise, 1, user)
+    end
+
+    battle.pbHideAbilitySplash(user)
+  }
+)
