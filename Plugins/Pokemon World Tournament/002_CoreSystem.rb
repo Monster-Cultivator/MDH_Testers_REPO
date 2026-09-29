@@ -71,11 +71,20 @@ class AdvancedWorldTournament
     GameData::PWTTournament.each do |t|
       $stats.pwt_loss[t.id] = 0 if $stats.pwt_loss[t.id].nil?
     end
+=begin
 	# Configures the win streak of the PWT
+  # Old, vanilla handling. Streaks do not carry over between tournaments. 
     $stats.pwt_win_streak = {} if $stats.pwt_win_streak.nil? || $stats.pwt_win_streak.is_a?(Array)
     GameData::PWTTournament.each do |t|
       $stats.pwt_win_streak[t.id] = 0 if $stats.pwt_win_streak[t.id].nil?
     end
+=end
+    # Configures the global PWT win streak
+    # New, based handling. Streaks carry between tournaments.
+    if $stats.pwt_win_streak.nil? || !$stats.pwt_win_streak.is_a?(Integer)
+      $stats.pwt_win_streak = 0
+    end
+
     # Playes the introductory dialogue
     self.introduction
     pbMapInterpreter.command_end if pbMapInterpreterRunning?
@@ -112,21 +121,21 @@ class AdvancedWorldTournament
   end
   
   def streak_multiplier
-	mult = 1
-	if $stats.pwt_win_streak[@tournament_id] >= 50
-	  mult = 10
-	elsif $stats.pwt_win_streak[@tournament_id] >= 25
-	  mult = 5
-	elsif $stats.pwt_win_streak[@tournament_id] >= 10
-	  mult = 3
-	elsif $stats.pwt_win_streak[@tournament_id] >= 5
-	  mult = 2
-	else
-	  mult = 1
-	end
-	return mult
+    mult = 1
+
+    if $stats.pwt_win_streak >= 50
+      mult = 10
+    elsif $stats.pwt_win_streak >= 25
+      mult = 5
+    elsif $stats.pwt_win_streak >= 10
+      mult = 3
+    elsif $stats.pwt_win_streak >= 5
+      mult = 2
+    end
+
+    return mult
   end
-  
+
   def continue
     @oldParty = $player.party
     $player.party = @modified_party
@@ -137,28 +146,52 @@ class AdvancedWorldTournament
     self.endFanfare if ret == "win"
     @current_location.push(true)
     self.transferPlayer(*@current_location)
+    
+    # Idite Code, fixes win totaling.
     case ret
     when "win"
-	  total_points = GameData::PWTTournament.get(@tournament_id).points_won
-	  pbMessage(_INTL("Congratulations on today's win.\\1"))
-	  if PWTSettings::PWT_STREAK_MULT && $stats.pwt_win_streak[@tournament_id] >= 5
-	    total_points = total_points * streak_multiplier
-		pbMessage(_INTL("Accounting for your current win streak, you have earned {1} BP.\\1",total_points))
-		pbMessage(_INTL("\\pn was awarded {1} Battle Points!\\me[BP Fanfare]\\wtnp[80]",total_points))
-	  else
-		pbMessage(_INTL("For your victory you have earned {1} BP.\\1",total_points))
-		pbMessage(_INTL("\\pn was awarded {1} Battle Points!\\me[BP Fanfare]\\wtnp[80]",total_points))
-	  end
-      pbMessage(_INTL("We hope to see you again."))
+      # Increase wins/streak before calculating the reward.
       $stats.pwt_wins[@tournament_id] += 1
+      $stats.pwt_win_streak += 1
+
+      total_points = GameData::PWTTournament.get(@tournament_id).points_won
+
+      pbMessage(_INTL("Congratulations on today's win.\\1"))
+
+      if PWTSettings::PWT_STREAK_MULT && $stats.pwt_win_streak >= 5
+        total_points *= streak_multiplier
+
+        pbMessage(_INTL(
+          "Accounting for your current {1}-win streak, you have earned {2} BP.\\1",
+          $stats.pwt_win_streak,
+          total_points
+        ))
+      else
+        pbMessage(_INTL(
+          "For your victory you have earned {1} BP.\\1",
+          total_points
+        ))
+      end
+
+      pbMessage(_INTL(
+        "\\pn was awarded {1} Battle Points!\\me[BP Fanfare]\\wtnp[80]",
+        total_points
+      ))
+
       $player.battle_points += total_points
-	  $stats.pwt_win_streak[@tournament_id] += 1
+
+      pbMessage(_INTL("We hope to see you again."))
       self.endTournament
+
     when "loss"
       pbMessage(_INTL("I'm sorry that you lost this tournament.\\1"))
       pbMessage(_INTL("Maybe you'll have better luck next time."))
-	  $stats.pwt_loss[@tournament_id] += 1
-	  $stats.pwt_win_streak[@tournament_id] = 0
+
+      $stats.pwt_loss[@tournament_id] += 1
+
+      # Any PWT tournament loss breaks the overall streak.
+      $stats.pwt_win_streak = 0
+
       self.cancelEntry
     end
     $player.party = @oldParty

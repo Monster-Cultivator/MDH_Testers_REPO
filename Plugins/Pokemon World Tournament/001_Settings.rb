@@ -174,7 +174,7 @@ GameData::PWTTournament.register({
   :banned_proc => proc {
     pbMessage(_INTL("Certain exotic species, as well as eggs, are ineligible.\\1"))
   },
-  :points_won => 2
+  :points_won => 8
 })
 
 #Hoenn Leaders
@@ -212,7 +212,7 @@ GameData::PWTTournament.register({
   :banned_proc => proc {
     pbMessage(_INTL("Certain exotic species, as well as eggs, are ineligible.\\1"))
   },
-  :points_won => 2
+  :points_won => 8
 })
 
 #Sinnoh Leaders
@@ -248,7 +248,7 @@ GameData::PWTTournament.register({
   :banned_proc => proc {
     pbMessage(_INTL("Certain exotic species, as well as eggs, are ineligible.\\1"))
   },
-  :points_won => 2
+  :points_won => 8
 })
 
 =begin
