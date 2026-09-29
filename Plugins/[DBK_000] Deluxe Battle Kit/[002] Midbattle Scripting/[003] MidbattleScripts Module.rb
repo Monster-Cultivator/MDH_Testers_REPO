@@ -833,6 +833,7 @@ MIST_GRENINJA = {
 ANGRY_RALTS_RAMPAGE = {
   "RoundStartCommand_1_foe" => {
     "setSpeaker" => :MUDKIP,
+	"battlerHPCap" => 70,
     "speech" => [
       "Wait... look at it.",
       "That Ralts isn't normal anymore.",
@@ -841,7 +842,17 @@ ANGRY_RALTS_RAMPAGE = {
       "And judging by that look on its face... anger is probably what shaped this one."
     ],
     "setVariable" => 0,
-    "changeTerrain" => :Psychic
+  },
+  
+  "BattlerReachedHPCap_foe" => {
+    "battlerHPCap" => 0,
+	"changeTerrain" => :Psychic,
+	"setSpeaker" => :MUDKIP,
+    "speech" => [
+     "Wow, you’re really kipping it up!",
+	 "Be careful! Some powerful Pokémon will reveal new abilities when injured!",
+	 "This Ralts has created a terrain that powers up its Psychic-type attacks."
+    ]
   },
 
   "TargetTookDamage_foe_repeat" => {
@@ -861,28 +872,33 @@ ANGRY_RALTS_RAMPAGE = {
     ]
   },
 
-  "TargetHPHalf_foe" => {
+  "BattlerHPCritical_foe" => {
     "text" => [
       "Ralts lets out a piercing scream, its identity overwhelming its original form!"
     ],
+	"setSpeaker" => :MUDKIP,
+    "speech" => [
+     "At low HP, a Pokémon enters its Desperation Phase!",
+	"It goes all out in one final, kipping moment!",
+	"During this phase, items are disabled, so be careful!"
+    ],
+	"changeWeather" => :Hail,
+	"disableItems" => true,
     "battlerStats" => [
       :SPECIAL_ATTACK, 1,
       :SPECIAL_DEFENSE, 1
-    ],
-    "changeWeather" => :Hail
+    ]
   },
 
   "BattlerFainted_foe" => {
     "text" => [
       "The Ralts collapses, its rampage finally ended..."
-    ],
-    "changeTerrain" => :None,
-    "changeWeather" => :None
+    ]
   }
 }
 
 # Vaporeon Boss Fight
-VAPOREON_MIDBATTLE   = {
+VAPOREON_MIDBATTLE  = {
   # Lol. Lmao, even. 
   "RoundEnd_foe_repeat" => {
     "ignoreAfter" => "BattlerReachedHPCap_foe",
@@ -1024,8 +1040,8 @@ SMEARGLE_MIDBATTLE = {
 	"battlerForm" => 4,
     "playSE" => "Anim/GrassyTerrain"
   },
-  "BattlerHPLow_foe" => {
-    "ignoreAfter" => "BattlerHPLow_foe",
+  "BattlerHPCritical_foe" => {
+    "ignoreAfter" => "BattlerHPCritical_foe",
     "speech" => ["Sme...argle! (defiant)"],
     "text" => ["{1} shakes off ailments with artistic resolve!"],
     "playSE" => "Anim/Splash"
@@ -1211,8 +1227,8 @@ MARACTUS_MIDBATTLE = {
     "text" => ["{1} enters a frenzied dance, boosting its power!"],
     "playSE" => "Anim/SwordsDance"
   },
-  "BattlerHPLow_foe" => {
-    "ignoreAfter" => "BattlerHPLow_foe",
+  "BattlerHPCritical_foe" => {
+    "ignoreAfter" => "BattlerHPCritical_foe",
     "battlerStatus" => [:None, "{1} shakes off the funk!"],
     "battlerHP" => [25, "{1} heals with a healing melody!"],
     "playSE" => "Anim/HealBell",
@@ -2951,7 +2967,7 @@ MYSTERIOUS_LADY2_MIDBATTLE = {
     ]
   },
   "RoundEnd_foe_repeat_even" => {
-    "ignoreUntil" => "BattlerHPLow_foe",
+    "ignoreUntil" => "BattlerHPCritical_foe",
     "ignoreAfter" => "BattlerHPCritical_foe",
     "playSE" => "Anim/Charge",
     "text" => [
