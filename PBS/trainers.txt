@@ -6376,7 +6376,7 @@ Pokemon = KINGLER,50
     EV = 252,0,0,252,0,4
     Ball = NESTBALL
 #-------------------------------------
-[LEADER_Tate,Tate,1]
+[LEADER_Tate,Tate,3]
     LoseText = "If I would've battled you with Liza... Ugh!"
 Pokemon = GENGAR,50
     Moves = SHADOWBALL,SLUDGEBOMB,MOONBLAST,DESTINYBOND
