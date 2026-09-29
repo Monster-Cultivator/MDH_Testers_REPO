@@ -39,6 +39,7 @@ module QuestModule
   # Here's an example of not defining the quest giver and reward text
   Quest4 = {
     :ID => "4",
+	:QuestPage => :STORY
     :Name => "Emotion known as rage",
     :QuestGiver => "Whitney",
     :Stage1 => "Seek out the mad Ralts!",
@@ -206,6 +207,7 @@ Quest13 = {
 }
     Quest20 = {
     :ID => "20",
+	:QuestPage => :STORY
     :Name => "Step into the Grand Tour",
     :QuestGiver => "Goddess",
     :Stage1 => "Check out the town",
@@ -263,6 +265,7 @@ Quest13 = {
 
     Quest21 = {
     :ID => "21",
+	:QuestPage => :STORY
     :Name => "Roxanne's request",
     :QuestGiver => "Roxanne",
     :Stage1 => "Retrieve Fossils",
@@ -451,6 +454,7 @@ Quest13 = {
 }
     Quest41 = {
     :ID => "41",
+	:QuestPage => :OAK
     :Name => "Sign of Love: Lapras",
     :QuestGiver => "Lapras",
     :Stage1 => "Increase her Affinity",
@@ -460,6 +464,7 @@ Quest13 = {
 }
     Quest42 = {
     :ID => "42",
+	:QuestPage => :OAK
     :Name => "Sign of Love: Machoke",
     :QuestGiver => "Machoke",
     :Stage1 => "Increase her Affinity",
@@ -489,6 +494,7 @@ Quest13 = {
 }
     Quest45 = {
     :ID => "45",
+	:QuestPage => :OAK
     :Name => "Sign of Love: Feebas",
     :QuestGiver => "Feebas",
     :Stage1 => "Increase her Affinity",
@@ -498,6 +504,7 @@ Quest13 = {
 }
     Quest46 = {
     :ID => "46",
+	:QuestPage => :OAK
     :Name => "Sign of Love: Sneasel",
     :QuestGiver => "Sneasel",
     :Stage1 => "Increase her Affinity",
@@ -728,6 +735,7 @@ Quest13 = {
 
    Quest66 = {
     :ID => "66",
+	:QuestPage => :OAK
     :Name => "Sign of Love: Greninja",
     :QuestGiver => "Greninja",
     :Stage1 => "Increase her Affinity",
@@ -739,6 +747,7 @@ Quest13 = {
 
     Quest67 = {
     :ID => "67",
+	:QuestPage => :OAK
     :Name => "Sign of Love: Goodra",
     :QuestGiver => "Goodra",
     :Stage1 => "Increase her Affinity",
@@ -783,6 +792,7 @@ Quest13 = {
 
     Quest71 = {
     :ID => "71",
+	:QuestPage => :OAK
     :Name => "Sign of Love: Maractus",
     :QuestGiver => "Maractus",
     :Stage1 => "Increase her Affinity",
@@ -794,6 +804,7 @@ Quest13 = {
  
     Quest72 = {
     :ID => "72",
+	:QuestPage => :OAK
     :Name => "Sign of Love: Flygon",
     :QuestGiver => "Flygon",
     :Stage1 => "Increase her Affinity",
