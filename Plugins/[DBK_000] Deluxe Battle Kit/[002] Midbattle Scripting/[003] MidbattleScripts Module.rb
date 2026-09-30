@@ -1845,18 +1845,25 @@ DONPOLEON_MIDBATTLE = {
 MOTHERWAK_MIDBATTLE = {
 "RoundStartCommand_1_foe" => {
     "speech_A" => ["Thank you for protecting me MotherWak, I'm sorry."],
-	"battlerHPCap" => 30,
+	"battlerHPCap" => 70,
 	"setBattler" => :Opposing,
+	"setVariable" => 0,
 	"teamEffects" => [:StealthRock, true, "{1} The ground obey's her motherly fury!"]
  },
-"AfterPhysicalMove_player_repeat_random_25" => {
+ "BattlerReachedHPCap_foe" => {
+	"changeWeather" => :Sandstorm,
+	"text" => ["{1} slams her club and summons a sandstorm!"]
+ },     
+"RoundEnd_foe_repeat_every_3" => {
     "setBattler" => :Self, 
-    "battlerStatus" => [:SLEEP, "{1} is hugged in a motherly embrace and falls asleep!"],
+    "battlerStats" => [:ATTACK, 1, :DEFENSE, 1],
     "playSE" => "Anim/Heal"
 },
-"BattlerHPHalf_foe" => {
+"BattlerHPCritical_foe" => {
+    "disableItems" => true,
+	"battlerStatus" => :NONE,
     "megaEvolve" => "You can feel her love, her anger, and all of her sorrow!",
-	"battlerStats" => [:ATTACK, 1, :SPECIAL_ATTACK, 1, :DEFENSE, 1, :SPECIAL_DEFENSE, 1]
+	"battlerStats" => [:ATTACK, 1, :DEFENSE, 1, :SPECIAL_DEFENSE, 1]
   }
  }
 
