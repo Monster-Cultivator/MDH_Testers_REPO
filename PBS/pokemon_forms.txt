@@ -476,10 +476,13 @@ Generation = 7
 RaidRanks = 3,4
 #-------------------------------
 [MAROWAKx,1]
+FormName = Damage Cap
+#-------------------------------
+[MAROWAKx,2]
 FormName = Mega Motherwak
 MegaMove = SHADOWBONE
 Types = FIRE,GHOST
-BaseStats = 125,150,120,30,70,140
+BaseStats = 145,150,120,30,70,90
 Abilities = PARENTALBOND
 HiddenAbilities = CURSEDBODY
 Moves = 1,BONEMERANG,1,KNOCKOFF,1,GLARE,1,SHADOWBONE

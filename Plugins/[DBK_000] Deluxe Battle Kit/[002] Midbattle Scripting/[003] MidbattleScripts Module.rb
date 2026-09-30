@@ -1846,24 +1846,24 @@ MOTHERWAK_MIDBATTLE = {
 "RoundStartCommand_1_foe" => {
     "speech_A" => ["Thank you for protecting me MotherWak, I'm sorry."],
 	"battlerHPCap" => 70,
+	"battlerForm"   => [1],
 	"setBattler" => :Opposing,
-	"setVariable" => 0,
 	"teamEffects" => [:StealthRock, true, "{1} The ground obey's her motherly fury!"]
- },
- "BattlerReachedHPCap_foe" => {
-	"changeWeather" => :Sandstorm,
-	"text" => ["{1} slams her club and summons a sandstorm!"]
  },     
 "RoundEnd_foe_repeat_every_3" => {
     "setBattler" => :Self, 
     "battlerStats" => [:ATTACK, 1, :DEFENSE, 1],
     "playSE" => "Anim/Heal"
 },
+"BattlerReachedHPCap_foe" => {
+    "battlerHPCap" => 0,
+	"battlerForm"   => [0]
+},	
 "BattlerHPCritical_foe" => {
     "disableItems" => true,
 	"battlerStatus" => :NONE,
     "megaEvolve" => "You can feel her love, her anger, and all of her sorrow!",
-	"battlerStats" => [:ATTACK, 1, :DEFENSE, 1, :SPECIAL_DEFENSE, 1]
+	"battlerStats" => [:ATTACK, 2, :DEFENSE, 1, :SPECIAL_DEFENSE, 1]
   }
  }
 

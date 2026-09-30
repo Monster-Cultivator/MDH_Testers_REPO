@@ -121,8 +121,14 @@ Innates = COWED,SURGESURFER,BEASTBOOST
 [ENTEIh]
 Innates = OVERCOAT,THERMALEXCHANGE,BEASTBOOST
 #-------------------------------
+[MAROWAKx]
+Innates = KEENEYE,ROCKHEAD,INTIMIDATE
+#-------------------------------
 [MAROWAKx_1]
-Innates = FILTER,JUSTIFIED,ROCKHEAD
+Innates = KEENEYE,ROCKHEAD,MAGICGUARD
+#-------------------------------
+[MAROWAKx_2]
+Innates = KEENEYE,ROCKHEAD,INTIMIDATE
 #-------------------------------
 [DRAGONITE_1]
 Innates = PHOENIXDOWN,AERILATE

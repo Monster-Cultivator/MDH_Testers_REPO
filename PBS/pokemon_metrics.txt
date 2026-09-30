@@ -9936,7 +9936,7 @@ DmaxFrontSprite = 0,0
 #-------------------------------
 [MAROWAKx]
 BackSprite = 0,0
-FrontSprite = 0,3
+FrontSprite = 0,5
 ShadowX = 0
 ShadowSize = 2
 DmaxFrontSprite = 0,0
@@ -10399,13 +10399,6 @@ ShadowSize = 3
 DmaxBackSprite = 0,0
 DmaxFrontSprite = 0,27
 #-------------------------------
-[MAROWAKx,1]
-BackSprite = 0,0
-FrontSprite = 0,13
-ShadowX = 0
-ShadowSize = 2
-DmaxFrontSprite = 0,0
-#-------------------------------
 [ABSOL_2,2]
 BackSprite = 0,0
 FrontSprite = -2,15
@@ -10622,6 +10615,49 @@ DmaxFrontSprite = 0,0
 [VAPOREONmgq]
 BackSprite = 0,0
 FrontSprite = -11,13
+ShadowX = 0
+ShadowSize = 2
+DmaxFrontSprite = 0,0
+#-------------------------------
+[SLITHERQUEEN]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[FLYGONh]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[HYBRIDJENNY]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[KABUTOPGLITCH]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[KATE]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[LUXRAYgs]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[MAROWAKx,2]
+BackSprite = 0,0
+FrontSprite = 0,13
 ShadowX = 0
 ShadowSize = 2
 DmaxFrontSprite = 0,0
