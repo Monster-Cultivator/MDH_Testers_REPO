@@ -1850,7 +1850,7 @@ MOTHERWAK_MIDBATTLE = {
 	"setBattler" => :Opposing,
 	"teamEffects" => [:StealthRock, true, "{1} The ground obey's her motherly fury!"]
  },     
-"RoundEnd_foe_repeat_every_3" => {
+"RoundEnd_foe_repeat_every_4" => {
     "setBattler" => :Self, 
     "battlerStats" => [:ATTACK, 1, :DEFENSE, 1],
     "playSE" => "Anim/Heal"
@@ -1863,7 +1863,7 @@ MOTHERWAK_MIDBATTLE = {
     "disableItems" => true,
 	"battlerStatus" => :NONE,
     "megaEvolve" => "You can feel her love, her anger, and all of her sorrow!",
-	"battlerStats" => [:ATTACK, 2, :DEFENSE, 1, :SPECIAL_DEFENSE, 1]
+	"battlerStats" => [:ATTACK, 1, :DEFENSE, 1, :SPECIAL_DEFENSE, 1]
   }
  }
 
