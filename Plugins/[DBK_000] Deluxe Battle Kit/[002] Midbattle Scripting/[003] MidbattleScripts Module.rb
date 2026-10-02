@@ -1956,7 +1956,7 @@ SERPERIOR_MIDBATTLE = {
 LOPUNNY_MIDBATTLE = {
   "RoundStartCommand_1_foe" => {
     "setVariable" => 0,
-	"battlerHPCap" => 49,
+	"battlerHPCap" => 70,
 	"setBattler" => :Opposing,
     "teamEffects" => [:StealthRock, true, "Pointed stones float around the foe's party!"],
     "text" => ["{1} scattered pointed stones across the battlefield!"]
@@ -2000,13 +2000,17 @@ LOPUNNY_MIDBATTLE = {
 HOUNDOOM_MIDBATTLE = {
 "RoundStartCommand_1_foe" => {
     "setVariable" => 0,
-	"battlerHPCap" => 50,
+	"battlerHPCap" => 70,
     "text" => ["{1} Seems to want to test your might!"]
   },
   "UserDealtDamage_foe_repeat" => {
     "addVariable" => 1,
 	"text" => ["{1} is feeling herself!"]
   },
+ "BattlerReachedHPCap_foe" => {
+    "battlerHPCap" => 0,
+	"battlerForm"   => [0]
+},	
   "VariableUp_repeat_every_4" => {
     "setBattler"   => :Self,
     "battlerStats" => [:ATTACK, 1, :SPECIAL_DEFENSE, 1, :SPEED, 1],
@@ -2021,7 +2025,7 @@ HOUNDOOM_MIDBATTLE = {
 HOUNDOOM_REMATCH_MIDBATTLE = {
 "RoundStartCommand_1_foe" => {
     "setVariable" => 0,
-	"battlerHPCap" => 49,
+	"battlerHPCap" => 70,
     "text" => ["{1} Seems to want to test your might!"]
   },
   "UserDealtDamage_foe_repeat" => {
