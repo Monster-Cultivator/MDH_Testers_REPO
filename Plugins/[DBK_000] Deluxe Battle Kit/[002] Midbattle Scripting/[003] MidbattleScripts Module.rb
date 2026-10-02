@@ -1660,38 +1660,39 @@ BANETTE_MIDBATTLE   = {
 ZOE_MIDBATTLE   = {
 "RoundStartCommand_1_foe" => {
     "speech_A" => ["You will experence the might of Zoe, Grizzbolt, and the Rayne Syndicate!"],
-	"changeTerrain" => :Electric,
 	"teamEffects" => [:Chargestone, "There seems to be some kind of explosive ordnance!"],
-	"battlerStats" => [:SPECIAL_ATTACK, 1, :DEFENSE, 2],
-    "battlerHPCap" => 49,
+    "battlerHPCap" => 70,
 	"text" => ["The hair on you arms are standing, Something Powerful is coming"]
 	},
-"RoundEnd_foe_repeat_even" => {
-	"ignoreAfter"	=> "BattlerReachedHPCap_foe",
-    "playSE"        => "Anim/Sound2",
-    "battlerForm"   => [1, "{1} got the glock!"],
-    "playCry"       => :Self,
-	"battlerMoves" => [:EMBARGO, :TRIATTACK, :ARMORPIERCER, :NASTYPLOT],
-    "battlerHP"     => [4, "{1} regenerated some HP!"]
-  },
- "RoundEnd_foe_repeat_odd" => {
-    "ignoreAfter"   => "BattlerReachedHPCap_foe",
-    "playSE"        => "Anim/Sound2",
-    "battlerForm"   => [0, "{1} Grizzbolt is ready!"],
-    "playCry"       => :Self,
-	"battlerMoves" => [:FLAMETHROWER, :WATERPULSE, :SHOCKWAVE, :ENERGYBALL],
-    "battlerHP"     => [4, "{1} regenerated some HP!"]
-  },
 "BattlerReachedHPCap_foe" => {
     "speech_A" => ["Time to pull out all the stops!"],
 	"playSE"        => "Anim/Sound2",
-    "battlerForm"   => [2, "{1} Grizzbolt's gun is running!!"],
-	"battlerMoves" => [:FLAMETHROWER, :HYDROSTEAM, :SHOCKWAVE, :GATLINGRUSH],
+  },
+"RoundEnd_foe_repeat_even" => {
+	"ignoreUntil"   => "BattlerReachedHPCap_foe",
+    "playSE"        => "Anim/Sound2",
+    "battlerForm"   => [1, "{1} got the glock!"],
+    "playCry"       => :Self,
+    "battlerHP"     => [2, "{1} regenerated some HP!"]
+  },
+ "RoundEnd_foe_repeat_odd" => {
+    "ignoreUntil"   => "BattlerReachedHPCap_foe",
+    "playSE"        => "Anim/Sound2",
+    "battlerForm"   => [0, "{1} Grizzbolt is ready!"],
+    "playCry"       => :Self,
+    "battlerHP"     => [2, "{1} regenerated some HP!"]
   },
 "RoundEnd_foe" => {
     "ignoreUntil"   => "BattlerReachedHPCap_foe",
     "playCry"       => :Self,
-    "battlerHP"     => [6, "{1} regenerated some HP!"]
+    "battlerHP"     => [4, "{1} regenerated some HP!"]
+  },
+"BattlerHPCritical_foe" => {
+    "disableItems" => true,
+	"battlerStatus" => :NONE,
+	"changeTerrain" => :Electric,
+    "battlerForm"   => [2, "{1} Grizzbolt's gun is running!!"],
+	"battlerStats" => [:SPECIAL_ATTACK, 1, :DEFENSE, 1, :SPECIAL_DEFENSE, 1]
   }
  }
  

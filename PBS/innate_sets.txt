@@ -109,6 +109,18 @@ Innates = EXFLAMEBODY
 [MISMAGIUS_1]
 Innates = BEADSOFRUIN
 #-------------------------------
+[ZOEGRIZZBOLT]
+Innates = FILTER,MAGICGUARD
+#-------------------------------
+[ZOEGRIZZBOLT_1]
+Innates = FILTER,MOTORDRIVE,STATIC
+#-------------------------------
+[ZOEGRIZZBOLT_2]
+Innates = FILTER,SERENEGRACE,STATIC
+#-------------------------------
+[ZOEGRIZZBOLT_3]
+Innates = SKILLLINK,FILTER,MOLDBREAKER
+#-------------------------------
 [LUXRAY_1]
 Innates = DARKAURA
 #-------------------------------

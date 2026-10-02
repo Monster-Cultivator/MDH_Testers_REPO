@@ -2966,14 +2966,17 @@ BaseStats = 5,120,30,220,95,40
 Pokedex = What... what is that thing?
 #--------------------------------
 [ZOEGRIZZBOLT,1]
+FormName = Damage Cap
+Moves = 0,SHOCKWAVE,1,INCINERATE,1,BRINE,1,CALMMIND
+#--------------------------------
+[ZOEGRIZZBOLT,2]
 FormName = Zoe
 Moves = 0,STRENGTHSAP,1,TRIATTACK,1,ARMORPIERCER,1,NASTYPLOT
 #--------------------------------
-[ZOEGRIZZBOLT,2]
+[ZOEGRIZZBOLT,3]
 FormName = Gatlin form
-Abilities = SKILLLINK
-BaseStats = 160,105,110,200,250,110
-Moves = 0,STRENGTHSAP,1,TRIATTACK,1,ARMORPIERCER,1,GATLINGRUSH
+BaseStats = 160,105,110,90,200,110
+Moves = 0,RISINGVOLTAGE,1,SEARINGSHOT,1,SNIPESHOT,1,GATLINGRUSH
 #--------------------------------
 [SMEARGLEsg,1]
 FormName = Clone
