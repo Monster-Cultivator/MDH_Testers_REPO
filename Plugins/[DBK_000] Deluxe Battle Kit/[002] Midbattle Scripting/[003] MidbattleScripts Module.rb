@@ -1619,8 +1619,7 @@ GYM4_MIDBATTLE   = {
   }
 }
 =end
-GYM5_MIDBATTLE   = {
-  # Regimimilk
+MILTANK_MIDBATTLE   = {
   "RoundStartCommand_1_foe" => {
     "speech" => ["Alright! It's time for my ace in the hole!"],
     "battlerHPCap" => 70,
