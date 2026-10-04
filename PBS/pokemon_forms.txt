@@ -3054,6 +3054,15 @@ Generation = 6
 FormName = Released Form
 BaseStats = 80,29,105,90,150,103
 #-------------------------------
+[BRAIXENx,1]
+FormName = Damage Cap
+#-------------------------------
+[MILTANKx,1]
+FormName = Damage Cap
+#-------------------------------
+[MILTANKx,2]
+FormName = Desperation
+#-------------------------------
 [HOUNDOURh,1]
 FormName = No cap
 Evolutions = HOUNDOOMh,Level,24

@@ -8000,6 +8000,18 @@ FunctionCode = MultiTurnAttackPowersUpEachTurn
 Flags = Contact,CanProtect,CanMirrorMove
 Description = The user continually rolls into the target over five turns. It becomes stronger each time it hits.
 #-------------------------------
+[ROLLOUTEX]
+Name = Rollout
+Type = ROCK
+Category = Physical
+Power = 45
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = MultiTurnAttackPowersUpEachTurn
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user continually rolls into the target over five turns. It becomes stronger each time it hits.
+#-------------------------------
 [ROCKBLAST]
 Name = Rock Blast
 Type = ROCK

@@ -199,6 +199,21 @@ Innates = RIVALRY,INTIMIDATE,DEFIANT
 [HOUNDOOMh]
 Innates = RIVALRY,INTIMIDATE,DEFIANT
 #-------------------------------
+[BRAIXENx]
+Innates = SOULHEART,WONDERSKIN,MAGICGUARD
+#-------------------------------
+[BRAIXENx_1]
+Innates = SOULHEART,WONDERSKIN,SERENEGRACE
+#-------------------------------
+[MILTANKx]
+Innates = SLOWSTART,DAMAGEARMOR
+#-------------------------------
+[MILTANKx_1]
+Innates = SAPSIPPER,SCRAPPY,HARDBODY
+#-------------------------------
+[MILTANKx_2]
+Innates = SAPSIPPER,TINTEDLENS,HARDBODY
+#-------------------------------
 [MOTHERBEAST]
 Innates = DAMAGEARMOR,MAGICGUARD
 #-------------------------------

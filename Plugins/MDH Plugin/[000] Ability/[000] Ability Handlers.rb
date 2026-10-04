@@ -477,3 +477,41 @@ Battle::AbilityEffects::OnEndOfUsingMove.add(:EXECUTIONER,
     battle.pbHideAbilitySplash(user)
   }
 )
+
+#===============================================================================
+# GUARDIANLINK (Braixen)
+#
+# While the Pokemon with this ability is on the field Braixen gains 25% DR.
+#===============================================================================
+
+Battle::AbilityEffects::DamageCalcFromTargetAlly.add(:GUARDIANLINK,
+  proc { |ability, user, target, move, mults, power, type, ally|
+    next if target.fainted?
+
+    # Defines the ally you want protected
+    next if !target.isSpecies?(:BRAIXENx)
+
+    mults[:final_damage_multiplier] *= 0.75
+  }
+)
+
+#===============================================================================
+# HARDBODY
+#
+# Physical moves use the user's Defense instead of Attack.
+#===============================================================================
+
+class Battle::Move
+  alias hardbody_pbGetAttackStats pbGetAttackStats
+
+  def pbGetAttackStats(user, target)
+    # If this is a physical move and the user has Iron Body,
+    # use Defense instead of Attack.
+    if physicalMove? && user.hasActiveAbility?(:HARDBODY)
+      return user.defense,
+             user.stages[:DEFENSE] + Battle::Battler::STAT_STAGE_MAXIMUM
+    end
+
+    return ironbody_pbGetAttackStats(user, target)
+  end
+end

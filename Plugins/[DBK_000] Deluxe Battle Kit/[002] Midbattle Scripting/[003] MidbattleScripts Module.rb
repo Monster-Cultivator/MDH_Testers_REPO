@@ -1621,34 +1621,50 @@ GYM4_MIDBATTLE   = {
 =end
 GYM5_MIDBATTLE   = {
   # Regimimilk
-  "RoundStartCommand_1_foe" => {  # Replace "MILTANKx" with whatever the ID for SG Miltank is. 
+  "RoundStartCommand_1_foe" => {
     "speech" => ["Alright! It's time for my ace in the hole!"],
-    "battlerStats" => [:SPEED, -2],
-    "text" => ["{1} can't get it going because of her Slow Start!"]
+    "battlerHPCap" => 70,
+	"text" => ["{1} can't get it going because of her Slow Start!"]
+  },
+  "BattlerReachedHPCap_foe" => {
+    "speech_A" => ["Time to pull out all the stops!"],
+	"battlerForm"   => [1, "{1} got the glock!"],
+	"playSE"        => "Anim/Sound2",
+  },
+  "RoundEnd_foe_repeat_every_5" => {
+    "setBattler" => :Self, 
+    "battlerStats" => [:ATTACK, 1, :DEFENSE, 1],
+    "playSE" => "Anim/Heal"
   },
   "BeforeStatusMove_foe" => {
+    "ignoreUntil" => "BattlerReachedHPCap_foe",
     "ignoreAfter" => "Variable_3",
     "addVariable" => [1]
   },
   "Variable_1" => {
     "text" => ["{1} needs a drink!"],
-    "battlerHP" => 20,
+    "battlerHP" => 5,
     "battlerStats" => [:SPEED, 1, :DEFENSE, 1]
   },
   "Variable_2" => {
     "text" => ["{1} is getting it together!"],
-    "battlerHP" => 20,
+    "battlerHP" => 5,
     "battlerStats" => [:SPEED, 1, :DEFENSE, 1, :SPECIAL_DEFENSE, 1]
   },
   "Variable_3" => {
     "text" => ["{1} is ready!"],
-    "battlerHP" => 20,
-    "battlerStats" => [:SPEED, 1, :DEFENSE, 1, :SPECIAL_DEFENSE, 1],
-    "battlerMoves" => [:ROLLOUT,nil,nil,nil],
-    "battlerEffects" => [:Rollout, 3, "{1} is ready to rock and roll(out)!"]
+    "battlerHP" => 5,
+    "battlerStats" => [:SPEED, 1, :DEFENSE, 1, :SPECIAL_DEFENSE, 1]
+   },
+   "BattlerHPCritical_foe" => {
+    "disableItems" => true,
+	"battlerStatus" => :NONE,
+    "battlerForm"   => [2, "{1} is hard body baby!!"],
+	"battlerMoves" => [:ROLLOUT,nil,nil,nil],
+    "battlerEffects" => [:Rollout, 3, "{1} is ready to rock and roll(out)!"],
+	"battlerStats" => [:SPEED, 1, :DEFENSE, 1, :SPECIAL_DEFENSE, 1]
   }
-}
-
+ }
 
 BANETTE_MIDBATTLE   = {
   # She big now.
@@ -2140,33 +2156,23 @@ BRAIXEN_MAGI_MIDBATTLE = {
     "playSE" => "Anim/Psychic",
     "text" => ["{1} summons her first magical familiar!"]
   },
-  "Variable_1" => {
-    "addWild" => [:FENNEKIN, 30],
-    "text" => ["Another familiar appears to aid {1}!"]
+  "RoundEnd_foe_repeat_every_4" => {
+    "setBattler" => :Self, 
+    "battlerStats" => [:SPECIAL_ATTACK, 1, :SPECIAL_DEFENSE, 1],
+    "playSE" => "Anim/Heal"
   },
-  "TargetTookDamage_foe" => {
-    "ignoreAfter" => "Variable_2",
-    "battlerHP" => [15, "{1} is shielded by her familiars!"],
-    "text" => ["The familiars absorb some of the damage!"],
-    "playSE" => "Anim/Protect"
+   "BattlerReachedHPCap_foe" => {
+    "battlerHPCap" => 0,
+	"battlerForm"   => [1],
+	"addWild" => [:FENNEKIN, 30],
+	"text" => ["Another familiar appears to aid {1}!"]
   },
-  "BattlerFainted_FENNEKIN_2" => {
-    "text" => ["Brax! Braxien!"],
-    "setBattler" => :Opposing,
-    "battlerStats" => [:SPECIAL_ATTACK, 1, :SPEED, 1],
-    "addVariable" => 1,
-    "playSE" => "Anim/Flamethrower"
-  },
-  "BattlerFainted_FENNEKIN" => {
-    "text" => ["Brax! Braxien!"],
-    "setBattler" => :Opposing,
-    "battlerStats" => [:DEFENSE, 1, :SPECIAL_DEFENSE, 1],
-    "addVariable" => 1,
-    "playSE" => "Anim/Flamethrower"
-  },
-  "BattlerReachedHPCap_foe" => {
-    "dynamax" => true,
-    "text" => ["{1} towers above, radiating mystical flames!"]
+  "BattlerHPCritical_foe" => {
+    "disableItems" => true,
+	"battlerStatus" => :NONE,
+	"dynamax" => true,
+    "megaEvolve" => "You can feel her love, her anger, and all of her sorrow!",
+	"battlerStats" => [:ATTACK, 1, :DEFENSE, 1, :SPECIAL_DEFENSE, 1]
   }
 }
 
@@ -2174,38 +2180,28 @@ BRAIXEN_MAGI_MIDBATTLE1 = {
   "RoundStartCommand_1_foe" => {
     "addWild" => [:FENNEKIN_2, 30],
     "addVariable" => 1,
-    "battlerHPCap" => 49,
+    "battlerHPCap" => 70,
     "changeTerrain" => :Psychic,
     "playSE" => "Anim/Psychic",
     "text" => ["{1} summons her first magical familiar!"]
+   },
+  "RoundEnd_foe_repeat_every_4" => {
+    "setBattler" => :Self, 
+    "battlerStats" => [:SPECIAL_ATTACK, 1, :SPECIAL_DEFENSE, 1],
+    "playSE" => "Anim/Heal"
   },
-  "Variable_1" => {
-    "addWild" => [:ABSOL_2, 35],
-    "text" => ["She is being called to aid {1}!"]
+   "BattlerReachedHPCap_foe" => {
+    "battlerHPCap" => 0,
+	"battlerForm"   => [1],
+	"addWild" => [:ABSOL_2, 35],
+	"text" => ["Another familiar appears to aid {1}!"]
   },
-  "TargetTookDamage_foe" => {
-    "ignoreAfter" => "Variable_2",
-    "battlerHP" => [15, "{1} is shielded by her familiars!"],
-    "text" => ["The familiars absorb some of the damage!"],
-    "playSE" => "Anim/Protect"
-  },
-  "BattlerFainted_FENNEKIN_2" => {
-    "text" => ["Brax! Braxien!"],
-    "setBattler" => 1,
-    "battlerStats" => [:SPECIAL_ATTACK, 1, :SPEED, 1],
-    "addVariable" => 1,
-    "playSE" => "Anim/Flamethrower"
-  },
-  "BattlerFainted_ABSOL_2" => {
-    "text" => ["Brax! Braxien!"],
-    "setBattler" => 1,
-    "battlerStats" => [:DEFENSE, 1, :SPECIAL_DEFENSE, 1],
-    "addVariable" => 1,
-    "playSE" => "Anim/Flamethrower"
-  },
-  "BattlerReachedHPCap_foe" => {
-    "dynamax" => true,
-    "text" => ["{1} towers above, radiating mystical flames!"]
+  "BattlerHPCritical_foe" => {
+    "disableItems" => true,
+	"battlerStatus" => :NONE,
+	"dynamax" => true,
+    "megaEvolve" => "You can feel her love, her anger, and all of her sorrow!",
+	"battlerStats" => [:SPECIAL_ATTACK, 1, :DEFENSE, 1, :SPECIAL_DEFENSE, 1]
   }
 }
 #===============================================

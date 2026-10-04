@@ -1323,3 +1323,11 @@ Description = Status moves used on poisoned targets weaken their offense and str
 [ENRAGE]
 Name = Enrage
 Description = Reduces damage taken while the user is locked into a rampaging attack.
+#-------------------------------
+[GUARDIANLINK]
+Name = Guardian Link
+Description = Reduces damage taken by a certain ally by 25%.
+#-------------------------------
+[HARDBODY]
+Name = Hard Body
+Description = Physical moves use the user's Defense instead of Attack.
