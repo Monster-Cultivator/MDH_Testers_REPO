@@ -512,6 +512,6 @@ class Battle::Move
              user.stages[:DEFENSE] + Battle::Battler::STAT_STAGE_MAXIMUM
     end
 
-    return ironbody_pbGetAttackStats(user, target)
+    return hardbody_pbGetAttackStats(user, target)
   end
 end
