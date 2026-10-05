@@ -205,6 +205,15 @@ Innates = SOULHEART,WONDERSKIN,MAGICGUARD
 [BRAIXENx_1]
 Innates = SOULHEART,WONDERSKIN,SERENEGRACE
 #-------------------------------
+[CERULEDGEsg]
+Innates = BATTLEARMOR,KEENEYE,MAGICGUARD
+#-------------------------------
+[CERULEDGEsg_1]
+Innates = KEENEYE,BATTLEARMOR,PRESSURE
+#-------------------------------
+[CERULEDGEsg_2]
+Innates = DUALWIELD,WEAKARMOR,KEENEYE
+#-------------------------------
 [MILTANKx]
 Innates = SLOWSTART,DAMAGEARMOR
 #-------------------------------

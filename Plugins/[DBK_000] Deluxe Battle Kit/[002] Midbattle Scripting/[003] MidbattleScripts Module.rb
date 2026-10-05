@@ -1890,14 +1890,17 @@ PDAWN_MIDBATTLE = {
 	"setBattler" => :Opposing,
 	"teamEffects" => [:Spikes, 3, "Dawn scatters vicious spikes across the field!"]
  },
- "BattlerStatLowered_DEFENCE_foe_repeat" => {
-	"ignoreAfter" => "BattlerReachedHPCap_foe",
+ "RoundEnd_foe_repeat_every_3" => {
     "setBattler" => :Opposing,
 	"battlerAbility" => :NORMALIZE,
     "addVariable" => 1,
     "text" => ["Dawn's spectral influence has altered {1} ability!"]
   },
-"VariableUp_repeat_every_3" => {
+ "BattlerReachedHPCap_foe" => {
+    "battlerHPCap" => 0,
+	"battlerForm"   => [1]
+ },	
+ "VariableUp_repeat_every_3" => {
     "setBattler" => :Self,
     "battlerStats" => [:DEFENSE, 1, :SPECIAL_DEFENSE, 1],
     "text" => ["{1}'s attack surges with her blistering speed!"],
@@ -1910,9 +1913,12 @@ PDAWN_MIDBATTLE = {
     "battlerEffects" => [:Curse, true, "Dawn haunts your Pokemon!"],
     "playSE" => "Anim/Glare"
   },
-  "BattlerReachedHPCap_foe" => {
+  "TargetHPLow_foe" => {
     "text" => ["{1}'s flame burns brightly!"],
-	"battlerStats" => [:ATTACK, 1, :SPECIAL_ATTACK, 1, :DEFENSE, 1, :SPECIAL_DEFENSE, 1]
+	"disableItems" => true,
+	"battlerStatus" => :NONE,
+	"battlerForm"   => [2],
+	"battlerStats" => [:ATTACK, 1, :DEFENSE, 1, :SPECIAL_DEFENSE, 1]
   }
  }
  
@@ -1932,39 +1938,33 @@ SERPERIOR_MIDBATTLE = {
     "changeTerrain" => :Grassy,
     "playSE" => "Anim/GrassyTerrain",
     "text" => ["Verdant grass surges across the battlefield, pulsing with life!"],
-    "battlerHPCap" => 30
+    "battlerHPCap" => 70
   },
-  "TargetTookDamage_foe_repeat" => {
-    "addVariable" => 1,
-    "battlerEffects" => [:Stockpile, 1, "She's seems to be storing energy!"]
+  "RoundEnd_foe_repeat_every_2" => {
+   "addVariable" => 1,
+   "battlerHP" => [10, "{1} siphons life from the ancient roots!"],
+   "battlerEffects" => [:Stockpile, 1, "She seems to be storing energy!"]
   },
+  "BattlerReachedHPCap_foe" => {
+    "battlerHPCap" => 0,
+	"battlerForm"   => [1]
+  },	
   "VariableOver_3_repeat" => {
     "text" => ["{1} is ready!"],
-    "battlerStats" => [:SPEED, 1, :DEFENSE, 1, :SPECIAL_DEFENSE, 1],
+    "battlerStats" => [:SPECIAL_ATTACK, 1, :DEFENSE, 1, :SPECIAL_DEFENSE, 1],
 	"battlerMoves" => [:SPITUP,nil,nil,nil]
   },
   "AfterMove_SPITUP_repeat" => {
     "battlerMoves" => [:FLAMETHROWER, :SLUDGEWAVE, :ENERGYBALL, :MOONBLAST],
 	"setVariable" => 0
   },
-  "TargetHPHalf_foe" => {
-    "ignoreAfter" => "TargetHPHalf_foe",
-    "battlerHP" => [75, "{1} siphons life from the ancient roots!"],
-    "battlerStats" => [:SPEED, 1, :DEFENSE, 2, :SPECIAL_ATTACK, 2, :SPECIAL_DEFENSE, 1],
-    "playSE" => "Anim/Coil",
-    "text" => ["{1} coils majestically, its body swelling with primal vigor!"]
-  },
   "TargetHPLow_foe" => {
     "ignoreAfter" => "TargetHPLow_foe",
-    "battlerHP" => [50, "{1} radiates an aura of unyielding dominance!"],
-    "battlerStats" => [:SPECIAL_ATTACK, 1, :DEFENSE, 1, :SPEED, 2],
+    "disableItems" => true,
+	"battlerStatus" => :NONE,
+    "battlerStats" => [:SPECIAL_ATTACK, 1, :DEFENSE, 1, :SPEED, 1],
     "playSE" => "Anim/DragonDance",
-    "text" => ["{1}'s fronds flare wildly as it prepares its final assault!"]
-  },
-  "BattlerReachedHPCap_foe" => {
-    "dynamax" => true,
-    "text" => ["{1} erupts with colossal energy!"],
-    "playSE" => "Anim/MaxFlare" 
+    "text" => ["{1}'s fronds flare wildly as it prepares its final assault!"] 
   }
 }
 
