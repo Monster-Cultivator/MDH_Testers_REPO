@@ -3077,6 +3077,13 @@ FormName = Damage Cap
 FormName = Desperation
 BaseStats = 180,200,160,110,95,125
 #-------------------------------
+[SERPERIORsg,1]
+FormName = Damage Cap
+#-------------------------------
+[SERPERIORsg,2]
+FormName = Desperation
+BaseStats = 200,100,125,140,200,125
+#-------------------------------
 [LEAFEONx,1]
 FormName = Treant form
 BaseStats = 600,120,700,1,120,700

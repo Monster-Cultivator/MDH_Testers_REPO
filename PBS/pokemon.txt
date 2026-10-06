@@ -32611,7 +32611,7 @@ CallRateSOS = 9
 [SERPERIORsg]
 Name = Serperior
 Types = GRASS
-BaseStats = 200,125,125,140,175,100
+BaseStats = 200,100,125,140,175,125
 GenderRatio = AlwaysFemale
 GrowthRate = Parabolic
 BaseExp = 264

@@ -214,8 +214,17 @@ Innates = KEENEYE,BATTLEARMOR,PRESSURE
 [CERULEDGEsg_2]
 Innates = DUALWIELD,WEAKARMOR,KEENEYE
 #-------------------------------
+[SERPERIORsg]
+Innates = HARVEST,UNBURDEN,MAGICGUARD
+#-------------------------------
+[SERPERIORsg_1]
+Innates = HARVEST,UNBURDEN,GRASSPELT
+#-------------------------------
+[SERPERIORsg_2]
+Innates = HARVEST,UNBURDEN,PREDATOR
+#-------------------------------
 [MILTANKx]
-Innates = SLOWSTART,DAMAGEARMOR
+Innates = SLOWSTART,DAMAGEARMOR,MAGICGUARD
 #-------------------------------
 [MILTANKx_1]
 Innates = SAPSIPPER,SCRAPPY,HARDBODY
