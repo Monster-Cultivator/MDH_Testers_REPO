@@ -203,7 +203,7 @@ end
 Battle::AbilityEffects::OnSwitchIn.add(:DAMAGEARMOR,
   proc { |ability, battler, battle, switch_in|
     next if battler.form != 0
-    battler.effects[PBEffects::DamageArmor] = (battler.totalhp * 0.3).round
+    battler.effects[PBEffects::DamageArmor] = (battler.totalhp * 0.2).round
   }
 )
 
