@@ -3021,6 +3021,24 @@ BaseStats = 100,70,85,60,100,85
 Moves = 0,SCALD,1,MUDSPORT,1,PROTECT,1,KNOCKOFF
 #-------------------------------
 [HOUNDOOMx,1]
+FormName = Damage Cap
+BaseStats = 175,150,135,125,100,120
+BaseExp = 350
+Abilities = APEXPREDATOR
+HiddenAbilities = APEXPREDATOR
+Height = 1.1
+Weight = 27.8
+#-------------------------------
+[HOUNDOOMx,2]
+FormName = Desperation
+BaseStats = 150,200,165,115,100,165
+BaseExp = 350
+Abilities = APEXPREDATOR
+HiddenAbilities = APEXPREDATOR
+Height = 1.1
+Weight = 27.8
+#-------------------------------
+[HOUNDOOMx,3]
 FormName = Mega Houndoom!
 MegaMove = FIREFANG
 BaseStats = 150,200,165,115,100,165

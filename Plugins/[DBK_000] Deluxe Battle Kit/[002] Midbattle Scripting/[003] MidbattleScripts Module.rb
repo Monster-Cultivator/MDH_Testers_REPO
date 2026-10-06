@@ -2022,6 +2022,10 @@ HOUNDOOM_MIDBATTLE = {
     "addVariable" => 1,
 	"text" => ["{1} is feeling herself!"]
   },
+"RoundEnd_foe_repeat_every_2" => {
+   "addVariable" => 1,
+   "battlerStats" => [:DEFENSE, -1]
+  },
  "BattlerReachedHPCap_foe" => {
     "battlerHPCap" => 0,
 	"battlerForm"   => [0]

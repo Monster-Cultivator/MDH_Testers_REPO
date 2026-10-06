@@ -103,6 +103,12 @@ Innates = QUICKFEET,MOXIE,MOLDBREAKER
 [HOUNDOOMx_1]
 Innates = QUICKFEET,MOXIE,SWORDOFRUIN
 #-------------------------------
+[HOUNDOOMx_2]
+Innates = QUICKFEET,MOXIE,MOLDBREAKER
+#-------------------------------
+[HOUNDOOMx_3]
+Innates = QUICKFEET,MOXIE,MOLDBREAKER
+#-------------------------------
 [FLORAGATO_2]
 Innates = EXFLAMEBODY
 #-------------------------------
