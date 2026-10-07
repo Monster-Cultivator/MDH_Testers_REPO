@@ -98,16 +98,16 @@ Innates = FATALPRECISION
 Innates = MOLDBREAKER
 #-------------------------------
 [HOUNDOOMx]
-Innates = QUICKFEET,MOXIE,MOLDBREAKER
+Innates = SCORCHINGFANGS,MOXIE,MAGICGUARD
 #-------------------------------
 [HOUNDOOMx_1]
-Innates = QUICKFEET,MOXIE,SWORDOFRUIN
+Innates = SCORCHINGFANGS,MOXIE,MOLDBREAKER
 #-------------------------------
 [HOUNDOOMx_2]
-Innates = QUICKFEET,MOXIE,MOLDBREAKER
+Innates = SCORCHINGFANGS,MOXIE,APEXPREDATOR
 #-------------------------------
 [HOUNDOOMx_3]
-Innates = QUICKFEET,MOXIE,MOLDBREAKER
+Innates = SCORCHINGFANGS,MOXIE,MOLDBREAKER
 #-------------------------------
 [FLORAGATO_2]
 Innates = EXFLAMEBODY

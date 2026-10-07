@@ -2028,7 +2028,7 @@ HOUNDOOM_MIDBATTLE = {
   },
  "BattlerReachedHPCap_foe" => {
     "battlerHPCap" => 0,
-	"battlerForm"   => [0]
+	"battlerForm"   => [1]
 },	
   "VariableUp_repeat_every_4" => {
     "setBattler"   => :Self,
@@ -2037,7 +2037,16 @@ HOUNDOOM_MIDBATTLE = {
   },
    "UserMoveEffective_player_repeat" => {
     "text" => [:Opposing, "{1} unleashes a crippling howl!"],
-    "battlerStatus" => [:PARALYSIS, true]
+    "battlerStatus" => [:BURN, true]
+  },
+   "TargetHPLow_foe" => {
+    "ignoreAfter" => "TargetHPLow_foe",
+	"battlerForm"   => [2],
+    "disableItems" => true,
+	"battlerStatus" => :NONE,
+    "battlerStats" => [:SPECIAL_ATTACK, 1, :DEFENSE, 1, :SPEED, 1],
+    "playSE" => "Anim/DragonDance",
+    "text" => ["{1}'s fronds flare wildly as it prepares its final assault!"] 
   }
 }
 
@@ -2051,14 +2060,22 @@ HOUNDOOM_REMATCH_MIDBATTLE = {
     "addVariable" => 1,
 	"text" => ["{1} is feeling herself!"]
   },
-  "VariableUp_repeat_every_3" => {
+"RoundEnd_foe_repeat_every_2" => {
+   "addVariable" => 1,
+   "battlerStats" => [:DEFENSE, -1]
+  },
+ "BattlerReachedHPCap_foe" => {
+    "battlerHPCap" => 0,
+	"battlerForm"   => [1]
+},	
+  "VariableUp_repeat_every_4" => {
     "setBattler"   => :Self,
     "battlerStats" => [:ATTACK, 1, :SPECIAL_DEFENSE, 1, :SPEED, 1],
     "text" => ["{1} is getting pumped up! She's landing hits left and right!"]
   },
    "UserMoveEffective_player_repeat" => {
     "text" => [:Opposing, "{1} unleashes a crippling howl!"],
-    "battlerStatus" => [:PARALYSIS, true]
+    "battlerStatus" => [:BURN, true]
   },
   "BattlerHPHalf_foe" => {
     "megaEvolve" => "It seems that her most Primal instints have awaken!",

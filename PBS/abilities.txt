@@ -1331,3 +1331,7 @@ Description = Reduces damage taken by a certain ally by 25%.
 [HARDBODY]
 Name = Hard Body
 Description = Physical moves use the user's Defense instead of Attack.
+#-------------------------------
+[SCORCHINGFANGS]
+Name = Scorching Fangs
+Description = Biting moves are strengthened and may burn the target. They become stronger against burned foes.

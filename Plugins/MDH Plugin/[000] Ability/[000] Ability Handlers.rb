@@ -515,3 +515,38 @@ class Battle::Move
     return hardbody_pbGetAttackStats(user, target)
   end
 end
+
+#===============================================================================
+# SCORCHING FANGS
+# Biting moves deal 1.1x damage.
+# If the target is burned, they deal 1.3x damage instead.
+# Biting moves also have a 20% chance to burn.
+#===============================================================================
+
+Battle::AbilityEffects::DamageCalcFromUser.add(:SCORCHINGFANGS,
+  proc { |ability, user, target, move, multipliers, baseDmg, type|
+    next if !move.bitingMove?
+
+    if target.burned?
+      multipliers[:power_multiplier] *= 1.3
+    else
+      multipliers[:power_multiplier] *= 1.1
+    end
+  }
+)
+
+Battle::AbilityEffects::OnDealingHit.add(:SCORCHINGFANGS,
+  proc { |ability, user, target, move, battle|
+    next if !move.bitingMove?
+    next if !move.damagingMove?
+    next if target.fainted?
+    next if target.burned?
+    next if battle.pbRandom(100) >= 20
+
+    if target.pbCanBurn?(user, false, move)
+      battle.pbShowAbilitySplash(user)
+      target.pbBurn(user)
+      battle.pbHideAbilitySplash(user)
+    end
+  }
+)
