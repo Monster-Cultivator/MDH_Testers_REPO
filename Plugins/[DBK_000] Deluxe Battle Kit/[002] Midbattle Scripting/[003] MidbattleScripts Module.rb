@@ -1976,6 +1976,10 @@ LOPUNNY_MIDBATTLE = {
     "teamEffects" => [:StealthRock, true, "Pointed stones float around the foe's party!"],
     "text" => ["{1} scattered pointed stones across the battlefield!"]
   },
+  "BattlerReachedHPCap_foe" => {
+    "battlerHPCap" => 0,
+	"battlerForm"   => [1]
+  },	
   "BattlerStatRaised_SPEED_foe_repeat" => {
     "text" => ["{1}'s legs blur with blinding speed!"],
 	"ignoreAfter" => "BattlerReachedHPCap_foe",
@@ -1992,23 +1996,26 @@ LOPUNNY_MIDBATTLE = {
     "battlerStats" => [:ATTACK, -1, :DEFENSE, -1, :SPECIAL_ATTACK, -1, :SPECIAL_DEFENSE, -1, :SPEED, -1, :EVASION, -1],
     "text" => ["{1} is overwhelmed by Lopunny's flurry of kicks!"]
   },
-  "BattlerReachedHPCap_foe" => {
-    "ignoreAfter" => "TargetHPHalf_foe",
-    "megaEvolve" => "{1} mega evolved in a burst of fierce determination!",
-    "text" => ["Behold the ultimate evolution of speed and power!"]
-  },
-  "UserMoveEffective_player_repeat" => {
-    "ignoreUntil" => "TargetHPHalf_foe",
-    "text" => [:Opposing, "{1} flaming chains lashes out!"],
-    "battlerStatus" => [:BURN, true]
+   "UserMoveEffective_player_repeat" => {
+    "text" => [:Opposing, "{1} unleashes a crippling howl!"],
+    "battlerStats" => [:SPEED, 1]
   },
   "BattlerStatRaised_foe_repeat" => {
     "text" => ["{1}'s legs blur with blinding speed!"],
-	"ignoreUntil" => "BattlerReachedHPCap_foe",
+	"ignoreUntil" => "TargetHPLow_foe",
     "setBattler" => :Opposing,
     "battlerHP" => [-24, "{1} was struck by {2}'s swift kick!"],
     "addVariable" => 1,
     "text" => ["{1} gains momentum from her speed!"]
+   },
+   "TargetHPLow_foe" => {
+    "ignoreAfter" => "TargetHPLow_foe",
+	"battlerForm"   => [2],
+    "disableItems" => true,
+	"battlerStatus" => :NONE,
+    "battlerStats" => [:ATTACK, 1, :DEFENSE, 1, :SPEED, 1],
+    "playSE" => "Anim/DragonDance",
+    "text" => ["{1}'s fronds flare wildly as it prepares its final assault!"] 
   },
 }
  
@@ -2044,7 +2051,7 @@ HOUNDOOM_MIDBATTLE = {
 	"battlerForm"   => [2],
     "disableItems" => true,
 	"battlerStatus" => :NONE,
-    "battlerStats" => [:SPECIAL_ATTACK, 1, :DEFENSE, 1, :SPEED, 1],
+    "battlerStats" => [:ATTACK, 1, :DEFENSE, 1, :SPEED, 1],
     "playSE" => "Anim/DragonDance",
     "text" => ["{1}'s fronds flare wildly as it prepares its final assault!"] 
   }
