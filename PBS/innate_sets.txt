@@ -109,6 +109,21 @@ Innates = SCORCHINGFANGS,MOXIE,APEXPREDATOR
 [HOUNDOOMx_3]
 Innates = SCORCHINGFANGS,MOXIE,MOLDBREAKER
 #-------------------------------
+[BUNEARY_2]
+Innates = GUARDIANLINK
+#-------------------------------
+[LOPUNNYsg]
+Innates = SCRAPPY,SPEEDFORCE,MAGICGUARD
+#-------------------------------
+[LOPUNNYsg_1]
+Innates = SCRAPPY,SPEEDFORCE,MOLDBREAKER
+#-------------------------------
+[LOPUNNYsg_2]
+Innates = SCRAPPY,SPEEDFORCE,EXECUTIONER
+#-------------------------------
+[LOPUNNYsg_3]
+Innates = SCRAPPY,SPEEDFORCE,SPEEDBOOST
+#-------------------------------
 [FLORAGATO_2]
 Innates = EXFLAMEBODY
 #-------------------------------

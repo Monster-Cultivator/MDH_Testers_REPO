@@ -10119,3 +10119,15 @@ Target = NearOther
 FunctionCode = HitOncePerUserHoundoom 
 Flags = CanProtect,CanMirrorMove
 Description = Running the ones is a fools errane. The more Houndooms, the more damage.
+#-------------------------------
+[BURNOUT]
+Name = Burn Out
+Type = NORMAL
+Category = Physical
+Power = 150
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = AttackAndSkipNextTurn
+Flags = CanProtect,CanMirrorMove,kick
+Description = The foe is attacked with a powerful beam. The user must rest on the next turn to regain its energy.

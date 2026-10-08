@@ -3020,23 +3020,6 @@ Abilities = STEELYSPIRIT
 BaseStats = 100,70,85,60,100,85
 Moves = 0,SCALD,1,MUDSPORT,1,PROTECT,1,KNOCKOFF
 #-------------------------------
-[HOUNDOOMx,1]
-FormName = Damage Cap
-#-------------------------------
-[HOUNDOOMx,2]
-FormName = Desperation
-BaseStats = 175,175,165,130,100,125
-#-------------------------------
-[HOUNDOOMx,3]
-FormName = Mega Houndoom!
-MegaMove = FIREFANG
-BaseStats = 150,200,165,115,100,165
-BaseExp = 350
-Abilities = APEXPREDATOR
-HiddenAbilities = APEXPREDATOR
-Height = 1.1
-Weight = 27.8
-#-------------------------------
 [GROWLITHE_3,1]
 FormName = Legendary
 BaseStats = 95,130,120,50,70,115
@@ -3075,6 +3058,35 @@ FormName = Damage Cap
 FormName = Damage Cap
 #-------------------------------
 [MILTANKx,2]
+FormName = Desperation
+#-------------------------------
+[HOUNDOOMx,1]
+FormName = Damage Cap
+#-------------------------------
+[HOUNDOOMx,2]
+FormName = Desperation
+BaseStats = 175,175,165,130,100,125
+#-------------------------------
+[HOUNDOOMx,3]
+FormName = Mega Houndoom!
+MegaMove = FIREFANG
+BaseStats = 150,200,165,115,100,165
+BaseExp = 350
+Abilities = APEXPREDATOR
+HiddenAbilities = APEXPREDATOR
+Height = 1.1
+Weight = 27.8
+#-------------------------------
+[LOPUNNYsg,1]
+FormName = Damage Cap
+#-------------------------------
+[LOPUNNYsg,2]
+FormName = Burn Out
+Abilities = APEXPREDATOR
+Moves = 1,BURNOUT,1,TRIATTACK,1,TERRAINPULSE,1,ANCIENTPOWER
+BaseStats = 160,160,90,220,80,90
+#-------------------------------
+[LOPUNNYsg,3]
 FormName = Desperation
 #-------------------------------
 [CERULEDGEsg,1]

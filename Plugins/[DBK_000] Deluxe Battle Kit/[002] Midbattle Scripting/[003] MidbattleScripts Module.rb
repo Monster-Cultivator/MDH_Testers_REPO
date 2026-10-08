@@ -1978,39 +1978,34 @@ LOPUNNY_MIDBATTLE = {
   },
   "BattlerReachedHPCap_foe" => {
     "battlerHPCap" => 0,
-	"battlerForm"   => [1]
+	"battlerForm"   => [1],
+	"addWild" => [:BUNEARY_2, 40],
+	"text" => ["{1} calls out to her crew!"]
   },	
   "BattlerStatRaised_SPEED_foe_repeat" => {
-    "text" => ["{1}'s legs blur with blinding speed!"],
-	"ignoreAfter" => "BattlerReachedHPCap_foe",
-    "setBattler" => :Opposing,
-    "battlerHP" => [-12, "{1} was struck by {2}'s swift kick!"],
-    "addVariable" => 1,
-    "text" => ["Lopunny gains momentum from her speed!"]
-  },
-  "VariableUp_repeat_every_3" => {
-    "setBattler" => :Self,
-    "battlerStats" => [:ATTACK, 2, :DEFENSE, 1, :SPECIAL_DEFENSE, 1, :SPEED, -1],
-    "text" => ["{1}'s attack surges with her blistering speed!"],
-    "setBattler" => :Opposing,
-    "battlerStats" => [:ATTACK, -1, :DEFENSE, -1, :SPECIAL_ATTACK, -1, :SPECIAL_DEFENSE, -1, :SPEED, -1, :EVASION, -1],
-    "text" => ["{1} is overwhelmed by Lopunny's flurry of kicks!"]
-  },
-   "UserMoveEffective_player_repeat" => {
-    "text" => [:Opposing, "{1} unleashes a crippling howl!"],
-    "battlerStats" => [:SPEED, 1]
-  },
-  "BattlerStatRaised_foe_repeat" => {
-    "text" => ["{1}'s legs blur with blinding speed!"],
-	"ignoreUntil" => "TargetHPLow_foe",
-    "setBattler" => :Opposing,
-    "battlerHP" => [-24, "{1} was struck by {2}'s swift kick!"],
     "addVariable" => 1,
     "text" => ["{1} gains momentum from her speed!"]
-   },
+  },
+  "VariableOver_3_repeat" => {
+    "text" => ["{1} is ready to burn out!"],
+	"ignoreUntil" => "BattlerReachedHPCap_foe",
+    "battlerStats" => [:ATTACK, 1, :DEFENSE, 1, :SPEED, 1],
+	"battlerMoves" => [:BURNOUT,nil,nil,nil],
+	"battlerForm"   => [2]
+  },
+   "TargetWeakToMove_foe_repeat" => {
+    "addVariable" => 1,
+    "text" => ["{1} gains momentum from her speed!"]
+  },
+    "AfterMove_BURNOUT_repeat" => {
+	"text" => ["{1} has burned out!"],
+	"battlerMoves" => [:AXEKICK, :FLASHSTEP, :TRIPLEAXEL, :FLAMECHARGE],
+    "battlerForm"   => [1],
+	"setVariable" => 0
+  },
    "TargetHPLow_foe" => {
     "ignoreAfter" => "TargetHPLow_foe",
-	"battlerForm"   => [2],
+	"battlerForm"   => [3],
     "disableItems" => true,
 	"battlerStatus" => :NONE,
     "battlerStats" => [:ATTACK, 1, :DEFENSE, 1, :SPEED, 1],
@@ -2031,6 +2026,7 @@ HOUNDOOM_MIDBATTLE = {
   },
 "RoundEnd_foe_repeat_every_2" => {
    "addVariable" => 1,
+   "setBattler"   => :Opposing,
    "battlerStats" => [:DEFENSE, -1]
   },
  "BattlerReachedHPCap_foe" => {

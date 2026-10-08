@@ -1335,3 +1335,11 @@ Description = Physical moves use the user's Defense instead of Attack.
 [SCORCHINGFANGS]
 Name = Scorching Fangs
 Description = Biting moves are strengthened and may burn the target. They become stronger against burned foes.
+#-------------------------------
+[SPEEDFORCE]
+Name = Speed Force
+Description = The faster the Pokémon is than its target, the more damage it deals.
+#-------------------------------
+[EXECUTIONER]
+Name = Executioner
+Description = KOs with recharge moves skip the recharge turn and raise Attack and Speed.

@@ -420,7 +420,6 @@ Battle::AbilityEffects::DamageCalcFromTarget.add(:ENRAGE,
 # If the move misses, fails, deals no damage, or doesn't KO:
 # - Recharge happens normally.
 #===============================================================================
-
 Battle::AbilityEffects::OnEndOfUsingMove.add(:EXECUTIONER,
   proc { |ability, user, targets, move, battle|
     next if !user.is_a?(Battle::Battler)
@@ -453,25 +452,14 @@ Battle::AbilityEffects::OnEndOfUsingMove.add(:EXECUTIONER,
     )
 
     #---------------------------------------------------------------------------
-    # Find highest stat. Maybe I'll just make it an Omniboost?
+    # Raise Attack and Speed by 1 stage.
     #---------------------------------------------------------------------------
+    if user.pbCanRaiseStatStage?(:ATTACK, user)
+      user.pbRaiseStatStage(:ATTACK, 1, user)
+    end
 
-    stats = {
-      :ATTACK          => user.attack,
-      :DEFENSE         => user.defense,
-      :SPECIAL_ATTACK  => user.spatk,
-      :SPECIAL_DEFENSE => user.spdef,
-      :SPEED           => user.speed
-    }
-
-    highest_value = stats.values.max
-    highest_stats = stats.select { |stat, value| value == highest_value }.keys
-
-    # Randomly choose if multiple stats are tied for highest.
-    stat_to_raise = highest_stats[battle.pbRandom(highest_stats.length)]
-
-    if user.pbCanRaiseStatStage?(stat_to_raise, user)
-      user.pbRaiseStatStage(stat_to_raise, 1, user)
+    if user.pbCanRaiseStatStage?(:SPEED, user)
+      user.pbRaiseStatStage(:SPEED, 1, user)
     end
 
     battle.pbHideAbilitySplash(user)
@@ -548,5 +536,30 @@ Battle::AbilityEffects::OnDealingHit.add(:SCORCHINGFANGS,
       target.pbBurn(user)
       battle.pbHideAbilitySplash(user)
     end
+  }
+)
+
+#===============================================
+# Speed Force
+# Damage increases based on how much faster
+# the user is than the target.
+#===============================================
+Battle::AbilityEffects::DamageCalcFromUser.add(:SPEEDFORCE,
+  proc { |ability, user, target, move, multipliers, baseDmg, type|
+    next if !move.damagingMove?
+
+    user_speed   = user.pbSpeed.to_f
+    target_speed = target.pbSpeed.to_f
+
+    next if user_speed <= target_speed
+
+    speed_ratio = user_speed / target_speed
+
+    # Every 100% faster gives +50% damage.
+    # Maximum damage multiplier is 2x.
+    damage_boost = 1.0 + ((speed_ratio - 1.0) * 0.5)
+    damage_boost = [damage_boost, 2.0].min
+
+    multipliers[:final_damage_multiplier] *= damage_boost
   }
 )
