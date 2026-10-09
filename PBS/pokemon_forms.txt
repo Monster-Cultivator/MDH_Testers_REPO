@@ -3089,6 +3089,20 @@ BaseStats = 160,160,90,220,80,90
 [LOPUNNYsg,3]
 FormName = Desperation
 #-------------------------------
+[FLYGONsg,1]
+FormName = Physical Waltz
+Abilities = SANDFORCE
+#-------------------------------
+[FLYGONsg,2]
+FormName = Special Waltz
+Abilities = SANDRUSH
+#-------------------------------
+[EMPOLEONsg,1]
+FormName = Damage Cap
+#-------------------------------
+[EMPOLEONsg,2]
+FormName = Desperation
+#-------------------------------
 [CERULEDGEsg,1]
 FormName = Damage Cap
 #-------------------------------

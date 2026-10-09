@@ -10120,6 +10120,18 @@ FunctionCode = HitOncePerUserHoundoom
 Flags = CanProtect,CanMirrorMove
 Description = Running the ones is a fools errane. The more Houndooms, the more damage.
 #-------------------------------
+[DRACONICWALTZ]
+Name = Draconic Waltz
+Type = DRAGON
+Category = Special
+Power = 120
+Accuracy = 100
+TotalPP = 10
+Target = RandomNearFoe
+FunctionCode = MultiTurnAttackConfuseUserAtEnd
+Flags = Contact,CanProtect,CanMirrorMove,Dance
+Description = The user attacks by scattering petals for two to three turns. The user then becomes confused.
+#-------------------------------
 [BURNOUT]
 Name = Burn Out
 Type = NORMAL

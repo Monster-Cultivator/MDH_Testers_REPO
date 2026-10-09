@@ -1630,7 +1630,7 @@ MILTANK_MIDBATTLE   = {
 	"battlerForm"   => [1, "{1} got the glock!"],
 	"playSE"        => "Anim/Sound2",
   },
-  "RoundEnd_foe_repeat_every_5" => {
+  "RoundEnd_foe_repeat_every_4" => {
     "setBattler" => :Self, 
     "battlerStats" => [:ATTACK, 1, :DEFENSE, 1],
     "playSE" => "Anim/Heal"
@@ -1717,74 +1717,125 @@ DANCERFLYGON_MIDBATTLE = {
     "changeWeather" => :Sandstorm,
     "battlerHPCap" => 70,
     "speech" => "The swaying of Flygon's wings whips up a sandstorm!",
-    "text" => "Flygon's dance tempo begins to rise!",
-    "addVariable" => 1
-  },
-  "UserMoveDodged_player_repeat" => {
-    "setBattler" => :Opposing,
-	"battlerHP" => -8,
-    "setBattler" => :Opposing,
-    "battlerStats" => [:SPEED, 1],
-    "addVariable" => [1],
-    "text" => ["Her tempo is increasing!"]
-  },
-  "UserDealtDamage_FLYGON_repeat" => {
-    "text" => ["Her tempo is increasing!"],
-	"setBattler_A" => :Opposing,
-    "battlerHP_A" => -4,
-    "setBattler_B" => :Opposing,
-    "battlerHP_B" => [4, "{1} regenerated some HP!"],
-    "addVariable" => [1]
-  },
-  "BattlerHPRecovered_foe" => {
-	"setBattler" => :Self,
-    "battlerStats" => [:EVASION, 1],
-    "text" => ["Her tempo is increasing!"],
-    "addVariable" => [1]
-  },
-  "UserMoveNegated_FLYGON_repeat" => {
-    "text" => ["Her tempo is slowing down a bit!"],
-	"addVariable" => [-1]
-  },
-  "UserMoveEffective_ICE" => {
-    "text" => ["It hurts her tempo!!"],
-	"addVariable" => [-2],
-    "ignoreAfter" => "UserMoveEffective_ICE",
-    "ignoreUntil" => "UserMoveEffective_ICE_repeat"
-  },
-  "UserMoveEffective_ICE_repeat" => {
-    "ignoreUntil" => "UserMoveEffective_ICE",
-    "text" => ["She adapted to keep her rhythm!"],
-    "battlerHP" => -16
-  },
-  "UserMoveEffective_DRAGON" => {
-    "text" => ["It hurts her tempo!!"],
-	"addVariable" => [-1],
-    "ignoreAfter" => "UserMoveEffective_DRAGON",
-    "ignoreUntil" => "UserMoveEffective_DRAGON_repeat"
-  },
-  "UserMoveEffective_DRAGON_repeat" => {
-    "ignoreUntil" => "UserMoveEffective_DRAGON",
-    "text" => ["She adapted to keep her rhythm!"],
-    "battlerHP" => -8,
-    "battlerStats" => [:SPEED, -1]
-  },
-  "UserMoveEffective_FAIRY" => {
-    "text" => ["It hurts her tempo!!"],
-	"addVariable" => [-1],
-    "ignoreAfter" => "UserMoveEffective_FAIRY",
-    "ignoreUntil" => "UserMoveEffective_FAIRY_repeat"
-  },
-  "UserMoveEffective_FAIRY_repeat" => {
-    "text" => ["She fights back!"],
-    "ignoreUntil" => "UserMoveEffective_FAIRY",
-    "battlerHP" => -8
+    "text" => "Flygon's dance tempo begins to rise!"
   },
   "BattlerReachedHPCap_foe" => {
-    "dynamax" => true,
-    "speech" => "She's ready to put on a show!"
+    "text" => ["{1}'s has shifted her way of dance!"],
+	"battlerForm"   => [1],
+	"playSE"        => "Anim/Sound2"
+  },
+"RoundEnd_3_foe" => {
+  "setBattler" => :Self,
+  "battlerForm" => [1],
+  "battlerStats" => [:ATTACK, 1, :DEFENSE, 1, :SPEED, 1],
+  "battlerMoves" => [:DRAGONDANCE, :EARTHQUAKE, :DRACONICWALTZ, :SMACKDOWN],
+  "changeWeather" => :Sandstorm,
+  "text" => ["{1}'s dancing seems to be more physical!"],
+  "addVariable" => 1,
+  "playSE" => "Anim/Heal"
+},
+"RoundEnd_6_foe" => {
+  "setBattler" => :Self,
+  "battlerForm" => [2],
+  "battlerStats" => [:SPECIAL_ATTACK, 1, :SPECIAL_DEFENSE, 1, :SPEED, 1],
+  "battlerMoves" => [:QUIVERDANCE, :EARTHPOWER, :PETALDANCE, :DRAGONBREATH],
+  "changeWeather" => :Sandstorm,
+  "text" => ["{1}'s dancing seems to be more spiritual!"],
+  "addVariable" => 1,
+  "playSE" => "Anim/Heal"
+},
+"RoundEnd_9_foe" => {
+  "setBattler" => :Self,
+  "battlerForm" => [1],
+  "battlerStats" => [:ATTACK, 1, :DEFENSE, 1, :SPEED, 1],
+  "battlerMoves" => [:DRAGONDANCE, :EARTHQUAKE, :DRACONICWALTZ, :SMACKDOWN],
+  "changeWeather" => :Sandstorm,
+  "text" => ["{1}'s dancing seems to be more physical!"],
+  "addVariable" => 1,
+  "playSE" => "Anim/Heal"
+},
+"RoundEnd_12_foe" => {
+  "setBattler" => :Self,
+  "battlerForm" => [2],
+  "battlerStats" => [:SPECIAL_ATTACK, 1, :SPECIAL_DEFENSE, 1, :SPEED, 1],
+  "battlerMoves" => [:QUIVERDANCE, :EARTHPOWER, :PETALDANCE, :DRAGONBREATH],
+  "changeWeather" => :Sandstorm,
+  "text" => ["{1}'s dancing seems to be more spiritual!"],
+  "addVariable" => 1,
+  "playSE" => "Anim/Heal"
+},
+"RoundEnd_15_foe" => {
+  "setBattler" => :Self,
+  "battlerForm" => [1],
+  "battlerStats" => [:ATTACK, 1, :DEFENSE, 1, :SPEED, 1],
+  "battlerMoves" => [:DRAGONDANCE, :EARTHQUAKE, :DRACONICWALTZ, :SMACKDOWN],
+  "changeWeather" => :Sandstorm,
+  "text" => ["{1}'s dancing seems to be more physical!"],
+  "addVariable" => 1,
+  "playSE" => "Anim/Heal"
+},
+"RoundEnd_18_foe" => {
+  "setBattler" => :Self,
+  "battlerForm" => [2],
+  "battlerStats" => [:SPECIAL_ATTACK, 1, :SPECIAL_DEFENSE, 1, :SPEED, 1],
+  "battlerMoves" => [:QUIVERDANCE, :EARTHPOWER, :PETALDANCE, :DRAGONBREATH],
+  "changeWeather" => :Sandstorm,
+  "text" => ["{1}'s dancing seems to be more spiritual!"],
+  "addVariable" => 1,
+  "playSE" => "Anim/Heal"
+},
+"RoundEnd_21_foe" => {
+  "setBattler" => :Self,
+  "battlerForm" => [1],
+  "battlerStats" => [:ATTACK, 1, :DEFENSE, 1, :SPEED, 1],
+  "battlerMoves" => [:DRAGONDANCE, :EARTHQUAKE, :DRACONICWALTZ, :SMACKDOWN],
+  "changeWeather" => :Sandstorm,
+  "text" => ["{1}'s dancing seems to be more physical!"],
+  "addVariable" => 1,
+  "playSE" => "Anim/Heal"
+},
+"RoundEnd_24_foe" => {
+  "setBattler" => :Self,
+  "battlerForm" => [2],
+  "battlerStats" => [:SPECIAL_ATTACK, 1, :SPECIAL_DEFENSE, 1, :SPEED, 1],
+  "battlerMoves" => [:QUIVERDANCE, :EARTHPOWER, :PETALDANCE, :DRAGONBREATH],
+  "changeWeather" => :Sandstorm,
+  "text" => ["{1}'s dancing seems to be more spiritual!"],
+  "addVariable" => 1,
+  "playSE" => "Anim/Heal"
+},
+  "VariableUp_repeat_every_4" => {
+    "setBattler" => :Opposing,
+    "battlerStats" => [:ATTACK, -1, :SPECIAL_ATTACK, -1, :SPEED, -1],
+	"battlerStatus" => [:CONFUSION, true],
+    "text" => ["{1} is getting pumped up! She's landing hits left and right!"]
+  },
+  "BattlerConfusionStart_foe_repeat" => {
+    "setBattler" => :Self, 
+    "battlerStats" => [:EVASION, 1],
+	"text" => ["{1} has turned her stumbling into a new form of dance!"]
+  },  
+  "BattlerConfusionEnd_foe_repeat" => {
+	"setBattler" => :Self,
+	"battlerStats" => [:EVASION, -1],
+	"text" => ["{1} recovered from her confusion losing her new tempo!"]
+  },
+  "TargetWeakToMove_foe_repeat" => {
+    "addVariable" => 1,
+    "text" => ["{1} tempo is increasing!"]
+  },
+  "UserMoveEffective_ICE_repeat" => {
+    "text" => ["It hurts her tempo!!"],
+	"addVariable" => 1,
+    "text" => ["{1} tempo is increasing!"]
+  },
+  "BattlerHPCritical_foe" => {
+    "disableItems" => true,
+	"battlerStatus" => :NONE,
+    "speech" => "{1}'s ready to put on a show!",
+	"battlerStats" => [:ATTACK, 1, :SPECIAL_ATTACK, 1, :DEFENSE, 1, :SPECIAL_DEFENSE, 1, :SPEED, 1]
   }
-}
+ }
 
 PIPLUP_PRINPLUP_MIDBATTLE = {
   "RoundStartCommand_1_foe" => {
@@ -1819,22 +1870,28 @@ DONPOLEON_MIDBATTLE = {
     "teamEffects" => [:Spikes, 3, "{1} scatters vicious spikes across the field!"],
     "playSE" => "Anim/Rain",
     "text" => ["{1} glares at you menacingly!"]
-  },
+    },
+  "BattlerReachedHPCap_foe" => {
+    "addVariable" => 1,
+	"battlerForm"   => [1],
+	"battlerStats" => [:DEFENSE, 1, :SPECIAL_DEFENSE, 1],
+    "text" => ["{1} towers over you, ready to crush all opposition!"]
+   },
   "Variable_1" => {
     "addWild" => [:PIPLUPh_1, 40]
   },
-  "VariableUp_repeat_every_2" => {
+  "VariableUp_repeat_every_3" => {
     "addWild" => [:PIPLUPh_1, 40],
 	"setBattler" => :Ally,
 	"battlerStats" => [:SPECIAL_ATTACK, 1]
   },
-  "VariableUp_repeat_every_3" => {
+  "VariableUp_repeat_every_5" => {
     "addWild" => [:PRINPLUPh_1, 45],
 	"setBattler" => :Ally2,
 	"battlerStats" => [:SPECIAL_DEFENSE, 1]
   },
-  "AfterSpecialMove_EMPOLEONsg_repeat_random_25" => {
-    "setBattler" => :Ally,
+  "RoundEnd_foe_repeat_every_4" => {
+    "setBattler" => :Self,
     "battlerStats" => [:SPECIAL_DEFENSE, 1, :DEFENSE, 1],
     "text" => ["{1} steels its resolve!"],
     "playSE" => "Anim/CosmicPower",
@@ -1846,10 +1903,11 @@ DONPOLEON_MIDBATTLE = {
 	"addVariable" => 1,
     "text" => ["{1} cries out in fury!"]
   },
-  "BattlerReachedHPCap_foe" => {
-    "dynamax" => true,
-	"battlerStats" => [:ATTACK, 1, :SPECIAL_ATTACK, 1, :DEFENSE, 1, :SPECIAL_DEFENSE, 1],
-    "text" => ["{1} towers over you, ready to crush all opposition!"]
+  "BattlerHPCritical_foe" => {
+    "disableItems" => true,
+	"battlerStatus" => :NONE,
+    "speech" => "{1}'s ready to put on a show!",
+	"battlerStats" => [:ATTACK, 1, :SPECIAL_ATTACK, 1, :DEFENSE, 1, :SPECIAL_DEFENSE, 1, :SPEED, 1]
   },
   "BattlerFainted_EMPOLEONsg" => {
     "speech"    => ["She dives into the water to escape!"],

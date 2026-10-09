@@ -563,3 +563,52 @@ Battle::AbilityEffects::DamageCalcFromUser.add(:SPEEDFORCE,
     multipliers[:final_damage_multiplier] *= damage_boost
   }
 )
+
+#===============================================
+# Dance Fever
+# Dance moves deal 20% more damage.
+# Dance moves have a 30% chance to confuse.
+#===============================================
+
+Battle::AbilityEffects::DamageCalcFromUser.add(:DANCEFEVER,
+  proc { |ability, user, target, move, multipliers, baseDmg, type|
+    next if !move.danceMove?
+    next if !move.damagingMove?
+
+    multipliers[:power_multiplier] *= 1.2
+  }
+)
+
+# Damaging Dance moves
+Battle::AbilityEffects::OnDealingHit.add(:DANCEFEVER,
+  proc { |ability, user, target, move, battle|
+    next if !move.danceMove?
+    next if !move.damagingMove?
+    next if target.fainted?
+    next if battle.pbRandom(100) >= 30
+    next if !target.pbCanConfuse?(user, false, move)
+
+    battle.pbShowAbilitySplash(user)
+    target.pbConfuse
+    battle.pbHideAbilitySplash(user)
+  }
+)
+
+# Non-damaging Dance moves
+Battle::AbilityEffects::OnEndOfUsingMove.add(:DANCEFEVER,
+  proc { |ability, user, targets, move, battle|
+    next if user.fainted?
+    next if !move.danceMove?
+    next if move.damagingMove?
+    next if battle.pbRandom(100) >= 30
+
+    target = user.pbDirectOpposing(true)
+    next if !target
+    next if target.fainted?
+    next if !target.pbCanConfuse?(user, false, move)
+
+    battle.pbShowAbilitySplash(user)
+    target.pbConfuse
+    battle.pbHideAbilitySplash(user)
+  }
+)

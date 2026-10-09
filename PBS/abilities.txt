@@ -1343,3 +1343,7 @@ Description = The faster the Pokémon is than its target, the more damage it dea
 [EXECUTIONER]
 Name = Executioner
 Description = KOs with recharge moves skip the recharge turn and raise Attack and Speed.
+#-------------------------------
+[DANCEFEVER]
+Name = Dance Fever
+Description = Powers up damaging dance moves by 20%. Dance moves may also confuse an opposing Pokémon.

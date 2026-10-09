@@ -253,6 +253,24 @@ Innates = SAPSIPPER,SCRAPPY,HARDBODY
 [MILTANKx_2]
 Innates = SAPSIPPER,TINTEDLENS,HARDBODY
 #-------------------------------
+[FLYGONsg]
+Innates = FILTER,TANGLEDFEET,MAGICGUARD
+#-------------------------------
+[FLYGONsg_1]
+Innates = FILTER,TANGLEDFEET,DANCEFEVER
+#-------------------------------
+[FLYGONsg_2]
+Innates = FILTER,TANGLEDFEET,DANCEFEVER
+#-------------------------------
+[EMPOLEONsg]
+Innates = FILTER,PRESSURE,MAGICGUARD
+#-------------------------------
+[EMPOLEONsg_1]
+Innates = FILTER,PRESSURE,KEENEYE
+#-------------------------------
+[EMPOLEONsg_2]
+Innates = FILTER,PRESSURE,KEENEYE
+#-------------------------------
 [MOTHERBEAST]
 Innates = DAMAGEARMOR,MAGICGUARD
 #-------------------------------
