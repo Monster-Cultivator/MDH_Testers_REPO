@@ -156,10 +156,10 @@ Quest13 = {
 	Quest15 = {
     :ID => "15",
     :Name => "The Known Unknown? VS the Masquerading Champion",
-    :QuestGiver => "Void Mudkip",
+    :QuestGiver => "Random Pokeball",
     :Stage1 => "Do your best!",
-    :Location1 => "Granite Cave",
-    :QuestDescription => "Void Mudpik has informed you of two powerful opponents. Kick their asses!",
+    :Location1 => "Oldale Town",
+    :QuestDescription => "There's something waiting in that other house in Oldale!",
     :RewardString => "Something shiny!"
   }
 	
@@ -233,7 +233,11 @@ Quest13 = {
 	:Stage21 => "Check on Houndoom",
 	:Stage22 => "Check on Inesse",
 	:Stage23 => "Complete Usurping the Apex",
-	:Stage24 => "Working on it!",
+	:Stage24 => "Interrogate Inesse!",
+	:Stage25 => "Complete An Entrancing Wish!",
+	:Stage26 => "Complete VS The Known Unknown!",
+	:Stage27 => "Check on Voidkip!",
+	:Stage28 => "That's it for now!",
     :Location1 => "Littleroot Town",
     :Location2 => "Petalburg Gym",
     :Location3 => "Petalburg Gym",
@@ -257,7 +261,11 @@ Quest13 = {
 	:Location21 => "Home",
 	:Location22 => "Rustboro",
 	:Location23 => "Route 110",
-	:Location24 => "Working on it!",
+	:Location24 => "Home",
+	:Location25 => "Route 119!",
+	:Location26 => "Oldale Town!",
+	:Location27 => "Route 103!",
+	:Location28 => "That's it!",
 	:QuestDescription => "The Goddess has set you on your epic journey, this is an outline of things to do to achieve your goal. Step into the grand tour! Note: If you get lost, try fighting a gym or something.",
     :RewardString => "The journey itself!"
 	
@@ -876,7 +884,18 @@ Quest13 = {
 	:Location2 => "Dawn's house",
     :QuestDescription => "The power that fused Dawn and Ceruledge is calling them back, weakening their body. Investigate the manor in Trackless Forest and defeat the presence threatening them!",
     :RewardString => "Free Dawn and Ceruledge from the manor's influence!"
-}
+   }
+
+    DarkFloralEmpress = {
+    :ID => "78",
+    :Name => "The Dark Floral Empress",
+    :QuestGiver => "Braixen",
+    :Stage1 => "Follow Braixen and defeat the Dark Floral Empress with Inesse.",
+    :Location1 => "Follow Braixen's lead",
+    :QuestDescription => "Braixen has sensed another Dark PokeShojo. Inesse has reluctantly agreed to help, reviving their old partnership.",
+    :RewardString => "Help Inesse and Braixen work together to stop another Dark PokeShojo.",
+    }
+  
   #======================================================#
   #                                                      #
   #                      "Official"                      #
@@ -964,5 +983,5 @@ Quest13 = {
     :QuestDescription => "From what you can gather, something has gone wrong.",
     :RewardString => "The heavyweight championship."
 	}
-  
+
 end
