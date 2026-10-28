@@ -891,7 +891,7 @@ Quest13 = {
     :Name => "The Dark Floral Empress",
     :QuestGiver => "Braixen",
     :Stage1 => "Follow Braixen and defeat the Dark Floral Empress with Inesse.",
-    :Location1 => "Follow Braixen's lead",
+    :Location1 => "Trackless Forest",
     :QuestDescription => "Braixen has sensed another Dark PokeShojo. Inesse has reluctantly agreed to help, reviving their old partnership.",
     :RewardString => "Help Inesse and Braixen work together to stop another Dark PokeShojo.",
     }
