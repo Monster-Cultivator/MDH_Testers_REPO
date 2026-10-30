@@ -3177,3 +3177,14 @@ BaseStats = 120,105,155,30,145,100
 #-------------------------------
 [KABUTOPGLITCH,5]
 FormName = Chaos Fiction
+
+#-------------------------------
+[TSAREENAsg,1]
+FormName = Kneel Before Me
+Abilities = QUEENLYMAJESTY
+HiddenAbilities = QUEENLYMAJESTY
+#-------------------------------
+[TSAREENAsg,2]
+FormName = The Queens Wrath
+Abilities = QUEENLYMAJESTY
+HiddenAbilities = QUEENLYMAJESTY

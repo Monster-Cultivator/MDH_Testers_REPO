@@ -984,4 +984,47 @@ Quest13 = {
     :RewardString => "The heavyweight championship."
 	}
 
+  LilithRecovery = {
+    :ID => "79",
+    :Name => "No Skipping Recovery",
+    :QuestGiver => "Lilith",
+    :Stage1 => "Bring Lilith 3 Protein.",
+    :Location1 => "Dewford Ranger Guild",
+    :QuestDescription => "Lilith has been training harder to keep up with you. Bring her 3 Protein for her team, and remind her that taking a break is part of getting stronger.",
+    :RewardString => "Rare Candy, 5 Muscle Feathers, and increased affection."
+  }
+
+  LilithMoreThanMuscle = {
+    :ID => "80",
+    :Name => "More Than Muscle",
+    :QuestGiver => "Lilith",
+    :Stage1 => "Show Lilith a Medicham in your party.",
+    :Location1 => "Dewford Ranger Guild",
+    :QuestDescription => "Lilith wants to learn how a Medicham combines strength with concentration. Bring one in your party so she can study its composure. You will keep your Medicham.",
+    :RewardString => "Rare Candy, a PP Up, and increased affection."
+  }
+
+  LilithLetHimProveIt = {
+    :ID => "81",
+    :Name => "Let Him Prove It",
+    :QuestGiver => "Lilith",
+    :Stage1 => "Battle Patrick again on Route 106.",
+    :Stage2 => "Report to Lilith at the Dewford Ranger Guild.",
+    :Location1 => "Route 106",
+    :Location2 => "Dewford Ranger Guild",
+    :QuestDescription => "Lilith's younger brother Patrick says he has improved. Battle him again, then give Lilith an honest report on his progress.",
+    :RewardString => "2 Rare Candies, a Focus Sash, and increased affection."
+  }
+
+  BanetteSignsOfLove = {
+    :ID => "82",
+    :QuestPage => :OAK,
+    :Name => "Sign of Love: Banette",
+    :QuestGiver => "Banette",
+    :Stage1 => "Increase her affinity by giving all six gifts.",
+    :Location1 => "Grave Area at your home",
+    :QuestDescription => "The Banette you brought home from the haunted manor is learning to trust you. Give her a Poke Doll, 5 Chesto Berries, a Heart Scale, a Spell Tag, a Reaper Cloth, and a Ghost Gem. Each gift increases her affinity once.",
+    :RewardString => "Banette's trust and affection."
+  }
+
 end

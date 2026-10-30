@@ -7289,3 +7289,12 @@ Pokemon = SHEDINJA,70
     IV = 31,31,31,31,31,31
     EV = 0,252,0,252,0,0
     Item = AIRBALLOON
+#-------------------------------
+[YOUNGSTER,Patrick,1]
+LoseText = We stayed in it this time!
+Pokemon = LINOONE,42
+    Moves = HEADBUTT,PLAYROUGH,SANDATTACK,QUICKATTACK
+Pokemon = SHIFTRY,43
+    Moves = LEAFBLADE,NIGHTSLASH,FAKEOUT,PROTECT
+Pokemon = GARDEVOIR,44
+    Moves = PSYBEAM,DRAININGKISS,CALMMIND,LIGHTSCREEN

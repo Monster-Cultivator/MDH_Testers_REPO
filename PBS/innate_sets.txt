@@ -306,3 +306,12 @@ Innates = QUARKDRIVE,MAGICGUARD
 #-------------------------------
 [KABUTOPGLITCH_4]
 Innates = GRASSPELT,MAGICGUARD
+#-------------------------------
+[TSAREENAsg]
+Innates = DOWNHEEL,SCRAPPY,MAGICGUARD
+#-------------------------------
+[TSAREENAsg_1]
+Innates = DOWNHEEL,SCRAPPY,MOLDBREAKER
+#-------------------------------
+[TSAREENAsg_2]
+Innates = DOWNHEEL,SCRAPPY,MOLDBREAKER

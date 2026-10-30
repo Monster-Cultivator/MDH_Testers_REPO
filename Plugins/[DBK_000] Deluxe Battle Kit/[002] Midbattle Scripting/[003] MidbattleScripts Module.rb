@@ -1665,14 +1665,12 @@ MILTANK_MIDBATTLE   = {
   }
  }
 
-# Banette: edit the battle here, like the other boss midbattles.
 BANETTE_MIDBATTLE = {
   "RoundStartCommand_1_foe" => {
     "setVariable" => 0,
     "battlerHPCap" => 70,
-    "disableBalls" => true,
-    "addWild_A" => [:SHUPPET, 48],
-    "addWild_B" => [:SHUPPET, 50],
+    "addWild_A" => [:SHUPPETm, 48],
+    "addWild_B" => [:SHUPPETm, 50],
     "setBattler_A" => 3,
     "battlerName_A" => "Lonely Doll",
     "battlerMoves_A" => [:HEX, :LIGHTSCREEN, :REFLECT, :PROTECT],
@@ -1683,7 +1681,6 @@ BANETTE_MIDBATTLE = {
     "text" => "Two forgotten dolls stir beside Banette. Every three hits tighten her Grudge Stitches!"
   },
 
-  # GRUDGE STITCHES: each hit on Banette adds one; every third hit retaliates.
   "TargetTookDamage_BANETTE_foe_repeat" => {
     "addVariable" => 1,
     "text" => "Another grudge stitch tightens!"
@@ -1696,8 +1693,7 @@ BANETTE_MIDBATTLE = {
 
   # PHASE TWO: 70% HP. End Magic Guard and absorb the mansion's energy.
   "BattlerReachedHPCap_BANETTE_foe" => {
-    "battlerInnates" => [:INFILTRATOR],
-    "bossDynamax" => "The mansion's grief pours into Banette!",
+    "battlerForm"   => [1],
     "battlerHPCap" => 25,
     "setBattler_A" => 3,
     "battlerStats_A" => [:SPECIAL_ATTACK, 1, :SPEED, 1],
@@ -1728,16 +1724,11 @@ BANETTE_MIDBATTLE = {
     "text" => "The mansion whispers: Don't leave. Banette clings to its fading warmth."
   },
 
-  # DESPERATION: 25% HP. No healing, no more dolls, no items.
   "BattlerHPCritical_BANETTE_foe" => {
-    "unDynamax" => true,
-    "battlerHPCap" => nil,
-    "battlerStatus" => :NONE,
-    "battlerItem" => :BANETTITE,
-    "megaEvolve" => "The stitches holding Banette together begin to snap!",
     "battlerMoves" => [:SHADOWCLAW, :KNOCKOFF, :SHADOWSNEAK, :PLAYROUGH],
     "battlerStats" => [:ATTACK, 2, :SPEED, 1, :DEFENSE, -2, :SPECIAL_DEFENSE, -2],
     "disableItems" => true,
+	"dynamax" => true,
     "setBattler_A" => 3,
     "battlerHP_A" => -100,
     "setBattler_B" => 5,
@@ -3543,4 +3534,59 @@ EEVEE_MIDBATTLE   = {
 	"battlerHP" => 5
   }
 }
+# Dark PokeShojo Tsareena: forms select the primary ability and innate sets.
+TSAREENA_MIDBATTLE = {
+  "RoundStartCommand_1_foe" => {
+    "setBattler" => :Self,
+    "setVariable" => 0,
+    "battlerHPCap" => 70,
+    "disableBalls" => true,
+    "text" => "Tsareena looks down on your party, utterly unimpressed."
+  },
+
+  # IMPATIENCE: every third round, throughout the entire fight. No timer reset.
+  "RoundEnd_foe_repeat_every_3" => {
+    "setBattler" => :Self,
+    "battlerStats" => [:ATTACK, 1, :SPEED, 1],
+    "text" => "Tsareena's patience wears thin. Her kicks become faster and more vicious!"
+  },
+
+  # PHASE TWO: form 1 replaces Magic Guard with Mold Breaker.
+  "BattlerReachedHPCap_TSAREENAsg_foe" => {
+    "setBattler" => :Self,
+    "battlerForm" => 1,
+    "battlerHPCap" => 25,
+    "setVariable" => 0,
+    "battlerStats" => [:ATTACK, 1, :SPEED, 1],
+    "battlerMoves" => [:TROPKICK, :KNOCKOFF, :PLAYROUGH, :HIGHJUMPKICK],
+    "text" => "Her composed expression twists into contempt. Tsareena raises her heel!"
+  },
+
+  # ROYAL DISPLEASURE: starts after phase one and carries into desperation.
+  "TargetTookDamage_TSAREENAsg_foe_repeat" => {
+    "ignoreUntil" => "BattlerReachedHPCap_TSAREENAsg_foe",
+    "addVariable" => 1
+  },
+  "VariableUp_repeat_every_3" => {
+    "setBattler_A" => :Self,
+    "battlerStats_A" => [:ATTACK, 1],
+    "setBattler_B" => :Opposing,
+    "battlerStats_B" => [:DEFENSE, -1],
+    "text" => "Tsareena stamps her heel. She refuses to tolerate your resistance!"
+  },
+
+  # DESPERATION: form 2 keeps Mold Breaker; no healing or further HP cap.
+  "BattlerHPCritical_TSAREENAsg_foe" => {
+    "setBattler" => :Self,
+    "battlerHPCap" => nil,
+    "battlerForm" => 2,
+    "battlerStatus" => :NONE,
+    "disableItems" => true,
+    "battlerStats" => [:ATTACK, 2, :SPEED, 1, :DEFENSE, -1, :SPECIAL_DEFENSE, -1],
+    "battlerMoves" => [:POWERWHIP, :KNOCKOFF, :PLAYROUGH, :HIGHJUMPKICK],
+    "text" => "Her royal composure shatters! Tsareena abandons caution and lashes out!"
+  }
+}
+
+
 end
