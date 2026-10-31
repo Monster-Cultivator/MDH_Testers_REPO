@@ -315,3 +315,12 @@ Innates = DOWNHEEL,SCRAPPY,MOLDBREAKER
 #-------------------------------
 [TSAREENAsg_2]
 Innates = DOWNHEEL,SCRAPPY,MOLDBREAKER
+#-------------------------------
+[BANETTEsg]
+Innates = MAGICGUARD,INFILTRATOR,CLEARBODY
+#-------------------------------
+[BANETTEsg_1]
+Innates = INFILTRATOR,DEFIANT,PRESSURE
+#-------------------------------
+[BANETTEsg_2]
+Innates = INFILTRATOR,DEFIANT,ADAPTABILITY

@@ -1027,4 +1027,36 @@ Quest13 = {
     :RewardString => "Banette's trust and affection."
   }
 
+  WallyPrepared = {
+    :ID => "83",
+    :Name => "A Little More Prepared",
+    :QuestGiver => "Wally",
+    :Stage1 => "Bring Wally 3 Sitrus Berries and 5 Lum Berries.",
+    :Location1 => "Verdanturf Town",
+    :QuestDescription => "Wally wants to prepare properly after being rescued from Abomceon. Bring him 3 Sitrus Berries and 5 Lum Berries for a supply kit he is putting together.",
+    :RewardString => "3 Exp. Candy M and increased affinity."
+  }
+
+  WallyProtect = {
+    :ID => "84",
+    :Name => "More Than Attacking",
+    :QuestGiver => "Wally",
+    :Stage1 => "Show Wally a Pokemon that knows Protect.",
+    :Location1 => "Verdanturf Town",
+    :QuestDescription => "Wally wants to learn when to defend instead of attacking in a panic. Bring a non-Egg Pokemon that knows Protect in your party for a short practice session. You keep your Pokemon.",
+    :RewardString => "A PP Up and increased affinity."
+  }
+
+  WallyBesideYou = {
+    :ID => "85",
+    :Name => "Beside You",
+    :QuestGiver => "Wally",
+    :Stage1 => "Meet Wally and confront two Team Aqua grunts on Route 117.",
+    :Location1 => "Route 117",
+    :Stage2 => "Visit Wally in Verdanturf after defeating the grunts.",
+    :Location2 => "Verdanturf Town",
+    :QuestDescription => "Wally heard that two Team Aqua grunts are intimidating travelers on Route 117. He wants to see how far he has come by helping stop them, and has asked you to battle alongside him.",
+    :RewardString => "2 Rare Candies and increased affinity."
+  }
+
 end

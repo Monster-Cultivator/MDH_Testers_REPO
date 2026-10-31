@@ -3188,3 +3188,13 @@ HiddenAbilities = QUEENLYMAJESTY
 FormName = The Queens Wrath
 Abilities = QUEENLYMAJESTY
 HiddenAbilities = QUEENLYMAJESTY
+#-------------------------------
+[BANETTEsg,1]
+FormName = The Mansions Grudge
+Abilities = CURSEDBODY
+HiddenAbilities = CURSEDBODY
+#-------------------------------
+[BANETTEsg,2]
+FormName = Unraveling Grudge
+Abilities = CURSEDBODY
+HiddenAbilities = CURSEDBODY

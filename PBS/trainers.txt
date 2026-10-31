@@ -7298,3 +7298,26 @@ Pokemon = SHIFTRY,43
     Moves = LEAFBLADE,NIGHTSLASH,FAKEOUT,PROTECT
 Pokemon = GARDEVOIR,44
     Moves = PSYBEAM,DRAININGKISS,CALMMIND,LIGHTSCREEN
+#-------------------------------
+[POKEMONTRAINER_Wally,Wally,2]
+LoseText = We will keep working at it!
+Pokemon = GALLADE,50
+    Moves = PSYCHOCUT,DRAINPUNCH,PROTECT,HELPINGHAND
+Pokemon = PELIPPER,48
+    Moves = AIRSLASH,WATERPULSE,PROTECT,TAILWIND
+Pokemon = BRELOOM,48
+    Moves = MACHPUNCH,BULLETSEED,STUNSPORE,PROTECT
+#-------------------------------
+[TEAMAQUA_M,Grunt,4]
+LoseText = We picked the wrong pair!
+Pokemon = MIGHTYENA,48
+    Moves = CRUNCH,ICEFANG,HOWL,TAUNT
+Pokemon = SHARPEDO,49
+    Moves = WATERFALL,CRUNCH,ICEFANG,AQUAJET
+#-------------------------------
+[AQUA_F,Grunt,8]
+LoseText = This was supposed to be easy!
+Pokemon = GOLBAT,48
+    Moves = AIRSLASH,POISONFANG,CONFUSERAY,BITE
+Pokemon = CRAWDAUNT,49
+    Moves = RAZORSHELL,NIGHTSLASH,AQUAJET,SWORDSDANCE

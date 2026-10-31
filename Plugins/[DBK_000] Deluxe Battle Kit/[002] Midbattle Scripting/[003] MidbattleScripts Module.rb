@@ -1667,6 +1667,8 @@ MILTANK_MIDBATTLE   = {
 
 BANETTE_MIDBATTLE = {
   "RoundStartCommand_1_foe" => {
+    "setBattler" => :Self,
+    "battlerForm" => 0,
     "setVariable" => 0,
     "battlerHPCap" => 70,
     "addWild_A" => [:SHUPPETm, 48],
@@ -1681,7 +1683,7 @@ BANETTE_MIDBATTLE = {
     "text" => "Two forgotten dolls stir beside Banette. Every three hits tighten her Grudge Stitches!"
   },
 
-  "TargetTookDamage_BANETTE_foe_repeat" => {
+  "TargetTookDamage_BANETTEsg_foe_repeat" => {
     "addVariable" => 1,
     "text" => "Another grudge stitch tightens!"
   },
@@ -1692,7 +1694,8 @@ BANETTE_MIDBATTLE = {
   },
 
   # PHASE TWO: 70% HP. End Magic Guard and absorb the mansion's energy.
-  "BattlerReachedHPCap_BANETTE_foe" => {
+  "BattlerReachedHPCap_BANETTEsg_foe" => {
+    "setBattler" => :Self,
     "battlerForm"   => [1],
     "battlerHPCap" => 25,
     "setBattler_A" => 3,
@@ -1705,26 +1708,29 @@ BANETTE_MIDBATTLE = {
 
   # The first summoned doll occupies foe slot 2 (battler index 3).
   "RoundEnd_foe2_repeat_every_3" => {
-    "ignoreAfter" => "BattlerHPCritical_BANETTE_foe",
+    "ignoreAfter" => "BattlerHPCritical_BANETTEsg_foe",
     "setBattler" => 1,
     "battlerHP" => 4,
     "text" => "The Lonely Doll whispers: Stay with us. Its thread repairs Banette."
   },
-  "BattlerFainted_SHUPPET_foe_repeat" => {
-    "ignoreUntil" => "BattlerReachedHPCap_BANETTE_foe",
-    "ignoreAfter" => "BattlerHPCritical_BANETTE_foe",
+  "BattlerFainted_SHUPPETm_foe_repeat" => {
+    "ignoreUntil" => "BattlerReachedHPCap_BANETTEsg_foe",
+    "ignoreAfter" => "BattlerHPCritical_BANETTEsg_foe",
     "setBattler" => 1,
     "battlerStats" => [:DEFENSE, -1, :SPECIAL_DEFENSE, -1, :SPECIAL_ATTACK, 1],
     "text" => "A whisper tears through the room: You broke them."
   },
   "AfterSwitchIn_player_repeat" => {
-    "ignoreAfter" => "BattlerHPCritical_BANETTE_foe",
+    "ignoreAfter" => "BattlerHPCritical_BANETTEsg_foe",
     "setBattler" => 1,
     "battlerHP" => 2,
     "text" => "The mansion whispers: Don't leave. Banette clings to its fading warmth."
   },
 
-  "BattlerHPCritical_BANETTE_foe" => {
+  "BattlerHPCritical_BANETTEsg_foe" => {
+    "setBattler" => :Self,
+    "battlerHPCap" => nil,
+    "battlerForm" => 2,
     "battlerMoves" => [:SHADOWCLAW, :KNOCKOFF, :SHADOWSNEAK, :PLAYROUGH],
     "battlerStats" => [:ATTACK, 2, :SPEED, 1, :DEFENSE, -2, :SPECIAL_DEFENSE, -2],
     "disableItems" => true,
@@ -1737,11 +1743,11 @@ BANETTE_MIDBATTLE = {
     "text" => "The mansion falls silent. For the first time, nothing answers her."
   },
   "RoundEnd_foe1_repeat_every_2" => {
-    "ignoreUntil" => "BattlerHPCritical_BANETTE_foe",
+    "ignoreUntil" => "BattlerHPCritical_BANETTEsg_foe",
     "battlerStats" => [:ATTACK, 1, :DEFENSE, -1, :SPECIAL_DEFENSE, -1],
     "text" => "Banette's grudge grows stronger as her seams unravel!"
   },
-  "BattlerFainted_BANETTE_foe" => {
+  "BattlerFainted_BANETTEsg_foe" => {
     "text" => "Banette's grudge loosens. The remaining dolls fall still.",
     "endBattle" => 1
   }
