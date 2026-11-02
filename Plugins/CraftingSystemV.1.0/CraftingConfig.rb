@@ -144,6 +144,7 @@ module CraftingUIConfig
 	"CINDERACE_LOVE" => 815,
 	"MEOWSCARADA_LOVE" => 816,
 	"PRIMARINA_LOVE" => 817,
+	"LUSAMINE_LILLIE_LOVE" => 944,
     # Add more switches here as needed:
     # "TEAM_ROCKET_DEFEATED" => 53,
     # "NATIONAL_DEX_UNLOCKED" => 54,

@@ -7952,3 +7952,11 @@ Price = 1000
 SellPrice = 0
 Flags = Fling_90,Plate
 Description = A sword with a hook!
+#-------------------------------
+[ANTIVENOM]
+Name = Anti-Venom
+NamePlural = Anti-Venoms
+Pocket = 2
+Price = 0
+SellPrice = 0
+Description = A specialized treatment that neutralizes venom left in the body after prolonged exposure to Nihilego.

@@ -1059,4 +1059,65 @@ Quest13 = {
     :RewardString => "2 Rare Candies and increased affinity."
   }
 
+
+  LillieSmallSteps = {
+    :ID => "86",
+    :Name => "An Anti-Venom for Mother",
+    :QuestGiver => "Lillie",
+    :Stage1 => "Bring one Anti-Venom from Voidkip to Lillie for Lusamine.",
+    :Location1 => "Rustboro Apartment / Voidkip crafting",
+    :QuestDescription => "Lillie has asked you to obtain Anti-Venom for Lusamine, who is recovering from prolonged exposure to Nihilego venom. Voidkip can craft it using Anti-Venom recipe. Bring one Anti-Venom back to the Rustboro apartment.",
+    :RewardString => "Help Lusamine recover and strengthen your bond with Lillie.",
+  }
+
+  LillieStandFirm = {
+    :ID => "87",
+    :Name => "A Voice of Her Own",
+    :QuestGiver => "Lillie",
+    :Stage1 => "Show Lillie a non-Egg Pokemon that knows Safeguard in your party.",
+    :Location1 => "Rustboro Apartment",
+    :QuestDescription => "Lillie wants to practice protecting her partner without panicking. Bring a non-Egg Pokemon that knows Safeguard in your party. You keep your Pokemon.",
+    :RewardString => "1 PPUP and increased affinity.",
+  }
+
+  LillieOwnAfternoon = {
+    :ID => "88",
+    :Name => "An Afternoon of Her Own",
+    :QuestGiver => "Lillie",
+    :Stage1 => "Bring Lillie a Poke Doll, then spend a quiet afternoon with her.",
+    :Location1 => "Rustboro Apartment",
+    :QuestDescription => "Lillie wants to choose something for herself and spend time with you without discussing the crisis. Bring her one Poke Doll at the Rustboro apartment.",
+    :RewardString => "2 EXPCANDYM and increased affinity.",
+  }
+
+  LusamineOrderlyStart = {
+    :ID => "89",
+    :Name => "An Anti-Venom for Lillie",
+    :QuestGiver => "Lusamine",
+    :Stage1 => "Bring one Anti-Venom from Voidkip to Lusamine for Lillie.",
+    :Location1 => "Rustboro Apartment / Voidkip crafting",
+    :QuestDescription => "Lusamine has asked you to obtain Anti-Venom for Lillie, who is recovering from prolonged exposure to Nihilego venom. Voidkip can craft it using Anti-Venom recipe. Bring one Anti-Venom back to the Rustboro apartment.",
+    :RewardString => "Help Lillie recover and strengthen your bond with Lusamine.",
+  }
+
+  LusamineLivingBeauty = {
+    :ID => "90",
+    :Name => "Something Worth Keeping",
+    :QuestGiver => "Lusamine",
+    :Stage1 => "Show Lusamine a non-Egg Fairy-type Pokemon in your party.",
+    :Location1 => "Rustboro Apartment",
+    :QuestDescription => "Lusamine has asked to meet one of your Fairy-type partners. Bring a non-Egg Fairy-type Pokemon in your party for a visit. You keep your Pokemon.",
+    :RewardString => "1 PPUP and increased affinity.",
+  }
+
+  LusaminePlaceAtTable = {
+    :ID => "91",
+    :Name => "A Place at the Table",
+    :QuestGiver => "Lusamine",
+    :Stage1 => "Bring Lusamine a Lava Cookie and join her for tea.",
+    :Location1 => "Rustboro Apartment",
+    :QuestDescription => "Lusamine has arranged a small tea at the apartment and asked you to join her. Bring one Lava Cookie. She wants your company without turning the visit into another obligation.",
+    :RewardString => "2 EXPCANDYM and increased affinity.",
+  }
+
 end

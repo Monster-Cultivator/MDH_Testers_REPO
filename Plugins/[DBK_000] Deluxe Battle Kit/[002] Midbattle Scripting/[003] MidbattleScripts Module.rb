@@ -2379,12 +2379,12 @@ DAIYOUSEI_MIDBATTLE = {
   },
   "AfterSendOut_RIBOMBEE" => {
     "battlerStats" => [:SPECIAL_ATTACK, 1, :SPEED, 1],
-    "battlerEffects" => [:Safeguard, 1],
+    "teamEffects" => [:Safeguard, 1],
     "speech"       => ["Spell Card ~ Shimmering Fairy Bullet Dance ~"]
   },
   "AfterSendOut_EMOLGA" => {
     "battlerStats" => [:SPEED, 2, :EVASION, 1],
-    "battlerEffects" => [:LightScreen, 4],
+    "teamEffects" => [:LightScreen, 4],
     "speech"       => ["Spell Card ~ Lightning Fairy Escape Maneuver ~"]
   },
   "AfterSendOut_TROPIUS" => {
@@ -2393,15 +2393,53 @@ DAIYOUSEI_MIDBATTLE = {
     "speech"       => ["Spell Card ~ Tropical Sanctuary of Fairy Rain ~"]
   },
   "AfterSendOut_TOGEKISS" => {
-    "battlerStats" => [:SPECIAL_DEFENSE, 2, :SPEED, 1],
+    "battlerStats" => [:SPECIAL_DEFENSE, 1, :SPEED, 1],
     "teamEffects" => [:Tailwind, 5],
     "speech"       => ["Spell Card ~ Wish Upon a Shy Fairy Star ~"]
   },
  "AfterSendOut_DAIYOUSEI" => {
-    "battlerStats" => [:SPECIAL_DEFENSE, 3, :DEFENSE, 3],
+    "battlerStats" => [:SPECIAL_DEFENSE, 2, :DEFENSE, 2],
     "battlerEffects" => [:Tailwind,5],
     "speech"       => ["S-Spell Card... ~ Tiny Starlight of Hope ~"]
     }
+}
+
+CYNTHIA_MIDBATTLE = {
+  # Each teammate gets one small boost on its first send-out. Arceus is excluded.
+  "AfterSendOut_SPIRITOMB_foe" => {
+    "speech" => "Spiritomb, let's begin. You didn't think all those victories meant you could skip the Champion battle, did you?",
+    "endSpeech" => true,
+    "setBattler" => :Self,
+    "battlerStats" => [:SPECIAL_DEFENSE, 1]
+  },
+  "AfterSendOut_PORYGON2_foe" => {
+    "speech" => "Porygon2, take your time. Let's see if our challenger brought a strategy or just a very full bag.",
+    "endSpeech" => true,
+    "setBattler" => :Self,
+    "battlerStats" => [:DEFENSE, 1]
+  },
+  "AfterSendOut_TOGEKISS_foe" => {
+    "speech" => "Togekiss, keep them on their toes. A little luck makes these battles much more entertaining, don't you think?",
+    "endSpeech" => true,
+    "setBattler" => :Self,
+    "battlerStats" => [:SPECIAL_ATTACK, 1]
+  },
+  "AfterSendOut_HOOPA_2_foe" => {
+    "speech" => "Hoopa, you're up. What? Even a Champion is allowed a surprise pick. You can't plan around everything.",
+    "endSpeech" => true,
+    "setBattler" => :Self,
+    "battlerStats" => [:ATTACK, 1]
+  },
+  "AfterSendOut_GARCHOMP_foe" => {
+    "speech" => "You knew she was coming. Garchomp, my ace! I do hope you saved something better than an Ice move and a prayer.",
+    "endSpeech" => true,
+    "setBattler" => :Self,
+    "battlerStats" => [:SPEED, 1, :ATTACK, 1]
+  },
+  "AfterSendOut_ARCEUSsealed_foe" => {
+    "speech" => "Arceus, let's see what they can do. Try not to look so surprised. Nobody promised the team preview would be fair.",
+    "endSpeech" => true
+  }
 }
 
 RATTATAm_MIDBATTLE = {

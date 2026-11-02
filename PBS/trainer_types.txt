@@ -647,9 +647,8 @@ Name = Temp Champion
 Gender = Female
 BaseMoney = 30
 SkillLevel = 100
-IntroBGM = Approaching Cynthia
+IntroBGM = Battle! Cynthia
 BattleBGM = Battle! Cynthia
-VictoryBGM = Victory! Cynthia
 #-------------------------------
 [HECATIA]
 Name = Goddess

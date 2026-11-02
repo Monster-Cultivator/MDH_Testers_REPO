@@ -283,3 +283,11 @@ Result = ASSASSINATIONCREED,1
 Ingredients = DUSKSTONE,1,SMOKEBALL,2,BLACKGLASSES,1
 Category = Evolution Items
 UnlockCondition = story_flag("NOIVERN_LOVE")
+
+[NIHILEGO_ANTIVENOM]
+Name = Anti-Venom
+Description = A specialized treatment for prolonged exposure to Nihilego venom.
+Result = ANTIVENOM,1
+Ingredients = PECHABERRY,3,LUMBERRY,2,REVIVALHERB,1
+Category = Materials
+UnlockCondition = story_flag("LUSAMINE_LILLIE_LOVE")
