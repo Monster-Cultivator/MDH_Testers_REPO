@@ -169,6 +169,9 @@ Innates = PHOENIXDOWN,AERILATE
 [MACHAMPh]
 Innates = ONETWO
 #-------------------------------
+[BRAIXENMEGUMI]
+Innates = MOLDBREAKER,TINTEDLENS
+#-------------------------------
 [WHIMSICOTT_1]
 Innates = AIRSUPPORT
 #-------------------------------

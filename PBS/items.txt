@@ -7539,6 +7539,17 @@ FieldUse = OnPokemon
 Flags = EvolutionStone,Fling_30
 Description = An old manuscript encypted in Thieves' Cant! It makes certain species of Pokémon evolve!
 #-------------------------------
+[CRIMSONEYEPATCH]
+Name = Crimson Eyepatch
+NamePlural = Crimson Eyepatches
+Pocket = 1
+Price = 10000
+SellPrice = 750
+BPPrice = 5
+FieldUse = OnPokemon
+Flags = EvolutionStone,Fling_30
+Description = A crimson eyepatch worn by a mage who only ever needed one spell. It makes certain species of Pokémon evolve!
+#-------------------------------
 # CULTIVATION MEGA STONES
 #-------------------------------
 [HONCHNITE]

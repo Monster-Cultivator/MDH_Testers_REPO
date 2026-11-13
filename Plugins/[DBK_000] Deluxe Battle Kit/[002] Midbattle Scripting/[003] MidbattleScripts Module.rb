@@ -2404,8 +2404,34 @@ DAIYOUSEI_MIDBATTLE = {
     }
 }
 
+HAXA_WINONA_MIDBATTLE = {
+  "RoundStartCommand_1_foe2" => {
+    "setBattler" => 3,
+    "speech" => ["Swellow, give us a tailwind!", 1, "See? I barely have to ask."],
+    "endSpeech" => true,
+    "teamEffects" => [:Tailwind, 3, "The opposing team's Tailwind blew!"]
+  },
+  "BattlerFainted_SLITHERQUEEN_foe1" => {
+    "ignoreAfter" => "BattlerFainted_SWELLOW_foe2",
+    "text" => "Lura: There. They're not quite so impressive when you make them work for it."
+  },
+  "BattlerFainted_SWELLOW_foe2" => {
+    "ignoreAfter" => "BattlerFainted_SLITHERQUEEN_foe1",
+    "text" => "Lura: There. They're not quite so impressive when you make them work for it."
+  },
+  "AfterSendOut_CANARI_EELEKTROSS_foe1" => {
+    "speech" => "Canari, turn it up. I think they're starting to enjoy themselves.",
+    "endSpeech" => true,
+    "changeTerrain" => :Electric
+  },
+  "AfterSendOut_ALTARIA_foe2" => {
+    "speech" => ["Altaria, stay close. We can still pull this back.", 1, "Pull it back? Winona, we're putting on a show."],
+    "endSpeech" => true
+  }
+}
+
 CYNTHIA_MIDBATTLE = {
-  # Each teammate gets one small boost on its first send-out. Arceus is excluded.
+  # First send-out effects and a one-time response when the ace reaches half HP.
   "AfterSendOut_SPIRITOMB_foe" => {
     "speech" => "Spiritomb, let's begin. You didn't think all those victories meant you could skip the Champion battle, did you?",
     "endSpeech" => true,
@@ -2413,10 +2439,10 @@ CYNTHIA_MIDBATTLE = {
     "battlerStats" => [:SPECIAL_DEFENSE, 1]
   },
   "AfterSendOut_PORYGON2_foe" => {
-    "speech" => "Porygon2, take your time. Let's see if our challenger brought a strategy or just a very full bag.",
+    "speech" => "You've been awfully quick to move. Porygon2, let's see how they do going second.",
     "endSpeech" => true,
     "setBattler" => :Self,
-    "battlerStats" => [:DEFENSE, 1]
+    "fieldEffects" => [:TrickRoom, 3, "The dimensions twisted!"]
   },
   "AfterSendOut_TOGEKISS_foe" => {
     "speech" => "Togekiss, keep them on their toes. A little luck makes these battles much more entertaining, don't you think?",
@@ -2430,11 +2456,18 @@ CYNTHIA_MIDBATTLE = {
     "setBattler" => :Self,
     "battlerStats" => [:ATTACK, 1]
   },
-  "AfterSendOut_GARCHOMP_foe" => {
+  "AfterSendOut_GARCHOMPsg_foe" => {
     "speech" => "You knew she was coming. Garchomp, my ace! I do hope you saved something better than an Ice move and a prayer.",
     "endSpeech" => true,
     "setBattler" => :Self,
-    "battlerStats" => [:SPEED, 1, :ATTACK, 1]
+    "battlerStats" => [:SPEED, 1]
+  },
+  "TargetHPHalf_GARCHOMPsg_foe" => {
+    "ignoreAfter" => "LastTargetHPHalf_GARCHOMPsg_foe",
+    "setBattler" => :Self,
+    "speech" => "There it is. Garchomp, press the attack!",
+    "endSpeech" => true,
+    "battlerStats" => [:ATTACK, 2, :DEFENSE, 2]
   },
   "AfterSendOut_ARCEUSsealed_foe" => {
     "speech" => "Arceus, let's see what they can do. Try not to look so surprised. Nobody promised the team preview would be fair.",
@@ -2927,7 +2960,7 @@ MYSTERIOUS_LADY_MIDBATTLE = {
     ]
   },
   "BattlerReachedHPCap_foe" => {
-    "battlerHPCap" => 0,
+    "battlerHPCap" => nil,
     "text_A" => [
       "Kabutops's corrupted body violently distorts!",
       "Mysterious Lady: \"Oh? Already?\"",
@@ -2942,7 +2975,8 @@ MYSTERIOUS_LADY_MIDBATTLE = {
       "\"Now then... let's make this interesting.\""
     ]
   },
-  "TurnStart_2_foe" => {
+  # The Lady joins slot 3 (foe2). Her turns drive Kabutops in slot 1.
+  "TurnStart_2_foe2" => {
     "ignoreUntil" => "BattlerReachedHPCap_foe",
     "text" => [
       "Reality begins bending around Mysterious Lady...",
@@ -2950,27 +2984,29 @@ MYSTERIOUS_LADY_MIDBATTLE = {
       "Mysterious Lady: \"Do you feel that?\""
     ]
   },
-  "TurnStart_3_foe" => {
+  "TurnStart_3_foe2" => {
     "ignoreUntil" => "BattlerReachedHPCap_foe",
     "changeTerrain" => :Psychic,
-	"battlerForm"   => [1],
+    "setBattler" => 1,
+    "battlerForm" => [1],
     "text" => [
       "The distortion erupts across the battlefield!",
       "The battlefield became strange!",
       "Mysterious Lady: \"Wonderful! Now let's see what changes.\""
     ]
   },
-  "TurnStart_5_foe" => {
+  "TurnStart_5_foe2" => {
     "ignoreUntil" => "BattlerReachedHPCap_foe",
     "text" => [
       "A strange mist begins leaking through cracks in reality...",
       "Mysterious Lady: \"Oh? Something new is coming through.\""
     ]
   },
-  "TurnStart_6_foe" => {
+  "TurnStart_6_foe2" => {
     "ignoreUntil" => "BattlerReachedHPCap_foe",
     "changeTerrain" => :Misty,
-	"battlerForm"   => [2],
+    "setBattler" => 1,
+    "battlerForm" => [2],
     "text" => [
       "The distortion shifts again!",
       "A mysterious mist covers the battlefield!",
@@ -2982,7 +3018,7 @@ MYSTERIOUS_LADY_MIDBATTLE = {
   # DISTORTION 3 - ELECTRIC TERRAIN
   #===========================================================================
 
-  "TurnStart_8_foe" => {
+  "TurnStart_8_foe2" => {
     "ignoreUntil" => "BattlerReachedHPCap_foe",
     "text" => [
       "Static begins crackling through the distortion...",
@@ -2990,10 +3026,11 @@ MYSTERIOUS_LADY_MIDBATTLE = {
       "Mysterious Lady: \"I wonder what THIS one does?\""
     ]
   },
-  "TurnStart_9_foe" => {
+  "TurnStart_9_foe2" => {
     "ignoreUntil" => "BattlerReachedHPCap_foe",
     "changeTerrain" => :Electric,
-	"battlerForm"   => [3],
+    "setBattler" => 1,
+    "battlerForm" => [3],
     "text" => [
       "Electricity explodes across the battlefield!",
       "The terrain became electrified!",
@@ -3005,17 +3042,18 @@ MYSTERIOUS_LADY_MIDBATTLE = {
   # DISTORTION 4 - GRASSY TERRAIN
   #===========================================================================
 
-  "TurnStart_11_foe" => {
+  "TurnStart_11_foe2" => {
     "ignoreUntil" => "BattlerReachedHPCap_foe",
     "text" => [
       "Plants begin pushing through cracks in reality...",
       "Mysterious Lady: \"Now THAT certainly wasn't there before.\""
     ]
   },
-  "TurnStart_12_foe" => {
+  "TurnStart_12_foe2" => {
     "ignoreUntil" => "BattlerReachedHPCap_foe",
     "changeTerrain" => :Grassy,
-	"battlerForm"   => [4],
+    "setBattler" => 1,
+    "battlerForm" => [4],
     "text" => [
       "The battlefield suddenly erupts with vegetation!",
       "Mysterious Lady: \"Beautiful, isn't it?\""

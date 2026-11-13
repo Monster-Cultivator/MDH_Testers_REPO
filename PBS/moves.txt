@@ -4680,6 +4680,18 @@ FunctionCode = UserFaintsExplosive
 Flags = CanProtect,CanMirrorMove
 Description = The user explodes to inflict damage on those around it. The user faints upon using this move.
 #-------------------------------
+[EXPLOOOOSION]
+Name = Braixploooosion
+Type = FIRE
+Category = Special
+Power = 250
+Accuracy = 100
+TotalPP = 5
+Target = AllNearOthers
+FunctionCode = UserFaintsExplosive
+Flags = CanProtect,CanMirrorMove
+Description = The user explodes to inflict damage on those around it. The user faints upon using this move.
+#-------------------------------
 [SELFDESTRUCT]
 Name = Self-Destruct
 Type = NORMAL

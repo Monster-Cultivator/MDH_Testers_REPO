@@ -1120,4 +1120,13 @@ Quest13 = {
     :RewardString => "2 EXPCANDYM and increased affinity.",
   }
 
+  LilithMyTurnToProveIt = {
+    :ID => "92",
+    :Name => "My Turn to Prove It",
+    :QuestGiver => "Lilith",
+    :Stage1 => "Bring a full team and defeat Lilith in a battle.",
+    :Location1 => "Dewford Ranger Guild",
+    :QuestDescription => "Lilith wants to become Dewford's next Gym Leader. She has asked you to bring your full team and give her an honest battle.",
+  }
+
 end
