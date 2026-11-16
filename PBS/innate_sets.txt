@@ -223,6 +223,12 @@ Innates = RIVALRY,INTIMIDATE,DEFIANT
 [HOUNDOOMh]
 Innates = RIVALRY,INTIMIDATE,DEFIANT
 #-------------------------------
+[SERPERIORh]
+Innates = THICKFAT,SEEDSOWER,SHEDSKIN
+#-------------------------------
+[BANETTEh]
+Innates = THICKFAT,SEEDSOWER,SHEDSKIN
+#-------------------------------
 [BRAIXENx]
 Innates = SOULHEART,WONDERSKIN,MAGICGUARD
 #-------------------------------
