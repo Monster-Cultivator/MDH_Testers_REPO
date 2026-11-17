@@ -1108,3 +1108,8 @@ BaseMoney = 100
 SkillLevel = 100
 BattleBGM = idite fight
 VictoryBGM = Victory! Team Rocket
+#-------------------------------
+[WILDPARTNER]
+Name = Wild
+Gender = Unknown
+BaseMoney = 0

@@ -7345,3 +7345,7 @@ Pokemon = MACHAMP,55
     Ability = NOGUARD
     Item = BLACKBELT
     Moves = DYNAMICPUNCH,STONEEDGE,KNOCKOFF,BULLETPUNCH
+#-------------------------------
+[WILDPARTNER,Buizel]
+Pokemon = BUIZEL,38
+    Moves = LIQUIDATION,AQUAJET,BITE,SWIFT
