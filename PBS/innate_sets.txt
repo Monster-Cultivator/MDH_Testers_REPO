@@ -40,6 +40,9 @@ Innates = STRONGJAW
 [ABSOL_2]
 Innates = BATTLEBOND
 #-------------------------------
+[ABSOLh]
+Innates = BATTLEBOND
+#-------------------------------
 [GOURGEIST_4]
 Innates = BATTLEBOND
 #-------------------------------
