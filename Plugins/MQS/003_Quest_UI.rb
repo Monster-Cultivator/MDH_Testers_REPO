@@ -70,7 +70,7 @@ class QuestList_Scene
     @shadow = Color.new(160,160,168)
     addBackgroundPlane(@sprites,"bg","QuestUI/bg_1",@viewport)
     @sprites["base"] = IconSprite.new(0,0,@viewport)
-    @page_keys = [:STORY, :TARGET, :OAK, :SIDEQUEST, :COMPLETED]
+    @page_keys = [:STORY, :TARGET, :OAK, :SIDEQUEST, :RUMORS, :COMPLETED]
     @page_keys.push(:FAILED) if SHOW_FAILED_QUESTS
     setQuestPageBackground(0)
     @sprites["page_icon1"] = IconSprite.new(0,4,@viewport)
@@ -90,9 +90,10 @@ class QuestList_Scene
       active_quests.select { |quest| $quest_data.getQuestPage(quest.id) == :TARGET },
       active_quests.select { |quest| $quest_data.getQuestPage(quest.id) == :OAK },
       active_quests.select { |quest| $quest_data.getQuestPage(quest.id) == :SIDEQUEST },
+	  active_quests.select { |quest| $quest_data.getQuestPage(quest.id) == :RUMORS },
       $PokemonGlobal.quests.completed_quests
     ]
-    @quests_text = ["Story Quests", "Target Quests", "Signs of Love", "Sidequests", "Completed Tasks"]
+    @quests_text = ["Story Quests", "Target Quests", "Signs of Love", "Sidequests", "Rumors", "Completed Tasks"]
     if SHOW_FAILED_QUESTS
       @quests.push($PokemonGlobal.quests.failed_quests)
       @quests_text.push("Failed Tasks")

@@ -283,7 +283,7 @@ class QuestData
   def getQuestPage(quest)
     page = QuestModule.const_get(quest)[:QuestPage]
     page = page.to_s.upcase.to_sym if page
-    valid_pages = [:STORY, :TARGET, :OAK, :SIDEQUEST]
+    valid_pages = [:STORY, :TARGET, :OAK, :SIDEQUEST, :RUMORS]
     return valid_pages.include?(page) ? page : :SIDEQUEST
   end
 

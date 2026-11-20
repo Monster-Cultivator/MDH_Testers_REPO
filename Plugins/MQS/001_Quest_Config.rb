@@ -35,6 +35,7 @@ QUEST_PAGE_BACKGROUNDS = {
   :TARGET    => "Graphics/UI/QuestUI/bg_target",
   :OAK       => "Graphics/UI/QuestUI/bg_oak",
   :SIDEQUEST => "Graphics/UI/QuestUI/bg_sidequest",
+  :RUMORS    => "Graphics/UI/QuestUI/bg_rumors",
   :COMPLETED => "Graphics/UI/QuestUI/bg_completed",
   :FAILED    => "Graphics/UI/QuestUI/bg_failed"
 }

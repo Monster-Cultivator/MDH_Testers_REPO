@@ -28862,6 +28862,32 @@ Pokedex = An Espeon is extremely loyal to any trainer it considers to be worthy.
 Generation = 2
 RaidRanks = 3,4,5
 #-------------------------------
+[ESPEONnin]
+Name = Espeon
+Types = PSYCHIC
+BaseStats = 65,65,60,130,140,115
+GenderRatio = AlwaysFemale
+GrowthRate = Medium
+BaseExp = 184
+EVs = SPECIAL_ATTACK,2
+CatchRate = 45
+Happiness = 50
+Abilities = SYNCHRONIZE
+HiddenAbilities = MAGICBOUNCE
+Moves = 0,CONFUSION,1,TACKLE,1,TAKEDOWN,1,DOUBLEEDGE,1,TAILWHIP,1,BITE,1,GROWL,1,COPYCAT,1,COVET,1,HELPINGHAND,1,CHARM,1,BATONPASS,5,SANDATTACK,10,QUICKATTACK,15,BABYDOLLEYES,20,SWIFT,25,PSYBEAM,30,MORNINGSUN,35,POWERSWAP,40,PSYCHIC,45,PSYCHUP,50,FUTURESIGHT,55,LASTRESORT
+TutorMoves = ALLURINGVOICE,BATONPASS,BODYSLAM,CALMMIND,CHARM,CONFUSERAY,CURSE,DAZZLINGGLEAM,DIG,DOUBLEEDGE,DRAININGKISS,ENDURE,EXPANDINGFORCE,FACADE,FAKETEARS,FUTURESIGHT,GIGAIMPACT,GRASSKNOT,GRAVITY,HELPINGHAND,HYPERBEAM,HYPERVOICE,IMPRISON,LIGHTSCREEN,MAGICALLEAF,MUDSLAP,POWERGEM,PROTECT,PSYBEAM,PSYCHIC,PSYCHICFANGS,PSYCHICNOISE,PSYCHICTERRAIN,PSYCHUP,PSYSHOCK,RAINDANCE,REFLECT,REST,ROAR,SHADOWBALL,SKILLSWAP,SLEEPTALK,STOREDPOWER,SUBSTITUTE,SUNNYDAY,SWIFT,TAKEDOWN,THUNDERWAVE,TRAILBLAZE,TRICK,TRICKROOM,WEATHERBALL,ZENHEADBUTT
+EggGroups = Field
+HatchSteps = 8960
+Height = 0.9
+Weight = 26.5
+Color = Purple
+Shape = Quadruped
+Habitat = Urban
+Category = Sun
+Pokedex = An Espeon is extremely loyal to any trainer it considers to be worthy. It is said to have developed precognitive powers to protect its trainer from harm.
+Generation = 2
+RaidRanks = 3,4,5
+#-------------------------------
 [UMBREON_1]
 Name = Umbreon
 Types = DARK
@@ -31942,7 +31968,7 @@ Habitat = Grassland
 Category = Grass Snake
 Pokedex = They photosynthesize by bathing their tails in sunlight. When they are not feeling well, their tails droop.
 Generation = 5
-Evolutions = SERVINE,Level,17
+Evolutions = SERVINEh,Level,17
 RaidRanks = 1,2
 #-------------------------------
 [SERVINEh]
@@ -31969,7 +31995,7 @@ Habitat = Grassland
 Category = Grass Snake
 Pokedex = They avoid attacks by sinking into the shadows of thick foliage. They retaliate with masterful whipping techniques.
 Generation = 5
-Evolutions = SERPERIOR,Level,36
+Evolutions = SERPERIORh,Level,36
 RaidRanks = 2,3
 #-------------------------------
 [SERPERIORh]

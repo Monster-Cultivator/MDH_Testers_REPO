@@ -895,7 +895,16 @@ Quest13 = {
     :QuestDescription => "Braixen has sensed another Dark PokeShojo. Inesse has reluctantly agreed to help, reviving their old partnership.",
     :RewardString => "Help Inesse and Braixen work together to stop another Dark PokeShojo.",
     }
-  
+	
+   VoidkipRumor = {
+    :ID => "200",
+	:QuestPage => :RUMORS,
+	:Name => "A Moment of Solitude",
+	:QuestGiver => "Rumor",
+	:Stage1 => "Speak with Voidkip.",
+	:Location1 => "Route 103",
+	:QuestDescription => "Voidkip has been seen sitting alone by the water."
+	}
   #======================================================#
   #                                                      #
   #                      "Official"                      #
