@@ -3073,6 +3073,7 @@ BaseStats = 175,175,165,130,100,125
 [HOUNDOOMx,3]
 FormName = Mega Houndoom!
 MegaMove = FIREFANG
+UnmegaForm = 1
 BaseStats = 175,200,175,115,80,155
 BaseExp = 350
 Abilities = APEXPREDATOR
