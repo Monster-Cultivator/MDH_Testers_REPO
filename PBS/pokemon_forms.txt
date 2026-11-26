@@ -1510,12 +1510,15 @@ Color = Brown
 #-------------------------------
 [SAWSBUCK,1]
 FormName = Summer Form
+RaidRanks = 3,4
 #-------------------------------
 [SAWSBUCK,2]
 FormName = Autumn Form
+RaidRanks = 3,4
 #-------------------------------
 [SAWSBUCK,3]
 FormName = Winter Form
+RaidRanks = 3,4
 #-------------------------------
 [STUNFISK,1]
 FormName = Galarian

@@ -2208,8 +2208,8 @@ HOUNDOOM_REMATCH_MIDBATTLE = {
    "battlerStats" => [:DEFENSE, -1]
   },
  "BattlerReachedHPCap_HOUNDOOMx_foe" => {
-    # Guarantee a surviving hit at 25% HP before the Mega desperation phase.
-    "battlerHPCap" => 25,
+    # Guarantee a surviving hit below the 25% critical HP threshold.
+    "battlerHPCap" => 24,
 	"battlerForm"   => [1]
 },	
   "VariableUp_repeat_every_4" => {
@@ -2222,7 +2222,7 @@ HOUNDOOM_REMATCH_MIDBATTLE = {
     "battlerStatus" => [:BURN, true]
   },
   "BattlerHPCritical_HOUNDOOMx_foe" => {
-    "houndoomBossMega" => "Houndoom unleashes her primal instincts and Mega Evolves!",
+    "megaEvolve" => "Houndoom unleashes her primal instincts and Mega Evolves!",
 	"battlerStats" => [:ATTACK, 1, :SPEED, 1, :DEFENSE, 1, :SPECIAL_DEFENSE, 1],
 	"battlerMoves" => [:FLAREBLITZ, :WICKEDBLOW, :DYNAMICPUNCH, :YAWN],
 	"teamEffects" => [:StealthRock, true, "{1} Shards of the rock fly across the battle feild!"],

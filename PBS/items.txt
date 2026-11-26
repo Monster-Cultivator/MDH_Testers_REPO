@@ -7964,6 +7964,15 @@ SellPrice = 0
 Flags = Fling_90,Plate
 Description = A sword with a hook!
 #-------------------------------
+[CALIBURN]
+Name = Caliburn
+NamePlural = Caliburns
+Pocket = 1
+Price = 1000
+SellPrice = 0
+Flags = Fling_90,Plate
+Description = An ancient, royal blade forged of gleaming steel.
+#-------------------------------
 [ANTIVENOM]
 Name = Anti-Venom
 NamePlural = Anti-Venoms
