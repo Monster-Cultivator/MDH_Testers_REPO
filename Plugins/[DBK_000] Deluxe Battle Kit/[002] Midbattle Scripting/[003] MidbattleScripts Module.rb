@@ -1885,21 +1885,10 @@ DANCERFLYGON_MIDBATTLE = {
   "addVariable" => 1,
   "playSE" => "Anim/Heal"
 },
-  "VariableUp_repeat_every_4" => {
+  "VariableUp_repeat_every_8" => {
     "setBattler" => :Opposing,
-    "battlerStats" => [:ATTACK, -1, :SPECIAL_ATTACK, -1, :SPEED, -1],
-	"battlerStatus" => [:CONFUSION, true],
+    "battlerStats" => [:ATTACK, -2, :SPECIAL_ATTACK, -2, :SPEED, -1],
     "text" => ["{1} is getting pumped up! She's landing hits left and right!"]
-  },
-  "BattlerConfusionStart_foe_repeat" => {
-    "setBattler" => :Self, 
-    "battlerStats" => [:EVASION, 1],
-	"text" => ["{1} has turned her stumbling into a new form of dance!"]
-  },  
-  "BattlerConfusionEnd_foe_repeat" => {
-	"setBattler" => :Self,
-	"battlerStats" => [:EVASION, -1],
-	"text" => ["{1} recovered from her confusion losing her new tempo!"]
   },
   "TargetWeakToMove_foe_repeat" => {
     "addVariable" => 1,

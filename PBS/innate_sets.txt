@@ -94,6 +94,9 @@ Innates = WATERVEIL
 [DRACEON]
 Innates = STAMINA
 #-------------------------------
+[DRACEON_1]
+Innates = STAMINA
+#-------------------------------
 [NOIVERN_2]
 Innates = FATALPRECISION
 #-------------------------------
